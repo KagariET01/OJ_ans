@@ -2,7 +2,6 @@
 [zj]				[Q]https://zerojudge.tw/ShowProblem?problemid=b430
 */
 
-
 /*include*/
 #include<iostream>
 using namespace std;
