@@ -1,13 +1,5 @@
 /*
 [zj]				[Q]https://zerojudge.tw/ShowProblem?problemid=b430
-
-[]
-
-[result]		[AC]
-[time]			[400]
-[mem]				[344]
-[challenge]	[11405364]
-[sub time]	[2023/04/02]
 */
 
 
