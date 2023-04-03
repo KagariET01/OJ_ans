@@ -22,8 +22,8 @@
 > APCS
 >> 2020
 >>> 01
->>>> [1](/zerojudge/zj_h026.cpp)/
->>>> [3-zj](/zerojudge/zj_h028.cpp)/
+>>>> [1](/zerojudge/zj_h026.cpp)\
+>>>> [3-zj](/zerojudge/zj_h028.cpp)\
 >>>> [3-tcirc](/tcirc/tcirc_d030.cpp)
 >> 2018
 >>> 10
