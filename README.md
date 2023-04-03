@@ -28,5 +28,5 @@
 > [Algorithm](/Algorithm)
 >> [Math](/Algorithm/math/)
 >>> [Mod](/Algorithm/math/mod/)
->>>> [擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)
+>>>> [擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
 >>>> [模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
