@@ -2,7 +2,8 @@
 
 > [Zerojudge](#zerojudge)\
 > [TIOJ](#tioj)\
-> [APCS](#apcs)
+> [APCS](#apcs)\
+> [Algorithm](#algorithm)
 
 ## TIOJ
 
@@ -21,3 +22,9 @@
 >> 2018
 >>> 10
 >>>> [4](/zerojudge/d075.cpp)
+
+## Algorithm
+
+> [Algorithm](/Algorithm)
+>> [Math](/Algorithm/math)
+>>> [擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)
