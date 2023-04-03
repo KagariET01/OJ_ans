@@ -19,6 +19,7 @@ template<typename TPE>std::pair<TPE,std::pair<TPE,TPE>> Extended_Euclidean(TPE a
 	}
 	i=(i+1)%3;
 	std::pair<TPE,std::pair<TPE,TPE>> re={lst[i][0],{lst[i][1],lst[i][2]}};
+	re=(re%b+b)%b
 	return re;
 }
 
