@@ -27,7 +27,8 @@
 > [neoj](/neoj)
 >> [62](/neoj/neoj_62.cpp)\
 >> [63](/neoj/neoj_63.cpp)\
->> [69](/neoj/neoj_69.cpp)
+>> [69](/neoj/neoj_69.cpp)\
+>> [72](/neoj/neoj_72.cpp)
 
 ## APCS
 > APCS
