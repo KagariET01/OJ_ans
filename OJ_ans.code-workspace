@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"editor.tabSize": 2,
+		"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+		"editor.unicodeHighlight.nonBasicASCII": false,
+		"editor.fontSize": 12,
+		"editor.minimap.size": "fill",
+		"editor.minimap.showSlider": "always",
+		"files.associations": {
+			"\"*.cpp\"": "c++",
+			"iostream": "cpp"
+		}
+	}
+}
