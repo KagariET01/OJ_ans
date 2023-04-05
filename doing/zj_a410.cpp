@@ -1,6 +1,6 @@
 /*
-[Q]
-[]
+[Q]https://zerojudge.tw/ShowProblem?problemid=a410
+[WA]
 */
 #include<bits/stdc++.h>
 using namespace std;
