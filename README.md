@@ -16,6 +16,8 @@
 >> [a289](/zerojudge/zj_a289.cpp)\
 >> [b430](/zerojudge/zj_b430.cpp)\
 >> [d075](/zerojudge/zj_d075.cpp)\
+>> [f314](/zerojudge/zj_f314.cpp)\
+>> [f581](/zerojudge/zj_f581.cpp)\
 >> [h026](/zerojudge/zj_h026.cpp)\
 >> [h026](/zerojudge/zj_h028.cpp)
 
@@ -37,6 +39,12 @@
 >>>> [1](/zerojudge/zj_h026.cpp)\
 >>>> [3-zj](/zerojudge/zj_h028.cpp)\
 >>>> [3-tcirc](/tcirc/tcirc_d030.cpp)
+>>>>
+>>> 07
+>>>> [3](/zerojudge/zj_f581.cpp)
+>>>>
+>>> 10
+>>>> [3](/zerojudge/zj_f314.cpp)
 >>>>
 >> 2018
 >>> 10
