@@ -38,7 +38,8 @@
 ## Codeforces
 > [Codeforces](/codeforces/)
 >> Educational Codeforces Round 146 (contest 1814)
->>> [1814A](/codeforces/cf_1814A.cpp)
+>>> [1814A](/codeforces/cf_1814A.cpp)\
+>>> [1814A](/codeforces/cf_1814B.cpp)\
 
 ## APCS
 > APCS
