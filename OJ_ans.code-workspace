@@ -14,7 +14,10 @@
 		"editor.minimap.showSlider": "always",
 		"files.associations": {
 			"\"*.cpp\"": "c++",
-			"iostream": "cpp"
+			"iostream": "cpp",
+			"algorithm": "cpp",
+			"limits": "cpp",
+			"utility": "cpp"
 		}
 	}
 }

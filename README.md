@@ -10,7 +10,8 @@
 > [TIOJ](/tioj)\
 >>[1015](/tioj/tioj_1015.cpp)
 >>[1199](/tioj/tioj_1199.cpp)\
->>[1040](/tioj/tioj_1040.cpp)
+>>[1040](/tioj/tioj_1040.cpp)\
+>>[1402](/tioj/tioj_1402.cpp)
 
 ## Zerojudge
 > [Zerojudge](/zerojudge)
