@@ -36,7 +36,8 @@
 >> [69](/neoj/neoj_69.cpp)\
 >> [70](/neoj/neoj_70.cpp)\
 >> [72](/neoj/neoj_72.cpp)\
->> [74](/neoj/neoj_74.cpp)
+>> [74](/neoj/neoj_74.cpp)\
+>> [78](/neoj/neoj_78.cpp)
 >>
 > ## [Codeforces](/codeforces/)
 >> Educational Codeforces Round 146 (contest 1814)
