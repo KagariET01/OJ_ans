@@ -1,6 +1,6 @@
 /*
 [Q]https://neoj.sprout.tw/problem/70/
-[]
+[AC]
 */
 #include<bits/stdc++.h>
 using namespace std;

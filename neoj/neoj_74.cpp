@@ -1,6 +1,6 @@
 /*
 [Q]https://neoj.sprout.tw/problem/74/
-[]
+[AC]
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,30 +17,31 @@ int main(){
 			cin>>lst[i];
 		}
 		INT ans=1;
-		INT updn=0;//-1:(接下來要)下爬，1:上爬，0:都可
-		INT it=0;
+		INT nwans=1;
+		INT nw=lst[0];
+		INT go=-1;
 		for(INT i=1;i<n;i++){
-			if(updn){
-				if(updn==1){
-					if(lst[it]<lst[i]){
-						ans++;
-						updn*=-1;
-					}
-					it=i;
-				}else{
-					if(lst[it]>lst[i]){
-						ans++;
-						updn*=-1;
-					}
-					it=i;
+			if(go==1){
+				if(nw<lst[i]){
+					nwans++;
+					go*=-1;
 				}
-			}else if(lst[it]!=lst[i]){
-				ans++;
-				if(lst[it]<lst[i])updn=-1;
-				else updn=1;
-				it=i;
+			}else{
+				if(nw>lst[i]){
+					nwans++;
+					go*=-1;
+				}
 			}
+			nw=lst[i];
 		}
+		ans=max(ans,nwans);
+		if(ans%2==0)ans--;
+
+
+
+
+
+
 		cout<<ans<<endl;
 	}
 	return 0;
