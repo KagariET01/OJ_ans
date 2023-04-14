@@ -5,6 +5,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
+#define PII pair<INT,INT>
 #define endl "\n"
 
 int main(){
