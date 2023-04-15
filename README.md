@@ -33,7 +33,9 @@
 >> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
 >> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
 >> [h026 猜拳](/zerojudge/zj_h026.cpp)\
->> [h028 砍樹](/zerojudge/zj_h028.cpp)
+>> [h028 砍樹](/zerojudge/zj_h028.cpp)\
+>> [i399 數字遊戲 ](/zerojudge/zj_h028.cpp)
+>>
 > ## [Tcirc](/tcirc)
 >> [d030](/tcirc/tcirc_d030.cpp)\
 >> [d075](/tcirc/tcirc_d075.cpp)
