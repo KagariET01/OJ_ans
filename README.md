@@ -18,15 +18,25 @@
 >>[1402](/tioj/tioj_1402.cpp)
 >>
 > ## [Zerojudge](/zerojudge)
->> [a289](/zerojudge/zj_a289.cpp)\
->> [b430](/zerojudge/zj_b430.cpp)\
->> [d075](/zerojudge/zj_d075.cpp)\
->> [f314](/zerojudge/zj_f314.cpp)\
->> [f581](/zerojudge/zj_f581.cpp)\
->> [h026](/zerojudge/zj_h026.cpp)\
->> [h026](/zerojudge/zj_h028.cpp)
+>> a001 哈囉
+>>> [C++](/zerojudge/zj_a001.cpp)\
+>>> [Python](/zerojudge/zj_a001.py)
+>>>
+>> [a002 簡易加法](/zerojudge/zj_a002.cpp)\
+>> [a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)\
+>> [a004 文文的求婚](/zerojudge/zj_a004.cpp)\
+>> [a005 Eva 的回家作業](/zerojudge/zj_a005.cpp)\
+>> [a006 一元二次方程式](/zerojudge/zj_a006.cpp)\
+>> [a009 解碼器](/zerojudge/zj_a009.cpp)\
+>> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
+>> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
+>> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
+>> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
+>> [h026 猜拳](/zerojudge/zj_h026.cpp)\
+>> [h028 砍樹](/zerojudge/zj_h028.cpp)
 > ## [Tcirc](/tcirc)
->> [d030](/tcirc/tcirc_d030.cpp)
+>> [d030](/tcirc/tcirc_d030.cpp)\
+>> [d075](/tcirc/tcirc_d075.cpp)
 >>
 > ## [neoj](/neoj)
 >> [19](/neoj/neoj_19.cpp)\
