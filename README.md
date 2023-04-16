@@ -30,6 +30,7 @@
 >> [a009 解碼器](/zerojudge/zj_a009.cpp)\
 >> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
 >> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
+>> [c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
 >> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
 >> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
 >> [h026 猜拳](/zerojudge/zj_h026.cpp)\
