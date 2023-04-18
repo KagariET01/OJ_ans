@@ -4,7 +4,7 @@ using namespace std;
 void solve(int,int,int);
 void goodsolve(int,int,int,int,int,int);
 
-void Report(int,int,int,int,int,int);
+//void Report(int,int,int,int,int,int);
 
 
 
@@ -19,7 +19,7 @@ void goodsolve(int lx,int rx,int ly,int ry,int airx,int airy){
 	}else{
 		pair<int,int> a,b,c,d;
 		int Ax=(lx+rx)/2;
-		int Ay=(lx+rx)/2;
+		int Ay=(ly+ry)/2;
 		a={Ax,Ay};
 		b={a.first+1,a.second+0};
 		c={a.first+0,a.second+1};
@@ -29,39 +29,31 @@ void goodsolve(int lx,int rx,int ly,int ry,int airx,int airy){
 			goodsolve(Ax+1,rx,ly,Ay,Ax+1,Ay);
 			goodsolve(lx,Ax,Ay+1,ry,Ax,Ay+1);
 			goodsolve(Ax+1,rx,Ay+1,ry,Ax+1,Ay+1);
-	cerr<<"1dbg "<<lx<<" "<<rx<<" "<<ly<<" "<<ry<<" "<<airx<<" "<<airy<<endl;
-	cerr<<"1dbg a="<<a.first<<","<<a.second<<" b="<<b.first<<","<<b.second<<" c="<<c.first<<","<<c.second<<" d="<<d.first<<","<<d.second<<endl;
 			Report(b.first+1,b.second+1,c.first+1,c.second+1,d.first+1,d.second+1);
 		}else if(airx>Ax && airy<=Ay){
 			goodsolve(lx,Ax,ly,Ay,Ax,Ay);
 			goodsolve(Ax+1,rx,ly,Ay,airx,airy);
 			goodsolve(lx,Ax,Ay+1,ry,Ax,Ay+1);
 			goodsolve(Ax+1,rx,Ay+1,ry,Ax+1,Ay+1);
-	cerr<<"2dbg lx="<<lx<<" rx="<<rx<<" ly="<<ly<<" ry="<<ry<<" airx="<<airx<<" airy="<<airy<<endl;
-	cerr<<"2dbg a="<<a.first<<","<<a.second<<" b="<<b.first<<","<<b.second<<" c="<<c.first<<","<<c.second<<" d="<<d.first<<","<<d.second<<endl;
 			Report(a.first+1,a.second+1,c.first+1,c.second+1,d.first+1,d.second+1);
 		}else if(airx<=Ax && airy>Ay){
 			goodsolve(lx,Ax,ly,Ay,Ax,Ay);
 			goodsolve(Ax+1,rx,ly,Ay,Ax+1,Ay);
 			goodsolve(lx,Ax,Ay+1,ry,airx,airy);
 			goodsolve(Ax+1,rx,Ay+1,ry,Ax+1,Ay+1);
-	cerr<<"3dbg "<<lx<<" "<<rx<<" "<<ly<<" "<<ry<<" "<<airx<<" "<<airy<<endl;
-	cerr<<"3dbg a="<<a.first<<","<<a.second<<" b="<<b.first<<","<<b.second<<" c="<<c.first<<","<<c.second<<" d="<<d.first<<","<<d.second<<endl;
 			Report(a.first+1,a.second+1,b.first+1,b.second+1,d.first+1,d.second+1);
 		}else{
 			goodsolve(lx,Ax,ly,Ay,Ax,Ay);
 			goodsolve(Ax+1,rx,ly,Ay,Ax+1,Ay);
 			goodsolve(lx,Ax,Ay+1,ry,Ax,Ay+1);
 			goodsolve(Ax+1,rx,Ay+1,ry,airx,airy);
-	cerr<<"4dbg "<<lx<<" "<<rx<<" "<<ly<<" "<<ry<<" "<<airx<<" "<<airy<<endl;
-	cerr<<"4dbg a="<<a.first<<","<<a.second<<" b="<<b.first<<","<<b.second<<" c="<<c.first<<","<<c.second<<" d="<<d.first<<","<<d.second<<endl;
 			Report(a.first+1,a.second+1,b.first+1,b.second+1,c.first+1,c.second+1);
 		}
 	}
 }
 
 
-
+/*
 void Report(int a,int b,int c,int d,int e,int f){
 	cout<<"Report("<<a<<","<<b<<","<<c<<","<<d<<","<<e<<","<<f<<");"<<endl;
 }
@@ -69,12 +61,7 @@ void Report(int a,int b,int c,int d,int e,int f){
 int main(){
 	int n,x,y;
 	cin>>n>>x>>y;
-	cout<<endl<<"solve("<<n<<","<<x<<","<<y<<");"<<endl;
 	solve(n,x,y);
 	return 0;
 }
-
-/*
-ac
-bd
 */
