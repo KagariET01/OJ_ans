@@ -1,3 +1,7 @@
+/*
+[Q]https://neoj.sprout.tw/problem/124/
+[AC]
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
