@@ -59,6 +59,10 @@
 >>> [file](/neoj/neoj_125/neoj_125.cpp)\
 >>> [ans](/neoj/neoj_125/neoj_125.md)
 >>>
+>> [789](/neoj/neoj_789/)
+>>> [file](/neoj/neoj_125/neoj_789.cpp)\
+>>> [ans](/neoj/neoj_125/neoj_789.md)
+>>>
 >>
 > ## [Codeforces](/codeforces/)
 >> Educational Codeforces Round 146 (contest 1814)
