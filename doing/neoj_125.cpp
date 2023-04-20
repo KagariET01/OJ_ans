@@ -61,6 +61,13 @@ INT solve(INT l,INT r){
 		nwit++;
 		lit++;
 	}
+
+	nwit=0;
+	for(INT i=l;i<=r;i++,nwit++){
+		vec[i]=lst[nwit];
+	}
+
+
 	return re;
 }
 
