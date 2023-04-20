@@ -1,6 +1,6 @@
 /*
 [Q]https://neoj.sprout.tw/problem/125/
-[WA][RE]
+[WA]
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -26,6 +26,8 @@ void solve(INT l,INT r){
 	re+=solve(mnt,r);
 	re%=mod;
 	*/
+	solve(l,mnt);
+	solve(mnt,r);
 
 	INT lit=l,rit=mnt,ind=0,temp[r-l];
 	//nl=左指標,nr=右指標,ind=目前temp的.endl(),temp為排序後的list
