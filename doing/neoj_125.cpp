@@ -1,10 +1,10 @@
 /*
-[Q]
-[]
+[Q]https://neoj.sprout.tw/problem/125/
+[MLE]
 */
 #include<bits/stdc++.h>
 using namespace std;
-#define INT long long int
+#define INT unsigned int
 #define endl "\n"
 
 INT ans=0;
