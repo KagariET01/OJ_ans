@@ -1,6 +1,6 @@
 /*
 [Q]https://neoj.sprout.tw/problem/125/
-[WA]
+[AC]
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -28,6 +28,11 @@ void solve(INT l,INT r){
 	*/
 	solve(l,mnt);
 	solve(mnt,r);
+
+	for(INT i=l;i<r;i++){
+		vecadd[i]=vecadd[i-1]+vec[i];//前綴和
+		//因為vec的資料會隨著執行而更改元素的位置，所以必須每次solve都重算一次
+	}
 
 	INT lit=l,rit=mnt,ind=0,temp[r-l];
 	//nl=左指標,nr=右指標,ind=目前temp的.endl(),temp為排序後的list
