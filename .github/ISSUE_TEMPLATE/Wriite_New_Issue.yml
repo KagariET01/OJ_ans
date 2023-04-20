@@ -1,0 +1,16 @@
+name: 
+description: Create a report of unintended behavior or problems
+labels: 
+body:
+  - type: input
+    attributes:
+      label: 題目編號
+      placeholder: e.g. zj_z999
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 內容
+      description: 寫下你想說的話
+    validations:
+      required: true
