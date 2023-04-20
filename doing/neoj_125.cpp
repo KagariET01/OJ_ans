@@ -14,15 +14,18 @@ vector<INT> vecadd;
 bool debug=0;
 INT mod=10000019;
 
-INT solve(INT l,INT r){
+INT re=0;
+
+void solve(INT l,INT r){
 	DBG cerr<<"l="<<l<<" r="<<r<<endl;
-	if(r-l<=1)return 0;
+	if(r-l<=1)return;
 	INT mnt=(l+r)/2;//l區的右界(不包含)，r區的左界(包含)
-	INT re=0;
+	/*
 	re+=solve(l,mnt);
 	re%=mod;
 	re+=solve(mnt,r);
 	re%=mod;
+	*/
 
 	INT lit=l,rit=mnt,ind=0,temp[r-l];
 	//nl=左指標,nr=右指標,ind=目前temp的.endl(),temp為排序後的list
@@ -31,7 +34,7 @@ INT solve(INT l,INT r){
 			INT tme=mnt-lit;//除了自己之外，l區裡面比自己大的(在自己右邊的)都要算
 			re+=vecadd[mnt-1]-vecadd[lit-1];//每次+逆序數對，都要加自己一次
 			re%=mod;
-			re+=vec[rit]*tme;
+			re+=vec[rit]*tme%mod;
 			re%=mod;
 			temp[ind]=vec[rit];
 			ind++;
@@ -46,13 +49,11 @@ INT solve(INT l,INT r){
 		ind++;
 	}
 
-	ind=0;
-	for(int i=l;i<r;i++){
-		vec[i]=temp[ind];
-		ind++;
+	for(int i=0;i<r-l;i++){
+		vec[i+l]=temp[i];
 	}
 	re%=mod;
-	return re;
+	//return re;
 }
 
 int main(){
@@ -68,7 +69,8 @@ int main(){
 			cin>>vec[i];
 			vecadd[i]=vecadd[i-1]+vec[i];//前綴和
 		}
-		cout<<solve(1,n+1)%mod;
+		solve(1,n+1);
+		cout<<re%mod<<endl;
 	}
 	return 0;
 }
