@@ -1,6 +1,5 @@
-name: 
-description: Create a report of unintended behavior or problems
-labels: 
+name: 建立新Issue
+description: 如題，建立新的Issue
 body:
   - type: input
     attributes:
