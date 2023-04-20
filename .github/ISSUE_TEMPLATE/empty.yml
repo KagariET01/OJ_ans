@@ -1,5 +1,5 @@
 name: 建立空白Issue
-description: 如果不知道要在哪寫Issue，這選項是最好的選擇
+description: 如果不知道你的Issue屬於哪賴，這選項是最好的選擇
 body:
   - type: input
     attributes:
