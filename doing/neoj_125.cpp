@@ -4,18 +4,20 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
-#define INT unsigned int
+#define INT unsigned long long int
 #define endl "\n"
+#define DBG if(debug)
 
 vector<INT> vec;
 vector<INT> vecadd;
 
-bool debug=1;
-const INT mod=10000019;
+bool debug=0;
+INT mod=10000019;
 
 INT solve(INT l,INT r){
-	if(l==r)return 0;
-	INT mnt=l+(r-l)/2;//l區的右界(不包含)，r區的左界(包含)
+	DBG cerr<<"l="<<l<<" r="<<r<<endl;
+	if(r-l<=1)return 0;
+	INT mnt=(l+r)/2;//l區的右界(不包含)，r區的左界(包含)
 	INT re=0;
 	re+=solve(l,mnt);
 	re%=mod;
@@ -49,13 +51,16 @@ INT solve(INT l,INT r){
 		vec[i]=temp[ind];
 		ind++;
 	}
+	re%=mod;
 	return re;
 }
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT n;
-	while(cin>>n){
+	cin>>n;
+	INT rt=1;
+	while(rt--){
 		vec.resize(n+1);
 		vecadd.resize(n+1);
 		vecadd[0]=0;
@@ -71,4 +76,8 @@ int main(){
 /*
 參考資料
 https://peienwu.com/sprout6-1/
+
+
+這很明顯是分治題
+~~因為這堂課上分治
 */
