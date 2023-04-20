@@ -1,12 +1,11 @@
-name: 建立新Issue
-description: 如題，建立新的Issue
+name: 建立空白Issue
+description: 如果不知道要在哪寫Issue，這選項是最好的選擇
 body:
   - type: input
     attributes:
-      label: 題目編號
-      placeholder: e.g. zj_z999
+      label: 類型
     validations:
-      required: true
+      required: false
   - type: textarea
     attributes:
       label: 內容
