@@ -66,21 +66,24 @@
 >>>
 >>
 > ## [Codeforces](/codeforces/)
+>> Codeforces Round 819 and Grimoire of Code Annual Contest 2022
+>>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
+>>>
 >> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
 >>> [1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
 >>>
 >> Educational Codeforces Round 146 (contest 1814)
->>> [1814A](/codeforces/cf_1814A.cpp)\
->>> [1814B](/codeforces/cf_1814B.cpp)
+>>> [1814A Coins](/codeforces/cf_1814A.cpp)\
+>>> [1814B Long Legs](/codeforces/cf_1814B.cpp)
 >>>
 >> Codeforces Round 864 (contest 1797)
->>> [1797A](/codeforces/cf_1797A.cpp)\
->>> [1797B](/codeforces/cf_1797B.cpp)
+>>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
+>>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
 >>> 
->> Codeforces Round 865 (Div. 2) (contect 1816)
->>> [1816A](codeforces/cf_1816A.cpp)\
->>> [1816B](codeforces/cf_1816B.cpp)\
->>> [1816C](codeforces/cf_1816C.cpp)
+>> Codeforces Round 865 (contect 1816)
+>>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
+>>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
+>>> [1815A,1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
 >>>
 > ## [AtCoder](/AtCoder/)
 >> AtCoder Beginner Contest 293

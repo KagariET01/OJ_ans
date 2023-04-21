@@ -1,5 +1,5 @@
 /*
-[Q]https://codeforces.com/contest/1797/problem/A
+[Q]https://codeforces.com/contest/1797/problem/B
 [AC]
 */
 #include<bits/stdc++.h>
