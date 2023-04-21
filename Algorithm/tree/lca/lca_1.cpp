@@ -48,8 +48,8 @@ int lca(int a, int b){// 求a和b的LCA（利用倍增法）
             dif >>= 1;
         }
     }
-    if (a == b) return a;
-    for (int i = 19; i >= 0; i--){
+    if (a == b) return a;//如果位置相同，那lca就是自己
+    for (int i = 19; i >= 0; i--){//註3
         if (p[a][i] != p[b][i]){
             a = p[a][i];
             b = p[b][i];
