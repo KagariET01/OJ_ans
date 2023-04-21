@@ -66,6 +66,9 @@
 >>>
 >>
 > ## [Codeforces](/codeforces/)
+>> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
+>>> [1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
+>>>
 >> Educational Codeforces Round 146 (contest 1814)
 >>> [1814A](/codeforces/cf_1814A.cpp)\
 >>> [1814B](/codeforces/cf_1814B.cpp)
