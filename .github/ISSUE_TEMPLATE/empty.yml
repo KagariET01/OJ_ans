@@ -1,0 +1,14 @@
+name: 建立空白Issue
+description: 如果不知道你的Issue屬於哪賴，這選項是最好的選擇
+body:
+  - type: input
+    attributes:
+      label: 類型
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 內容
+      description: 寫下你想說的話
+    validations:
+      required: true

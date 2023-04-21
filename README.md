@@ -1,5 +1,6 @@
 # OJ_ans
-　　此github資料庫為[ET01](../../../)一個人完成。這邊提供熱門Online Judge的題解，但是看完題解後請自行思考其原理，且要自己重新寫一遍，不要沒思考過後就直接送出此答案\
+　　此github資料庫為[ET01](../../../)一個人完成。這邊提供熱門Online Judge的題解，但是看完題解後請自行思考其原理，且要自己重新寫一遍，不要沒思考過後就直接送出此答案<br>
+如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
 > [Zerojudge](#zerojudge)\
 > [TIOJ](#tioj)\
@@ -19,15 +20,28 @@
 >>[1402](/tioj/tioj_1402.cpp)
 >>
 > ## [Zerojudge](/zerojudge)
->> [a289](/zerojudge/zj_a289.cpp)\
->> [b430](/zerojudge/zj_b430.cpp)\
->> [d075](/zerojudge/zj_d075.cpp)\
->> [f314](/zerojudge/zj_f314.cpp)\
->> [f581](/zerojudge/zj_f581.cpp)\
->> [h026](/zerojudge/zj_h026.cpp)\
->> [h026](/zerojudge/zj_h028.cpp)
+>> a001 哈囉
+>>> [C++](/zerojudge/zj_a001.cpp)\
+>>> [Python](/zerojudge/zj_a001.py)
+>>>
+>> [a002 簡易加法](/zerojudge/zj_a002.cpp)\
+>> [a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)\
+>> [a004 文文的求婚](/zerojudge/zj_a004.cpp)\
+>> [a005 Eva 的回家作業](/zerojudge/zj_a005.cpp)\
+>> [a006 一元二次方程式](/zerojudge/zj_a006.cpp)\
+>> [a009 解碼器](/zerojudge/zj_a009.cpp)\
+>> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
+>> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
+>> [c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
+>> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
+>> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
+>> [h026 猜拳](/zerojudge/zj_h026.cpp)\
+>> [h028 砍樹](/zerojudge/zj_h028.cpp)\
+>> [i399 數字遊戲 ](/zerojudge/zj_h028.cpp)
+>>
 > ## [Tcirc](/tcirc)
->> [d030](/tcirc/tcirc_d030.cpp)
+>> [d030](/tcirc/tcirc_d030.cpp)\
+>> [d075](/tcirc/tcirc_d075.cpp)
 >>
 > ## [neoj](/neoj)
 >> [19](/neoj/neoj_19.cpp)\
@@ -40,7 +54,16 @@
 >> [74](/neoj/neoj_74.cpp)\
 >> [78](/neoj/neoj_78.cpp)\
 >> [89](/neoj/neoj_89.cpp)\
->> [91](/neoj/neoj_91.cpp)
+>> [91](/neoj/neoj_91.cpp)\
+>> [124](/neoj/neoj_124.cpp)\
+>> [125](/neoj/neoj_125/)
+>>> [file](/neoj/neoj_125/neoj_125.cpp)\
+>>> [ans](/neoj/neoj_125/neoj_125.md)
+>>>
+>> [789](/neoj/neoj_789/)
+>>> [file](/neoj/neoj_125/neoj_789.cpp)\
+>>> [ans](/neoj/neoj_125/neoj_789.md)
+>>>
 >>
 > ## [Codeforces](/codeforces/)
 >> Educational Codeforces Round 146 (contest 1814)
