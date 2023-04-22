@@ -1,56 +1,47 @@
 /*
 [Q]https://neoj.sprout.tw/problem/138/
-[矩陣快速密]
+[DP]
 [TLE]
 */
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
 #define endl "\n"
-
-struct lst{
-	INT a[2][2]={
-		{0,0},
-		{0,0}
-	};
-};
-
-lst operator*(lst a,lst b){
-	lst re;
-	for(INT i=0;i<2;i++){
-		for(INT j=0;j<2;j++){
-			for(INT k=0;k<2;k++){
-				re.a[i][j]+=a.a[i][k]*b.a[k][j];
-			}
-		}
-	}
-	return re;
+#define read(n) reader<n>()
+#define DBG if(debug)
+bool debug=0;
+template<typename TPE>TPE reader(){
+	TPE re;cin>>re;return re;
 }
+INT mod=1000007;
+INT ans[100002];
 
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	ans[2]=3;
+	for(INT i=4;i<=100000;i+=2){
+		ans[i]=ans[i-2]*6;
+		ans[i]%=mod;
+		ans[i]+=2;
+		ans[i]%=mod;
+	}
+	
 	INT t;cin>>t;
-	while(t--){
-		INT n;cin>>n;
-		lst ans;
-		ans.a[0][0]=3;
-		ans.a[0][1]=2;
-
-		lst xx;
-		xx.a[0][0]=3;
-		xx.a[1][0]=1;
-		xx.a[1][1]=1;
-		n/=2;
-		n--;
-		while(n){
-			if(n&1){
-				ans=ans*xx;
+	DBG{
+		INT it=20;
+		for(INT i=0;i<t;i++){
+			cout<<i<<":"<<ans[i]<<" ";
+			it--;
+			if(!it){
+				cout<<endl;
+				it=20;
 			}
-			xx=xx*xx;
-			n>>=1;
 		}
-		cout<<ans.a[0][0]<<endl;
+	}else{
+		while(t--){
+			cout<<ans[read(INT)]<<endl;
+		}
 	}
 	return 0;
 }
