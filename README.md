@@ -61,8 +61,8 @@
 >>> [ans](/neoj/neoj_125/neoj_125.md)
 >>>
 >> [789](/neoj/neoj_789/)
->>> [file](/neoj/neoj_125/neoj_789.cpp)\
->>> [ans](/neoj/neoj_125/neoj_789.md)
+>>> [file](/neoj/neoj_789/neoj_789.cpp)\
+>>> [ans](/neoj/neoj_789/neoj_789.md)
 >>>
 >>
 > ## [Codeforces](/codeforces/)
