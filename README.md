@@ -10,6 +10,7 @@
 > [AtCoder](#atcoder)\
 > [APCS](#apcs)\
 > [Algorithm](#algorithm)
+> [racing]
 >
 # 檔案
 > ## [TIOJ](/tioj)
@@ -115,3 +116,9 @@
 >>> [Mod](/Algorithm/math/mod/)
 >>>> [擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
 >>>> [模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>>>>
+> ## [racing](/racing/)
+>> [TOI 練習賽](/racing/TOI練習賽/)
+>>> 2023
+>>>> [04](/racing/TOI練習賽/2023-04/)
+>>>>> [新手組](/racing/TOI練習賽/2023-04/新手組/list.md)
