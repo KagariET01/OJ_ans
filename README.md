@@ -9,8 +9,8 @@
 > [Codeforces](#codeforces)\
 > [AtCoder](#atcoder)\
 > [APCS](#apcs)\
-> [Algorithm](#algorithm)
-> [racing]
+> [Algorithm](#algorithm)\
+> [racing](#racing)
 >
 # 檔案
 > ## [TIOJ](/tioj)
@@ -67,7 +67,10 @@
 >>>
 >>
 > ## [Codeforces](/codeforces/)
->> Codeforces Round 819 and Grimoire of Code Annual Contest 2022
+>> Codeforces Round 768 (contest 1630,1631)
+>>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
+>>>
+>> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>
 >> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
@@ -81,7 +84,7 @@
 >>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
 >>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
 >>> 
->> Codeforces Round 865 (contect 1816)
+>> Codeforces Round 865 (contect 1815,1816)
 >>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
 >>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
 >>> [1815A,1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
