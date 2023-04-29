@@ -1,4 +1,4 @@
-a# OJ_ans
+# OJ_ans
 　　此github資料庫為[ET01](../../../)一個人完成。這邊提供熱門Online Judge的題解，但是看完題解後請自行思考其原理，且要自己重新寫一遍，不要沒思考過後就直接送出此答案<br>
 如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
@@ -130,4 +130,4 @@ a# OJ_ans
 > ## [racing](/racing/)
 >> [TOI](/racing/TOI/)
 >>> [練習賽](/racing/TOI/練習賽/)
->>>> [2023](/racing/TOI/練習賽/2023/list.md)
+>>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
