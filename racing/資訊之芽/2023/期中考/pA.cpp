@@ -1,6 +1,5 @@
 /*
-[Q]
-[]
+[WA]
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -8,7 +7,7 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
-bool debug=1;
+bool debug=0;
 template<typename TPE>TPE reader(){
 	TPE re;cin>>re;return re;
 }
@@ -36,18 +35,12 @@ bool yvs(str a,str b){
 	else return a.y<b.y;
 }
 bool ul_rdvs(str a,str b){
-	if(a.c==b.c)return (a.x+a.y)<(b.x+b.y);
-	else return a.c<b.c;
-}
-bool ur_ldvs(str a,str b){
-	if(a.c==b.c)return (a.x-a.y)<(b.x-b.y);
-	else return a.c<b.c;
+	return a.c<b.c;
 }
 
 vector<str> xlst;
 vector<str> ylst;
 vector<str> ul_rdlst;
-vector<str> ur_ldlst;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
@@ -58,7 +51,6 @@ int main(){
 		xlst.reserve(n);
 		ylst.reserve(n);
 		ul_rdlst.reserve(n);
-		ur_ldlst.reserve(n);
 		for(INT i=0;i<n;i++){
 			str nw;
 			cin>>x[i]>>y[i]>>c[i];
@@ -69,13 +61,11 @@ int main(){
 			xlst.push_back(nw);
 			ylst.push_back(nw);
 			ul_rdlst.push_back(nw);
-			ur_ldlst.push_back(nw);
 		}
 
 		sort(xlst.begin(),xlst.end(),xvs);
 		sort(ylst.begin(),ylst.end(),yvs);
 		sort(ul_rdlst.begin(),ul_rdlst.end(),ul_rdvs);
-		sort(ur_ldlst.begin(),ur_ldlst.end(),ur_ldvs);
 		
 		deque<INT> dq;//做bfs，紀錄點編號
 		dq.push_back(s);
@@ -108,6 +98,7 @@ int main(){
 							else r=mnt;
 						}
 						xrit=r;
+						if(xlst[xrit].x==nx)xrit++;
 					}
 					{//在裡面二分搜出自己的位置
 						INT l=xlit,r=xrit;
@@ -163,6 +154,7 @@ int main(){
 							else r=mnt;
 						}
 						yrit=r;
+						if(ylst[yrit].y==ny)yrit++;
 					}
 					{//在裡面二分搜出自己的位置
 						INT l=ylit,r=yrit;
@@ -218,32 +210,18 @@ int main(){
 							else r=mnt;
 						}
 						arit=r;
+						if(ul_rdlst[arit].c==nc)arit++;
 					}
-					{//在裡面二分搜出自己的位置
-						INT l=alit,r=arit;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if((ul_rdlst[mnt].x+ul_rdlst[mnt].y)<(nx+ny))l=mnt+1;
-							else r=mnt;
-						}
-						nwaitl=r;
-					}
-					{//在裡面二分搜出自己的位置
-						INT l=alit,r=arit;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if((ul_rdlst[mnt].x+ul_rdlst[mnt].y)<=(nx+ny))l=mnt+1;
-							else r=mnt;
-						}
-						nwaitr=r;
-					}
+					nwaitl=alit,nwaitr=arit;
 				}
+				DBG cerr<<"ul_rd "<<" l="<<nwaitl<<" r="<<nwaitr<<endl;	
 				for(INT nexti=nwaitl;nexti<nwaitr;nexti++){
 					INT nextx=xlst[nexti].x;
 					INT nexty=xlst[nexti].y;
 					INT nextid=xlst[nexti].id;
 					INT nextc=xlst[nexti].c;
-					if(nextc==nc){
+					DBG cerr<<"ul_rd "<<"nw="<<nextid<<" nx="<<nextx<<" ny="<<nexty<<" nc="<<nextc<<endl;
+					if(nextc==nc && ((nextx-nexty)==(nx-ny) || (nextx+nexty)==(nx+ny))){
 						if(step[nextid]==0 && nextid!=s){
 							step[nextid]=step[nw]+1;
 							dq.push_back(nextid);
@@ -251,61 +229,7 @@ int main(){
 					}
 				}
 			}
-			{//ur_ld
-				INT nwaitl=0,nwaitr=0;
-				{//二分搜出nwxit
-					INT alit=0,arit=n;
-					{//尋找第一個x=nx
-						INT l=0,r=n;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if(ur_ldlst[mnt].c<nc)l=mnt+1;
-							else r=mnt;
-						}
-						alit=r;
-					}
-					{//尋找最後一個x=nx
-						INT l=0,r=n;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if(ur_ldlst[mnt].c<=nc)l=mnt+1;
-							else r=mnt;
-						}
-						arit=r;
-					}
-					{//在裡面二分搜出自己的位置
-						INT l=alit,r=arit;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if((ur_ldlst[mnt].x-ur_ldlst[mnt].y)<(nx-ny))l=mnt+1;
-							else r=mnt;
-						}
-						nwaitl=r;
-					}
-					{//在裡面二分搜出自己的位置
-						INT l=alit,r=arit;
-						while(r>l){
-							INT mnt=(l+r)/2;
-							if((ur_ldlst[mnt].x-ur_ldlst[mnt].y)<=(nx-ny))l=mnt+1;
-							else r=mnt;
-						}
-						nwaitr=r;
-					}
-				}
-				for(INT nexti=nwaitl;nexti<nwaitr;nexti++){
-					INT nextx=xlst[nexti].x;
-					INT nexty=xlst[nexti].y;
-					INT nextid=xlst[nexti].id;
-					INT nextc=xlst[nexti].c;
-					if(nextc==nc){
-						if(step[nextid]==0 && nextid!=s){
-							step[nextid]=step[nw]+1;
-							dq.push_back(nextid);
-						}
-					}
-				}
-			}
-
+			
 			if(step[t]){
 				ans=1;
 			}
@@ -319,3 +243,14 @@ int main(){
 	}
 	return 0;
 }
+/*
+目前狀況
+測資
+3 1 3
+2 1 1
+2 6 2
+7 6 1
+正解為1
+程式輸出2
+因為code偵測node 1沒辦法直接前往node 2
+*/
