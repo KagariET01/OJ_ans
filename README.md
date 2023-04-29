@@ -9,8 +9,8 @@
 > [Codeforces](#codeforces)\
 > [AtCoder](#atcoder)\
 > [APCS](#apcs)\
-> [Algorithm](#algorithm)
-> [racing]
+> [Algorithm](#algorithm)\
+> [racing](#racing)
 >
 # 檔案
 > ## [TIOJ](/tioj)
@@ -38,7 +38,7 @@
 >> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
 >> [h026 猜拳](/zerojudge/zj_h026.cpp)\
 >> [h028 砍樹](/zerojudge/zj_h028.cpp)\
->> [i399 數字遊戲 ](/zerojudge/zj_h028.cpp)
+>> [i399 數字遊戲](/zerojudge/zj_h028.cpp)
 >>
 > ## [Tcirc](/tcirc)
 >> [d030](/tcirc/tcirc_d030.cpp)\
@@ -88,28 +88,28 @@
 >>>
 > ## [AtCoder](/AtCoder/)
 >> AtCoder Beginner Contest 293
->>> [ABC293G](/AtCoder/ABC293G.cpp)
+>>> [ABC 293G](/AtCoder/ABC293G.cpp)
 >>> 
 > ## APCS
 >> 2020
 >>> 01
->>>> [1(zj_h026)](/zerojudge/zj_h026.cpp)\
->>>> [3(zj_h028](/zerojudge/zj_h028.cpp)\
->>>> [3(dcirc_d030)](/tcirc/tcirc_d030.cpp)
+>>>> [1 (zj_h026)](/zerojudge/zj_h026.cpp)\
+>>>> [3 (zj_h028](/zerojudge/zj_h028.cpp)\
+>>>> [3 (tcirc_d030)](/tcirc/tcirc_d030.cpp)
 >>>>
 >>> 07
->>>> [3(zj_f581)](/zerojudge/zj_f581.cpp)
+>>>> [3 (zj_f581)](/zerojudge/zj_f581.cpp)
 >>>>
 >>> 10
->>>> [3(zj_f314)](/zerojudge/zj_f314.cpp)
+>>>> [3 (zj_f314)](/zerojudge/zj_f314.cpp)
 >>>>
 >> 2018
 >>> 10
->>>> [4(zj_d075)](/zerojudge/zj_d075.cpp)
+>>>> [4 (zj_d075)](/zerojudge/zj_d075.cpp)
 >>>>
 >> 2017
 >>> 03
->>>> [2(zj_c291)](/zerojudge/zj_c291.cpp)
+>>>> [2 (zj_c291)](/zerojudge/zj_c291.cpp)
 >>>>
 > ## [Algorithm](/Algorithm)
 >> [Math](/Algorithm/math/)
@@ -118,7 +118,6 @@
 >>>> [模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
 > ## [racing](/racing/)
->> [TOI 練習賽](/racing/TOI練習賽/)
->>> 2023
->>>> [04](/racing/TOI練習賽/2023-04/)
->>>>> [新手組](/racing/TOI練習賽/2023-04/新手組/list.md)
+>> [TOI](/racing/TOI/)
+>>> [練習賽](/racing/TOI/練習賽/)
+>>>> [2023](/racing/TOI/練習賽/2023/)
