@@ -215,6 +215,8 @@ int main(){
 					nwaitl=alit,nwaitr=arit;
 				}
 				DBG cerr<<"ul_rd "<<" l="<<nwaitl<<" r="<<nwaitr<<endl;	
+				nwaitl=max(nwaitl-1,0);
+				nwaitr=min(nwaitr+1,n);
 				for(INT nexti=nwaitl;nexti<nwaitr;nexti++){
 					INT nextx=xlst[nexti].x;
 					INT nexty=xlst[nexti].y;
