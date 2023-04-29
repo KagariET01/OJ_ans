@@ -1,6 +1,5 @@
 /*
-[Q]
-[]
+[AC]
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,14 +16,24 @@ const INT mxn=1e6;
 INT a[mxn+1],b[mxn+1];
 INT pze[mxn+1];
 bool solve(INT t){
-	for(INT i=0;i<n;i++){
-		pze[i]=a[i]+b[i]*t;
-	}
-	sort(pze,pze+n);
+	if(t==0)return true;
+	priority_queue<INT> pq;
+	INT pqs=0;
 	INT cst=0;
-	for(INT i=0;i<t;i++){
-		cst+=pze[i];
+	for(INT i=0;i<n;i++){
+		INT nwp=a[i]+b[i]*t;
+		if(pqs<t){
+			pq.push(nwp);
+			pqs++;
+			cst+=nwp;
+		}else if((pq.top())>nwp){
+			cst-=(pq.top());
+			pq.pop();
+			pq.push(nwp);
+			cst+=nwp;
+		}
 	}
+
 	DBG cerr<<"t="<<t<<" cst="<<cst<<endl;
 	return w>=cst;
 }
