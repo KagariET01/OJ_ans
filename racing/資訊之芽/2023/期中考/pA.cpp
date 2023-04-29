@@ -8,7 +8,7 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
-bool debug=0;
+bool debug=1;
 template<typename TPE>TPE reader(){
 	TPE re;cin>>re;return re;
 }
@@ -23,74 +23,298 @@ INT step[mxn+1];
 
 bool ans=0;
 
-vector<INT> xrow[mxxy+1];//xrow[i]代表在x=i的那條線上有那些點(記錄點編號)
-vector<INT> yrow[mxxy+1];
-vector<INT> ul_rdrow[mxxy*2+1];
-vector<INT> ur_ldrow[mxxy*2+1];
+struct str{
+	INT x=0,y=0,c=0;
+	INT id=0;
+};
+bool xvs(str a,str b){
+	if(a.x==b.x)return a.y<b.y;
+	else return a.x<b.x;
+}
+bool yvs(str a,str b){
+	if(a.y==b.y)return a.x<b.x;
+	else return a.y<b.y;
+}
+bool ul_rdvs(str a,str b){
+	if(a.c==b.c)return (a.x+a.y)<(b.x+b.y);
+	else return a.c<b.c;
+}
+bool ur_ldvs(str a,str b){
+	if(a.c==b.c)return (a.x-a.y)<(b.x-b.y);
+	else return a.c<b.c;
+}
 
-bool xvser(INT a,INT b){
-	return x[a]<x[b];
-}
-bool yvser(INT a,INT b){
-	return y[a]<y[b];
-}
-bool ulrdurld(INT a,INT b){
-	return c[a]<c[b];
-}
+vector<str> xlst;
+vector<str> ylst;
+vector<str> ul_rdlst;
+vector<str> ur_ldlst;
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	INT t=1;
-	while(t--){
+	INT runt=1;
+	while(runt--){
 		cin>>n>>s>>t;
-
+		s--;t--;
+		xlst.reserve(n);
+		ylst.reserve(n);
+		ul_rdlst.reserve(n);
+		ur_ldlst.reserve(n);
 		for(INT i=0;i<n;i++){
+			str nw;
 			cin>>x[i]>>y[i]>>c[i];
-			xrow[x[i]].push_back(i);
-			yrow[y[i]].push_back(i);
-			ul_rdrow[x[i]+y[i]].push_back(i);
-			ur_ldrow[x[i]-y[i]+mxxy].push_back(i);
+			nw.x=x[i];
+			nw.y=y[i];
+			nw.c=c[i];
+			nw.id=i;
+			xlst.push_back(nw);
+			ylst.push_back(nw);
+			ul_rdlst.push_back(nw);
+			ur_ldlst.push_back(nw);
 		}
 
-		for(INT i=0;i<sizeof(xrow);i++)sort(xrow[i].begin(),xrow[i].end(),xvser);
-		for(INT i=0;i<sizeof(yrow);i++)sort(yrow[i].begin(),yrow[i].end(),xvser);
-		for(INT i=0;i<sizeof(ul_rdrow);i++)sort(ul_rdrow[i].begin(),ul_rdrow[i].end(),ulrdurld);
-		for(INT i=0;i<sizeof(ur_ldrow);i++)sort(ur_ldrow[i].begin(),ur_ldrow[i].end(),ulrdurld);
+		sort(xlst.begin(),xlst.end(),xvs);
+		sort(ylst.begin(),ylst.end(),yvs);
+		sort(ul_rdlst.begin(),ul_rdlst.end(),ul_rdvs);
+		sort(ur_ldlst.begin(),ur_ldlst.end(),ur_ldvs);
 		
 		deque<INT> dq;//做bfs，紀錄點編號
-		dq.push_back(s-1);
+		dq.push_back(s);
 		while(!ans && !dq.empty()){
 			INT nw=dq.front();
 			dq.pop_front();
-			
-			//x
-			vector<INT>::iterator xit=lower_bound(xrow[nw].begin(),xrow[nw].end(),);
-			for(INT i:xrow[x[nw]]){
-				if(step[i] || i==s)continue;//已經走過or這裡是開始之地
-				step[i]=step[nw]+1;//走過去
-				if(i==t){//如果該地為目的地
-					ans=1;
-					break;
+			INT nx=x[nw];
+			INT ny=y[nw];
+			INT nc=c[nw];
+			DBG cerr<<"nw="<<nw<<" nx="<<nx<<" ny="<<ny<<" nc="<<nc<<endl;
+			if(ans) continue;
+			{//x
+				INT nwxit=0;
+				{//二分搜出nwxit
+					INT xlit=0,xrit=n;
+					{//尋找第一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(xlst[mnt].x<nx)l=mnt+1;
+							else r=mnt;
+						}
+						xlit=r;
+					}
+					{//尋找最後一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(xlst[mnt].x<=nx)l=mnt+1;
+							else r=mnt;
+						}
+						xrit=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=xlit,r=xrit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(xlst[mnt].y<ny)l=mnt+1;
+							else r=mnt;
+						}
+						nwxit=r;
+					}
 				}
-				dq.push_back(i);
-			}
-			if(ans)break;
-			//y
-			for(INT i:yrow[y[nw]]){
-				if(step[i] || i==s)continue;//已經走過or這裡是開始之地
-				step[i]=step[nw]+1;//走過去
-				if(i==t){//如果該地為目的地
-					ans=1;
-					break;
+				{
+					INT nextx=xlst[nwxit-1].x;
+					INT nexty=xlst[nwxit-1].y;
+					INT nextid=xlst[nwxit-1].id;
+					if(nextx==nx){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
 				}
-				dq.push_back(i);
+				{
+					INT nextx=xlst[nwxit+1].x;
+					INT nexty=xlst[nwxit+1].y;
+					INT nextid=xlst[nwxit+1].id;
+					if(nextx==nx){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
+				}
 			}
-			//ul_rd
+			{//y
+				INT nwyit=0;
+				{//二分搜出nwxit
+					INT ylit=0,yrit=n;
+					{//尋找第一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ylst[mnt].y<ny)l=mnt+1;
+							else r=mnt;
+						}
+						ylit=r;
+					}
+					{//尋找最後一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ylst[mnt].y<=ny)l=mnt+1;
+							else r=mnt;
+						}
+						yrit=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=ylit,r=yrit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ylst[mnt].x<nx)l=mnt+1;
+							else r=mnt;
+						}
+						nwyit=r;
+					}
+				}
+				{
+					INT nextx=xlst[nwyit-1].x;
+					INT nexty=xlst[nwyit-1].y;
+					INT nextid=xlst[nwyit-1].id;
+					if(nexty==ny){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
+				}
+				{
+					INT nextx=xlst[nwyit+1].x;
+					INT nexty=xlst[nwyit+1].y;
+					INT nextid=xlst[nwyit+1].id;
+					if(nexty==ny){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
+				}
+			}
+			{//ul_rd
+				INT nwaitl=0,nwaitr=0;
+				{//二分搜出nwxit
+					INT alit=0,arit=n;
+					{//尋找第一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ul_rdlst[mnt].c<nc)l=mnt+1;
+							else r=mnt;
+						}
+						alit=r;
+					}
+					{//尋找最後一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ul_rdlst[mnt].c<=nc)l=mnt+1;
+							else r=mnt;
+						}
+						arit=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=alit,r=arit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if((ul_rdlst[mnt].x+ul_rdlst[mnt].y)<(nx+ny))l=mnt+1;
+							else r=mnt;
+						}
+						nwaitl=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=alit,r=arit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if((ul_rdlst[mnt].x+ul_rdlst[mnt].y)<=(nx+ny))l=mnt+1;
+							else r=mnt;
+						}
+						nwaitr=r;
+					}
+				}
+				for(INT nexti=nwaitl;nexti<nwaitr;nexti++){
+					INT nextx=xlst[nexti].x;
+					INT nexty=xlst[nexti].y;
+					INT nextid=xlst[nexti].id;
+					INT nextc=xlst[nexti].c;
+					if(nextc==nc){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
+				}
+			}
+			{//ur_ld
+				INT nwaitl=0,nwaitr=0;
+				{//二分搜出nwxit
+					INT alit=0,arit=n;
+					{//尋找第一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ur_ldlst[mnt].c<nc)l=mnt+1;
+							else r=mnt;
+						}
+						alit=r;
+					}
+					{//尋找最後一個x=nx
+						INT l=0,r=n;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if(ur_ldlst[mnt].c<=nc)l=mnt+1;
+							else r=mnt;
+						}
+						arit=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=alit,r=arit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if((ur_ldlst[mnt].x-ur_ldlst[mnt].y)<(nx-ny))l=mnt+1;
+							else r=mnt;
+						}
+						nwaitl=r;
+					}
+					{//在裡面二分搜出自己的位置
+						INT l=alit,r=arit;
+						while(r>l){
+							INT mnt=(l+r)/2;
+							if((ur_ldlst[mnt].x-ur_ldlst[mnt].y)<=(nx-ny))l=mnt+1;
+							else r=mnt;
+						}
+						nwaitr=r;
+					}
+				}
+				for(INT nexti=nwaitl;nexti<nwaitr;nexti++){
+					INT nextx=xlst[nexti].x;
+					INT nexty=xlst[nexti].y;
+					INT nextid=xlst[nexti].id;
+					INT nextc=xlst[nexti].c;
+					if(nextc==nc){
+						if(step[nextid]==0 && nextid!=s){
+							step[nextid]=step[nw]+1;
+							dq.push_back(nextid);
+						}
+					}
+				}
+			}
 
-			if(ans)break;
-			//ur_ld
-
-			if(ans)break;
+			if(step[t]){
+				ans=1;
+			}
+		}
+		if(ans){
+			cout<<step[t]<<endl;
+			if(!debug)break;
+		}else{
+			cout<<-1<<endl;
 		}
 	}
 	return 0;
