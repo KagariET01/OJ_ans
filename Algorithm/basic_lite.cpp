@@ -1,7 +1,9 @@
+
 /*
 [Q]
 []
 */
+#ifndef EVAL
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -20,3 +22,4 @@ int main(){
 	}
 	return 0;
 }
+#endif

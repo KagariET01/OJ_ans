@@ -74,6 +74,9 @@
 >>> [file](/neoj/neoj_125/neoj_125.cpp)\
 >>> [ans](/neoj/neoj_125/neoj_125.md)
 >>>
+>> [136 20% 邪惡收集大作戰](/neoj/neoj_136.cpp)\
+>> [157 高棕櫚農場](/neoj/neoj_157.cpp)\
+>> [158 高棕櫚農場 2](/neoj/neoj_158.cpp)\
 >> [789](/neoj/neoj_789/)
 >>> [file](/neoj/neoj_789/neoj_789.cpp)\
 >>> [ans](/neoj/neoj_789/neoj_789.md)
