@@ -83,6 +83,9 @@
 >>>
 >>
 > ## [Codeforces](/codeforces/)
+>> Codeforces Round 746 (contest 1592)
+>>> [1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
+>>>
 >> Codeforces Round 768 (contest 1630,1631)
 >>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
 >>>
