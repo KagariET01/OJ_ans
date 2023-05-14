@@ -118,6 +118,7 @@ struct Polygon{
 double Area(Polygon Pol){
 	double re=0;
 	long long int Polsz=Pol.size();
+	if(Polsz==0)return 0;
 	for(INT i=0;i<Polsz;i++){
 		re+=Pol.vec[i]^Pol.vec[(i+1)%Polsz];
 	}
@@ -135,5 +136,10 @@ int sign(double a){
 
 
 int main(){
+	Polygon Pol;
+	Pol.push_back(make_Vec(3,3));
+	Pol.push_back(make_Vec(3,4));
+	Pol.push_back(make_Vec(0,5));
+	cout<<Area(Pol)<<endl;
 	return 0;
 }
