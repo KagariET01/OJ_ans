@@ -126,9 +126,14 @@ double Area(Polygon Pol){
 }
 
 /*
-	判斷方向
+	判斷方向ori
 	第一行：值取絕對值之後，誤差小於eps就算是0
+	o代表旋轉點，a代表點a,b代表點b
+	判斷oa轉道ob要轉哪個方向
 */
+int ori(const Vec &o,const Vec &a,const Vec &b){
+	return sign((a-o)^(b-o));
+}
 int sign(double a){
 	if(fabs(a)<eps)return 0;
 	else return a>0?1:-1;
@@ -136,10 +141,6 @@ int sign(double a){
 
 
 int main(){
-	Polygon Pol;
-	Pol.push_back(make_Vec(3,3));
-	Pol.push_back(make_Vec(3,4));
-	Pol.push_back(make_Vec(0,5));
-	cout<<Area(Pol)<<endl;
+	cout<<sign(Pol)<<endl;
 	return 0;
 }
