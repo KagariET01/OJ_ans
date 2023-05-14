@@ -10,17 +10,44 @@ using namespace std;
 
 bool debug=0;
 
-struct ETmath{
+template<typename TPE> struct ETmath{
 	/*
-		向量vec
+		向量Vec
 	*/
-	struct vec{
-		INT x=0,y=0;
-		void setv(const INT &a,const INT &b){
+	struct Vec{
+		TPE x=0,y=0;
+		void setv(const TPE &a,const TPE &b){
 			x=a,y=b;
 		}
 	};
-	
+	Vec make_Vec(const TPE &a,const TPE &b){
+		Vec re;
+		re.x=a,re.y=b;
+		return re;
+	}
+
+	/*
+		點Pnt
+	*/
+	struct Pnt{
+		TPE x=0,y=0;
+		void setv(const TPE &a,const TPE &b){
+			x=a,y=b;
+		}
+	};
+	Pnt make_Pnt(const TPE &a,const TPE &b){
+		Pnt re;
+		re.x=a,re.y=b;
+		return re;
+	}
+
+	/*
+		點連成向量
+	*/
+	Vec Pnt_Vec(const Pnt &a,const Pnt &b){
+
+	}
+
 	/*
 		內積*
 		AB內積=A的長度*B的長度*cos(AB夾角)
@@ -28,10 +55,10 @@ struct ETmath{
 		內積>0 夾角<90度
 		內積<0 夾角>90度
 	*/
-	long long int Dot(const vec &a,const vec &b){
+	TPE Dot(const Vec &a,const Vec &b){
 		return a.x*b.x+a.y*b.y;
 	}
-	long long int operator*(const vec &a,const vec &b){
+	TPE operator*(const Vec &a,const Vec &b){
 		return Dot(a,b);
 	
 	}
@@ -43,10 +70,10 @@ struct ETmath{
 		外積>0 B 向量在 A 向量的逆時針方向
 		外積<0 B 向量在 A 向量的順時針方向
 	*/
-	long long int cross(const vec &a,const vec &b){
+	TPE cross(const Vec &a,const Vec &b){
 		return a.x*b.y-a.y*b.x;
 	}
-	long long int operator^(const vec &a,const vec &b){
+	TPE operator^(const Vec &a,const Vec &b){
 		return cross(a,b);
 	}
 };
