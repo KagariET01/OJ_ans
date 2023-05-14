@@ -24,3 +24,4 @@ struct ETmath{
 		return Dot_Product(vec a,vec b);
 	}
 };
+//test
