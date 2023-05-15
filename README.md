@@ -106,7 +106,12 @@
 >> Codeforces Round 865 (contect 1815,1816)
 >>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
 >>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
->>> [1815A,1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
+>>> [1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
+>>>
+>> Codeforces Round 873 (contest 1827,1828)
+>>> [1828A Divisible Array](./codeforces/cf_1828A.cpp)\
+>>> [1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
+>>> [1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
 >>>
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/list.md)

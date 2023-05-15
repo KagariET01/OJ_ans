@@ -48,7 +48,7 @@ Vec operator-(const Vec &a,const Vec &b){
 }
 
 /*
-	向量轉線段
+	向量轉點B
 	提供向量及點，即可算出延伸出去的點
 	a為起始點，b為向量
 	a和b交換不會有差
@@ -98,7 +98,7 @@ double operator^(const Vec &a,const Vec &b){
 	多邊形Polygon
 	裡面存的是點
 */
-struct Polygon{
+struct Polygon{//建立多邊形Polygon
 	vector<Vec> vec;
 	void push_back(Vec a){
 		vec.push_back(a);
@@ -115,7 +115,7 @@ struct Polygon{
 	對向量V1和V2計算三角形面積
 	全部總和即為所求
 */
-double Area(Polygon Pol){
+double Area(Polygon Pol){//對Polygon計算面積
 	double re=0;
 	long long int Polsz=Pol.size();
 	if(Polsz==0)return 0;
@@ -131,7 +131,7 @@ double Area(Polygon Pol){
 	o代表旋轉點，a代表點a,b代表點b
 	判斷oa轉道ob要轉哪個方向
 */
-int ori(const Vec &o,const Vec &a,const Vec &b){
+int ori(const Vec &o,const Vec &a,const Vec &b){//判斷方向，0為同向，1為逆時針，-1為順時針
 	return sign((a-o)^(b-o));
 }
 int sign(double a){
@@ -139,8 +139,11 @@ int sign(double a){
 	else return a>0?1:-1;
 }
 
+bool havebanana(const Vec &pa,const Vec &pb,const Vec &pc,const Vec &pd){//檢測兩線段是否相交
+
+}
+
 
 int main(){
-	cout<<sign(Pol)<<endl;
 	return 0;
 }
