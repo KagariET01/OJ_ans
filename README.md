@@ -2,16 +2,30 @@
 　　此github資料庫為[ET01](../../../)一個人完成。這邊提供熱門Online Judge的題解，但是看完題解後請自行思考其原理，且要自己重新寫一遍，不要沒思考過後就直接送出此答案<br>
 如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
-> [Zerojudge](#zerojudge)\
+> [Algorithm](#algorithm)\
 > [TIOJ](#tioj)\
+> [Zerojudge](#zerojudge)\
 > [tcirc](#tcirc)\
 > [neoj](#neoj)\
 > [Codeforces](#codeforces)\
 > [AtCoder](#atcoder)\
 > [APCS](#apcs)\
-> [Algorithm](#algorithm)
+> [racing](#racing)
 >
 # 檔案
+> ## [Algorithm](/Algorithm)
+>> [Math](/Algorithm/math/)
+>>> [Mod](/Algorithm/math/mod/)
+>>>> [Extended_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
+>>>> [Modular_multiplicative_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>>>>
+>> [tree](/Algorithm/tree/)
+>>> [lca 最近共同祖先](/Algorithm/tree/lca/)
+>>>> [ex](/Algorithm/tree/lca/lca_1.cpp)
+>>>>
+>>> [rmq](/Algorithm/tree/rmq/)
+>>>> [ex](/Algorithm/tree/rmq/rmq_1.cpp)
+>>>>
 > ## [TIOJ](/tioj)
 >>[1015](/tioj/tioj_1015.cpp)\
 >>[1072](/tioj/tioj_1072.cpp)\
@@ -37,7 +51,7 @@
 >> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
 >> [h026 猜拳](/zerojudge/zj_h026.cpp)\
 >> [h028 砍樹](/zerojudge/zj_h028.cpp)\
->> [i399 數字遊戲 ](/zerojudge/zj_h028.cpp)
+>> [i399 數字遊戲](/zerojudge/zj_h028.cpp)
 >>
 > ## [Tcirc](/tcirc)
 >> [d030](/tcirc/tcirc_d030.cpp)\
@@ -60,13 +74,22 @@
 >>> [file](/neoj/neoj_125/neoj_125.cpp)\
 >>> [ans](/neoj/neoj_125/neoj_125.md)
 >>>
+>> [136 20% 邪惡收集大作戰](/neoj/neoj_136.cpp)\
+>> [157 高棕櫚農場](/neoj/neoj_157.cpp)\
+>> [158 高棕櫚農場 2](/neoj/neoj_158.cpp)\
 >> [789](/neoj/neoj_789/)
->>> [file](/neoj/neoj_125/neoj_789.cpp)\
->>> [ans](/neoj/neoj_125/neoj_789.md)
+>>> [file](/neoj/neoj_789/neoj_789.cpp)\
+>>> [ans](/neoj/neoj_789/neoj_789.md)
 >>>
 >>
 > ## [Codeforces](/codeforces/)
->> Codeforces Round 819 and Grimoire of Code Annual Contest 2022
+>> Codeforces Round 746 (contest 1592)
+>>> [1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
+>>>
+>> Codeforces Round 768 (contest 1630,1631)
+>>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
+>>>
+>> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>
 >> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
@@ -80,38 +103,45 @@
 >>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
 >>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
 >>> 
->> Codeforces Round 865 (contect 1816)
+>> Codeforces Round 865 (contect 1815,1816)
 >>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
 >>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
->>> [1815A,1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
+>>> [1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
 >>>
+>> Codeforces Round 873 (contest 1827,1828)
+>>> [1828A Divisible Array](./codeforces/cf_1828A.cpp)\
+>>> [1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
+>>> [1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
+>>>
+>> Group
+>>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
+>>>>>
 > ## [AtCoder](/AtCoder/)
 >> AtCoder Beginner Contest 293
->>> [ABC293G](/AtCoder/ABC293G.cpp)
+>>> [ABC 293G](/AtCoder/ABC293G.cpp)
 >>> 
 > ## APCS
 >> 2020
 >>> 01
->>>> [1(zj_h026)](/zerojudge/zj_h026.cpp)\
->>>> [3(zj_h028](/zerojudge/zj_h028.cpp)\
->>>> [3(dcirc_d030)](/tcirc/tcirc_d030.cpp)
+>>>> [1 (zj_h026)](/zerojudge/zj_h026.cpp)\
+>>>> [3 (zj_h028](/zerojudge/zj_h028.cpp)\
+>>>> [3 (tcirc_d030)](/tcirc/tcirc_d030.cpp)
 >>>>
 >>> 07
->>>> [3(zj_f581)](/zerojudge/zj_f581.cpp)
+>>>> [3 (zj_f581)](/zerojudge/zj_f581.cpp)
 >>>>
 >>> 10
->>>> [3(zj_f314)](/zerojudge/zj_f314.cpp)
+>>>> [3 (zj_f314)](/zerojudge/zj_f314.cpp)
 >>>>
 >> 2018
 >>> 10
->>>> [4(zj_d075)](/zerojudge/zj_d075.cpp)
+>>>> [4 (zj_d075)](/zerojudge/zj_d075.cpp)
 >>>>
 >> 2017
 >>> 03
 >>>> [2(zj_c291)](/zerojudge/zj_c291.cpp)
 >>>>
-> ## [Algorithm](/Algorithm)
->> [Math](/Algorithm/math/)
->>> [Mod](/Algorithm/math/mod/)
->>>> [擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
->>>> [模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+> ## [racing](/racing/)
+>> [TOI](/racing/TOI/)
+>>> [練習賽](/racing/TOI/練習賽/)
+>>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
