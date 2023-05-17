@@ -8,7 +8,9 @@ using namespace std;
 #define INT long long int
 #define endl "\n"
 #define read(n) reader<n>()
-
+template<typename TPE>TPE reader(){
+	TPE re;cin>>re;return re;
+}
 bool debug=0;
 
 
@@ -302,6 +304,10 @@ double Pnt_to_Lne(const Vec &P,const Seg  la){
 }
 
 int main(){
+	/*cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t=read(INT);
+	while(t--){
+	}*/
 	if(0){//測試Area
 		Polygon Pol;
 		Pol.push_back(1,2);
