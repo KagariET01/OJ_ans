@@ -1,0 +1,12 @@
+# CMD
+vim <file path>   //use vim open file path  
+vim . <file_path_list> //use vim open file path  
+
+
+# vim
+v //選取模式  
+> y //複製
+> d //剪下
+
+p //在游標後面貼上
+P //在游標前面貼上

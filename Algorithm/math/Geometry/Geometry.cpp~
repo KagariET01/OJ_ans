@@ -338,9 +338,9 @@ bool sortb(Vec a,Vec b){//先以x升序排序，再以y降序排序
 
 Polygon convex(Polygon Pol){
 	Polygon re;
-	sort(Pol.vec.begin(),Pol.vec.end(),sorta);
 	re.vec.push_back(Pol.vec[0]);
 	long long int n=Pol.vec.size();
+	sort(Pol.vec.begin(),Pol.vec.end(),sorta);
 	for(INT i=1;i<n;i++){
 		if(re.vec.empty()){
 			re.push_back(Pol.vec[i]);
