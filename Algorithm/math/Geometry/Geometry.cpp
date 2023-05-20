@@ -155,6 +155,9 @@ struct Polygon{//建立多邊形Polygon
 	vector<Vec>::iterator end(){
 		return vec.end();
 	}
+	Vec operator[](unsigned long long int n){
+		return vec[n];
+	}
 };
 
 /*
