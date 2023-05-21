@@ -18,6 +18,7 @@ int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	int t=read(int);
 	while(t--){
+		
 	}
 	return 0;
 }
