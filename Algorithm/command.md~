@@ -86,10 +86,10 @@ Remove-Item '<file_path>	//remove file
 > set t_Co=256	//設定256色 
 > set number	//顯示行數
 > set background=dark		//終端機顏色(dark/light)
-> set ts=2	//縮排=2
+> set ts=4	//縮排=4
 > set expandtab			//tab替換成space
 > set smartindent		//自動縮排(autoindent / smartindent / cindent)
-> set backspace=indent,eol,start  //退格行為(一定要設，這樣按[backspace]才能刪除換行)
+
 
 
 # c++
