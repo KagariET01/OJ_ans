@@ -1,8 +1,26 @@
+#git
+> gh auth login		//set github
+
 # CMD(powershell)
 vim <file path>   //use vim open file path  
 vim . <file_path_list> //use vim open file path  
 Remove-Item '<file_path>	//remove file
 
+# CMD(ubuntu)
+> #檔案操作
+> mkdir <new folder>		//create new folder
+> rm <file_path>		//del file
+> rm -v <file_path>		//del file ***FOREVER***
+> touch <file_name>		//new file
+> mv <path1> <path2>		//rename(or move) path1 to path2
+> #磁碟空間
+> df -H	[folder_path]		//check space of disk
+> duf [path]			//check space of disk(sudo apt install duf)
+> #用戶管理
+> usermod -l <new_usrname> <old_usrname>	//change username
+> groupmod -n <new_groupnme> <old_groupnme>	//change groupname
+> groupadd <groupname>				//new group
+> groupadd -g <group id> <groupname>		//new group && set group id
 
 # vim
 > i //插入模式

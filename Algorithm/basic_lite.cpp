@@ -2,10 +2,10 @@
 [q]
 []
 */
-#ifndef eval
+//#ifndef eval
 #include<bits/stdc++.h>
 using namespace std;
-#define int long long int
+#define INT long long int
 #define endl "\n"
 #define read(n) reader<n>()
 #define dbg if(debug)
@@ -21,4 +21,4 @@ int main(){
 	}
 	return 0;
 }
-#endif
+//#endif
