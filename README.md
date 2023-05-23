@@ -16,9 +16,11 @@
 > ## [Algorithm](/Algorithm)
 >> [Math](/Algorithm/math/)
 >>> [Mod](/Algorithm/math/mod/)
->>>> [Extended_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
->>>> [Modular_multiplicative_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
+>>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
+>>> [Geometry](/Algorithm/Geometry/Geometry.cpp)
+>>>
 >> [tree](/Algorithm/tree/)
 >>> [lca 最近共同祖先](/Algorithm/tree/lca/)
 >>>> [ex](/Algorithm/tree/lca/lca_1.cpp)
@@ -26,6 +28,17 @@
 >>> [rmq](/Algorithm/tree/rmq/)
 >>>> [ex](/Algorithm/tree/rmq/rmq_1.cpp)
 >>>>
+>> [String](/Algorithm/string)
+>>> KMP
+>>>> [md](/Algorithm/string/kmp.md)\
+>>>> [C++](/Algorithm/string/kmp.cpp)
+>>>>
+>>> Z-value
+>>>> [md](/Algorithm/string/Z-algorithm.md)\
+>>>> [C++](/Algorithm/string/Z-value.cpp)
+>>>>
+>>> [Failure Function](/Algorithm/string/Failure.cpp)
+>>>
 > ## [TIOJ](/tioj)
 >>[1015](/tioj/tioj_1015.cpp)\
 >>[1072](/tioj/tioj_1072.cpp)\
