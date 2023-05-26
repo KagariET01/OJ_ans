@@ -21,6 +21,21 @@ struct trie{
 	}
 }
 
+INT cha_int(char c){
+	return c-'a';
+}
+
+void insert(char *ca,trie *root){
+	while(*c){
+		if(!(*root).c[cha_int(*ca)]){
+			(*root).c[cha_int(*ca)]=new trie();
+		}
+		root=(*root).c[cha_int(*ca)];
+		ca++;
+	}
+	(*root).cnt++;
+}
+
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	int t=read(int);
