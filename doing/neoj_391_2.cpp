@@ -27,31 +27,43 @@ int main(){
 		F=購買數量
 		*/
 		cin>>N>>M>>S>>E>>F;
-		INT mp[N+5][N+5];//do 最短路
-		//memset(mp,-1,sizeof(mp));
+		INT lst[N+1][N+1];
+
 		for(INT i=0;i<=N;i++){
 			for(INT j=0;j<=N;j++){
-				mp[i][j]=18446744073709551615;
+				lst[i][j]=(INT)44073709551615;
 			}
 		}
-		DBG cerr<<mp[1][1]<<endl;
+
 		for(INT i=0;i<M;i++){
-			INT A,B,C,D,C2;
-			cin>>A>>B>>C>>D>>C2;
-			INT V=min(F,D)*C+max((INT)0,F-D)*C2;
-			mp[A][B]=V;
+			INT a,b,c,d,c2;
+			cin>>a>>b>>c>>d>>c2;
+			INT v=0;
+			if(F<=d)v=F*c;
+			else v=d*c+(F-d)*c2;
+			lst[a][b]=v;
 		}
-		INT ctt=1;
-		while(ctt--){
+
+		DBG{
+			for(INT i=0;i<=N;i++){
+				for(INT j=0;j<=N;j++){
+					cerr<<lst[i][j]<<" ";
+				}
+				cerr<<endl;
+			}
+			cerr<<endl;
+		}
+
 		for(INT k=1;k<=N;k++){
 			for(INT i=1;i<=N;i++){
 				for(INT j=1;j<=N;j++){
-					mp[i][j]=min(mp[i][j],mp[i][k]+mp[k][j]);
+					INT nw=lst[i][k]+lst[k][j];
+					lst[i][j]=(lst[i][j]>nw)?nw:lst[i][j];
 				}
 			}
 		}
-		}
-		cout<<mp[S][E]<<endl;
+		cout<<lst[S][E]<<endl;
+
 	}
 	return 0;
 }
@@ -76,9 +88,6 @@ int main(){
 2 1 1 2 999999999
 1 2 50216 1000 50216
 
-
-
-3 4 4 1 4 1 1 2 1 1 1 2 4 5 1 3 1 3 1 1 1 3 4 6 1 1 4 4 1 4 2 1 2 1 1 1 2 4 5 1 3 1 3 1 1 1 3 4 6 1 1 2 1 1 2 999999999 1 2 50216 1000 50216 
 [O1]
 6
 9
