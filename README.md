@@ -102,6 +102,7 @@
 >> [399 等長線段對](/neoj/neoj_399.cpp)\
 >> [400 向左轉向右轉](/neoj/neoj_400.cpp)\
 >> [401 線段相交](/neoj/neoj_401.cpp)\
+>> [431 江神與他的小火車](/neoj/neoj_431.cpp)\
 >> [789 好的序列](/neoj/neoj_789/)
 >>> [file](/neoj/neoj_789/neoj_789.cpp)\
 >>> [ans](/neoj/neoj_789/neoj_789.md)
