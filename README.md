@@ -43,6 +43,8 @@
 >> [tree](/Algorithm/tree/)
 >>> [lca](/Algorithm/tree/lca/lca_1.cpp)\
 >>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
+>>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)\
+>>> [Dijkstra 最短路徑](/Algorithm/tree/dijkstra.cpp)\
 >>> [dsu](/Algorithm/tree/dsu.cpp)
 >>>
 > ## [TIOJ](/tioj)
@@ -115,6 +117,8 @@
 >> Codeforces Round 768 (contest 1630,1631)
 >>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
 >>>
+>> Codeforces Round 790 (contest 1676)
+>>> [1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
 >> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>

@@ -1,6 +1,7 @@
 /*
+[q]https://codeforces.com/contest/1676/problem/H1
 [q]https://codeforces.com/contest/1676/problem/H2
-[WA]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -31,8 +32,8 @@ INT getsum(INT x){//求1~x的值
 	return re;
 }
 
-void update(INT x,INT m){//單點加值
-	while(x<=m){
+void update(INT x){//單點加值
+	while(x<=n){
 		BIT[x]+=1;
 		x+=low_bit(x);
 	}
@@ -43,6 +44,8 @@ int main(){
 	INT t=read(int);
 	while(t--){
 		cin>>n;
+		vec.clear();
+		BIT.clear();
 		vec.resize(n+1);
 		BIT.resize(n+1);
 		for(INT i=1;i<=n;i++){
@@ -50,10 +53,18 @@ int main(){
 		}
 		INT ans=0;
 		for(INT i=n;i>=1;i--){
-			ans+=getsum(vec[i]-1);
-			update(vec[i],1);
+			ans+=getsum(vec[i]);
+			update(vec[i]);
 		}
 		cout<<ans<<endl;
+
+		DBG{
+			cerr<<"DBG ";
+			for(INT i=1;i<=n;i++){
+				cerr<<BIT[i]<<" ";
+			}
+			cerr<<endl;
+		}
 	}
 	return 0;
 }
