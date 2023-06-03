@@ -33,7 +33,7 @@ INT getsum(INT x){//求1~x的值
 	return re;
 }
 
-void update(INT x){//單點加值
+void update(INT x){//單點加1
 	while(x<=n){
 		BIT[x]+=1;
 		x+=low_bit(x);
