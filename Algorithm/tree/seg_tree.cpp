@@ -17,7 +17,7 @@ template<typename tpe>tpe reader(){
 vector<INT> vec;
 vector<INT> seg_tree;
 INT n;
-INT build(INT l,INT r,INT p=1){
+INT build(INT l,INT r,INT p=1){//將vec建成seg_tree
     if(l==r){
 	seg_tree[p]=vec[l];
     }else{
@@ -33,7 +33,7 @@ void call_build(INT n){
     build(0,n);
 }
 
-INT edit(INT e,INT v,INT l,INT r,INT p=1){
+INT edit(INT e,INT v,INT l,INT r,INT p=1){//單點編輯
     if(l==r){
 	if(l==e){
 	    vec[e]=v;
@@ -52,13 +52,13 @@ void call_edit(INT e,INT v,INT n){
     edit(e,v,0,n);
 }
 
-bool invs(INT la,INT ra,INT lb,INT rb){
+bool invs(INT la,INT ra,INT lb,INT rb){//檢測兩區間是否有重疊
     INT l=max(la,lb);
     INT r=min(ra,rb);
     return l<=r;
 }
 
-INT search(INT sl,INT sr,INT l,INT r,INT p=1){
+INT search(INT sl,INT sr,INT l,INT r,INT p=1){//求區間和
     if(sl<l)sl=l;
     if(r<sr)sr=r;
     if(sl==l && sr==r && l<=r){
