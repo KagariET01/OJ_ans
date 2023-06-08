@@ -1,6 +1,7 @@
 /*
 [q]https://neoj.sprout.tw/problem/265/
 [AC]
+[KMS]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
