@@ -1,6 +1,7 @@
 /*
-[Q]
-[]
+[Q]https://tioj.ck.tp.edu.tw/problems/1015
+[AC]
+[math]
 */
 #include<bits/stdc++.h>
 using namespace std;

@@ -15,18 +15,25 @@
 # 檔案
 > ## [Algorithm](/Algorithm)
 >> [Math](/Algorithm/math/)
+>>> [Geometry](/Algorithm/Geometry/Geometry.cpp)\
 >>> [Mod](/Algorithm/math/mod/)
 >>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
 >>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
->>> [Geometry](/Algorithm/Geometry/Geometry.cpp)
->>>
 >> [tree](/Algorithm/tree/)
->>> [lca 最近共同祖先](/Algorithm/tree/lca/)
->>>> [ex](/Algorithm/tree/lca/lca_1.cpp)
+>>> [lca](/Algorithm/tree/lca/lca_1.cpp)\
+>>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
+>>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)\
+>>> [Dijkstra 最短路徑](/Algorithm/tree/dijkstra.cpp)\
+>>> [BIT 樹狀數組](/Algorithm/tree/BIT.cpp)\
+>>> [dsu](/Algorithm/tree/dsu.cpp)
+>>>
+>> [string](/Algorithm/string/)
+>>> [lca 最近共同祖先](/Algorithm/string/lca/)
+>>>> [ex](/Algorithm/string/lca/lca_1.cpp)
 >>>>
->>> [rmq](/Algorithm/tree/rmq/)
->>>> [ex](/Algorithm/tree/rmq/rmq_1.cpp)
+>>> [rmq](/Algorithm/string/rmq/)
+>>>> [ex](/Algorithm/string/rmq/rmq_1.cpp)
 >>>>
 >> [String](/Algorithm/string)
 >>> KMP
@@ -38,21 +45,15 @@
 >>>> [C++](/Algorithm/string/z-value.cpp)
 >>>>
 >>> [hash (未測試)](/Algorithm/string/hash.cpp)\
+>>> [trie (未測試)](/Algorithm/string/trie.cpp)\
 >>> [Failure Function](/Algorithm/string/Failure.cpp)
 >>>
->> [tree](/Algorithm/tree/)
->>> [lca](/Algorithm/tree/lca/lca_1.cpp)\
->>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
->>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)\
->>> [Dijkstra 最短路徑](/Algorithm/tree/dijkstra.cpp)\
->>> [dsu](/Algorithm/tree/dsu.cpp)
->>>
 > ## [TIOJ](/tioj)
->>[1015](/tioj/tioj_1015.cpp)\
->>[1072](/tioj/tioj_1072.cpp)\
->>[1199](/tioj/tioj_1199.cpp)\
->>[1040](/tioj/tioj_1040.cpp)\
->>[1402](/tioj/tioj_1402.cpp)
+>> [1015 Squares in Rectangle](/tioj/tioj_1015.cpp)\
+>> [1072 誰先晚餐](/tioj/tioj_1072.cpp)\
+>> [1199 神奇的模術](/tioj/tioj_1199.cpp)\
+>> [1040 連分數](/tioj/tioj_1040.cpp)\
+>> [1402 淹水問題](/tioj/tioj_1402.cpp)
 >>
 > ## [Zerojudge](/zerojudge)
 >> a001 哈囉

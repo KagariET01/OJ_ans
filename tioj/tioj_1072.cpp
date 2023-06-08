@@ -1,6 +1,7 @@
 /*
 [Q]https://tioj.ck.tp.edu.tw/problems/1072
 [AC]
+[裸greedy]
 */
 #include<bits/stdc++.h>
 using namespace std;

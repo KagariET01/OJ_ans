@@ -1,5 +1,8 @@
 /*
 [tioj]			[Q]https://tioj.ck.tp.edu.tw/problems/1199
+[AC]
+[math 數學]
+[mod 模逆元]
 */
 
 #include<iostream>
