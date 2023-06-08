@@ -100,6 +100,7 @@
 >> [157 高棕櫚農場](/neoj/neoj_157.cpp)\
 >> [158 高棕櫚農場 2](/neoj/neoj_158.cpp)\
 >> [165 陣線推進](/neoj/neoj_165.cpp)\
+>> [265 欸迪的字串](/neoj/neoj_265.cpp)\
 >> [391 向量加法](/neoj/neoj_391.cpp)\
 >> [398 向量加法](/neoj/neoj_398.cpp)\
 >> [399 等長線段對](/neoj/neoj_399.cpp)\
