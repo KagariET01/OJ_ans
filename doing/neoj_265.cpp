@@ -18,7 +18,7 @@ vector<INT> getF(string str){
     INT n=str.size();
     vector<INT> re(n,-1);
     for(INT i=1;i<n;i++){
-	if(re[i-1]==-1){//上一個位置沒找到F值
+	if(re[i-1]==-1){
 	    if(str[i]==str[0]){
 		re[i]=0;
 	    }else{
@@ -36,14 +36,14 @@ vector<INT> getF(string str){
     return re;
 }
 
-vector<INT> KMS(string s,string t){
+vector<INT> KMS(string s,string t){//回傳一vector，代表S在T的哪些地方
     vector<INT> f=getF(s);
     INT ss=s.size();
     INT ts=t.size();
     vector<INT> re;
     INT p=-1;//表s的開頭要在t的哪裡
     for(INT i=0;i<ts;i++){
-	while(p>=0 && s[p+1]!=t[i]){//重複移動p直到字元配對成功
+	while(p>=0 && s[p+1]!=t[i]){//重複移動p直到字串S前綴和字串T重疊
 	    p=f[p];
 	}
 	if(s[p+1]==t[i]){
@@ -59,7 +59,7 @@ vector<INT> KMS(string s,string t){
 
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	int t=read(int);
+	int t=1;
 	while(t--){
 	    string s,t;
 	    cin>>s>>t;
@@ -67,7 +67,7 @@ int main(){
 	    for(INT i:vec){
 		cout<<i<<" ";
 	    }
-	    cout<<"end"<<endl;
+	    cout<<endl;
 	}
 	return 0;
 }
