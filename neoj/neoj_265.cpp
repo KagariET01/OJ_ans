@@ -1,6 +1,7 @@
 /*
 [q]https://neoj.sprout.tw/problem/265/
 [AC]
+[string]
 [KMS]
 */
 //#ifndef eval

@@ -1,3 +1,8 @@
+/*
+[Q]
+[AC]
+[運算元]
+*/
 #include<iostream>
 #include<string>
 using namespace std;

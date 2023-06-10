@@ -122,6 +122,7 @@
 >>>
 >> Codeforces Round 790 (contest 1676)
 >>> [1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
+>>>
 >> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>
