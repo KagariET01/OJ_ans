@@ -1,5 +1,6 @@
 /*
 [Q]https://zerojudge.tw/ShowProblem?problemid=a289
+[模逆元]
 */
 
 #include<iostream>

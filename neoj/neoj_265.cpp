@@ -1,6 +1,8 @@
 /*
 [q]https://neoj.sprout.tw/problem/265/
 [AC]
+[string]
+[KMS]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -61,15 +63,15 @@ int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	int t=1;
 	while(t--){
-	    string s,t;
-	    cin>>s>>t;
-	    vector<INT> vec=KMS(s,t);
-	    INT n=vec.size();
-	    for(INT i=0;i<n;i++){
-		if(i)cout<<" ";
-		cout<<vec[i];
-	    }
-	    cout<<endl;
+		string s,t;
+		cin>>s>>t;
+		vector<INT> vec=KMS(s,t);
+		INT n=vec.size();
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<vec[i];
+		}
+		cout<<endl;
 	}
 	return 0;
 }

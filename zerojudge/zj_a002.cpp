@@ -1,3 +1,8 @@
+/*
+[Q]
+[AC]
+[運算元]https://zerojudge.tw/ShowProblem?problemid=a002
+*/
 #include<iostream>
 #include<string>
 using namespace std;

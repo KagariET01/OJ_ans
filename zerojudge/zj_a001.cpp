@@ -1,3 +1,8 @@
+/*
+[Q]
+[AC]
+[基本輸入輸出]
+*/
 #include<iostream>
 #include<string>
 using namespace std;

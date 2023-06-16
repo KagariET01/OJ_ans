@@ -1,5 +1,7 @@
 /*
-[tioj]			[Q]https://tioj.ck.tp.edu.tw/problems/1040
+[Q]https://tioj.ck.tp.edu.tw/problems/1040
+[math]
+[遞迴]
 */
 
 #include<iostream>

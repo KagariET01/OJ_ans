@@ -1,6 +1,7 @@
 /*
-[Q]
+[Q]https://tioj.ck.tp.edu.tw/problems/1402
 [AC]
+[圖論]
 */
 #include<bits/stdc++.h>
 using namespace std;

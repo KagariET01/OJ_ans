@@ -2,6 +2,7 @@
 [Q]https://zerojudge.tw/ShowProblem?problemid=f314
 APCS 2020-10-3
 [AC]
+[圖論]
 */
 
 /*include*/
