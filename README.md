@@ -14,39 +14,39 @@
 >
 # 檔案
 > ## [Algorithm](/Algorithm)
->> ### [Math](/Algorithm/math/)
->>> #### [Geometry](/Algorithm/Geometry/Geometry.cpp)\
->>> #### [Mod](/Algorithm/math/mod/)
->>>> ##### [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
->>>> ##### [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>> [Math](/Algorithm/math/)
+>>> [Geometry](/Algorithm/Geometry/Geometry.cpp)\
+>>> [Mod](/Algorithm/math/mod/)
+>>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
+>>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
->> ### [tree](/Algorithm/tree/)
->>> #### [lca](/Algorithm/tree/lca/lca_1.cpp)\
->>> #### [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
->>> #### [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)\
->>> #### [Dijkstra 最短路徑](/Algorithm/tree/dijkstra.cpp)\
->>> #### [BIT 樹狀數組](/Algorithm/tree/BIT.cpp)\
->>> #### [dsu](/Algorithm/tree/dsu.cpp)
+>> [tree](/Algorithm/tree/)
+>>> [lca](/Algorithm/tree/lca/lca_1.cpp)\
+>>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
+>>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)\
+>>> [Dijkstra 最短路徑](/Algorithm/tree/dijkstra.cpp)\
+>>> [BIT 樹狀數組](/Algorithm/tree/BIT.cpp)\
+>>> [dsu](/Algorithm/tree/dsu.cpp)
 >>>
->> ### [string](/Algorithm/string/)
->>> #### [lca 最近共同祖先](/Algorithm/string/lca/)
+>> [string](/Algorithm/string/)
+>>> [lca 最近共同祖先](/Algorithm/string/lca/)
 >>>> [ex](/Algorithm/string/lca/lca_1.cpp)
 >>>>
->>> #### [rmq](/Algorithm/string/rmq/)
+>>> [rmq](/Algorithm/string/rmq/)
 >>>> [ex](/Algorithm/string/rmq/rmq_1.cpp)
 >>>>
->> ### [String](/Algorithm/string)
->>> #### KMP
+>> [String](/Algorithm/string)
+>>> KMP
 >>>> [md](/Algorithm/string/kmp.md)\
 >>>> [C++](/Algorithm/string/kmp.cpp)
 >>>>
->>> #### Z-value
+>>> Z-value
 >>>> [md](/Algorithm/string/Z-algorithm.md)\
 >>>> [C++](/Algorithm/string/z-value.cpp)
 >>>>
->>> #### [hash (未測試)](/Algorithm/string/hash.cpp)\
->>> #### [trie (未測試)](/Algorithm/string/trie.cpp)\
->>> #### [Failure Function](/Algorithm/string/Failure.cpp)
+>>> [hash (未測試)](/Algorithm/string/hash.cpp)\
+>>> [trie (未測試)](/Algorithm/string/trie.cpp)\
+>>> [Failure Function](/Algorithm/string/Failure.cpp)
 >>>
 > ## [TIOJ](/tioj)
 >> [1015 Squares in Rectangle](/tioj/tioj_1015.cpp)\
@@ -114,68 +114,68 @@
 >>>
 >>
 > ## [Codeforces](/codeforces/)
->> ### Codeforces Round 746 (contest 1592)
+>> Codeforces Round 746 (contest 1592)
 >>> [1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
 >>>
->> ### Codeforces Round 768 (contest 1630,1631)
+>> Codeforces Round 768 (contest 1630,1631)
 >>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
 >>>
->> ### Codeforces Round 790 (contest 1676)
+>> Codeforces Round 790 (contest 1676)
 >>> [1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
 >>>
->> ### Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
+>> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>
->> ### Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
+>> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
 >>> [1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
 >>>
->> ### Educational Codeforces Round 146 (contest 1814)
+>> Educational Codeforces Round 146 (contest 1814)
 >>> [1814A Coins](/codeforces/cf_1814A.cpp)\
 >>> [1814B Long Legs](/codeforces/cf_1814B.cpp)
 >>>
->> ### Codeforces Round 864 (contest 1797)
+>> Codeforces Round 864 (contest 1797)
 >>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
 >>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
 >>> 
->> ### Codeforces Round 865 (contect 1815,1816)
+>> Codeforces Round 865 (contect 1815,1816)
 >>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
 >>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
 >>> [1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
 >>>
->> ### Codeforces Round 873 (contest 1827,1828)
+>> Codeforces Round 873 (contest 1827,1828)
 >>> [1828A Divisible Array](./codeforces/cf_1828A.cpp)\
 >>> [1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
 >>> [1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
 >>>
->> ### Group
+>> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
->>>
+>>>>>
 > ## [AtCoder](/AtCoder/)
->> ### AtCoder Beginner Contest 293
+>> AtCoder Beginner Contest 293
 >>> [ABC 293G](/AtCoder/ABC293G.cpp)
 >>> 
 > ## APCS
->> ### 2020
->>> #### 01
+>> 2020
+>>> 01
 >>>> [1 (zj_h026)](/zerojudge/zj_h026.cpp)\
 >>>> [3 (zj_h028](/zerojudge/zj_h028.cpp)\
 >>>> [3 (tcirc_d030)](/tcirc/tcirc_d030.cpp)
 >>>>
->>> #### 07
+>>> 07
 >>>> [3 (zj_f581)](/zerojudge/zj_f581.cpp)
 >>>>
->>> #### 10
+>>> 10
 >>>> [3 (zj_f314)](/zerojudge/zj_f314.cpp)
 >>>>
->> ### 2018
->>> #### 10
+>> 2018
+>>> 10
 >>>> [4 (zj_d075)](/zerojudge/zj_d075.cpp)
 >>>>
->> ### 2017
->>> #### 03
+>> 2017
+>>> 03
 >>>> [2(zj_c291)](/zerojudge/zj_c291.cpp)
 >>>>
 > ## [racing](/racing/)
->> ### [TOI](/racing/TOI/)
->>> #### [練習賽](/racing/TOI/練習賽/)
->>>> ##### [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
+>> [TOI](/racing/TOI/)
+>>> [練習賽](/racing/TOI/練習賽/)
+>>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
