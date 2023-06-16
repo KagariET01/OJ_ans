@@ -1,6 +1,6 @@
 /*
-[q]
-[]
+[q]https://neoj.sprout.tw/problem/265/
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -64,8 +64,10 @@ int main(){
 	    string s,t;
 	    cin>>s>>t;
 	    vector<INT> vec=KMS(s,t);
-	    for(INT i:vec){
-		cout<<i<<" ";
+	    INT n=vec.size();
+	    for(INT i=0;i<n;i++){
+		if(i)cout<<" ";
+		cout<<vec[i];
 	    }
 	    cout<<endl;
 	}
