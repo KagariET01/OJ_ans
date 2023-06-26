@@ -3,12 +3,12 @@
 如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
 > [Algorithm](#algorithm)\
+> [AtCoder](#atcoder)\
 > [TIOJ](#tioj)\
 > [Zerojudge](#zerojudge)\
 > [tcirc](#tcirc)\
 > [neoj](#neoj)\
 > [Codeforces](#codeforces)\
-> [AtCoder](#atcoder)\
 > [APCS](#apcs)\
 > [racing](#racing)
 >
@@ -20,6 +20,19 @@
 >>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
 >>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
+>> [String](/Algorithm/string)
+>>> KMP
+>>>> [md](/Algorithm/string/kmp.md)\
+>>>> [C++](/Algorithm/string/kmp.cpp)
+>>>>
+>>> Z-value
+>>>> [md](/Algorithm/string/z-value.md)\
+>>>> [C++](/Algorithm/string/z-value.cpp)
+>>>>
+>>> [hash (未測試)](/Algorithm/string/hash.cpp)\
+>>> [trie (未測試)](/Algorithm/string/trie.cpp)\
+>>> [Failure Function](/Algorithm/string/Failure.cpp)
+>>>
 >> [tree](/Algorithm/tree/)
 >>> [lca](/Algorithm/tree/lca/lca_1.cpp)\
 >>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)\
@@ -28,57 +41,46 @@
 >>> [BIT 樹狀數組](/Algorithm/tree/BIT.cpp)\
 >>> [dsu](/Algorithm/tree/dsu.cpp)
 >>>
->> [string](/Algorithm/string/)
->>> [lca 最近共同祖先](/Algorithm/string/lca/)
->>>> [ex](/Algorithm/string/lca/lca_1.cpp)
->>>>
->>> [rmq](/Algorithm/string/rmq/)
->>>> [ex](/Algorithm/string/rmq/rmq_1.cpp)
->>>>
->> [String](/Algorithm/string)
->>> KMP
->>>> [md](/Algorithm/string/kmp.md)\
->>>> [C++](/Algorithm/string/kmp.cpp)
->>>>
->>> Z-value
->>>> [md](/Algorithm/string/Z-algorithm.md)\
->>>> [C++](/Algorithm/string/z-value.cpp)
->>>>
->>> [hash (未測試)](/Algorithm/string/hash.cpp)\
->>> [trie (未測試)](/Algorithm/string/trie.cpp)\
->>> [Failure Function](/Algorithm/string/Failure.cpp)
+> ## [AtCoder](/AtCoder/)
+>> AtCoder Beginner Contest 293
+>>> [ABC 293G](/AtCoder/ABC293G.cpp)
+>>> 
+> ## [Codeforces](/codeforces/)
+>> Codeforces Round 746 (contest 1592)
+>>> [1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
 >>>
-> ## [TIOJ](/tioj)
->> [1015 Squares in Rectangle](/tioj/tioj_1015.cpp)\
->> [1072 誰先晚餐](/tioj/tioj_1072.cpp)\
->> [1199 神奇的模術](/tioj/tioj_1199.cpp)\
->> [1040 連分數](/tioj/tioj_1040.cpp)\
->> [1402 淹水問題](/tioj/tioj_1402.cpp)
->>
-> ## [Zerojudge](/zerojudge)
->> a001 哈囉
->>> [C++](/zerojudge/zj_a001.cpp)\
->>> [Python](/zerojudge/zj_a001.py)
+>> Codeforces Round 768 (contest 1630,1631)
+>>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
 >>>
->> [a002 簡易加法](/zerojudge/zj_a002.cpp)\
->> [a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)\
->> [a004 文文的求婚](/zerojudge/zj_a004.cpp)\
->> [a005 Eva 的回家作業](/zerojudge/zj_a005.cpp)\
->> [a006 一元二次方程式](/zerojudge/zj_a006.cpp)\
->> [a009 解碼器](/zerojudge/zj_a009.cpp)\
->> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
->> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
->> [c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
->> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
->> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
->> [h026 猜拳](/zerojudge/zj_h026.cpp)\
->> [h028 砍樹](/zerojudge/zj_h028.cpp)\
->> [i399 數字遊戲](/zerojudge/zj_h028.cpp)
->>
-> ## [Tcirc](/tcirc)
->> [d030](/tcirc/tcirc_d030.cpp)\
->> [d075](/tcirc/tcirc_d075.cpp)
->>
+>> Codeforces Round 790 (contest 1676)
+>>> [1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
+>> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
+>>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
+>>>
+>> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
+>>> [1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
+>>>
+>> Codeforces Round 864 (contest 1797)
+>>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
+>>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
+>>> 
+>> Educational Codeforces Round 146 (contest 1814)
+>>> [1814A Coins](/codeforces/cf_1814A.cpp)\
+>>> [1814B Long Legs](/codeforces/cf_1814B.cpp)
+>>>
+>> Codeforces Round 865 (contect 1815,1816)
+>>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
+>>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
+>>> [1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
+>>>
+>> Codeforces Round 873 (contest 1827,1828)
+>>> [1828A Divisible Array](./codeforces/cf_1828A.cpp)\
+>>> [1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
+>>> [1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
+>>>
+>> Group
+>>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
+>>>
 > ## [neoj](/neoj)
 >> [19](/neoj/neoj_19.cpp)\
 >> [46](/neoj/neoj_46.cpp)\
@@ -113,46 +115,37 @@
 >>> [ans](/neoj/neoj_789/neoj_789.md)
 >>>
 >>
-> ## [Codeforces](/codeforces/)
->> Codeforces Round 746 (contest 1592)
->>> [1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
+> ## [TIOJ](/tioj)
+>> [1015 Squares in Rectangle](/tioj/tioj_1015.cpp)\
+>> [1072 誰先晚餐](/tioj/tioj_1072.cpp)\
+>> [1199 神奇的模術](/tioj/tioj_1199.cpp)\
+>> [1040 連分數](/tioj/tioj_1040.cpp)\
+>> [1402 淹水問題](/tioj/tioj_1402.cpp)
+>>
+> ## [Zerojudge](/zerojudge)
+>> a001 哈囉
+>>> [C++](/zerojudge/zj_a001.cpp)\
+>>> [Python](/zerojudge/zj_a001.py)
 >>>
->> Codeforces Round 768 (contest 1630,1631)
->>> [1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
->>>
->> Codeforces Round 790 (contest 1676)
->>> [1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
->> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
->>> [1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
->>>
->> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
->>> [1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
->>>
->> Educational Codeforces Round 146 (contest 1814)
->>> [1814A Coins](/codeforces/cf_1814A.cpp)\
->>> [1814B Long Legs](/codeforces/cf_1814B.cpp)
->>>
->> Codeforces Round 864 (contest 1797)
->>> [1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)\
->>> [1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
->>> 
->> Codeforces Round 865 (contect 1815,1816)
->>> [1816A Ian Visits Mary](codeforces/cf_1816A.cpp)\
->>> [1816B Grid Reconstruction](codeforces/cf_1816B.cpp)\
->>> [1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
->>>
->> Codeforces Round 873 (contest 1827,1828)
->>> [1828A Divisible Array](./codeforces/cf_1828A.cpp)\
->>> [1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
->>> [1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
->>>
->> Group
->>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
->>>>>
-> ## [AtCoder](/AtCoder/)
->> AtCoder Beginner Contest 293
->>> [ABC 293G](/AtCoder/ABC293G.cpp)
->>> 
+>> [a002 簡易加法](/zerojudge/zj_a002.cpp)\
+>> [a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)\
+>> [a004 文文的求婚](/zerojudge/zj_a004.cpp)\
+>> [a005 Eva 的回家作業](/zerojudge/zj_a005.cpp)\
+>> [a006 一元二次方程式](/zerojudge/zj_a006.cpp)\
+>> [a009 解碼器](/zerojudge/zj_a009.cpp)\
+>> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
+>> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
+>> [c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
+>> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
+>> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
+>> [h026 猜拳](/zerojudge/zj_h026.cpp)\
+>> [h028 砍樹](/zerojudge/zj_h028.cpp)\
+>> [i399 數字遊戲](/zerojudge/zj_h028.cpp)
+>>
+> ## [Tcirc](/tcirc)
+>> [d030](/tcirc/tcirc_d030.cpp)\
+>> [d075](/tcirc/tcirc_d075.cpp)
+>>
 > ## APCS
 >> 2020
 >>> 01
