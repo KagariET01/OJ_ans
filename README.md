@@ -95,10 +95,14 @@
 >> [91](/neoj/neoj_91.cpp)\
 >> [124](/neoj/neoj_124.cpp)\
 >> [125](/neoj/neoj_125/)
->>> [file](/neoj/neoj_125/neoj_125.cpp)\
->>> [ans](/neoj/neoj_125/neoj_125.md)
+>>> [cpp](/neoj/neoj_125/neoj_125.cpp)\
+>>> [md](/neoj/neoj_125/neoj_125.md)
 >>>
 >> [136 20% 邪惡收集大作戰](/neoj/neoj_136.cpp)\
+>> [138](/neoj/neoj_138/)
+>>> [cpp](/neoj/neoj_138/neoj_138.cpp)\
+>>> [md](/neoj/neoj_138/neoj_138.md)
+>>>
 >> [157 高棕櫚農場](/neoj/neoj_157.cpp)\
 >> [158 高棕櫚農場 2](/neoj/neoj_158.cpp)\
 >> [165 陣線推進](/neoj/neoj_165.cpp)\
@@ -111,15 +115,25 @@
 >> [401 線段相交](/neoj/neoj_401.cpp)\
 >> [431 江神與他的小火車](/neoj/neoj_431.cpp)\
 >> [789 好的序列](/neoj/neoj_789/)
->>> [file](/neoj/neoj_789/neoj_789.cpp)\
->>> [ans](/neoj/neoj_789/neoj_789.md)
+>>> [cpp](/neoj/neoj_789/neoj_789.cpp)\
+>>> [md](/neoj/neoj_789/neoj_789.md)
 >>>
+>>
+> ## [racing](/racing/)
+>> [TOI](/racing/TOI/)
+>>> [練習賽](/racing/TOI/練習賽/)
+>>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
+>>>>
+>> [資訊之芽](/racing/資訊之芽)/[2023](/racing/資訊之芽/2023)/[期中考](/racing/資訊之芽/2023/期中考)
+> ## [Tcirc](/tcirc)
+>> [d030](/tcirc/tcirc_d030.cpp)\
+>> [d075](/tcirc/tcirc_d075.cpp)
 >>
 > ## [TIOJ](/tioj)
 >> [1015 Squares in Rectangle](/tioj/tioj_1015.cpp)\
+>> [1040 連分數](/tioj/tioj_1040.cpp)\
 >> [1072 誰先晚餐](/tioj/tioj_1072.cpp)\
 >> [1199 神奇的模術](/tioj/tioj_1199.cpp)\
->> [1040 連分數](/tioj/tioj_1040.cpp)\
 >> [1402 淹水問題](/tioj/tioj_1402.cpp)
 >>
 > ## [Zerojudge](/zerojudge)
@@ -136,15 +150,12 @@
 >> [a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
 >> [b430 簡單乘法](/zerojudge/zj_b430.cpp)\
 >> [c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
+>> [c291 小群體](/zerojudge/zj_c291.cpp)\
 >> [f314 勇者修煉](/zerojudge/zj_f314.cpp)\
 >> [f581 圓環出口](/zerojudge/zj_f581.cpp)\
 >> [h026 猜拳](/zerojudge/zj_h026.cpp)\
 >> [h028 砍樹](/zerojudge/zj_h028.cpp)\
 >> [i399 數字遊戲](/zerojudge/zj_h028.cpp)
->>
-> ## [Tcirc](/tcirc)
->> [d030](/tcirc/tcirc_d030.cpp)\
->> [d075](/tcirc/tcirc_d075.cpp)
 >>
 > ## APCS
 >> 2020
@@ -165,9 +176,5 @@
 >>>>
 >> 2017
 >>> 03
->>>> [2(zj_c291)](/zerojudge/zj_c291.cpp)
+>>>> [2(zj_c291) 小群體](/zerojudge/zj_c291.cpp)
 >>>>
-> ## [racing](/racing/)
->> [TOI](/racing/TOI/)
->>> [練習賽](/racing/TOI/練習賽/)
->>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)

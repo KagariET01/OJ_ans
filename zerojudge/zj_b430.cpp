@@ -1,5 +1,7 @@
 /*
-[zj]				[Q]https://zerojudge.tw/ShowProblem?problemid=b430
+[Q]https://kagariet01.github.io/swap/?OJ=zj&P=b430
+[AC]
+[基本語法]
 */
 
 /*include*/

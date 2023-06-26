@@ -1,6 +1,7 @@
 /*
 [Q]https://zerojudge.tw/ShowProblem?problemid=h026
 [AC]
+[模擬]
 */
 #include<iostream>
 #include<algorithm>

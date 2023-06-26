@@ -1,6 +1,7 @@
 /*
 [Q]https://zerojudge.tw/ShowProblem?problemid=i399
 [AC]
+[基礎語法]
 */
 #include<iostream>
 #include<algorithm>

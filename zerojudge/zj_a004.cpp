@@ -1,3 +1,8 @@
+/*
+[Q]https://kagariet01.github.io/swap/?OJ=zj&P=a004
+[AC]
+[while,巢狀if]
+*/
 #include<iostream>
 using namespace std;
 int main(){

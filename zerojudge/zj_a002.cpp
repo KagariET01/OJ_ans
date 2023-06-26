@@ -1,7 +1,7 @@
 /*
-[Q]
+[Q]https://zerojudge.tw/ShowProblem?problemid=a002
 [AC]
-[運算元]https://zerojudge.tw/ShowProblem?problemid=a002
+[運算元]
 */
 #include<iostream>
 #include<string>

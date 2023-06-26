@@ -1,3 +1,8 @@
+/*
+[Q]https://kagariet01.github.io/swap/?OJ=zj&P=a006
+[AC]
+[基本語法]
+*/
 #include<iostream>
 #include<cmath>
 using namespace std;

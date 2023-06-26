@@ -3,6 +3,7 @@
 [AC]
 [Q]https://zerojudge.tw/ShowProblem?problemid=h028
 [AC]
+[想法]
 */
 #include<iostream>
 #include<algorithm>

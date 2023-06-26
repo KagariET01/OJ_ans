@@ -1,6 +1,7 @@
 /*
 [Q]https://zerojudge.tw/ShowProblem?problemid=f581
 [AC]
+[BIT search]
 */
 #include<iostream>
 #include<algorithm>

@@ -1,3 +1,8 @@
+/*
+[Q]https://kagariet01.github.io/swap/?OJ=zj&P=a003
+[AC]
+[if,else]
+*/
 #include<iostream>
 #include<string>
 using namespace std;
