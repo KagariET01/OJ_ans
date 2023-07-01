@@ -1,5 +1,6 @@
 /*
 [Q]https://leetcode.com/problems/binary-search/
+[二分搜]
 [AC]
 */
 class Solution {

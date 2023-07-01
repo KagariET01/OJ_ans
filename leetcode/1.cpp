@@ -9,14 +9,7 @@
 #define PUIUI pair<UINT,UINT>
 #define endl "\n"
 #define wassomething() empty()==false
-/*struct*/
-struct super_pair{
-	INT x1=0;
-	INT x2=0;
-	INT x3=0;
-	INT x4=0;
-	INT x5=0;
-};
+
 class Solution {
 public:
 	vector<int> twoSum(vector<int>& nums, int target) {

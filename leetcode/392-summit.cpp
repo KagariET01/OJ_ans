@@ -1,5 +1,6 @@
 /*
 [Q]https://leetcode.com/problems/is-subsequence/
+[string]
 [AC]
 */
 class Solution {

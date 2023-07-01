@@ -1,5 +1,6 @@
 /*
 [Q]https://leetcode.com/problems/sliding-window-maximum/
+[指標]
 [AC]
 */
 class Solution {

@@ -4,13 +4,14 @@
 [目次]
 > [Algorithm](#algorithm)\
 > [AtCoder](#atcoder)\
+> [Codeforces](#codeforces)\
+> [leetcode](#leetcode)\
+> [neoj](#neoj)\
+> [racing](#racing)\
+> [tcirc](#tcirc)\
 > [TIOJ](#tioj)\
 > [Zerojudge](#zerojudge)\
-> [tcirc](#tcirc)\
-> [neoj](#neoj)\
-> [Codeforces](#codeforces)\
-> [APCS](#apcs)\
-> [racing](#racing)
+> [APCS](#apcs)
 >
 # 檔案
 > ## [Algorithm](/Algorithm)
@@ -81,6 +82,11 @@
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
 >>>
+> ## [leetcode](/leetcode)
+>> [1 Two Sum](/leetcode/1.cpp)
+>> [239 sliding-window-maximum](/leetcode/239.cpp)
+>> [392 Is Subsequence](/leetcode/392-summit.cpp)
+>> [704 Binary Search](/leetcode/704.cpp)
 > ## [neoj](/neoj)
 >> [19](/neoj/neoj_19.cpp)\
 >> [46](/neoj/neoj_46.cpp)\
@@ -124,7 +130,9 @@
 >>> [練習賽](/racing/TOI/練習賽/)
 >>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
 >>>>
->> [資訊之芽](/racing/資訊之芽)/[2023](/racing/資訊之芽/2023)/[期中考](/racing/資訊之芽/2023/期中考)
+>> [資訊之芽](/racing/資訊之芽)/[2023](/racing/資訊之芽/2023)
+>>> [期中考](/racing/資訊之芽/2023/期中考)
+>>> [期末考](/racing/資訊之芽/2023/期末考)
 > ## [Tcirc](/tcirc)
 >> [d030](/tcirc/tcirc_d030.cpp)\
 >> [d075](/tcirc/tcirc_d075.cpp)
