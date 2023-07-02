@@ -8,7 +8,7 @@ using namespace std;
 #define INT long long int
 #define endl "\n"
 #define read(n) reader<n>()
-#define dbg if(debug)
+#define DBG if(debug)
 bool debug=0;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
@@ -36,38 +36,38 @@ vector<INT> getF(string str){
 	return re;
 }
 
-vector<INT> KMS(string s,string t){
-	vector<INT> f=getF(s);
-	INT ss=s.size();
-	INT ts=t.size();
-	vector<INT> re;
-	INT p=-1;//表s的開頭要在t的哪裡
-	for(INT i=0;i<ts;i++){
-		while(p>=0 && s[p+1]!=t[i]){//重複移動p直到字元配對成功
-			p=f[p];
-		}
-		if(s[p+1]==t[i]){
-			p++;
-		}
-		if(p+1==ss){
-			re.push_back(i-p);
-			p=f[p];
-		}
-	}
-	return re;
-}
-
 int main(){
 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-	int t=read(int);
+	INT t=read(int);
 	while(t--){
-		string s,t;
-		cin>>s>>t;
-		vector<INT> vec=KMS(s,t);
-		for(INT i:vec){
-			cout<<i<<" ";
+		INT n;
+		string s;
+		cin>>n>>s;
+		vector<INT> F=getF(s);
+		INT i=0,j=-1;
+		bool ans=0;
+		for(i=1;i<n&& !ans;i++){
+			while(j>=0 && s[i]!=s[j+1]){
+				j=F[j];
+			}
+			DBG cerr<<"DBG i="<<i<<" j="<<j<<endl;
+			if(s[i]==s[j+1]){
+				j++;
+				if((i+1)/2<=(j)){
+					ans=1;
+					break;
+				}
+
+			}else if(s[j+1]<s[i]){
+				ans=1;
+				break;
+			}
 		}
-		cout<<"end"<<endl;
+		if(ans){
+			cout<<"Yes"<<endl;
+		}else{
+			cout<<"No"<<endl;
+		}
 	}
 	return 0;
 }
