@@ -110,7 +110,8 @@
 >>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
 >>>
 >> Educational Codeforces Round 150 (contest 1841)
->>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)
+>>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)\
+>>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)
 >>>
 >> Educational Codeforces Round 151 (contest 1845)
 >>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)\
