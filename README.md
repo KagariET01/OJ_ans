@@ -109,8 +109,12 @@
 >>> [cf 1828B Permutation Swap](./codeforces/cf_1828B.cpp)\
 >>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
 >>>
+>> Educational Codeforces Round 150 (contest 1841)
+>>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)
+>>>
 >> Educational Codeforces Round 151 (contest 1845)
->>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)
+>>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)\
+>>> [cf 1845B Come Together](/codeforces/cf_1845B.cpp)
 >>>
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
