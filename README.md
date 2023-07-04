@@ -73,6 +73,15 @@
 >> [DC 分治](Algorithm\DC_1.cpp) 
 >>
 > ## [AtCoder](/AtCoder/)
+>> AtCoder Beginner Contest 121
+>>> [at ABC121D XOR World](/AtCoder/at_abc121D.cpp)
+>>>
+>> AtCoder Beginner Contest 141
+>>> [at ABC141C Attack Survival](/AtCoder/at_abc141C.cpp)
+>>>
+>> AtCoder Beginner Contest 178
+>>> [at ABC178E Dist Max](/AtCoder/at_abc178E.cpp)
+>>>
 >> AtCoder Beginner Contest 293
 >>> [ABC 293G](/AtCoder/ABC293G.cpp)
 >>> 
@@ -85,6 +94,7 @@
 >>>
 >> Codeforces Round 790 (contest 1676)
 >>> [cf 1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
+>>>
 >> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
 >>> [cf 1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
 >>>
@@ -121,9 +131,9 @@
 >>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
 >>>
 > ## [leetcode](/leetcode)
->> [lcode 1 Two Sum](/leetcode/1.cpp)
->> [lcode 239 sliding-window-maximum](/leetcode/239.cpp)
->> [lcode 392 Is Subsequence](/leetcode/392-summit.cpp)
+>> [lcode 1 Two Sum](/leetcode/1.cpp)\
+>> [lcode 239 sliding-window-maximum](/leetcode/239.cpp)\
+>> [lcode 392 Is Subsequence](/leetcode/392-summit.cpp)\
 >> [lcode 704 Binary Search](/leetcode/704.cpp)
 > ## [neoj](/neoj)
 >> [neoj 19](/neoj/neoj_19.cpp)\

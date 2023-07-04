@@ -1,5 +1,6 @@
 /*
 [Q]https://atcoder.jp/contests/abc103/tasks/abc103_d
+[WA]
 */
 #include<iostream>
 #include<vector>

@@ -1,3 +1,8 @@
+/*
+[Q]https://kagariet01.github.io/swap/?OJ=at&C=abc141&P=C
+[水題]
+[AC]
+*/
 #include<iostream>
 #include<vector>
 using namespace std;

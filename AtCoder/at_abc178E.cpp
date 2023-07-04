@@ -1,5 +1,6 @@
 /*
-[AtCoder]		[Q]https://atcoder.jp/contests/abc178/tasks/abc178_e
+[Q]https://atcoder.jp/contests/abc178/tasks/abc178_e
+[math]
 [AC]
 */
 
@@ -97,5 +98,12 @@ int main(){
 
 /*think*/
 /*
-
+|x1-x2|+|y1-y2|
+=+-(x1-x2)+-(y1-y2)
+=(x1-x2)+(y1-y2)=(x1+y1)-(x2+y2)
+=(x1-x2)-(y1-y2)=x1-y1-x2+y2=(x1-y1)-(x2-y2)
+=-(x1-x2)+(y1-y2)=-x1+y1+x2-y2=-(x1+y1)+(x2-y2)=-((x1-y1)-(x2-y2))
+=-(x1-x2)-(y1-y2)=-((x1+y1)-(x2+y2))
+找最大的(x+y)去-最小的(x+y)
+或找最大的(x-y)去-最小的(x-y)
 */
