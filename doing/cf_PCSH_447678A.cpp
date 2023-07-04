@@ -1,6 +1,6 @@
 /*
-[q]
-[]
+[q]https://codeforces.com/group/VEc3guEDmO/contest/447678/problem/A
+[WA]
 */
 //#ifndef eval
 #include<bits/stdc++.h>

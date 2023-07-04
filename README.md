@@ -123,12 +123,15 @@
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)\
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)
 >>>
+>> Codeforces Round 881
+>>> [cf 1843A Sasha and Array Coloring](/codeforces/cf_1843A.cpp)
+>>>
 >> Educational Codeforces Round 151 (contest 1845)
 >>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)\
 >>> [cf 1845B Come Together](/codeforces/cf_1845B.cpp)
 >>>
 >> Group
->>> [pcsh contest](/codeforces/pcsh%20contest/list.md)
+>>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
 >>>
 > ## [leetcode](/leetcode)
 >> [lcode 1 Two Sum](/leetcode/1.cpp)\
