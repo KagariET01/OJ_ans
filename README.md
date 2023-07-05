@@ -124,8 +124,10 @@
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)
 >>>
 >> Codeforces Round 881
->>> [cf 1843A Sasha and Array Coloring](/codeforces/cf_1843A.cpp)
->>> [cf 1843B Long Long](/codeforces/cf_1843B.cpp)
+>>> [cf 1843A Sasha and Array Coloring](/codeforces/cf_1843A.cpp)\
+>>> [cf 1843B Long Long](/codeforces/cf_1843B.cpp)\
+>>> [cf 1843C Sum in Binary Tree](/codeforces/cf_1843C.cpp)\
+>>> [cf 1843D Apple Tree](/codeforces/cf_1843D.cpp)
 >>>
 >> Educational Codeforces Round 151 (contest 1845)
 >>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)\
