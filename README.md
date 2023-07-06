@@ -123,7 +123,14 @@
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)\
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)
 >>>
->> Codeforces Round 881
+>> CodeTON Round 5 (contest 1842)
+>>> [cf 1842A Tenzing and Tsondu](/codeforces/cf_1842A.cpp)\
+>>> [cf 1842B Tenzing and Books](/codeforces/cf_1842B.cpp)\
+>>> [cf 1842C Tenzing and Balls](/codeforces/cf_1842C)
+>>>> [md](/codeforces/cf_1842C/README.md)\
+>>>> [cpp](/codeforces/cf_1842C/ans.cpp)
+>>>>
+>> Codeforces Round 881 (contest 1843)
 >>> [cf 1843A Sasha and Array Coloring](/codeforces/cf_1843A.cpp)\
 >>> [cf 1843B Long Long](/codeforces/cf_1843B.cpp)\
 >>> [cf 1843C Sum in Binary Tree](/codeforces/cf_1843C.cpp)\
