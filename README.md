@@ -140,6 +140,10 @@
 >>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)\
 >>> [cf 1845B Come Together](/codeforces/cf_1845B.cpp)
 >>>
+>> Codeforces Round 882 (contest 1847A)
+>>> [cf 1847A The Man who became a God](/codeforces/cf_1847A.cpp)\
+>>> [cf 1847B Hamon Odyssey](/codeforces/cf_1847B.cpp)
+>>>
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
 >>>
