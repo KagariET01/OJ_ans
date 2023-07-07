@@ -2,6 +2,8 @@
 	"C_Cpp.errorSquiggles": "disabled",
 	"files.associations": {
 		"\"*.cpp\"": "c++",
-		"iosfwd": "cpp"
+		"iosfwd": "cpp",
+		"chrono": "cpp",
+		"span": "cpp"
 	}
 }
