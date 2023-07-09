@@ -4,6 +4,7 @@
 		"\"*.cpp\"": "c++",
 		"iosfwd": "cpp",
 		"chrono": "cpp",
-		"span": "cpp"
+		"span": "cpp",
+		"iostream": "cpp"
 	}
 }

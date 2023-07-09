@@ -35,7 +35,8 @@
 >>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)\
 >>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
->>> [矩陣快速冪](/Algorithm\math\矩陣快速冪-q1.cpp)
+>>> [四則運算](/Algorithm/math/四則運算.cpp)\
+>>> [矩陣快速冪](/Algorithm/math/矩陣快速冪-q1.cpp)
 >>>
 >> [String](/Algorithm/string)
 >>> KMP
@@ -217,8 +218,8 @@
 >>
 > ## [Zerojudge](/zerojudge)
 >> zj a001 哈囉
->>> [C++](/zerojudge/zj_a001.cpp)\
->>> [Python](/zerojudge/zj_a001.py)
+>>> [cpp](/zerojudge/zj_a001.cpp)\
+>>> [py](/zerojudge/zj_a001.py)
 >>>
 >> [zj a002 簡易加法](/zerojudge/zj_a002.cpp)\
 >> [zj a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)\
@@ -226,6 +227,7 @@
 >> [zj a005 Eva 的回家作業](/zerojudge/zj_a005.cpp)\
 >> [zj a006 一元二次方程式](/zerojudge/zj_a006.cpp)\
 >> [zj a009 解碼器](/zerojudge/zj_a009.cpp)\
+>> zj a017 五則運算/[py](/zerojudge/zj_a017.py)\
 >> [zj a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)\
 >> [zj b430 簡單乘法](/zerojudge/zj_b430.cpp)\
 >> [zj c067 Box of Bricks](/zerojudge/zj_c067.cpp)\
