@@ -84,8 +84,11 @@
 >>> [at ABC178E Dist Max](/AtCoder/at_abc178E.cpp)
 >>>
 >> AtCoder Beginner Contest 293
->>> [ABC 293G](/AtCoder/ABC293G.cpp)
+>>> [at ABC293G](/AtCoder/at_abc293G.cpp)
 >>> 
+>> AtCoder Regular Contest 164
+>>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
+>>>
 > ## [Codeforces](/codeforces/)
 >> Codeforces Round 746 (contest 1592)
 >>> [cf 1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
