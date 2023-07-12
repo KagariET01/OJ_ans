@@ -154,6 +154,9 @@
 >>> [cf 1846C Rudolf and the Another Competition](/codeforces/cf_1846C.cpp)\
 >>> [cf 1846D Rudolph and Christmas Tree](/codeforces/cf_1846D.cpp)
 >>>
+>> Codeforces Round 884 (contest 1844)
+>>> [cf 1844A Subtraction Game](/codeforces/cf_1844A.cpp)\
+>>> [cf 1844B Permutations & Primes](/codeforces/cf_1844B.cpp)
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
 >>>

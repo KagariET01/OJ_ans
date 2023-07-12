@@ -5,6 +5,7 @@
 		"iosfwd": "cpp",
 		"chrono": "cpp",
 		"span": "cpp",
-		"iostream": "cpp"
+		"iostream": "cpp",
+		"cstdlib": "cpp"
 	}
 }
