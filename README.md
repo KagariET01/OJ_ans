@@ -161,7 +161,8 @@
 >>>
 >> Codeforces Round 884 (contest 1844)
 >>> [cf 1844A Subtraction Game](/codeforces/cf_1844A.cpp)\
->>> [cf 1844B Permutations & Primes](/codeforces/cf_1844B.cpp)
+>>> [cf 1844B Permutations & Primes](/codeforces/cf_1844B.cpp)\
+>>> cf 1844C Particles [md](/codeforces/cf_1844C.md) [cpp](/codeforces/cf_1844C.cpp)
 >>>
 >> Codeforces Round 885 (contest 1848)
 >>> cf 1848A Vika and Her Friends
