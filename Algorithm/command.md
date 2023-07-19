@@ -47,7 +47,8 @@ Remove-Item '<file_path>	//remove file
 >> tabs //查看所有頁籤
 >> tabn //下一個頁籤 or [g] [t]
 >> tabp //上一個頁籤 or [g] [T]
->>
+>> Explore //開啟檔案總管
+>> 
 > [Ctrl]+[w] //分割視窗管理
 >> hjkl //將游標移動到左、下、上、右的分割視窗
 >> [Ctrl]+[w] //切換分割視窗
@@ -98,18 +99,6 @@ Remove-Item '<file_path>	//remove file
 > :set nu!		//顯示行數(只在此顯示)
 > ## 檔案總管
 > :Explore	//開啟檔案總管
-> [F1]		//幫助
-> i		//切換檢視模式
-> d		//新建目錄
-> %		//新建文件
-> D		//刪除
-> R		//重新命名
-> t		//在新分頁中開啟
-> p		//預覽文件
-> qf		//顯示文件信息
-> mb		//將當前目錄加入書籤
-> mB		//取消書籤
-> 
 
 # vim settings
 > ~/_vimrc	//此為檔案路徑

@@ -1,6 +1,5 @@
 /*
 [q]
-[greedy]
 [AC]
 */
 //#ifndef eval
