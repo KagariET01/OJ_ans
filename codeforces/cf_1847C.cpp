@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[math][bit]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,6 +38,27 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;cin>>n;
+		INT a[n];
+		for(INT i=0;i<n;i++){
+			cin>>a[i];
+		}
+		INT mxa=1<<8;
+		vector<bool> vec(mxa);
+		vec[0]=1;
+		INT nwxor=0;
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			nwxor^=a[i];
+			for(INT j=0;j<mxa;j++){
+				if(vec[j]){
+					ans=max(ans,j^nwxor);//j代表0~l的xor，nwxor代表0~r的xor
+					//0~i的xor會在j=0時判測
+				}
+			}
+			vec[nwxor]=1;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

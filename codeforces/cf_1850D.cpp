@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,6 +38,23 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		INT a[n];
+		for(INT i=0;i<n;i++){
+			cin>>a[i];
+		}
+		sort(a,a+n);
+		INT last=0;
+		INT mxu=0;
+		for(INT i=1;i<n;i++){
+			if(a[i]-a[i-1]>k){
+				mxu=max(mxu, i-last);
+				last=i;
+			}
+		}
+		mxu=max(mxu,n-last);
+		cout<<n-mxu<<endl;
 	}
 	return 0;
 }

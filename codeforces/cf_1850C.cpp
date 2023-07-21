@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,6 +38,22 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		string ans="";
+		INT findj=-1;
+		for(INT i=0;i<8;i++){
+			string inin=read(string);
+			if(findj==-1){
+				for(INT j=0;j<8;j++){
+					if(inin[j]=='.')continue;
+					findj=j;
+					ans+=inin[j];
+					break;
+				}
+			}else if(inin[findj]!='.'){
+				ans+=inin[findj];
+			}
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

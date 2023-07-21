@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,6 +38,20 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT mx=0;
+		INT mxid=0;
+		for(INT i=1;i<=n;i++){
+			INT a,b;
+			cin>>a>>b;
+			if(a>10)continue;
+			if(b>mx){
+				mx=b;
+				mxid=i;
+			}
+		}
+		cout<<mxid<<endl;
 	}
 	return 0;
 }

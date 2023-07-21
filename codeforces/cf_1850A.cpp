@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,6 +38,17 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT a,b,c;
+		cin>>a>>b>>c;
+		INT d,e,f;
+		d=a+b;
+		e=b+c;
+		f=a+c;
+		if(d>=10 || e>=10 || f>=10){
+			cout<<"Yes"<<endl;
+		}else{
+			cout<<"NO"<<endl;
+		}
 	}
 	return 0;
 }

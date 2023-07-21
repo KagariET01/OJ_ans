@@ -164,7 +164,8 @@
 >>>
 >> Codeforces Round 882 (contest 1847)
 >>> [cf 1847A The Man who became a God](/codeforces/cf_1847A.cpp)  
->>> [cf 1847B Hamon Odyssey](/codeforces/cf_1847B.cpp)
+>>> [cf 1847B Hamon Odyssey](/codeforces/cf_1847B.cpp)  
+>>> cf 1847C Vampiric Powers, anyone? [md](/codeforces/cf_1847C.md) [cpp](/codeforces/cf_1847C.cpp)  
 >>>
 >> Codeforces Round 885 (contest 1848)
 >>> cf 1848A Vika and Her Friends
@@ -173,6 +174,13 @@
 >>>>
 >>> [cf 1848B Vika and the Bridge](/codeforces/cf_1848B.cpp)  
 >>> cf 1848C Vika and Price Tags [md](/codeforces/cf_1848C.md) [cpp](/codeforces/cf_1848C.cpp)
+>>>  
+>> Codeforces Round 886 (contest 1850)
+>>> [cf 1850A To My Critics](/codeforces/cf_1850A.cpp)  
+>>> [cf 1850B Ten Words of Wisdom](/codeforces/cf_1850B.cpp)  
+>>> [cf 1850C Word on the Paper](/codeforces/cf_1850C.cpp)  
+>>> [cf 1850D Balanced Round](/codeforces/cf_1850D.cpp)  
+>>> [cf 1850E Cardboard for Pictures](/codeforces/cf_1850E.cpp)  
 >>>
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
