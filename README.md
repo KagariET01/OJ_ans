@@ -74,6 +74,9 @@
 >> [DC 分治](Algorithm  DC_1.cpp) 
 >>
 > ## [AtCoder](/AtCoder/)
+>> practice contest
+>>> [at practice1 Welcome to AtCoder](/AtCoder/at_practice1.cpp)  
+>>>
 >> AtCoder Beginner Contest 121
 >>> [at ABC121D XOR World](/AtCoder/at_abc121D.cpp)
 >>>
@@ -94,6 +97,12 @@
 >>> [at ABC310B Strictly Superior](/AtCoder/at_abc310B.cpp)  
 >>> [at ABC310C Reversible](/AtCoder/at_abc310C.cpp)
 >>>
+>> Toyota Programming Contest 2023#4（AtCoder Beginner Contest 311）
+>>> [at ABC311A First ABC](/AtCoder/at_abc311A.cpp)  
+>>> [at ABC311B Vacation Together](/AtCoder/at_abc311B.cpp)  
+>>> [at ABC311C Find it!](/AtCoder/at_abc311C.cpp)  
+>>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
+>>> 
 > ## [Codeforces](/codeforces/)
 >> Codeforces Round 746 (contest 1592)
 >>> [cf 1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
@@ -130,7 +139,8 @@
 >>>
 >> Educational Codeforces Round 150 (contest 1841)
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
->>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)
+>>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)  
+>>> [cf 1841C Ranom Numbers](/codeforces/cf_1841C.cpp)
 >>>
 >> CodeTON Round 5 (contest 1842)
 >>> [cf 1842A Tenzing and Tsondu](/codeforces/cf_1842A.cpp)  
