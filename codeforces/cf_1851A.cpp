@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,6 +40,17 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n,m,k,H;
+		cin>>n>>m>>k>>H;
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			INT h;
+			cin>>h;
+			if(h!=H && (H-h)%k==0 && abs(H-h)/k<m){
+				ans++;
+			}
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

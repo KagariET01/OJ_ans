@@ -37,8 +37,39 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT n,m;
+		cin>>n>>m;
+		vector<INT> vec[n+1];
+		for(INT i=2;i<=n;i++){
+			INT p;
+			cin>>p;
+			vec[p].push_back(i);
+		}
+		INT helpe[n+1];memset(helpe,0,sizeof(helpe));
+		for(INT i=0;i<m;i++){
+			INT x,y;
+			cin>>x>>y;
+			helpe[x]=max(helpe[x],y+1);//自己，還有下y代，假設y=0，helpe[x]=y不就變成0了ㄇ？，所以y+1
+		}
+		deque<INT> dq;
+		dq.push_back(1);
+		INT ans=0;
+		while(!dq.empty()){
+			INT nw=dq.front();
+			dq.pop_front();
+			if(helpe[nw]){
+				ans++;
+			}
+			INT nxt=helpe[nw]-1;
+			if(nxt<0)nxt=0;
+			for(INT i:vec[nw]){
+				helpe[i]=max(helpe[i],nxt);
+				dq.push_back(i);
+			}
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

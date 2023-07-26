@@ -92,6 +92,11 @@
 >> AtCoder Regular Contest 164
 >>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
 >>>
+>> Denso Create Programming Contest 2023 (AtCoder Beginner Contest 309)  
+>>> [at ABC309A Nine](/AtCoder/at_abc309A.cpp)  
+>>> [at ABC309D Add One Edge](/AtCoder/at_abc309D.cpp)  
+>>> [at ABC309E Family and Insurance](/AtCoder/at_abc309E.cpp)  
+>>> 
 >> freee Programming Contest 2023（AtCoder Beginner Contest 310）
 >>> [at ABC310A Order Something Else](/AtCoder/at_abc310A.cpp)  
 >>> [at ABC310B Strictly Superior](/AtCoder/at_abc310B.cpp)  
@@ -102,7 +107,8 @@
 >>> [at ABC311B Vacation Together](/AtCoder/at_abc311B.cpp)  
 >>> [at ABC311C Find it!](/AtCoder/at_abc311C.cpp)  
 >>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
->>> 
+>>> at ABC311E Defect-free Squares [md](AtCoder/at_abc311E.md) [cpp](/AtCoder/at_abc311E.cpp)  
+>>>
 > ## [Codeforces](/codeforces/)
 >> Codeforces Round 746 (contest 1592)
 >>> [cf 1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
@@ -191,6 +197,16 @@
 >>> [cf 1850C Word on the Paper](/codeforces/cf_1850C.cpp)  
 >>> [cf 1850D Balanced Round](/codeforces/cf_1850D.cpp)  
 >>> [cf 1850E Cardboard for Pictures](/codeforces/cf_1850E.cpp)  
+>>>
+>> Codeforces Round 888 (contest 1851)
+>>> [cf 1851A Escalator Conversations](/codeforces/cf_1851A.cpp)  
+>>> [cf 1851B Parity Sort](/codeforces/cf_1851B.cpp)   
+>>> [cf 1851C Tiles Comeback](/codeforces/cf_1851C.cpp)  
+>>> [cf 1851D Prefix Permutation Sums](/codeforces/cf_1851D.cpp)  
+>>> [cf 1851E Nastya and Potions](/codeforces/cf_1851E.cpp)  
+>>> 
+>> Codeforces Round 887 (contest 1853)  
+>>> [cf 1853A Desorting](/codeforces/cf_1853A.cpp)  
 >>>
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)

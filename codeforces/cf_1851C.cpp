@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,6 +40,31 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		INT c[n];
+		for(INT i=0;i<n;i++){
+			cin>>c[i];
+		}
+		INT l=k,r=k,i=0;
+		if(c[0]==c[n-1])r=0;
+		for(;i<n && l;i++){
+			if(c[i]==c[0]){
+				l--;
+				if(!l)break;
+			}
+		}
+		for(;i<n && r;i++){
+			if(c[i]==c[n-1]){
+				r--;
+				if(!r)break;
+			}
+		}
+		if(l || r){
+			cout<<"no"<<endl;
+		}else{
+			cout<<"yes"<<endl;
+		}
 	}
 	return 0;
 }

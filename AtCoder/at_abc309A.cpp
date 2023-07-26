@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,8 +38,33 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT a,b;
+		cin>>a>>b;
+		a--;b--;
+
+		INT ax,ay,bx,by;
+		ax=a%3;
+		ay=a/3;
+		bx=b%3;
+		by=b/3;
+		INT all=abs(ax-bx)+abs(ay-by)*2;
+		DBG{
+			for(INT i=1;i<=9;i++){
+				INT aa=i-1;
+				INT aax=aa%3;
+				INT aay=aa/3;
+				cerr<<i<<":"<<aax<<","<<aay<<endl;
+			}
+			cerr<<ax<<","<<ay<<endl;
+			cerr<<bx<<","<<by<<endl;
+		}
+		if(all<=1){
+			cout<<"Yes"<<endl;
+		}else{
+			cout<<"No"<<endl;
+		}
 	}
 	return 0;
 }

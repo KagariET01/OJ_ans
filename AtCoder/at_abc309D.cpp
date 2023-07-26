@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[graph]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -37,8 +38,46 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT n1,n2,m;
+		cin>>n1>>n2>>m;
+		vector<INT> vec[n1+n2+5];
+		for(INT i=0;i<m;i++){
+			INT a,b;
+			cin>>a>>b;
+			vec[a].push_back(b);
+			vec[b].push_back(a);
+		}
+		INT path[n1+n2+5];
+		memset(path,0,sizeof(path));
+		path[1]=1;
+		path[n1+n2]=1;
+		deque<INT> dq;
+		dq.push_back(1);
+		dq.push_back(n1+n2);
+		INT lans=0,rans=0;
+		while(!dq.empty()){
+			INT nw=dq.front();
+			dq.pop_front();
+			for(INT i:vec[nw]){
+				if(path[i])continue;
+				path[i]=path[nw]+1;
+				dq.push_back(i);
+			}
+			if(nw<=n1){
+				lans=max(lans,path[nw]);
+			}else{
+				rans=max(rans,path[nw]);
+			}
+		}
+		DBG{
+			for(INT i=1;i<=n1+n2;i++){
+				cerr<<path[i]<<" ";
+			}
+			cerr<<endl;
+		}
+		cout<<lans+rans-1<<endl;
 	}
 	return 0;
 }

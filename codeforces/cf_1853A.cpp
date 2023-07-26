@@ -21,8 +21,6 @@ int main(int argc,char** argv){
 		if(nwstr=="-Dev"){
 			debug=1;
 			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
 		}
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
@@ -39,6 +37,23 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n];
+		INT ans=1e9;
+		for(INT i=0;i<n;i++){
+			cin>>a[i];
+			if(i){
+				ans=min(ans,(a[i]-a[i-1]));
+			}
+		}
+		if(ans>=0){
+			cout<<ans/2+1<<endl;
+		}else{
+			cout<<0<<endl;
+		}
+
+
 	}
 	return 0;
 }

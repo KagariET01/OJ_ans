@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -9,6 +10,7 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
+#define PII pair<INT,INT>
 bool debug=0;
 bool noTLE=1;
 template<typename tpe>tpe reader(){
@@ -39,6 +41,26 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n=read(INT);
+		INT a[n];
+		INT b[n];
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			a[i]=inin;
+			b[i]=inin;
+		}
+		sort(a,a+n);
+		bool ans=1;
+		for(INT i=0;i<n && ans;i++){
+			if(a[i]%2 != b[i]%2){
+				ans=0;
+			}
+		}
+		if(ans){
+			cout<<"yes"<<endl;
+		}else{
+			cout<<"no"<<endl;
+		}
 	}
 	return 0;
 }
