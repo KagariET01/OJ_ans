@@ -92,6 +92,15 @@
 >> AtCoder Regular Contest 164
 >>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
 >>>
+>> Tokio Marine & Nichido Fire Insurance Programming Contest 2023(AtCoder Beginner Contest 307)  
+>>> [at ABC307A Weekly Records](/AtCoder/at_abc307A.cpp)  
+>>> [at ABC307B racecar](/AtCoder/at_abc307B.cpp)  
+>>> 
+>> AtCoder Beginner Contest 308  
+>>> [at ABC308A New Scheme](/AtCoder/at_abc308A.cpp)  
+>>> [at ABC308B Default Price](/AtCoder/at_abc308B.cpp)  
+>>> [at ABC308C Standings](/AtCoder/at_abc308C.cpp)  
+>>> 
 >> Denso Create Programming Contest 2023 (AtCoder Beginner Contest 309)  
 >>> [at ABC309A Nine](/AtCoder/at_abc309A.cpp)  
 >>> [at ABC309D Add One Edge](/AtCoder/at_abc309D.cpp)  
@@ -191,6 +200,10 @@
 >>> [cf 1848B Vika and the Bridge](/codeforces/cf_1848B.cpp)  
 >>> cf 1848C Vika and Price Tags [md](/codeforces/cf_1848C.md) [cpp](/codeforces/cf_1848C.cpp)
 >>>  
+>> Educational Codeforces Round 152 (contest 1849)  
+>>> [cf 1849A Morning Sandwich](/codeforces/cf_1849A.cpp)  
+>>> [cf 1849B Monsters](/codeforces/cf_1849B.cpp)  
+>>> 
 >> Codeforces Round 886 (contest 1850)
 >>> [cf 1850A To My Critics](/codeforces/cf_1850A.cpp)  
 >>> [cf 1850B Ten Words of Wisdom](/codeforces/cf_1850B.cpp)  
@@ -208,6 +221,10 @@
 >> Codeforces Round 887 (contest 1853)  
 >>> [cf 1853A Desorting](/codeforces/cf_1853A.cpp)  
 >>>
+>> Codeforces Round 889 (contest 1855)  
+>>> [cf 1855A Dalton the Teacher](/codeforces/cf_1855A.cpp)  
+>>> [cf 1855B Longest Divisors Interval](/codeforces/cf_1855B.cpp)  
+>>> 
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
 >>>
@@ -262,6 +279,7 @@
 >> [資訊之芽](/racing/資訊之芽)/[2023](/racing/資訊之芽/2023)
 >>> [期中考](/racing/資訊之芽/2023/期中考)
 >>> [期末考](/racing/資訊之芽/2023/期末考)
+>>> 
 > ## [Tcirc](/tcirc)
 >> [tcirc d030](/tcirc/tcirc_d030.cpp)  
 >> [tcirc d075](/tcirc/tcirc_d075.cpp)
@@ -286,6 +304,7 @@
 >> [zj a009 解碼器](/zerojudge/zj_a009.cpp)  
 >> zj a017 五則運算/[py](/zerojudge/zj_a017.py)  
 >> [zj a289 Modular Multiplicative Inverse](/zerojudge/zj_a289.cpp)  
+>> [zj a597 祖靈被榨乾了!!!!!!!!](/zerojudge/zj_a597.cpp)  
 >> [zj b430 簡單乘法](/zerojudge/zj_b430.cpp)  
 >> [zj c067 Box of Bricks](/zerojudge/zj_c067.cpp)  
 >> [zj c291 小群體](/zerojudge/zj_c291.cpp)  
@@ -296,23 +315,23 @@
 >> [zj i399 數字遊戲](/zerojudge/zj_h028.cpp)
 >>
 > ## APCS
->> 2020
->>> 01
->>>> [1 (zj_h026)](/zerojudge/zj_h026.cpp)  
->>>> [3 (zj_h028](/zerojudge/zj_h028.cpp)  
->>>> [3 (tcirc_d030)](/tcirc/tcirc_d030.cpp)
->>>>
->>> 07
->>>> [3 (zj_f581)](/zerojudge/zj_f581.cpp)
->>>>
->>> 10
->>>> [3 (zj_f314)](/zerojudge/zj_f314.cpp)
->>>>
->> 2018
->>> 10
->>>> [4 (zj_d075)](/zerojudge/zj_d075.cpp)
->>>>
->> 2017
->>> 03
->>>> [2 (zj_c291) 小群體](/zerojudge/zj_c291.cpp)
->>>>
+>> 2020  
+>>> 01  
+>>>> [1 (zj_h026)](/zerojudge/zj_h026.cpp)    
+>>>> [3 (zj_h028](/zerojudge/zj_h028.cpp)    
+>>>> [3 (tcirc_d030)](/tcirc/tcirc_d030.cpp)  
+>>>>  
+>>> 07  
+>>>> [3 (zj_f581)](/zerojudge/zj_f581.cpp)  
+>>>>  
+>>> 10  
+>>>> [3 (zj_f314)](/zerojudge/zj_f314.cpp)  
+>>>>  
+>> 2018  
+>>> 10  
+>>>> [4 (zj_d075)](/zerojudge/zj_d075.cpp)  
+>>>>  
+>> 2017  
+>>> 03  
+>>>> [2 (zj_c291) 小群體](/zerojudge/zj_c291.cpp)  
+>>>>  
