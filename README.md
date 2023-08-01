@@ -221,9 +221,10 @@
 >> Codeforces Round 887 (contest 1853)  
 >>> [cf 1853A Desorting](/codeforces/cf_1853A.cpp)  
 >>>
->> Codeforces Round 889 (contest 1855)  
+>> Codeforces Round 889 (contest 1854,1855)  
 >>> [cf 1855A Dalton the Teacher](/codeforces/cf_1855A.cpp)  
 >>> [cf 1855B Longest Divisors Interval](/codeforces/cf_1855B.cpp)  
+>>> [cf 1854A1 1854A2 1855C1 1855C2 Dual](/codeforces/cf_1854A1_1854A2_1855C1_1855C2.cpp)  
 >>> 
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
