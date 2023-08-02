@@ -217,6 +217,7 @@
 >>> [cf 1851C Tiles Comeback](/codeforces/cf_1851C.cpp)  
 >>> [cf 1851D Prefix Permutation Sums](/codeforces/cf_1851D.cpp)  
 >>> [cf 1851E Nastya and Potions](/codeforces/cf_1851E.cpp)  
+>>> [cf 1851G Vlad and the Mountains](/codeforces/cf_1851G.cpp)  
 >>> 
 >> Codeforces Round 887 (contest 1853)  
 >>> [cf 1853A Desorting](/codeforces/cf_1853A.cpp)  
@@ -289,8 +290,10 @@
 >> [TIOJ 1015 Squares in Rectangle](/tioj/tioj_1015.cpp)  
 >> [TIOJ 1040 連分數](/tioj/tioj_1040.cpp)  
 >> [TIOJ 1072 誰先晚餐](/tioj/tioj_1072.cpp)  
+>> [TIOJ 1152 銀河帝國旅行社](/tioj/tioj_1152.cpp)  
 >> [TIOJ 1199 神奇的模術](/tioj/tioj_1199.cpp)  
->> [TIOJ 1402 淹水問題](/tioj/tioj_1402.cpp)
+>> [TIOJ 1402 淹水問題](/tioj/tioj_1402.cpp)  
+>> [TIOJ 1947 小向的試煉 1-3：森林(Forest)](/tioj/tioj_1947.cpp)  
 >>
 > ## [Zerojudge](/zerojudge)
 >> zj a001 哈囉
