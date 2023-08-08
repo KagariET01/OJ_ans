@@ -40,6 +40,50 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT x[n];
+		for(INT i=0;i<n;i++){
+			cin>>x[i];
+		}
+
+		map<INT,INT> ans;
+		map<INT,INT> cnt;//計算數值為i的有多少個點
+		set<INT> se;
+		INT mnx=1e9+7;
+		INT mxn=0;
+		for(INT i=0;i<n;i++){
+			mnx=min(mnx,x[i]);
+			mxn=max(mxn,x[i]);
+			se.insert(x[i]);
+			cnt[x[i]]++;
+		}
+		INT nwans=0;
+		for(INT i=0;i<n;i++){
+			nwans+=x[i]-mnx+1;
+		}
+		vector<INT> vec;
+		vec.reserve(se.size());
+		for(INT i:se){
+			vec.push_back(i);
+		}
+		INT vecs=vec.size();
+		INT l=0,r=n;
+		for(INT i=0;i<vecs;i++){
+			if(i){
+				nwans+=l*(vec[i]-vec[i-1]);
+				nwans-=r*(vec[i]-vec[i-1]);
+			}
+			ans[vec[i]]=nwans;
+			
+			r-=cnt[vec[i]];
+			l+=cnt[vec[i]];
+		}
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<ans[x[i]];
+		}
+		cout<<endl;
 	}
 	return 0;
 }

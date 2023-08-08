@@ -40,6 +40,24 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		string str;
+		cin>>str;
+		INT n=str.size();
+		INT r=n-1;
+		for(INT i=n-1;i>=0;i--){
+			if(str[i]>='5'){
+				for(INT j=r;j>=i;j--){
+					str[j]='0';
+				}
+				r=i-1;
+				if(i==0){
+					str='1'+str;
+				}else{
+					str[i-1]+=1;
+				}
+			}
+		}
+		cout<<str<<endl;
 	}
 	return 0;
 }

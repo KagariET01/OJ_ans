@@ -40,6 +40,29 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n];
+		for(INT i=0;i<n;i++){
+			cin>>a[i];
+		}
+		INT odd=0;//ㄐ
+		INT even=0;//偶
+		for(INT i=0;i<n;i++){
+			if(a[i]%2){
+				odd++;
+			}else{
+				even++;
+			}
+		}
+		bool ans=1;
+		if(odd%2)ans=0;
+		
+		if(ans){
+			cout<<"yes"<<endl;
+		}else{
+			cout<<"no"<<endl;
+		}
 	}
 	return 0;
 }

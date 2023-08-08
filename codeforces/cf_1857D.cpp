@@ -40,6 +40,33 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT a[n];
+		INT b[n];
+		for(INT i=0;i<n;i++){
+			cin>>a[i];
+		}
+		for(INT i=0;i<n;i++){
+			cin>>b[i];
+		}
+		PII c[n];
+		for(INT i=0;i<n;i++){
+			c[i]={a[i]-b[i],i};
+		}
+		sort(c,c+n);
+		INT ansc=0;
+		for(INT i=n-1;i>=0;i--){
+			if(c[i].first==c[n-1].first){
+				ansc++;
+			}else break;
+		}
+		cout<<ansc<<endl;
+		for(INT i=n-ansc,cnt=0;cnt<ansc;i++,cnt++){
+			if(cnt)cout<<" ";
+			cout<<c[i].second+1;
+		}
+		cout<<endl;
 	}
 	return 0;
 }

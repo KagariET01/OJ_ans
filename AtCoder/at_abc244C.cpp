@@ -1,6 +1,7 @@
 /*
-[q]
-[]
+[q]https://atcoder.jp/contests/newjudge-2308-algorithm/tasks/abc244_c
+[q]https://kagariet01.github.io/swap/?OJ=at&C=abc244&P=C
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -9,9 +10,8 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
-#define PII pair<INT,INT>
 bool debug=0;
-bool noTLE=1;
+bool noTLE=0;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
@@ -38,8 +38,25 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT n;
+		cin>>n;
+		INT mx=n*2+1;
+		bool a[mx+1]={};
+		INT al=mx;
+		for(INT i=1;i<=mx;i++){
+			if(a[i])continue;
+			cout<<i<<endl;
+			a[i]=1;
+			al--;
+			if(al){
+				a[read(INT)]=1;
+				al--;
+			}else{
+				break;
+			}
+		}
 	}
 	return 0;
 }

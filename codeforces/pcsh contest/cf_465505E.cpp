@@ -1,6 +1,11 @@
 /*
-[q]
-[]
+[q]https://codeforces.com/group/VEc3guEDmO/contest/465505/problem/E
+[36/100]
+[SubTask1 AC 11/11]
+[SubTask2 WA,TLE 0/17]
+[SubTask3 AC 25/25]
+[SubTask4 WA 0/21]
+[SubTask% 0/26]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -9,7 +14,6 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
-#define PII pair<INT,INT>
 bool debug=0;
 bool noTLE=1;
 template<typename tpe>tpe reader(){
@@ -38,8 +42,29 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT n,m;
+		cin>>n>>m;
+		INT a[n];
+		for(INT i=0;i<n;i++){
+			a[i]=read(INT);
+		}
+		INT al=1<<n;
+		INT ans=0;
+		for(INT i=0;i<al;i++){
+			INT nwans=0;
+			INT nw=i;
+			for(INT j=0;j<n;j++){
+				if(nw&1){
+					nwans+=a[j];
+					nwans%=m;
+				}
+				nw>>=1;
+			}
+			ans=max(ans,nwans);
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

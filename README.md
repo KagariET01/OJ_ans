@@ -74,9 +74,6 @@
 >> [DC 分治](Algorithm  DC_1.cpp) 
 >>
 > ## [AtCoder](/AtCoder/)
->> practice contest
->>> [at practice1 Welcome to AtCoder](/AtCoder/at_practice1.cpp)  
->>>
 >> AtCoder Beginner Contest 121
 >>> [at ABC121D XOR World](/AtCoder/at_abc121D.cpp)
 >>>
@@ -86,12 +83,18 @@
 >> AtCoder Beginner Contest 178
 >>> [at ABC178E Dist Max](/AtCoder/at_abc178E.cpp)
 >>>
+>> AtCoder Beginner Contest 244  
+>>> [at ABC244C Yamanote Line Game](/AtCoder/at_abc244C.cpp)  
+>>>
+>> AtCoder Beginner Contest 264  
+>>> [at ABC264A "atcoder".substr()](/AtCoder/at_abc264A.cpp)  
+>>> 
+>> AtCoder Beginner Contest 273  
+>>> [at ABC273B Broken Rounding](/AtCoder/at_abc273B.cpp)  
+>>> 
 >> AtCoder Beginner Contest 293
 >>> [at ABC293G](/AtCoder/at_abc293G.cpp)
 >>> 
->> AtCoder Regular Contest 164
->>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
->>>
 >> Tokio Marine & Nichido Fire Insurance Programming Contest 2023(AtCoder Beginner Contest 307)  
 >>> [at ABC307A Weekly Records](/AtCoder/at_abc307A.cpp)  
 >>> [at ABC307B racecar](/AtCoder/at_abc307B.cpp)  
@@ -117,6 +120,17 @@
 >>> [at ABC311C Find it!](/AtCoder/at_abc311C.cpp)  
 >>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
 >>> at ABC311E Defect-free Squares [md](AtCoder/at_abc311E.md) [cpp](/AtCoder/at_abc311E.cpp)  
+>>>
+>> AtCoder Regular Contest 164
+>>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
+>>>
+>> practice contest (practice)
+>>> [at practice1 Welcome to AtCoder](/AtCoder/at_practice1.cpp)  
+>>>
+>> 新ジャッジテストコンテスト -Algorithm- (newjudge-2308-algorithm)  
+>>> [at ABC264A "atcoder".substr()](/AtCoder/at_abc264A.cpp)  
+>>> [at ABC273B Broken Rounding](/AtCoder/at_abc273B.cpp)  
+>>> [at ABC244C Yamanote Line Game](/AtCoder/at_abc244C.cpp)  
 >>>
 > ## [Codeforces](/codeforces/)
 >> Codeforces Round 746 (contest 1592)
@@ -217,6 +231,7 @@
 >>> [cf 1851C Tiles Comeback](/codeforces/cf_1851C.cpp)  
 >>> [cf 1851D Prefix Permutation Sums](/codeforces/cf_1851D.cpp)  
 >>> [cf 1851E Nastya and Potions](/codeforces/cf_1851E.cpp)  
+>>> cf 1851F Lisa and the Martians [md](/codeforces/cf_1851F.md)  
 >>> [cf 1851G Vlad and the Mountains](/codeforces/cf_1851G.cpp)  
 >>> 
 >> Codeforces Round 887 (contest 1853)  
@@ -226,6 +241,13 @@
 >>> [cf 1855A Dalton the Teacher](/codeforces/cf_1855A.cpp)  
 >>> [cf 1855B Longest Divisors Interval](/codeforces/cf_1855B.cpp)  
 >>> [cf 1854A1 1854A2 1855C1 1855C2 Dual](/codeforces/cf_1854A1_1854A2_1855C1_1855C2.cpp)  
+>>> 
+>> Codeforces Round 891 (contest 1857)  
+>>> [cf 1857A Array Coloring](/codeforces/cf_1857A.cpp)  
+>>> [cf 1857B Maximum Rounding](/codeforces/cf_1857B.cpp)  
+>>> [cf 1857C Assembly via Minimums](/codeforces/cf_1857C.cpp)  
+>>> [cf 1857D Strong Vertices](/codeforces/cf_1857D.cpp)  
+>>> [cf 1857E Power of Points](/codeforces/cf_1857E.cpp)  
 >>> 
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
@@ -316,8 +338,9 @@
 >> [zj f581 圓環出口](/zerojudge/zj_f581.cpp)  
 >> [zj h026 猜拳](/zerojudge/zj_h026.cpp)  
 >> [zj h028 砍樹](/zerojudge/zj_h028.cpp)  
->> [zj i399 數字遊戲](/zerojudge/zj_h028.cpp)
->>
+>> [zj i399 數字遊戲](/zerojudge/zj_h028.cpp)  
+>> [zj k465 姓名分析 (Name)](/zerojudge/zj_k465.cpp)  
+>> 
 > ## APCS
 >> 2020  
 >>> 01  

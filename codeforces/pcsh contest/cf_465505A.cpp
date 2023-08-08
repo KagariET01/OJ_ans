@@ -1,6 +1,7 @@
 /*
-[q]
-[]
+[q]https://codeforces.com/group/VEc3guEDmO/contest/465505/problem/A
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -14,6 +15,14 @@ bool debug=0;
 bool noTLE=1;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
+}
+
+bool vser(PII a,PII b){//{藝人得幾顆,剩多少
+	if(a.second!=b.second){
+		return a.second<b.second;
+	}else{
+		return a.first<b.first;
+	}
 }
 
 int main(int argc,char** argv){
@@ -38,8 +47,22 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
+	INT t=1;
 	while(t--){
+		INT n,k;
+		cin>>n>>k;
+		vector<PII> vec;
+		vec.reserve(n);
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			vec.push_back({inin/k,inin%k});
+		}
+		sort(vec.begin(),vec.end(),vser);
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<(vec[i].first*k+vec[i].second);
+		}
+		cout<<endl;
 	}
 	return 0;
 }

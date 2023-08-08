@@ -40,6 +40,19 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		INT n;
+		cin>>n;
+		INT m=n*(n-1)/2;
+		INT b[m];
+		for(INT i=0;i<m;i++){
+			cin>>b[i];
+		}
+		sort(b,b+m);
+		for(INT i=0,j=n-1;j>0;i+=j,j--){
+			cout<<b[i]<<" ";
+		}
+		cout<<b[m-1];
+		cout<<endl;
 	}
 	return 0;
 }

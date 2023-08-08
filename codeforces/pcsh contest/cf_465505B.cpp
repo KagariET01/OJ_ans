@@ -1,6 +1,7 @@
 /*
-[q]
-[]
+[q]https://codeforces.com/group/VEc3guEDmO/contest/465505/problem/B
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -9,7 +10,6 @@ using namespace std;
 #define endl "\n"
 #define read(n) reader<n>()
 #define DBG if(debug)
-#define PII pair<INT,INT>
 bool debug=0;
 bool noTLE=1;
 template<typename tpe>tpe reader(){
@@ -40,6 +40,8 @@ int main(int argc,char** argv){
 	}
 	INT t=read(int);
 	while(t--){
+		string str=read(string);INT n=str.size();vector<INT> vec;for(INT i=0;i<n-2;i++){if(str[i]=='s' && str[i+1]=='t' && str[i+2]=='o' && str[i+3]=='r' && str[i+4]=='z'){vec.push_back(0);i+=4;}else if(str[i]=='o' && str[i+1]=='r' && str[i+2]=='z'){vec.push_back(-1);i+=2;}else if(str[i]=='s' && str[i+1]=='t' && str[i+2]=='o'){vec.push_back(1);i+=2;}}
+		n=vec.size();INT ans=0;for(INT i=0;i<n;i++){if(vec[i]==-1){ans+=i;}else if(vec[i]==0){ans+=max(i,n-1-i);}else{ans+=n-1-i;}}cout<<ans<<endl;
 	}
 	return 0;
 }
