@@ -169,6 +169,8 @@
 >> Codeforces Round 878 (contest 1840)  
 >>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
 >>> [cf 1840B Binary Cafe](/codeforces/cf_1840B.cpp)  
+>>> [cf 1840C Ski Resort](/codeforces/cf_1840C.cpp)  
+>>>
 >> Educational Codeforces Round 150 (contest 1841)
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)  
