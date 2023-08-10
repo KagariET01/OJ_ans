@@ -32,8 +32,8 @@
 >> [Math](/Algorithm/math/)
 >>> [Geometry](/Algorithm/Geometry/Geometry.cpp)  
 >>> [Mod](/Algorithm/math/mod/)
->>>> [Extended  _Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)  
->>>> [Modular  _multiplicative  _inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)  
+>>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
 >>> [四則運算](/Algorithm/math/四則運算.cpp)  
 >>> [矩陣快速冪](/Algorithm/math/矩陣快速冪-q1.cpp)
@@ -168,7 +168,7 @@
 >>>
 >> Codeforces Round 878 (contest 1840)  
 >>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
->>> 
+>>> [cf 1840B Binary Cafe](/codeforces/cf_1840B.cpp)  
 >> Educational Codeforces Round 150 (contest 1841)
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)  
