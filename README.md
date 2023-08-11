@@ -1,4 +1,4 @@
-# OJ_ans
+# OJ\_ans
 　　此github資料庫為[ET01](../../../)一個人完成。這邊提供熱門Online Judge的題解，但是看完題解後請自行思考其原理，且要自己重新寫一遍，不要沒思考過後就直接送出此答案<br>
 如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
@@ -32,8 +32,8 @@
 >> [Math](/Algorithm/math/)
 >>> [Geometry](/Algorithm/Geometry/Geometry.cpp)  
 >>> [Mod](/Algorithm/math/mod/)
->>>> [Extended  _Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)  
->>>> [Modular  _multiplicative  _inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
+>>>> [Extended\_Euclidean 擴展歐幾里得](/Algorithm/math/Extended_Euclidean.cpp)  
+>>>> [Modular\_multiplicative\_inverse 模逆元](/Algorithm/math/mod/Modular_multiplicative_inverse.cpp)
 >>>>
 >>> [四則運算](/Algorithm/math/四則運算.cpp)  
 >>> [矩陣快速冪](/Algorithm/math/矩陣快速冪-q1.cpp)
@@ -165,6 +165,11 @@
 >>> [cf 1828A Divisible Array](./codeforces/cf_1828A.cpp)  
 >>> [cf 1828B Permutation Swap](./codeforces/cf_1828B.cpp)  
 >>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
+>>>
+>> Codeforces Round 878 (contest 1840)  
+>>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
+>>> [cf 1840B Binary Cafe](/codeforces/cf_1840B.cpp)  
+>>> [cf 1840C Ski Resort](/codeforces/cf_1840C.cpp)  
 >>>
 >> Educational Codeforces Round 150 (contest 1841)
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
