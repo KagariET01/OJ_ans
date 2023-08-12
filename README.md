@@ -166,6 +166,9 @@
 >>> [cf 1828B Permutation Swap](./codeforces/cf_1828B.cpp)  
 >>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
 >>>
+>> Codeforces Round 880 (contest 1836)
+>>> [cf 1836A Destroyer](codeforces/cf_1836A.cpp)  
+>>> 
 >> Codeforces Round 878 (contest 1840)  
 >>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
 >>> [cf 1840B Binary Cafe](/codeforces/cf_1840B.cpp)  
@@ -217,6 +220,12 @@
 >>>> [cpp](/codeforces/cf_1848A.cpp)  
 >>>> [md](/codeforces/cf_1848A.md)
 >>>>
+>> Codeforces Round 892 (contest 1859)
+>>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
+>>> [cf 1859B Olya and Game with Arrays](/codeforces/cf_1859B.cpp)  
+>>> [cf 1859C Another Permutation Problem](/codeforces/cf_1859C.cpp)
+>>> [cf 1859D Andrey and Escape from Capygrad](/codeforces/cf_1859D.cpp)
+>>> 
 >>> [cf 1848B Vika and the Bridge](/codeforces/cf_1848B.cpp)  
 >>> cf 1848C Vika and Price Tags [md](/codeforces/cf_1848C.md) [cpp](/codeforces/cf_1848C.cpp)
 >>>  
