@@ -204,8 +204,9 @@
 >>> [cf 1846A Rudolph and Cut the Rope](/codeforces/cf_1846A.cpp)  
 >>> [cf 1846B Rudolph and Tic-Tac-Toe](/codeforces/cf_1846B.cpp)  
 >>> [cf 1846C Rudolf and the Another Competition](/codeforces/cf_1846C.cpp)  
->>> [cf 1846D Rudolph and Christmas Tree](/codeforces/cf_1846D.cpp)
->>>
+>>> [cf 1846D Rudolph and Christmas Tree](/codeforces/cf_1846D.cpp)  
+>>> [cf 1846E1 Rudolf and Snowflakes (simple version)](codeforces/cf_1846E.cpp)  
+>>> 
 >> Codeforces Round 882 (contest 1847)
 >>> [cf 1847A The Man who became a God](/codeforces/cf_1847A.cpp)  
 >>> [cf 1847B Hamon Odyssey](/codeforces/cf_1847B.cpp)  
