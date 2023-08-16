@@ -177,8 +177,9 @@
 >> Educational Codeforces Round 150 (contest 1841)
 >>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
 >>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)  
->>> [cf 1841C Ranom Numbers](/codeforces/cf_1841C.cpp)
->>>
+>>> [cf 1841C Ranom Numbers](/codeforces/cf_1841C.cpp)  
+>>> [cf 1841D Pairs of Segments](/codeforces/cf_1841D.cpp)  
+>>> 
 >> CodeTON Round 5 (contest 1842)
 >>> [cf 1842A Tenzing and Tsondu](/codeforces/cf_1842A.cpp)  
 >>> [cf 1842B Tenzing and Books](/codeforces/cf_1842B.cpp)  
