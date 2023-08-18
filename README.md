@@ -263,6 +263,7 @@
 >>> 
 >> Codeforces Round 893 (contest 1858)
 >>> [cf 1858A Buttons](/codeforces/cf_1858A.cpp)  
+>>> [cf 1858B The Walkway](/codeforces/cf_1858B.cpp)  
 >>> 
 >> Codeforces Round 892 (contest 1859)
 >>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
