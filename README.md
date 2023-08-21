@@ -121,6 +121,11 @@
 >>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
 >>> at ABC311E Defect-free Squares [md](AtCoder/at_abc311E.md) [cpp](/AtCoder/at_abc311E.cpp)  
 >>>
+>> KEYENCE Programming Contest 2023 Summer（AtCoder Beginner Contest 315）  
+>>> [at ABC315A tcdr](/AtCoder/at_abc315A.cpp)  
+>>> [at ABC315B The Middle Day](/AtCoder/at_abc315B.cpp)  
+>>> [at abc315D Magical Cookies](/AtCoder/at_abc315D.cpp)  
+>>> 
 >> AtCoder Regular Contest 164
 >>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
 >>>
@@ -264,6 +269,7 @@
 >> Codeforces Round 893 (contest 1858)
 >>> [cf 1858A Buttons](/codeforces/cf_1858A.cpp)  
 >>> [cf 1858B The Walkway](/codeforces/cf_1858B.cpp)  
+>>> [cf 1858C Yet Another Permutation Problem](/codeforces/cf_1858C.cpp)  
 >>> 
 >> Codeforces Round 892 (contest 1859)
 >>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
