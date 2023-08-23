@@ -174,6 +174,7 @@
 >> Codeforces Round 880 (contest 1836)
 >>> [cf 1836A Destroyer](/codeforces/cf_1836A.cpp)  
 >>> [cf 1836B Astrophysicists](/codeforces/cf_1836B.cpp)  
+>>> [cf 1836C k-th equality](/codeforces/cf_1836C.cpp)  
 >>> 
 >> Codeforces Round 878 (contest 1840)  
 >>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
