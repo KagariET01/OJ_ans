@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +39,69 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		string str=read(string);
+		INT n=str.size();
+		bool t1=1;//()()...
+		bool t2=1;//)()(...
+		bool t3=1;//((...))
+		for(INT i=0;i<n;i++){
+			if(i%2){
+				if(str[i]!=')'){
+					t1=0;
+					break;
+				}
+			}else{
+				if(str[i]!='('){
+					t1=0;
+					break;
+				}
+			}
+		}
+		for(INT i=0;i<n;i++){
+			if(i%2){
+				if(str[i]!='('){
+					t2=0;
+					break;
+				}
+			}else{
+				if(str[i]!=')'){
+					t2=0;
+					break;
+				}
+			}
+		}
+		bool sw=0;
+		for(INT i=0;i<n;i++){
+			if(!sw){
+				if(str[i]==')'){
+					sw=1;
+				}
+			}else{
+				if(str[i]!=')'){
+					t3=0;
+					break;
+				}
+			}
+		}
+		if(!t1 && !t2){
+			cout<<"YES"<<endl;
+			for(INT i=0;i<n;i++){
+				cout<<"()";
+			}
+			cout<<endl;
+		}else if(!t3){
+			cout<<"YES"<<endl;
+			for(INT i=0;i<n;i++){
+				cout<<"(";
+			}
+			for(INT i=0;i<n;i++){
+				cout<<")";
+			}
+			cout<<endl;
+		}else{
+			cout<<"NO"<<endl;
+		}
 	}
 	return 0;
 }

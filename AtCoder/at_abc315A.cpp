@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,10 +39,15 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
-	cout<<t<<endl;
+	INT t=1;
 	while(t--){
-		cout<<t<<endl;
+		string str=read(string);
+		for(char c:str){
+			if(c!='a' && c!='e' && c!='i' && c!='o' && c!='u'){
+				cout<<c;
+			}
+		}
+		cout<<endl;
 	}
 	return 0;
 }

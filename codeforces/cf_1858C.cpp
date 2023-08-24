@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[math]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +40,27 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT n;
+		cin>>n;
+		bool r[n+1]={};
+		bool sec=0;
+		for(INT i=n;i>=1;i--){
+			if(r[i])continue;
+			if(sec)cout<<" ";
+			cout<<i;
+			sec=1;
+			r[i]=1;
+			INT nw=i;
+			while(nw%2==0){
+				nw/=2;
+				if(r[nw])break;
+				if(sec)cout<<" ";
+				cout<<nw;
+				r[nw]=1;
+			}
+		}
+		cout<<endl;
 	}
 	return 0;
 }

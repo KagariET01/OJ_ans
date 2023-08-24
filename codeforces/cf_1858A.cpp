@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +40,20 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT a,b,c;
+		cin>>a>>b>>c;
+		if(a>b){
+			cout<<"First"<<endl;
+		}else if(b>a){
+			cout<<"Second"<<endl;
+		}else{
+			if(c%2){
+				cout<<"First"<<endl;
+			}else{
+				cout<<"Second"<<endl;
+			}
+		}
 	}
 	return 0;
 }

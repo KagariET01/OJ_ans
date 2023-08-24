@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +39,40 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT n,m;
+		string str;
+		cin>>n>>m>>str;
+		set<PII> se;
+		INT dp[2][n];
+		dp[0][0]=-1;
+		dp[1][n-1]=n+5;
+		for(INT i=0;i<n;i++){
+			if(i)dp[0][i]=dp[0][i-1];
+			if(str[i]=='0')dp[0][i]=i;
+		}
+		for(INT i=n-1;i>=0;i--){
+			if(i<n-1)dp[1][i]=dp[1][i+1];
+			if(str[i]=='1')dp[1][i]=i;
+		}
+		for(INT i=0;i<m;i++){
+			INT l,r;
+			cin>>l>>r;
+			l--,r--;
+			l=dp[1][l];
+			r=dp[0][r];
+			if(l<r){
+				se.insert(make_pair(l,r));
+			}else{
+				se.insert(make_pair(-1,-1));
+			}
+		}
+		cout<<se.size()<<endl;
+		DBG{
+			for(PII i:se){
+				cerr<<"{"<<i.first<<","<<i.second<<"}"<<endl;
+			}
+		}
 	}
 	return 0;
 }

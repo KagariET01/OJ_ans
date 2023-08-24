@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +39,25 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT n;
+		cin>>n;
+		INT p[n];
+		for(INT i=0;i<n;i++){
+			cin>>p[i];
+		}
+		INT ans=0;
+		INT mx=1e9+7,mn=p[0];
+		for(INT i=1;i<n;i++){
+			DBG cerr<<"mx="<<mx<<" mn="<<mn<<endl;
+			if(p[i]<mn){
+				mn=p[i];
+			}else if(mn<p[i] && p[i]<mx){
+				ans++;
+				mx=p[i];
+			}
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }

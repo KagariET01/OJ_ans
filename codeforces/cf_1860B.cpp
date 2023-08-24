@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +39,35 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT n,k,a1,ak;
+		cin>>n>>k>>a1>>ak;
+		INT ans=0;
+		INT aneed=n%k;
+		if(a1>=aneed){
+			n-=aneed;
+			a1-=aneed;
+		}else{
+			ans+=aneed-a1;
+			a1=0;
+		}
+		n-=n%k;
+		DBG cerr<<"n="<<n<<" ans="<<ans<<endl;
+		ak+=a1/k;
+		n/=k;
+		INT kneed=n;
+		if(kneed){
+			if(ak>=kneed){
+				n=0;
+			}else{
+				ans+=n-ak;
+				n=0;
+			}
+		}
+		cout<<ans<<endl;
+
+
+
 	}
 	return 0;
 }

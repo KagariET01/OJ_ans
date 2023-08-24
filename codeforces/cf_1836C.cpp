@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -39,9 +39,45 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT a,b,c,d;
+		cin>>a>>b>>c>>d;
+		INT amin=1,amax=1;
+		INT bmin=1,bmax=1;
+		INT cmin=1,cmax=1;
+		for(INT i=1;i<a;i++){
+			amin*=10;
+		}
+		for(INT i=1;i<b;i++){
+			bmin*=10;
+		}
+		for(INT i=1;i<c;i++){
+			cmin*=10;
+		}
+		amax=amin*10-1;
+		bmax=bmin*10-1;
+		cmax=cmin*10-1;
+		INT ansa=-1,ansb=-1;
+		for(INT nwa=amin;nwa<=amax;nwa++){
+			INT nwbmax=min(bmax,cmax-nwa);
+			INT nwbmin=max(bmin,cmin-nwa);
+			if(nwbmin>nwbmax)continue;
+			INT nwall=nwbmax-nwbmin+1;
+			if(nwall<d){
+				d-=nwall;
+			}
+			else{
+				ansa=nwa;
+				ansb=nwbmin+d-1;
+				break;
+			}
+		}
+		if(ansa==-1 && ansb==-1){
+			cout<<-1<<endl;
+			continue;
+		}else{
+			cout<<ansa<<" + "<<ansb<<" = "<<ansa+ansb<<endl;
+		}
 	}
 	return 0;
 }

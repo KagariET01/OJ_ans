@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[greedy][math][快速冪]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -15,6 +16,26 @@ bool noTLE=1;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
+
+INT superx(INT a,INT n,INT mod=0){
+	INT re=1;
+	INT xx=a;
+	while(n>0){
+		
+		if(n&1){
+			re*=xx;
+		}
+		xx*=xx;
+		n>>=1;
+		if(mod){
+			re%=mod;
+			xx%=mod;
+		}
+	}
+	return re;
+}
+
+const INT Amod=998244353;
 
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
@@ -39,10 +60,35 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(int);
-	cout<<t<<endl;
 	while(t--){
-		cout<<t<<endl;
+		INT n;
+		cin>>n;
+		if(n<=4){
+			cout<<n<<endl;
+			continue;
+		}
+		INT xx=n/3;
+		INT mod=n%3;
+		DBG cerr<<"xx="<<xx<<" mod="<<mod<<endl;
+		INT ans=0;
+		if(mod==0){
+			ans=superx(3,xx,Amod);
+		}else if(mod==1){
+			ans=superx(3,xx-1,Amod)%Amod;
+			ans*=4;
+			ans%=Amod;
+		}else{
+			ans=superx(3,xx,Amod)*2%Amod;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 //#endif
+/*
+[I1]
+1
+254042
+[O1]
+201708275
+*/

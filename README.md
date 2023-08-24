@@ -121,6 +121,11 @@
 >>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
 >>> at ABC311E Defect-free Squares [md](AtCoder/at_abc311E.md) [cpp](/AtCoder/at_abc311E.cpp)  
 >>>
+>> KEYENCE Programming Contest 2023 Summer（AtCoder Beginner Contest 315）  
+>>> [at ABC315A tcdr](/AtCoder/at_abc315A.cpp)  
+>>> [at ABC315B The Middle Day](/AtCoder/at_abc315B.cpp)  
+>>> [at abc315D Magical Cookies](/AtCoder/at_abc315D.cpp)  
+>>> 
 >> AtCoder Regular Contest 164
 >>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
 >>>
@@ -172,7 +177,9 @@
 >>> [cf 1834C Game with Reversing](/codeforces/cf_1834C.cpp)  
 >>> 
 >> Codeforces Round 880 (contest 1836)
->>> [cf 1836A Destroyer](codeforces/cf_1836A.cpp)  
+>>> [cf 1836A Destroyer](/codeforces/cf_1836A.cpp)  
+>>> [cf 1836B Astrophysicists](/codeforces/cf_1836B.cpp)  
+>>> [cf 1836C k-th equality](/codeforces/cf_1836C.cpp)  
 >>> 
 >> Codeforces Round 878 (contest 1840)  
 >>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
@@ -226,12 +233,6 @@
 >>>> [cpp](/codeforces/cf_1848A.cpp)  
 >>>> [md](/codeforces/cf_1848A.md)
 >>>>
->> Codeforces Round 892 (contest 1859)
->>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
->>> [cf 1859B Olya and Game with Arrays](/codeforces/cf_1859B.cpp)  
->>> [cf 1859C Another Permutation Problem](/codeforces/cf_1859C.cpp)
->>> [cf 1859D Andrey and Escape from Capygrad](/codeforces/cf_1859D.cpp)
->>> 
 >>> [cf 1848B Vika and the Bridge](/codeforces/cf_1848B.cpp)  
 >>> cf 1848C Vika and Price Tags [md](/codeforces/cf_1848C.md) [cpp](/codeforces/cf_1848C.cpp)
 >>>  
@@ -270,6 +271,17 @@
 >>> [cf 1857C Assembly via Minimums](/codeforces/cf_1857C.cpp)  
 >>> [cf 1857D Strong Vertices](/codeforces/cf_1857D.cpp)  
 >>> [cf 1857E Power of Points](/codeforces/cf_1857E.cpp)  
+>>> 
+>> Codeforces Round 893 (contest 1858)
+>>> [cf 1858A Buttons](/codeforces/cf_1858A.cpp)  
+>>> [cf 1858B The Walkway](/codeforces/cf_1858B.cpp)  
+>>> [cf 1858C Yet Another Permutation Problem](/codeforces/cf_1858C.cpp)  
+>>> 
+>> Codeforces Round 892 (contest 1859)
+>>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
+>>> [cf 1859B Olya and Game with Arrays](/codeforces/cf_1859B.cpp)  
+>>> [cf 1859C Another Permutation Problem](/codeforces/cf_1859C.cpp)
+>>> [cf 1859D Andrey and Escape from Capygrad](/codeforces/cf_1859D.cpp)
 >>> 
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
@@ -360,6 +372,7 @@
 >> [zj f581 圓環出口](/zerojudge/zj_f581.cpp)  
 >> [zj h026 猜拳](/zerojudge/zj_h026.cpp)  
 >> [zj h028 砍樹](/zerojudge/zj_h028.cpp)  
+>> [zj h399 h400 蛋糕店促銷](/zerojudge/zj_h399_h400.cpp)  
 >> [zj i399 數字遊戲](/zerojudge/zj_h028.cpp)  
 >> [zj k465 姓名分析 (Name)](/zerojudge/zj_k465.cpp)  
 >> 

@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[HACK][WA]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,11 +38,52 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
-	cout<<t<<endl;
+	INT t=1;
 	while(t--){
-		cout<<t<<endl;
+		string str;
+		cin>>str;
+		INT nw=0;
+		INT n=str.size();
+		for(INT i=0;i<n;i++){
+			for(INT j=i+1;j<n;j++){
+				if(str[i]=='1' && str[j]=='0')nw++;
+				else if(str[i]=='0' && str[j]=='1')nw--;
+			}
+		}
+		INT ans=0;
+		while(nw){
+			DBG cerr<<"nw="<<nw<<endl;
+			PII doit={0,0};
+			INT ch=nw;
+			for(INT i=0;i<n;i++){
+				for(INT j=i+1;j<n;j++){
+					if(str[i]==str[j])continue;
+					INT ad=0;
+					if(str[i]=='1'){
+						ad=-1;
+					}else{
+						ad=1;
+					}
+					ad*=j-i;
+					ad*=2;
+					INT nwc=nw+ad;
+					if(abs(nwc)<abs(ch)){
+						ch=nwc;
+						doit={i,j};
+					}
+				}
+			}
+			swap(str[doit.first],str[doit.second]);
+			nw=ch;
+			ans++;
+		}
+		cout<<ans<<endl;
 	}
 	return 0;
 }
 //#endif
+
+/*
+	一個10就+1
+	一個01就-1
+*/

@@ -1,6 +1,7 @@
 /*
 [q]
-[]
+[water]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,10 +39,22 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
-	cout<<t<<endl;
+	INT t=1;
 	while(t--){
-		cout<<t<<endl;
+		INT n;
+		cin>>n;
+		INT sum=1;
+		INT d[n];
+		for(INT i=0;i<n;i++){
+			d[i]=read(INT);
+			sum+=d[i];
+		}
+		sum/=2;
+		INT i;
+		for(i=0;i<n && d[i]<sum;i++){
+			sum-=d[i];
+		}
+		cout<<i+1<<" "<<sum<<endl;
 	}
 	return 0;
 }
