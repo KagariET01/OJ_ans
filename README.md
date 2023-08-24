@@ -165,7 +165,12 @@
 >>> [cf 1828A Divisible Array](./codeforces/cf_1828A.cpp)  
 >>> [cf 1828B Permutation Swap](./codeforces/cf_1828B.cpp)  
 >>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
->>>
+>>> 
+>> Codeforces Round 879 (contest 1834)  
+>>> [cf 1834A Unit Array](/codeforces/cf_1834A.cpp)  
+>>> [cf 1834B Maximum Strength](/codeforces/cf_1834B.cpp)  
+>>> [cf 1834C Game with Reversing](/codeforces/cf_1834C.cpp)  
+>>> 
 >> Codeforces Round 880 (contest 1836)
 >>> [cf 1836A Destroyer](codeforces/cf_1836A.cpp)  
 >>> 
