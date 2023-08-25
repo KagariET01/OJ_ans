@@ -283,6 +283,12 @@
 >>> [cf 1859C Another Permutation Problem](/codeforces/cf_1859C.cpp)
 >>> [cf 1859D Andrey and Escape from Capygrad](/codeforces/cf_1859D.cpp)
 >>> 
+>> Codeforces Round 894 (contest 1862)
+>>> [cf 1862A Gift Carpet](/codeforces/cf_1862A.cpp)  
+>>> [cf 1862B Sequence Game](/codeforces/cf_1862B.cpp)  
+>>> [cf 1862C Flower City Fence](/codeforces/cf_1862C.cpp)  
+>>> [cf 1862D Ice Cream Balls](/codeforces/cf_1862D.cpp)  
+>>> 
 >> Group
 >>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
 >>>
