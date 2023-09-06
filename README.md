@@ -3,15 +3,16 @@
 如果對題解有任何疑問，請嘗試[提出Issue](../../../oj_ans/issues/new/choose)<br>
 [目次]
 > [Algorithm](#algorithm)  
-> [AtCoder](#atcoder)  
-> [Codeforces](#codeforces)  
+> [AtCoder](/AtCoder/README.md)  
+> [Codeforces](/codeforces/README.md)  
 > [leetcode](#leetcode)  
-> [neoj](#neoj)  
+> [neoj](/neoj/README.md)  
 > [racing](#racing)  
 > [tcirc](#tcirc)  
 > [TIOJ](#tioj)  
 > [Zerojudge](#zerojudge)  
 > [APCS](#apcs)
+> [PCIC](#PCIC)
 >
 # 檔案
 > ## [Algorithm](/Algorithm)
@@ -71,278 +72,39 @@
 >>> [dsu](/Algorithm/tree/dsu.cpp)  
 >>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)
 >>>
->> [DC 分治](Algorithm  DC_1.cpp) 
+>> [DC 分治](Algorithm/DC_1.cpp) 
 >>
-> ## [AtCoder](/AtCoder/)
->> AtCoder Beginner Contest 121
->>> [at ABC121D XOR World](/AtCoder/at_abc121D.cpp)
->>>
->> AtCoder Beginner Contest 141
->>> [at ABC141C Attack Survival](/AtCoder/at_abc141C.cpp)
->>>
->> AtCoder Beginner Contest 178
->>> [at ABC178E Dist Max](/AtCoder/at_abc178E.cpp)
->>>
->> AtCoder Beginner Contest 244  
->>> [at ABC244C Yamanote Line Game](/AtCoder/at_abc244C.cpp)  
->>>
->> AtCoder Beginner Contest 264  
->>> [at ABC264A "atcoder".substr()](/AtCoder/at_abc264A.cpp)  
->>> 
->> AtCoder Beginner Contest 273  
->>> [at ABC273B Broken Rounding](/AtCoder/at_abc273B.cpp)  
->>> 
->> AtCoder Beginner Contest 293
->>> [at ABC293G](/AtCoder/at_abc293G.cpp)
->>> 
->> Tokio Marine & Nichido Fire Insurance Programming Contest 2023(AtCoder Beginner Contest 307)  
->>> [at ABC307A Weekly Records](/AtCoder/at_abc307A.cpp)  
->>> [at ABC307B racecar](/AtCoder/at_abc307B.cpp)  
->>> 
->> AtCoder Beginner Contest 308  
->>> [at ABC308A New Scheme](/AtCoder/at_abc308A.cpp)  
->>> [at ABC308B Default Price](/AtCoder/at_abc308B.cpp)  
->>> [at ABC308C Standings](/AtCoder/at_abc308C.cpp)  
->>> 
->> Denso Create Programming Contest 2023 (AtCoder Beginner Contest 309)  
->>> [at ABC309A Nine](/AtCoder/at_abc309A.cpp)  
->>> [at ABC309D Add One Edge](/AtCoder/at_abc309D.cpp)  
->>> [at ABC309E Family and Insurance](/AtCoder/at_abc309E.cpp)  
->>> 
->> freee Programming Contest 2023（AtCoder Beginner Contest 310）
->>> [at ABC310A Order Something Else](/AtCoder/at_abc310A.cpp)  
->>> [at ABC310B Strictly Superior](/AtCoder/at_abc310B.cpp)  
->>> [at ABC310C Reversible](/AtCoder/at_abc310C.cpp)
->>>
->> Toyota Programming Contest 2023#4（AtCoder Beginner Contest 311）
->>> [at ABC311A First ABC](/AtCoder/at_abc311A.cpp)  
->>> [at ABC311B Vacation Together](/AtCoder/at_abc311B.cpp)  
->>> [at ABC311C Find it!](/AtCoder/at_abc311C.cpp)  
->>> [at ABC311D Grid Ice Floor](/AtCoder/at_abc311D.cpp)  
->>> at ABC311E Defect-free Squares [md](AtCoder/at_abc311E.md) [cpp](/AtCoder/at_abc311E.cpp)  
->>>
->> KEYENCE Programming Contest 2023 Summer（AtCoder Beginner Contest 315）  
->>> [at ABC315A tcdr](/AtCoder/at_abc315A.cpp)  
->>> [at ABC315B The Middle Day](/AtCoder/at_abc315B.cpp)  
->>> [at abc315D Magical Cookies](/AtCoder/at_abc315D.cpp)  
->>> 
->> AtCoder Regular Contest 164
->>> [at ARC164A Ternary Decomposition](/AtCoder/at_arc164A.cpp)
->>>
->> practice contest (practice)
->>> [at practice1 Welcome to AtCoder](/AtCoder/at_practice1.cpp)  
->>>
->> 新ジャッジテストコンテスト -Algorithm- (newjudge-2308-algorithm)  
->>> [at ABC264A "atcoder".substr()](/AtCoder/at_abc264A.cpp)  
->>> [at ABC273B Broken Rounding](/AtCoder/at_abc273B.cpp)  
->>> [at ABC244C Yamanote Line Game](/AtCoder/at_abc244C.cpp)  
->>>
-> ## [Codeforces](/codeforces/)
->> Codeforces Round 746 (contest 1592)
->>> [cf 1592B Hemose Shopping](/codeforces/cf_1592B.cpp)
->>>
->> Codeforces Round 768 (contest 1630,1631)
->>> [cf 1630A,1631C And Matching](/codeforces/cf_1630A_1631C.cpp)
->>>
->> Codeforces Round 790 (contest 1676)
->>> [cf 1676H Maximum Crossings](/codeforces/cf_1676H.cpp)
->>>
->> Codeforces Round 819 and Grimoire of Code Annual Contest 2022 (contest 1726)
->>> [cf 1726B Mainak and Interesting Sequence](/codeforces/cf_1726B.cpp)
->>>
->> Codeforces Round 840 and Enigma 2022 - Cybros LNMIIT (contest 1763)
->>> [cf 1763A Absolute Maximization](/codeforces/cf_1763A.cpp)
->>>
->> Codeforces Round 864 (contest 1797)
->>> [cf 1797A Li Hua and Maze](/codeforces/cf_1797A.cpp)  
->>> [cf 1797B Li Hua and Pattern](/codeforces/cf_1797B.cpp)
->>> 
->> Educational Codeforces Round 146 (contest 1814)
->>> [cf 1814A Coins](/codeforces/cf_1814A.cpp)  
->>> [cf 1814B Long Legs](/codeforces/cf_1814B.cpp)
->>>
->> Codeforces Round 865 (contect 1815,1816)
->>> [cf 1816A Ian Visits Mary](codeforces/cf_1816A.cpp)  
->>> [cf 1816B Grid Reconstruction](codeforces/cf_1816B.cpp)  
->>> [cf 1815A 1816C Ian and Array Sorting](codeforces/cf_1815A_1816C.cpp)
->>>
->> Codeforces Round 873 (contest 1827,1828)
->>> [cf 1828A Divisible Array](./codeforces/cf_1828A.cpp)  
->>> [cf 1828B Permutation Swap](./codeforces/cf_1828B.cpp)  
->>> [cf 1827A 1828C Counting Orders](./codeforces/cf_1827A_1828C.cpp)
->>> 
->> Codeforces Round 879 (contest 1834)  
->>> [cf 1834A Unit Array](/codeforces/cf_1834A.cpp)  
->>> [cf 1834B Maximum Strength](/codeforces/cf_1834B.cpp)  
->>> [cf 1834C Game with Reversing](/codeforces/cf_1834C.cpp)  
->>> 
->> Codeforces Round 880 (contest 1836)
->>> [cf 1836A Destroyer](/codeforces/cf_1836A.cpp)  
->>> [cf 1836B Astrophysicists](/codeforces/cf_1836B.cpp)  
->>> [cf 1836C k-th equality](/codeforces/cf_1836C.cpp)  
->>> 
->> Codeforces Round 878 (contest 1840)  
->>> [cf 1840A Cipher Shifer](/codeforces/cf_1840A.cpp)  
->>> [cf 1840B Binary Cafe](/codeforces/cf_1840B.cpp)  
->>> [cf 1840C Ski Resort](/codeforces/cf_1840C.cpp)  
->>>
->> Educational Codeforces Round 150 (contest 1841)
->>> [cf 1841A Game with Board](/codeforces/cf_1841A.cpp)  
->>> [cf 1841B Keep it Beautiful](/codeforces/cf_1841B.cpp)  
->>> [cf 1841C Ranom Numbers](/codeforces/cf_1841C.cpp)  
->>> [cf 1841D Pairs of Segments](/codeforces/cf_1841D.cpp)  
->>> 
->> CodeTON Round 5 (contest 1842)
->>> [cf 1842A Tenzing and Tsondu](/codeforces/cf_1842A.cpp)  
->>> [cf 1842B Tenzing and Books](/codeforces/cf_1842B.cpp)  
->>> [cf 1842C Tenzing and Balls](/codeforces/cf_1842C)
->>>> [md](/codeforces/cf_1842C/README.md)  
->>>> [cpp](/codeforces/cf_1842C/ans.cpp)
->>>>
->> Codeforces Round 881 (contest 1843)
->>> [cf 1843A Sasha and Array Coloring](/codeforces/cf_1843A.cpp)  
->>> [cf 1843B Long Long](/codeforces/cf_1843B.cpp)  
->>> [cf 1843C Sum in Binary Tree](/codeforces/cf_1843C.cpp)  
->>> [cf 1843D Apple Tree](/codeforces/cf_1843D.cpp)
->>>
->> Codeforces Round 884 (contest 1844)
->>> [cf 1844A Subtraction Game](/codeforces/cf_1844A.cpp)  
->>> [cf 1844B Permutations & Primes](/codeforces/cf_1844B.cpp)  
->>> cf 1844C Particles [md](/codeforces/cf_1844C.md) [cpp](/codeforces/cf_1844C.cpp)  
->>> cf 1844D Row Major [md](/codeforces/cf_1844D.md) [cpp](/codeforces/cf_1844D.cpp)
->>>
->> Educational Codeforces Round 151 (contest 1845)
->>> [cf 1845A Forbidden Integer](/codeforces/cf_1845A.cpp)  
->>> [cf 1845B Come Together](/codeforces/cf_1845B.cpp)  
->>> cf 1845C Strong Password [md](/codeforces/cf_1845C.md) [cpp](/codeforces/cf_1845C.cpp)
->>>
->> Codeforces Round 883 (contest 1846)
->>> [cf 1846A Rudolph and Cut the Rope](/codeforces/cf_1846A.cpp)  
->>> [cf 1846B Rudolph and Tic-Tac-Toe](/codeforces/cf_1846B.cpp)  
->>> [cf 1846C Rudolf and the Another Competition](/codeforces/cf_1846C.cpp)  
->>> [cf 1846D Rudolph and Christmas Tree](/codeforces/cf_1846D.cpp)  
->>> [cf 1846E1 Rudolf and Snowflakes (simple version)](codeforces/cf_1846E.cpp)  
->>> 
->> Codeforces Round 882 (contest 1847)
->>> [cf 1847A The Man who became a God](/codeforces/cf_1847A.cpp)  
->>> [cf 1847B Hamon Odyssey](/codeforces/cf_1847B.cpp)  
->>> cf 1847C Vampiric Powers, anyone? [md](/codeforces/cf_1847C.md) [cpp](/codeforces/cf_1847C.cpp)  
->>>
->> Codeforces Round 885 (contest 1848)
->>> cf 1848A Vika and Her Friends
->>>> [cpp](/codeforces/cf_1848A.cpp)  
->>>> [md](/codeforces/cf_1848A.md)
->>>>
->>> [cf 1848B Vika and the Bridge](/codeforces/cf_1848B.cpp)  
->>> cf 1848C Vika and Price Tags [md](/codeforces/cf_1848C.md) [cpp](/codeforces/cf_1848C.cpp)
->>>  
->> Educational Codeforces Round 152 (contest 1849)  
->>> [cf 1849A Morning Sandwich](/codeforces/cf_1849A.cpp)  
->>> [cf 1849B Monsters](/codeforces/cf_1849B.cpp)  
->>> 
->> Codeforces Round 886 (contest 1850)
->>> [cf 1850A To My Critics](/codeforces/cf_1850A.cpp)  
->>> [cf 1850B Ten Words of Wisdom](/codeforces/cf_1850B.cpp)  
->>> [cf 1850C Word on the Paper](/codeforces/cf_1850C.cpp)  
->>> [cf 1850D Balanced Round](/codeforces/cf_1850D.cpp)  
->>> [cf 1850E Cardboard for Pictures](/codeforces/cf_1850E.cpp)  
->>>
->> Codeforces Round 888 (contest 1851)
->>> [cf 1851A Escalator Conversations](/codeforces/cf_1851A.cpp)  
->>> [cf 1851B Parity Sort](/codeforces/cf_1851B.cpp)   
->>> [cf 1851C Tiles Comeback](/codeforces/cf_1851C.cpp)  
->>> [cf 1851D Prefix Permutation Sums](/codeforces/cf_1851D.cpp)  
->>> [cf 1851E Nastya and Potions](/codeforces/cf_1851E.cpp)  
->>> cf 1851F Lisa and the Martians [md](/codeforces/cf_1851F.md)  
->>> [cf 1851G Vlad and the Mountains](/codeforces/cf_1851G.cpp)  
->>> 
->> Codeforces Round 887 (contest 1853)  
->>> [cf 1853A Desorting](/codeforces/cf_1853A.cpp)  
->>> [cf 1853B Fibonaccharsis](/codeforces/cf_1853B.cpp)  
->>>
->> Codeforces Round 889 (contest 1854,1855)  
->>> [cf 1855A Dalton the Teacher](/codeforces/cf_1855A.cpp)  
->>> [cf 1855B Longest Divisors Interval](/codeforces/cf_1855B.cpp)  
->>> [cf 1854A1 1854A2 1855C1 1855C2 Dual](/codeforces/cf_1854A1_1854A2_1855C1_1855C2.cpp)  
->>> 
->> Codeforces Round 891 (contest 1857)  
->>> [cf 1857A Array Coloring](/codeforces/cf_1857A.cpp)  
->>> [cf 1857B Maximum Rounding](/codeforces/cf_1857B.cpp)  
->>> [cf 1857C Assembly via Minimums](/codeforces/cf_1857C.cpp)  
->>> [cf 1857D Strong Vertices](/codeforces/cf_1857D.cpp)  
->>> [cf 1857E Power of Points](/codeforces/cf_1857E.cpp)  
->>> 
->> Codeforces Round 893 (contest 1858)
->>> [cf 1858A Buttons](/codeforces/cf_1858A.cpp)  
->>> [cf 1858B The Walkway](/codeforces/cf_1858B.cpp)  
->>> [cf 1858C Yet Another Permutation Problem](/codeforces/cf_1858C.cpp)  
->>> 
->> Codeforces Round 892 (contest 1859)
->>> [cf 1859A United We Stand](/codeforces/cf_1859A.cpp)  
->>> [cf 1859B Olya and Game with Arrays](/codeforces/cf_1859B.cpp)  
->>> [cf 1859C Another Permutation Problem](/codeforces/cf_1859C.cpp)
->>> [cf 1859D Andrey and Escape from Capygrad](/codeforces/cf_1859D.cpp)
->>> 
->> Codeforces Round 894 (contest 1862)
->>> [cf 1862A Gift Carpet](/codeforces/cf_1862A.cpp)  
->>> [cf 1862B Sequence Game](/codeforces/cf_1862B.cpp)  
->>> [cf 1862C Flower City Fence](/codeforces/cf_1862C.cpp)  
->>> [cf 1862D Ice Cream Balls](/codeforces/cf_1862D.cpp)  
->>> 
->> Group
->>> [pcsh contest](/codeforces/pcsh%20contest/README.md)
->>>
 > ## [leetcode](/leetcode)
 >> [lcode 1 Two Sum](/leetcode/1.cpp)  
 >> [lcode 239 sliding-window-maximum](/leetcode/239.cpp)  
 >> [lcode 392 Is Subsequence](/leetcode/392-summit.cpp)  
 >> [lcode 704 Binary Search](/leetcode/704.cpp)
-> ## [neoj](/neoj)
->> [neoj 19](/neoj/neoj_19.cpp)  
->> [neoj 46](/neoj/neoj_46.cpp)  
->> [neoj 62](/neoj/neoj_62.cpp)  
->> [neoj 63](/neoj/neoj_63.cpp)  
->> [neoj 69](/neoj/neoj_69.cpp)  
->> [neoj 70](/neoj/neoj_70.cpp)  
->> [neoj 72](/neoj/neoj_72.cpp)  
->> [neoj 74](/neoj/neoj_74.cpp)  
->> [neoj 78](/neoj/neoj_78.cpp)  
->> [neoj 89](/neoj/neoj_89.cpp)  
->> [neoj 91](/neoj/neoj_91.cpp)  
->> [neoj 124](/neoj/neoj_124.cpp)  
->> [neoj 125](/neoj/neoj_125/)
->>> [cpp](/neoj/neoj_125/neoj_125.cpp)  
->>> [md](/neoj/neoj_125/neoj_125.md)
->>>
->> [neoj 136 20% 邪惡收集大作戰](/neoj/neoj_136.cpp)  
->> [neoj 138](/neoj/neoj_138/)
->>> [cpp](/neoj/neoj_138/neoj_138.cpp)  
->>> [md](/neoj/neoj_138/neoj_138.md)
->>>
->> [neoj 157 高棕櫚農場](/neoj/neoj_157.cpp)  
->> [neoj 158 高棕櫚農場 2](/neoj/neoj_158.cpp)  
->> [neoj 165 陣線推進](/neoj/neoj_165.cpp)  
->> [neoj 265 欸迪的字串](/neoj/neoj_265.cpp)  
->> [neoj 266 溫力的故事](/neoj/neoj_266.cpp)  
->> [neoj 391 向量加法](/neoj/neoj_391.cpp)  
->> [neoj 398 向量加法](/neoj/neoj_398.cpp)  
->> [neoj 399 等長線段對](/neoj/neoj_399.cpp)  
->> [neoj 400 向左轉向右轉](/neoj/neoj_400.cpp)  
->> [neoj 401 線段相交](/neoj/neoj_401.cpp)  
->> [neoj 431 江神與他的小火車](/neoj/neoj_431.cpp)  
->> [neoj 789 好的序列](/neoj/neoj_789/)
->>> [cpp](/neoj/neoj_789/neoj_789.cpp)  
->>> [md](/neoj/neoj_789/neoj_789.md)
->>>
->>
 > ## [racing](/racing/)
->> [TOI](/racing/TOI/)
->>> [練習賽](/racing/TOI/練習賽/)
->>>> [2023](/racing/TOI/練習賽/2023/list.md/#toi練習賽-2023)
->>>>
+>> [TOI](/racing/TOI/)/[練習賽](/racing/TOI/練習賽/)/[2023](/racing/TOI/練習賽/2023/)/[04](/racing/TOI/練習賽/2023/04/)  
+>>> [新手組](/racing/TOI/練習賽/2023/04/新手組)  
+>>>> pA [Q](/racing/TOI/練習賽/2023/04/新手組/pA.pdf) , [cpp](/racing/TOI/練習賽/2023/04/新手組/pA.cpp)  
+>>>> pB [Q](/racing/TOI/練習賽/2023/04/新手組/pB.pdf) , [cpp](/racing/TOI/練習賽/2023/04/新手組/pB.cpp)  
+>>>> pC [Q](/racing/TOI/練習賽/2023/04/新手組/pC.pdf) , [cpp](/racing/TOI/練習賽/2023/04/新手組/pC.cpp)  
+>>>> 
+>>> [潛力組](/racing/TOI/練習賽/2023/04/潛力組)  
+>>>> pA [Q](/racing/TOI/練習賽/2023/04/潛力組/pA.pdf) , [cpp](/racing/TOI/練習賽/2023/04/潛力組/pA.cpp)  
+>>>> pB [Q](/racing/TOI/練習賽/2023/04/潛力組/pB.pdf) , [cpp](/racing/TOI/練習賽/2023/04/潛力組/pB.cpp)  
+>>>> pC [Q](/racing/TOI/練習賽/2023/04/潛力組/pC.pdf) , [cpp](/racing/TOI/練習賽/2023/04/潛力組/pC.cpp)  
+>>> 
 >> [資訊之芽](/racing/資訊之芽)/[2023](/racing/資訊之芽/2023)
 >>> [期中考](/racing/資訊之芽/2023/期中考)
+>>>> pA [Q](/racing/資訊之芽/2023/期中考/pA.pdf) , [cpp](/racing/資訊之芽/2023/期中考/pA.cpp)  
+>>>> pB [Q](/racing/資訊之芽/2023/期中考/pB.pdf)  
+>>>> pC [Q](/racing/資訊之芽/2023/期中考/pC.pdf) , [cpp](/racing/資訊之芽/2023/期中考/pC.cpp)  
+>>>> pD [Q](/racing/資訊之芽/2023/期中考/pD.pdf)  
+>>>> pE [Q](/racing/資訊之芽/2023/期中考/pE.pdf)  
+>>>>
 >>> [期末考](/racing/資訊之芽/2023/期末考)
+>>>> pA [Q](/racing/資訊之芽/2023/pA.pdf) , cpp/[20%](/racing/資訊之芽/2023/pA.cpp)  
+>>>> pB [Q](/racing/資訊之芽/2023/pB.pdf)  
+>>>> pC [Q](/racing/資訊之芽/2023/pC.pdf)  
+>>>> pD [Q](/racing/資訊之芽/2023/pD.pdf)  
+>>>> pE [Q](/racing/資訊之芽/2023/pE.pdf)  
 >>> 
 > ## [Tcirc](/tcirc)
 >> [tcirc d030](/tcirc/tcirc_d030.cpp)  
@@ -352,16 +114,15 @@
 >> [TIOJ 1015 Squares in Rectangle](/tioj/tioj_1015.cpp)  
 >> [TIOJ 1040 連分數](/tioj/tioj_1040.cpp)  
 >> [TIOJ 1072 誰先晚餐](/tioj/tioj_1072.cpp)  
+>> [TIOJ 1105](/tioj/tioj_1105.cpp)  
 >> [TIOJ 1152 銀河帝國旅行社](/tioj/tioj_1152.cpp)  
 >> [TIOJ 1199 神奇的模術](/tioj/tioj_1199.cpp)  
 >> [TIOJ 1402 淹水問題](/tioj/tioj_1402.cpp)  
 >> [TIOJ 1947 小向的試煉 1-3：森林(Forest)](/tioj/tioj_1947.cpp)  
+>> [TIOJ 2252](/tioj/tioj_2252.cpp)  
 >>
 > ## [Zerojudge](/zerojudge)
->> zj a001 哈囉
->>> [cpp](/zerojudge/zj_a001.cpp)  
->>> [py](/zerojudge/zj_a001.py)
->>>
+>> zj a001 哈囉 [cpp](/zerojudge/zj_a001.cpp) , [py](/zerojudge/zj_a001.py)  
 >> [zj a002 簡易加法](/zerojudge/zj_a002.cpp)  
 >> [zj a003 兩光法師占卜術](/zerojudge/zj_a003.cpp)  
 >> [zj a004 文文的求婚](/zerojudge/zj_a004.cpp)  
@@ -403,6 +164,13 @@
 >>> 03  
 >>>> [2 (zj_c291) 小群體](/zerojudge/zj_c291.cpp)  
 >>>> 
+> ## PCIC
+>> 2023/test
+>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/test/a.cpp)  
+>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/test/b.cpp)  
+>>> pC [Q](/PCIC/2023/test/pC.pdf) , [cpp](/PCIC/2023/test/c.cpp)  
+>>> pD [Q](/PCIC/2023/test/pD.pdf)
+>>> 
 
 未整理
 TIOJ_2252
