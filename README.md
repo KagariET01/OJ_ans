@@ -165,12 +165,20 @@
 >>>> [2 (zj_c291) 小群體](/zerojudge/zj_c291.cpp)  
 >>>> 
 > ## PCIC
->> 2023/test
->>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/test/a.cpp)  
->>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/test/b.cpp)  
->>> pC [Q](/PCIC/2023/test/pC.pdf) , [cpp](/PCIC/2023/test/c.cpp)  
->>> pD [Q](/PCIC/2023/test/pD.pdf)
->>> 
+>> [2023](/PCIC/2023/)/
+>>> [test](/PCIC/2023/test/)
+>>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/test/a.cpp)  
+>>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/test/b.cpp)  
+>>>> pC [Q](/PCIC/2023/test/pC.pdf) , [cpp](/PCIC/2023/test/c.cpp)  
+>>>> pD [Q](/PCIC/2023/test/pD.pdf)
+>>>> 
+>>> [r1](/PCIC/2023/r1/)
+>>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/r1/a.cpp)  
+>>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/r1/b.cpp)  
+>>>> pC [Q](/PCIC/2023/test/pC.pdf) , cpp/[49%](/PCIC/2023/r1/c.cpp)  
+>>>> pD [Q](/PCIC/2023/test/pD.pdf)  
+>>>> pE [Q](/PCIC/2023/test/pE.pdf) , [cpp](/PCIC/2023/r1/E.cpp)  
+>>>> 
 
 未整理
 TIOJ_2252
