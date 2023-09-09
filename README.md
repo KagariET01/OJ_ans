@@ -173,11 +173,11 @@
 >>>> pD [Q](/PCIC/2023/test/pD.pdf)
 >>>> 
 >>> [r1](/PCIC/2023/r1/)
->>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/r1/a.cpp)  
->>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/r1/b.cpp)  
->>>> pC [Q](/PCIC/2023/test/pC.pdf) , cpp/[49%](/PCIC/2023/r1/c.cpp)  
->>>> pD [Q](/PCIC/2023/test/pD.pdf)  
->>>> pE [Q](/PCIC/2023/test/pE.pdf) , [cpp](/PCIC/2023/r1/E.cpp)  
+>>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/r1/pA.cpp)  
+>>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/r1/pB.cpp)  
+>>>> pC [Q](/PCIC/2023/test/pC.pdf) , cpp/[49%](/PCIC/2023/r1/pC_racing.cpp) , cpp/[15%](/PCIC/2023/r1/pC.cpp)  
+>>>> pD [Q](/PCIC/2023/test/pD.pdf) , cpp/[0%](/PCIC/2023/r1/pD_racing.cpp) , cpp/[100%](/PCIC/2023/r!/pD.cpp)  
+>>>> pE [Q](/PCIC/2023/test/pE.pdf) , [cpp](/PCIC/2023/r1/pE.cpp)  
 >>>> 
 
 未整理

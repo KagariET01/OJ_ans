@@ -1,140 +1,142 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<queue>
-#include<map>
+/*
+[q]
+[AC]
+*/
+//#ifndef eval
+#include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
-#define PII pair<INT,INT>
-#define PPIIPII pair<PII,PII>
-#define ET01 cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-#define DBG if(debug)
-bool debug=1;
-bool iofast=1;
-template<typename TPE> TPE reader(){
-	TPE re;
-	cin>>re;
-	return re;
-}
+#define endl "\n"
 #define read(n) reader<n>()
-
-
-
-INT geter(INT w,INT a,INT l,char c){
-	if(c=='W')return w;
-	if(c=='A')return a;
-	if(c=='L')return l;
+#define DBG if(debug)
+#define PII pair<INT,INT>
+bool debug=0;
+bool noTLE=1;
+template<typename tpe>tpe reader(){
+	tpe re;cin>>re;return re;
 }
 
-PPIIPII make_PPIIPII(INT a,INT b,INT c,INT d){
-	PPIIPII re={{a,b},{c,d}};
-	return re;
+struct dta{
+	INT id=0;
+	INT w=0;
+	INT a=0;
+	INT l=0;
+	string sortby="WAL";
+	INT getv(char c){
+		if(c=='w' || c=='W')return w;
+		else if(c=='a' || c=='A')return a;
+		else return l;
+	}
+};
+/*
+bool operator>(const dta &a,const dta &b){
+	string sortby=a.sortby;
+	for(INT i=0;i<3;i++){
+		if(a.getv(sortby[i])!=b.getv(sortby[i])){
+			return a.getv(sortby[i])>b.getv(sortby[i]);
+		}
+	}
+	return a.id>b.id;
 }
+*/
+struct vser{
+	bool operator()(dta a,dta b){
+		for(INT i=0;i<3;i++){
+			if(a.getv(a.sortby[i])!=b.getv(b.sortby[i])){
+				return a.getv(a.sortby[i])>b.getv(b.sortby[i]);
+			}
+		}
+		return a.id>b.id;
+	}
+};
 
-void outPPIIPII(PPIIPII n){
-	//DBG cerr<<n.first.first<<","<<n.first.second<<","<<n.second.first<<","<<n.second.second<<endl;
-}
-
-PPIIPII make(INT id,INT w,INT a,INT l,string str){
-	DBG cerr<<"str="<<str<<endl;
-	PPIIPII re=make_PPIIPII(
-		-geter(w,a,l,str[0]),
-		-geter(w,a,l,str[1]),
-		-geter(w,a,l,str[2]),
-		id
-	);
-	DBG outPPIIPII(re);
-	return re;
-}
-
-
-
-int main(){
-	if(iofast && !debug){ET01}
+int main(int argc,char** argv){
+	for(int i=0;i<argc;i++){
+		string nwstr=argv[i];
+		if(nwstr=="-Dev"){
+			debug=1;
+			noTLE=0;
+		}else if(nwstr=="-TLE"){
+			noTLE=0;
+		}
+	}
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	DBG{
+		cout<<"Temp by KagariET01"<<endl;
+		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
+		cout<<"===DBG mod on==="<<endl;
+		cout<<"Here's your CFG"<<endl;
+		for(int i=0;i<argc;i++){
+			string nwstr=argv[i];
+			cout<<'['<<nwstr<<']'<<endl;
+		}
+		cout<<"===Code start==="<<endl;
+	}
 	INT t=1;
 	while(t--){
 		INT n,m,q;
 		cin>>n>>m>>q;
-		vector<INT> ans[n];//計算[i]拿到的總重量...
-		string man[n];//記錄他的喜好排序
+		string s[n];
 		for(INT i=0;i<n;i++){
-			cin>>man[i];
+			cin>>s[i];
 		}
-		vector<PPIIPII> vec;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_WAL;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_WLA;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_AWL;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_ALW;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_LAW;
-		priority_queue<PPIIPII,vector<PPIIPII>> pq_LWA;
+		priority_queue<dta,vector<dta>,vser> pq_WAL;
+		priority_queue<dta,vector<dta>,vser> pq_WLA;
+		priority_queue<dta,vector<dta>,vser> pq_AWL;
+		priority_queue<dta,vector<dta>,vser> pq_ALW;
+		priority_queue<dta,vector<dta>,vser> pq_LAW;
+		priority_queue<dta,vector<dta>,vser> pq_LWA;
+		vector<dta> vec;
+		vec.reserve(m+q);
 		INT id=0;
 		for(;id<m;){
-			INT w,a,l;
-			cin>>w>>a>>l;
-			vec.push_back(make(id,w,a,l,"WAL"));
-			pq_WAL.push(make(id,w,a,l,"WAL"));
-			pq_WLA.push(make(id,w,a,l,"WLA"));
-			pq_AWL.push(make(id,w,a,l,"AWL"));
-			pq_ALW.push(make(id,w,a,l,"ALW"));
-			pq_LAW.push(make(id,w,a,l,"LAW"));
-			pq_LWA.push(make(id,w,a,l,"LWA"));
+			dta nw;
+			cin>>nw.w>>nw.a>>nw.l;
+			nw.id=id;
+			vec.push_back(nw);
+			nw.sortby="WAL";pq_WAL.push(nw);
+			nw.sortby="WLA";pq_WLA.push(nw);
+			nw.sortby="AWL";pq_AWL.push(nw);
+			nw.sortby="ALW";pq_ALW.push(nw);
+			nw.sortby="LAW";pq_LAW.push(nw);
+			nw.sortby="LWA";pq_LWA.push(nw);
 			id++;
 		}
-		DBG{
-			PPIIPII *nw=pq_WAL.back();
-			for(INT i=0;i<m;i++){
-				DBG cerr<<"id:"<<(*nw).second.second<<" w:"<<(*nw).first.first<<" s:"<<(*nw).first.second<<" l:"<<(*nw).second.first<<endl;
-				nw++;
-			}
-		}
-		map<INT,bool> mp;
+		INT ans[n][3]={};
+		INT mp[m+q+5]={};
 		while(q--){
-			while(!pq_WAL.empty() && mp[pq_WAL.top().second.second]){pq_WAL.pop();}//DBG cerr<<"WAL top:"<<pq_WAL.top().second.second<<endl;
-			while(!pq_WLA.empty() && mp[pq_WLA.top().second.second]){pq_WLA.pop();}//DBG cerr<<"WLA top:"<<pq_WLA.top().second.second<<endl;
-			while(!pq_AWL.empty() && mp[pq_AWL.top().second.second]){pq_AWL.pop();}//DBG cerr<<"AWL top:"<<pq_AWL.top().second.second<<endl;
-			while(!pq_ALW.empty() && mp[pq_ALW.top().second.second]){pq_ALW.pop();}//DBG cerr<<"ALW top:"<<pq_ALW.top().second.second<<endl;
-			while(!pq_LAW.empty() && mp[pq_LAW.top().second.second]){pq_LAW.pop();}//DBG cerr<<"LAW top:"<<pq_LAW.top().second.second<<endl;
-			while(!pq_LWA.empty() && mp[pq_LWA.top().second.second]){pq_LWA.pop();}//DBG cerr<<"LWA top:"<<pq_LWA.top().second.second<<endl;
 			INT a=read(INT);
-			if(a==2){
-				INT b=read(INT)-1;
-				PPIIPII nw;
-				if(false){}
-				else if(man[b]=="WAL"){PPIIPII nw=pq_WAL.top();pq_WAL.pop();}
-				else if(man[b]=="WLA"){PPIIPII nw=pq_WLA.top();pq_WLA.pop();}
-				else if(man[b]=="AWL"){PPIIPII nw=pq_AWL.top();pq_AWL.pop();}
-				else if(man[b]=="ALW"){PPIIPII nw=pq_ALW.top();pq_ALW.pop();}
-				else if(man[b]=="LAW"){PPIIPII nw=pq_LAW.top();pq_LAW.pop();}
-				else if(man[b]=="LWA"){PPIIPII nw=pq_LWA.top();pq_LWA.pop();}
-				ans[b].push_back(nw.second.second);
-				DBG cerr<<"p "<<b<<" get id "<<nw.second.second<<endl;
-			}else if(a==1){
-				INT w,a,l;
-				cin>>w>>a>>l;
-				vec.push_back(make(id,w,a,l,"WAL"));
-				pq_WAL.push(make(id,w,a,l,"WAL"));
-				pq_WLA.push(make(id,w,a,l,"WLA"));
-				pq_AWL.push(make(id,w,a,l,"AWL"));
-				pq_ALW.push(make(id,w,a,l,"ALW"));
-				pq_LAW.push(make(id,w,a,l,"LAW"));
-				pq_LWA.push(make(id,w,a,l,"LWA"));
+			if(a==1){
+				dta nw;
+				cin>>nw.w>>nw.a>>nw.l;
+				nw.id=id;
+				vec.push_back(nw);
+				nw.sortby="WAL";pq_WAL.push(nw);
+				nw.sortby="WLA";pq_WLA.push(nw);
+				nw.sortby="AWL";pq_AWL.push(nw);
+				nw.sortby="ALW";pq_ALW.push(nw);
+				nw.sortby="LAW";pq_LAW.push(nw);
+				nw.sortby="LWA";pq_LWA.push(nw);
 				id++;
+			}else{
+				INT b=read(INT)-1;
+				INT tk=0;
+				if(s[b]=="WAL"){while(!pq_WAL.empty() && mp[pq_WAL.top().id])pq_WAL.pop();tk=pq_WAL.top().id;}
+				if(s[b]=="WLA"){while(!pq_WLA.empty() && mp[pq_WLA.top().id])pq_WLA.pop();tk=pq_WLA.top().id;}
+				if(s[b]=="AWL"){while(!pq_AWL.empty() && mp[pq_AWL.top().id])pq_AWL.pop();tk=pq_AWL.top().id;}
+				if(s[b]=="ALW"){while(!pq_ALW.empty() && mp[pq_ALW.top().id])pq_ALW.pop();tk=pq_ALW.top().id;}
+				if(s[b]=="LAW"){while(!pq_LAW.empty() && mp[pq_LAW.top().id])pq_LAW.pop();tk=pq_LAW.top().id;}
+				if(s[b]=="LWA"){while(!pq_LWA.empty() && mp[pq_LWA.top().id])pq_LWA.pop();tk=pq_LWA.top().id;}
+				ans[b][0]+=vec[tk].w;
+				ans[b][1]+=vec[tk].a;
+				ans[b][2]+=vec[tk].l;
+				mp[tk]=1;
 			}
 		}
-
 		for(INT i=0;i<n;i++){
-			INT w=0,s=0,l=0;
-			for(INT j:ans[i]){
-				PPIIPII nw=vec[i];
-				w-=nw.first.first;
-				s-=nw.first.second;
-				l-=nw.second.first;
-				DBG cerr<<"id:"<<nw.second.second<<" w:"<<nw.first.first<<" s:"<<nw.first.second<<" l:"<<nw.second.first<<endl;
-			}
-			cout<<w<<" "<<s<<" "<<l<<endl;
+			cout<<ans[i][0]<<" "<<ans[i][1]<<" "<<ans[i][2]<<endl;
 		}
-
-
 	}
 	return 0;
 }
+//#endif
