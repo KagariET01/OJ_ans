@@ -82,7 +82,8 @@ bool find(INT x,INT y,INT n){
 		}else{
 			row[x][mp[x][y]]=column[y][mp[x][y]]=block[(x/n)][(y/n)][mp[x][y]]=0;
 			do{
-				mp[x][y]++;
+				mp[x][y]=(x/20+20*((x%20==0?20:x%20)-1)+y)%400;
+				mp[x][y]=(mp[x][y]==0?400:mp[x][y]);
 			}while(row[x][mp[x][y]] || column[y][mp[x][y]] || block[(x/n)][(y/n)][mp[x][y]]);
 			if(mp[x][y]>n*n){
 				mp[x][y]=0;
@@ -134,8 +135,8 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(INT);
-	for(INT nwcase=6;nwcase<=t;nwcase++){
+	INT t=5;
+	for(INT nwcase=5;nwcase<=t;nwcase++){
 		string nwf="pDout/";
 		nwf+=('0'+(nwcase>=10?1:0));
 		nwf+=('0'+(nwcase%10));

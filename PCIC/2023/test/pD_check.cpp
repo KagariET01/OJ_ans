@@ -22,16 +22,13 @@ template<typename tpe>tpe reader(){
 const INT mxn=20;
 const INT pwn=mxn*mxn;
 
-bool row[pwn+5][pwn+5],column[pwn+5][pwn+5];//-,|
-bool block[mxn+5][mxn+5][pwn+5];
 
-INT mp[pwn+5][pwn+5];
 bool lc[pwn+5][pwn+5];
 
 string inname="";
 string outname="";
 
-ofstream file;
+ifstream file;
 ifstream infile;
 /*
 bool find(INT x,INT y,INT n){
@@ -64,53 +61,7 @@ bool find(INT x,INT y,INT n){
 	return 0;
 }
 */
-bool find(INT x,INT y,INT n){
-	while(true){
-		if(x>=n*n)break;
-		else if(y<0){
-			x-=1;
-			y+=n*n;
-		}
-		else if(y>=n*n){
-			x+=1;
-			y-=n*n;
-			DBG cerr<<endl;
-		}
-		else if(lc[x][y]){
-			DBG cerr<<mp[x][y]/100<<(mp[x][y]%100)/10<<mp[x][y]%10<<" ";
-			y++;
-		}else{
-			row[x][mp[x][y]]=column[y][mp[x][y]]=block[(x/n)][(y/n)][mp[x][y]]=0;
-			do{
-				mp[x][y]++;
-			}while(row[x][mp[x][y]] || column[y][mp[x][y]] || block[(x/n)][(y/n)][mp[x][y]]);
-			if(mp[x][y]>n*n){
-				mp[x][y]=0;
-				do{
-					DBG cerr<<"\b\b\b\b    \b\b\b\b";
-					y--;
-					if(y<0){
-						x-=1;
-						y+=n*n;
-						cerr<<"\b";
-					}
-				}while(lc[x][y]);
-			}else{
-				row[x][mp[x][y]]=column[y][mp[x][y]]=block[(x/n)][(y/n)][mp[x][y]]=1;
-				DBG cerr<<mp[x][y]/100<<(mp[x][y]%100)/10<<mp[x][y]%10<<" ";
-				y++;
-			}
-		}
-	}
-	for(INT i=0;i<(n*n);i++){
-		for(INT j=0;j<(n*n);j++){
-			if(j)file<<" ";
-			file<<mp[i][j];
-		}
-		file<<endl;
-	}
-	return 1;
-}
+
 
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
@@ -135,39 +86,53 @@ int main(int argc,char** argv){
 		cout<<"===Code start==="<<endl;
 	}
 	INT t=read(INT);
-	for(INT nwcase=6;nwcase<=t;nwcase++){
+	for(INT nwcase=t;nwcase<=t;nwcase++){
 		string nwf="pDout/";
 		nwf+=('0'+(nwcase>=10?1:0));
 		nwf+=('0'+(nwcase%10));
-		string onwf=nwf+".out";
-		file.open(onwf);
-		string inwf=nwf+".in";
+		string inwf=nwf+".out";
+		string outwf=nwf+".in";
 		infile.open(inwf);
+		file.open(outwf);
 		DBG{
-			cerr<<"read file:"<<inwf<<endl;
+			cerr<<"checking file:"<<inwf<<endl;
 		}
-		memset(row,0,sizeof(row));
-		memset(column,0,sizeof(column));
-		memset(block,0,sizeof(block));
-		memset(mp,0,sizeof(mp));
 		INT n;
-		infile>>n;
-		for(INT i=0;i<n*n;i++){
-			for(INT j=0;j<n*n;j++){
+		file>>n;
+		DBG cerr<<"now point:000 000";
+		bool AC=true;
+		INT i=0,j=0;
+		bool row[pwn+5][pwn+5]={},column[pwn+5][pwn+5]={};//-,|
+		bool block[mxn+5][mxn+5][pwn+5]={};
+
+		INT mp[pwn+5][pwn+5]={};
+		for(;i<n*n && AC;i++){
+			for(;j<n*n && AC;j++){
+				DBG{
+					cerr<<"\b\b\b\b\b\b\b";
+					cerr<<i/100<<(i%100)/10<<i%10<<" ";
+				}
 				infile>>mp[i][j];
+				if(
+					row[i][mp[i][j]] ||
+					column[j][mp[i][j]] ||
+					block[(i/n)][j/n][mp[i][j]] 
+				){
+					AC=0;
+					break;
+				}
 				row[i][mp[i][j]]=1;
 				column[j][mp[i][j]]=1;
 				block[(i/n)][j/n][mp[i][j]]=1;
-				lc[i][j]=mp[i][j];
+				
 			}
 		}
-		DBG cerr<<"write file:"<<onwf<<endl;
-		DBG cerr<<"now:"<<endl;
-		find(0,0,n);
-		DBG cerr<<endl;
-		file.close();
-		infile.close();
-		DBG cerr<<"task id:"<<nwcase<<" complete."<<endl;
+		DBG cerr<<"\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                 \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b";
+		if(AC){
+			cout<<"file:"<<nwf<<" AC"<<endl;
+		}else{
+			cout<<"file:"<<nwf<<" WA at point"<<i<<" "<<j<<endl;
+		}
 	}
 	return 0;
 }
