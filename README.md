@@ -172,11 +172,11 @@
 >>>> pC [Q](/PCIC/2023/test/pC.pdf) , [cpp](/PCIC/2023/test/c.cpp)  
 >>>> pD [Q](/PCIC/2023/test/pD.pdf)
 >>>> 
->>> [r1](/PCIC/2023/r1/)
+>>> [r1](/PCIC/2023/r1/) ***`FINISH`***
 >>>> pA [Q](/PCIC/2023/test/pA.pdf) , [cpp](/PCIC/2023/r1/pA.cpp)  
 >>>> pB [Q](/PCIC/2023/test/pB.pdf) , [cpp](/PCIC/2023/r1/pB.cpp)  
->>>> pC [Q](/PCIC/2023/test/pC.pdf) , cpp/[49%](/PCIC/2023/r1/pC_racing.cpp) , cpp/[15%](/PCIC/2023/r1/pC.cpp)  
->>>> pD [Q](/PCIC/2023/test/pD.pdf) , cpp/[0%](/PCIC/2023/r1/pD_racing.cpp) , cpp/[100%](/PCIC/2023/r!/pD.cpp)  
+>>>> pC [Q](/PCIC/2023/test/pC.pdf) , cpp/[100%](/PCIC/2023/r1/pC.cpp) ~~, cpp/[49%](/PCIC/2023/r1/pC_racing.cpp)~~  
+>>>> pD [Q](/PCIC/2023/test/pD.pdf) , cpp/[100%](/PCIC/2023/r!/pD.cpp) ~~, cpp/[0%](/PCIC/2023/r1/pD_racing.cpp)~~  
 >>>> pE [Q](/PCIC/2023/test/pE.pdf) , [cpp](/PCIC/2023/r1/pE.cpp)  
 >>>> 
 
