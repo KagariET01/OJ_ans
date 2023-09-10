@@ -72,6 +72,7 @@
 >>> [dsu](/Algorithm/tree/dsu.cpp)  
 >>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)
 >>>
+>> [basic 基本樣板](Algorithm/basic_lite.cpp)  
 >> [DC 分治](Algorithm/DC_1.cpp) 
 >>
 > ## [leetcode](/leetcode)
@@ -181,4 +182,4 @@
 >>>> 
 
 未整理
-TIOJ_2252
+tioj_1419
