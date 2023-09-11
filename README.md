@@ -67,10 +67,10 @@
 >>>>
 >>> [lca](/Algorithm/tree/lca/lca_1.cpp)  
 >>> [rmq](/Algorithm/tree/rmq/rmq_1.cpp)  
->>> 未整理 [樹直徑 Q](Algorithm/tree/樹直徑_q_1.cpp)  
 >>> [BIT 樹狀數組](/Algorithm/tree/BIT.cpp)  
 >>> [dsu](/Algorithm/tree/dsu.cpp)  
->>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)
+>>> [Segment Tree 線段數](/Algorithm/tree/seg_tree.cpp)  
+>>> 未整理 [樹直徑 Q](Algorithm/tree/樹直徑_q_1.cpp)  
 >>>
 >> [basic 基本樣板](Algorithm/basic_lite.cpp)  
 >> [DC 分治](Algorithm/DC_1.cpp) 
@@ -106,6 +106,9 @@
 >>>> pC [Q](/racing/資訊之芽/2023/pC.pdf)  
 >>>> pD [Q](/racing/資訊之芽/2023/pD.pdf)  
 >>>> pE [Q](/racing/資訊之芽/2023/pE.pdf)  
+>>>> pF [Q](/racing/資訊之芽/2023/pF.pdf)  
+>>>> pG [Q](/racing/資訊之芽/2023/pG.pdf)  
+>>>> pH [Q](/racing/資訊之芽/2023/pH.pdf)  
 >>> 
 > ## [Tcirc](/tcirc)
 >> [tcirc d030](/tcirc/tcirc_d030.cpp)  
@@ -119,8 +122,10 @@
 >> [TIOJ 1152 銀河帝國旅行社](/tioj/tioj_1152.cpp)  
 >> [TIOJ 1199 神奇的模術](/tioj/tioj_1199.cpp)  
 >> [TIOJ 1402 淹水問題](/tioj/tioj_1402.cpp)  
+>> [TIOJ 1419](/tioj/tioj_1419.cpp)  
 >> [TIOJ 1947 小向的試煉 1-3：森林(Forest)](/tioj/tioj_1947.cpp)  
 >> [TIOJ 2252](/tioj/tioj_2252.cpp)  
+>> [TIOJ 2253](/tioj/tioj_2253.cpp)  
 >>
 > ## [Zerojudge](/zerojudge)
 >> zj a001 哈囉 [cpp](/zerojudge/zj_a001.cpp) , [py](/zerojudge/zj_a001.py)  
@@ -138,6 +143,7 @@
 >> [zj c291 小群體](/zerojudge/zj_c291.cpp)  
 >> [zj f314 勇者修煉](/zerojudge/zj_f314.cpp)  
 >> [zj f581 圓環出口](/zerojudge/zj_f581.cpp)  
+>> zj g541 [cpp](/zerojudge/zj_g541.cpp) , [md](/zerojudge/zj_g541.md)  
 >> [zj h026 猜拳](/zerojudge/zj_h026.cpp)  
 >> [zj h028 砍樹](/zerojudge/zj_h028.cpp)  
 >> [zj h399 h400 蛋糕店促銷](/zerojudge/zj_h399_h400.cpp)  
