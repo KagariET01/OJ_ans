@@ -180,6 +180,13 @@
 >>>> pD [Q](/PCIC/2023/test/pD.pdf) , cpp/[100%](/PCIC/2023/r!/pD.cpp) ~~, cpp/[0%](/PCIC/2023/r1/pD_racing.cpp)~~  
 >>>> pE [Q](/PCIC/2023/test/pE.pdf) , [cpp](/PCIC/2023/r1/pE.cpp)  
 >>>> 
+>>> [r2](/PCIC/2023/r2/)
+>>>> [Q](/PCIC/2023/r2/R2_All.pdf)  
+>>>> [pA](/PCIC/2023/r2/pA.cpp)  
+>>>> [pB](/PCIC/2023/r2/pB.cpp)  
+>>>> [pC](/PCIC/2023/r2/pC.cpp)  
+>>>> pD/[100](/PCIC/2023/r2/pD.cpp) , pD/[13](/PCIC/2023/r2/pD-013.cpp) , pD/[31](/PCIC/2023/r2/pD-031.cpp)  
+>>>> pE/[23](/PCIC/2023/r2/pE_bowle.cpp) , pE/[29](/PCIC/2023/r2/pE-old.cpp)
 
 未整理
 tioj_1419
