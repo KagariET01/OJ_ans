@@ -193,6 +193,15 @@
 >>>> [pC](/PCIC/2023/r2/pC.cpp)  
 >>>> pD/[100](/PCIC/2023/r2/pD.cpp) ~~, pD/[013](/PCIC/2023/r2/pD-013.cpp) , pD/[031](/PCIC/2023/r2/pD-031.cpp)~~  
 >>>> pE/[23](/PCIC/2023/r2/pE_bowle.cpp) , pE/[29](/PCIC/2023/r2/pE-old.cpp)
+>>>> 
+>>> [r3](/PCIC/2023/r3)  
+>>>> [Q](/PCIC/2023/r2/R3_All.pdf)  
+>>>> [pA](/PCIC/2023/r3/pA.cpp)  
+>>>> [pB](/PCIC/2023/r3/pB.cpp)  
+>>>> [pC](/PCIC/2023/r3/pC.cpp)  
+>>>> pD  
+>>>> [pE](/PCIC/2023/r3/pE.cpp)  
 
-未整理
+
+未整理  
 tioj_1419
