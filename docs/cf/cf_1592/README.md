@@ -1,7 +1,7 @@
-# `Codeforces` > `Codeforces Round 746 (contest 1592)`
+# [`Codeforces`] > `Codeforces Round 746 (contest 1592)`
 
 > [`pA`](#pA)  
-> [`pB`](#pB)  
+> [`pB Hemose Shopping`](#pB)  
 > [`pC`](#pC)  
 > [`pD`](#pD)  
 > [`pE`](#pE)  
@@ -10,12 +10,8 @@
 
 
 ## pB
-`pB Hemose Shopping`
+`cf 1592_B` Hemose Shopping
 ```c++
-/*
-[Q]https://codeforces.com/problemset/problem/1592/B
-[AC]
-*/
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -35,9 +31,6 @@ int main(){
 		INT b[n+1];
 		INT a[n+1];for(INT i=1;i<=n;i++){cin>>a[i];b[i]=a[i];}
 		DBG cout<<"n x="<<n<<" "<<x<<endl;
- 
- 
- 
 		if(n>=2*x|| is_sorted(a+1,a+n+1)){
 			cout<<"YES"<<endl;
 			continue;
@@ -61,5 +54,7 @@ int main(){
 	}
 	return 0;
 }
-
 ```
+
+
+[`Codeforces`]: /cf

@@ -1,4 +1,4 @@
-# `ZeroJudge` > `a001 哈囉`
+# [`ZeroJudge`] > `a001 哈囉`
 `c++`
 ```
 /*
@@ -24,5 +24,8 @@ int main(){
 #[基本輸入輸出]
 print("hello,",input())
 ```
-# Tag
-`基本輸出輸入`
+> Tag  
+> `基本輸出輸入`
+
+
+[`ZeroJudge`]: /zj
