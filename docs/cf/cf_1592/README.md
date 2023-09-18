@@ -1,4 +1,4 @@
-# `Codeforces`/`Codeforces Round 746 (contest 1592)`
+# `Codeforces` > `Codeforces Round 746 (contest 1592)`
 
 > [`pA`](#pA)  
 > [`pB`](#pB)  

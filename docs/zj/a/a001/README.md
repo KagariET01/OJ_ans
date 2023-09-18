@@ -1,4 +1,4 @@
-# `ZeroJudge`/`a001 哈囉`
+# `ZeroJudge` > `a001 哈囉`
 `c++`
 ```
 /*
