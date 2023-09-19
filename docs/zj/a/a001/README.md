@@ -27,5 +27,6 @@ print("hello,",input())
 > Tag  
 > `基本輸出輸入`
 
-
-[`ZeroJudge`]: /zj
+[`Codeforces`]: /OJ_ans/cf
+[`Zerojudge`]: /OJ_ans/zj
+[`PCIC`]: /OJ_ans/PCIC

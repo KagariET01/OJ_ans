@@ -4,6 +4,6 @@
 > [`CodeTON Round 6 (contest 1870)`](./cf_1870)
 
 
-[`Codeforces`]: /cf
-[`Zerojudge`]: /zj
-[`PCIC`]: /PCIC
+[`Codeforces`]: /OJ_ans/cf
+[`Zerojudge`]: /OJ_ans/zj
+[`PCIC`]: /OJ_ans/PCIC

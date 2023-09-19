@@ -9,5 +9,6 @@
 > [`h___`](./h)  
 > [`i___`](./i)  
 
-
-[`ZeroJudge`]: /zj
+[`Codeforces`]: /OJ_ans/cf
+[`Zerojudge`]: /OJ_ans/zj
+[`PCIC`]: /OJ_ans/PCIC
