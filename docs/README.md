@@ -2,6 +2,7 @@
 > [`Zerojudge`](./zj)  
 
 > [`PCIC`]
+> [`Log`](./log)
 
 
 [`Codeforces`]: /OJ_ans/cf
