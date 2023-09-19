@@ -1,13 +1,13 @@
 # [`Codeforces`] > `CodeTON Round 6 (contest 1870)`
 
 > [`pA MEXanized Array`](#pA)  
-> [`pB`]  
-> [`pC`]  
-> [`pD`]  
-> [`pE`]  
-> [`pF`]  
-> [`pG`]  
-> [`pH`]  
+> [`pB`](#pB)  
+> [`pC`](#pC)  
+> [`pD`](#pD)  
+> [`pE`](#pE)  
+> [`pF`](#pF)  
+> [`pG`](#pG)  
+> [`pH`](#pH)  
 
 ## pA
 `cf 1870_A` MEXanized Array
@@ -47,3 +47,6 @@ int main(int argc,char** argv){
 
 
 
+[`Codeforces`]: /cf
+[`Zerojudge`]: /zj
+[`PCIC`]: /PCIC
