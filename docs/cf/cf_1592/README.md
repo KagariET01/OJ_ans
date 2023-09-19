@@ -1,16 +1,16 @@
-# [`Codeforces`] > `Codeforces Round 746 (contest 1592)`
+# [`Codeforces`] > `cf 1592`<br>Codeforces Round 746 (Div. 2)
 
-> [`pA`](#pA)  
-> [`pB Hemose Shopping`](#pB)  
-> [`pC`](#pC)  
-> [`pD`](#pD)  
-> [`pE`](#pE)  
-> [`pF1`](#pF1)  
-> [`pF2`](#pF2)  
+> ~~[`cf 1592 PA`](#pA)~~  
+> [`cf 1592 PB` Hemose Shopping](#pB)  
+> ~~[`cf 1592 PC`](#pC)~~  
+> ~~[`cf 1592 PD`](#pD)~~  
+> ~~[`cf 1592 PE`](#pE)~~  
+> ~~[`cf 1592 PF1`](#pF1)~~  
+> ~~[`cf 1592 PF2`](#pF2)~~  
 
 
 ## pB
-`cf 1592_B` Hemose Shopping
+`cf 1592 PB` Hemose Shopping
 ```c++
 #include<bits/stdc++.h>
 using namespace std;

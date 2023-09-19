@@ -1,15 +1,15 @@
-# [`Codeforces`] > `Codeforces Round 897 (contest 1867)`
+# [`Codeforces`] > `cf 1867`<br>Codeforces Round 897 (Div. 2)
 
-> [`pA green_gold_dog, array and permutation`](#pA)  
-> [`pB`](#pB)  
-> [`pC`](#pC)  
-> [`pD`](#pD)  
-> [`pE1`](#pE1)  
-> [`pE2`](#pE2)  
-> [`pF`](#pF)  
+> [`cf 1867 PA` green_gold_dog, array and permutation](#pA)  
+> ~~[`cf 1867 PB`](#pB)~~  
+> ~~[`cf 1867 PC`](#pC)~~  
+> ~~[`cf 1867 PD`](#pD)~~  
+> ~~[`cf 1867 PE1`](#pE1)~~  
+> ~~[`cf 1867 PE2`](#pE2)~~  
+> ~~[`cf 1867 PF`](#pF)~~  
 
 ## pA
-`cf 1867_A` green_gold_dog, array and permutation
+`cf 1867 PA` green_gold_dog, array and permutation
 ```c++
 #include<bits/stdc++.h>
 using namespace std;

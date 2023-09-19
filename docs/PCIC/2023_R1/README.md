@@ -1,13 +1,13 @@
-# [`PCIC`] > `2023-R1`
+# [`PCIC`] > `PCIC 2023_R1`
 
-> [`pA 尖叫雞的三角形詛咒(Triangle Curse)`](#pA)  
-> [`pB 堅持下去(Give Up)`](#pB)  
-> [`pC 拆地雷(Minesweeper)`](#pC)  
-> [`pD 長頸鹿(Giraffe)`](#pD)  
-> [`pE 戀愛關係(Relationship)`](#pE)  
+> [`PCIC 2023_R1 PA` 尖叫雞的三角形詛咒(Triangle Curse)](#pA)  
+> [`PCIC 2023_R1 PB` 堅持下去(Give Up)](#pB)  
+> [`PCIC 2023_R1 PC` 拆地雷(Minesweeper)](#pC)  
+> [`PCIC 2023_R1 PD` 長頸鹿(Giraffe)](#pD)  
+> [`PCIC 2023_R1 PE` 戀愛關係(Relationship)](#pE)  
 
 ## pA
-`PCIC 2023_R1_A` 尖叫雞的三角形詛咒(Triangle Curse)  
+`PCIC 2023_R1 PA` 尖叫雞的三角形詛咒(Triangle Curse)  
 [`題目`](./pA.pdf)  
 `100/100`  
 ```c++
@@ -56,7 +56,7 @@ int main(){
 ```
 
 ## pB
-`PCIC 2023_R1_B` 堅持下去(Give Up)  
+`PCIC 2023_R1 PB` 堅持下去(Give Up)  
 [`題目`](./pB.pdf)  
 `100/100`  
 ```c++
@@ -105,7 +105,7 @@ int main(){
 ```
 
 ## pC
-`PCIC 2023_R1_C` 拆地雷(Minesweeper)  
+`PCIC 2023_R1 PC` 拆地雷(Minesweeper)  
 [`題目`](./pC.pdf)  
 `100/100`  
 ```c++
@@ -299,7 +299,7 @@ int main(int argc,char** argv) {
 ```
 
 ## pD
-`PCIC 2023_R1_D` 長頸鹿(Giraffe)  
+`PCIC 2023_R1 PD` 長頸鹿(Giraffe)  
 [`題目`](./pD.pdf)  
 `100/100`
 ```c++
@@ -431,7 +431,7 @@ int main(int argc,char** argv){
 ```
 
 ## pE
-`PCIC 2023_R1_E` 戀愛關係(Relationship)  
+`PCIC 2023_R1 PE` 戀愛關係(Relationship)  
 [`題目`](./pE.pdf)  
 `100/100`
 ```c++
@@ -492,6 +492,6 @@ int main(){
 ```
 
 
-[`Codeforces`]: /cf
-[`Zerojudge`]: /zj
-[`PCIC`]: /PCIC
+[`Codeforces`]: /OJ_ans/cf
+[`Zerojudge`]: /OJ_ans/zj
+[`PCIC`]: /OJ_ans/PCIC

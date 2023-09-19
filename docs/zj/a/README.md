@@ -1,4 +1,4 @@
-# [`ZeroJudge`] > `a___`
+# [`ZeroJudge`] > `zj a___`
 > [`a001 哈囉`](./a001)
 
 

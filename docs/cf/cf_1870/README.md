@@ -1,16 +1,16 @@
-# [`Codeforces`] > `CodeTON Round 6 (contest 1870)`
+# [`Codeforces`] > `cf 1870`<br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
 
-> [`pA MEXanized Array`](#pA)  
-> [`pB`](#pB)  
-> [`pC`](#pC)  
-> [`pD`](#pD)  
-> [`pE`](#pE)  
-> [`pF`](#pF)  
-> [`pG`](#pG)  
-> [`pH`](#pH)  
+> [`cf 1870 PA` MEXanized Array](#pA)  
+> ~~[`cf 1870 PB`](#pB)~~  
+> ~~[`cf 1870 PC`](#pC)~~  
+> ~~[`cf 1870 PD`](#pD)~~  
+> ~~[`cf 1870 PE`](#pE)~~  
+> ~~[`cf 1870 PF`](#pF)~~  
+> ~~[`cf 1870 PG`](#pG)~~  
+> ~~[`cf 1870 PH`](#pH)~~  
 
 ## pA
-`cf 1870_A` MEXanized Array
+`cf 1870 PA` MEXanized Array
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
