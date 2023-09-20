@@ -1,4 +1,4 @@
-# [`Codeforces`] > `cf_1872`<br>Codeforces Round 895 (Div. 3)
+# [`Codeforces`] > `cf 1872`<br>Codeforces Round 895 (Div. 3)
 
 > [`cf 1872 PA` Two Vessels](#pA)  
 > [`cf 1872 PB` The Corridor or There and Back Again](#pB)  

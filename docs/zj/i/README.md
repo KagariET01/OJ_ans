@@ -1,6 +1,5 @@
-# [`ZeroJudge`] > `zj a___`
-> [`zj a001` 哈囉](./a001)
-
+# [`ZeroJudge`] > `zj i___`
+> [`zj i722` 蝸牛好蟀](./722)
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj
