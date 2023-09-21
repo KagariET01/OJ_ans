@@ -301,7 +301,7 @@ int main(int argc,char** argv) {
 ## pD
 `PCIC 2023_R1 PD` 長頸鹿(Giraffe)  
 [`題目`](./pD.pdf)  
-`100/100`
+`100/100`  
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
@@ -433,7 +433,7 @@ int main(int argc,char** argv){
 ## pE
 `PCIC 2023_R1 PE` 戀愛關係(Relationship)  
 [`題目`](./pE.pdf)  
-`100/100`
+`100/100`  
 ```c++
 #include<iostream>
 #include<vector>
