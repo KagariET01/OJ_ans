@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -15,6 +15,10 @@ bool noTLE=1;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
+
+INT n;
+vector<PII> vec;
+set<PII> se;
 
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
@@ -38,39 +42,29 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
 	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
-	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+	while(t){
+		n=read(INT);
+		if(!n)break;
+		vec.clear();
+		vec.reserve(n);
+		for(INT i=0;i<n;i++){
+			vec.push_back({read(INT),read(INT)});
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
+		INT ans=0,ansa=0,ansb=0;
+		for(INT i=0;i<n;i++){
+			for(INT j=i+1;j<n;j++){
+				INT nwx=(vec[i].first-vec[j].first);
+				INT nwy=(vec[i].second-vec[j].second);
+				INT nw=nwx*nwx+nwy*nwy;
+				if(nw>ans){
+					ans=nw;
+					ansa=i;
+					ansb=j;
+				}
 			}
 		}
-
+		cout<<ansa<<" "<<ansb<<endl;
 	}
 	return 0;
 }

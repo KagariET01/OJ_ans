@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,39 +38,14 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	INT t=read(int);
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
-		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
-			}
-		}
-
+		INT a,b,c;
+		cin>>a>>b>>c;
+		INT n=abs(a-b);
+		c*=2;
+		INT ans=n/c+(n%c?1:0);
+		cout<<ans<<endl;
 	}
 	return 0;
 }

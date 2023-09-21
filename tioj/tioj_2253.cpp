@@ -16,6 +16,15 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 
+const INT mxn=2000+5;
+const INT mxm=8000+5;
+const INT mxk=mxn;
+INT n,m,k;//都市數量（點數）,道路數,道路中間村莊數
+INT c[mxm][mxn];//邊[i]中的點[j]的花費
+INT ctt[mxm];//每條邊的所有子點相加（包含尾站）
+vector<INT> tre[mxn];//tre[i]可走到...(紀錄編號)
+INT x[mxm],y[mxm];
+
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
@@ -38,39 +47,23 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	INT t=read(int);
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+		//cin
+		cin>>n>>m>>k;
+		for(INT i=1;i<=n;i++){
+			cin>>c[0][i];
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
+		for(INT i=1;i<=m;i++){
+			cin>>x[i]>>y[i];
+			w[i]=c[0][y[i]];
+			for(INT j=1;j<=k;j++){
+				cin>>c[i][j];
+				w[i]+=c[i][j];
 			}
+			tre[x[i]].push_back(i);
 		}
-
+		//cout
 	}
 	return 0;
 }

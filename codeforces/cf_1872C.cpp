@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -14,6 +14,23 @@ bool debug=0;
 bool noTLE=1;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
+}
+const INT nn=100000;
+INT ll[nn+5];
+vector<INT> odlst;
+void ggetod(INT n=nn){
+	memset(ll,0,sizeof(ll));
+	odlst.push_back(2);
+	for(INT i=3;i<=n;i++){
+		if(ll[i]<=1){
+			odlst.push_back(i);
+		}
+		for(INT j:odlst){
+			if(j*i>n)break;
+			ll[j*i]=j;
+			if(j==ll[i])break;
+		}
+	}
 }
 
 int main(int argc,char** argv){
@@ -38,39 +55,40 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	ggetod();
+	INT t=read(int);
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+		INT l,r;
+		cin>>l>>r;
+		INT t=4;
+		if(r<4){
+			cout<<-1<<endl;
+			continue;
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
+		bool ans=0;
+		while(t-- && !ans){
+			if(l>r)break;
+			INT bse=0;
+			for(INT i:odlst){
+				//DBG cerr<<" i="<<i<<endl;
+				if(i>=l)break;
+				if(l%i==0){
+					bse=i;
+					break;
+				}
 			}
+			//DBG cerr<<"l="<<l<<"bse="<<bse<<endl;
+			if(!bse){
+				l++;
+				continue;
+			}
+			cout<<bse<<" ";
+			l-=bse;
+			cout<<l<<endl;
+			ans=1;
+			break;
 		}
-
+		if(!ans)cout<<-1<<endl;
 	}
 	return 0;
 }

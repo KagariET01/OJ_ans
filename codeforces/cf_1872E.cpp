@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,38 +38,40 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	INT t=read(int);
 	while(t--){
 		INT n;
 		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+		INT a[n+1];
+		for(INT i=1;i<=n;i++){
+			cin>>a[i];
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
+		bool b[n+1];
+		string str;
+		cin>>str;
+		for(INT i=1;i<=n;i++){
+			b[i]=(str[i-1]=='1');
+		}
+		INT addall[n+1]={};
+		INT ans[2]={};
+		for(INT i=1;i<=n;i++){
+			addall[i]=addall[i-1]^a[i];
+			ans[b[i]]^=a[i];
+		}
+		INT q=read(INT);
+		while(q--){
+			INT inin=read(INT);
+			if(inin==2){
+				cout<<ans[read(INT)]<<" ";
+			}else{
+				INT l,r;
+				cin>>l>>r;
+				l--;
+				ans[0]^=addall[r]^addall[l];
+				ans[1]^=addall[r]^addall[l];
 			}
 		}
+		cout<<endl;
 
 	}
 	return 0;

@@ -38,39 +38,27 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	INT t=read(int);
 	while(t--){
 		INT n;
 		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+		vector<PII> vec;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			vec.push_back({inin,i});
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
-			}
+		sort(vec.begin(),vec.end());
+		INT ans[n];
+		INT cnt=n;
+		for(PII i:vec){
+			ans[i.second]=cnt;
+			cnt--;
 		}
-
+		for(INT i=0;i<n;i++){
+			if(i)cout<<" ";
+			cout<<ans[i];
+		}
+		cout<<endl;
 	}
 	return 0;
 }

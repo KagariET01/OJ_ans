@@ -1,6 +1,6 @@
 /*
 [q]
-[]
+[AC]
 */
 //#ifndef eval
 #include<bits/stdc++.h>
@@ -38,39 +38,24 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-		
-	INT t=1;
-	map<string,INT> mp;
-	mp["win"]=2;
-	mp["tie"]=0;
-	mp["lose"]=1;
-	char RPS[]={'R','P','S'};
+	INT t=read(int);
 	while(t--){
-		INT n;
-		cin>>n;
-		vector<INT> vec[3];
-		vec[0].reserve(n);
-		vec[1].reserve(n);
-		vec[2].reserve(n);
-		INT me='R';
-		char ans[3];
-		for(INT i=2;i<=n;i++){
-			cout<<"? "<<1<<" "<<i<<" "<<RPS[me]<<endl;
-			string inin;
-			cin>>inin;
-			vec[mp[inin]].push_back(i);
+		INT n,x,y;
+		cin>>n>>x>>y;
+		if(x==y){
+			cout<<0<<endl;
+			continue;
 		}
-		for(INT i=0;i<2;i++){
-			if(vec[i].size()>=2){
-				cout<<"? "<<vec[i][0]<<" "<<vec[i][1]<<" "<<RPS[me]<<endl;
-				string inin;
-				cin>>inin;
-				ans[i]=me+mp[inin];
-
-				break;
-			}
-		}
-
+		INT ad=0;
+		INT mn=0;
+		INT xxx=__gcd(x,y);
+		INT aaa=x*(y/xxx);
+		INT sme=n/aaa;
+		INT adcnt=n/x-sme;
+		INT mncnt=n/y-sme;
+		ad=(n+(n-adcnt+1))*adcnt/2;
+		mn=(1+mncnt)*mncnt/2;
+		cout<<ad-mn<<endl;
 	}
 	return 0;
 }
