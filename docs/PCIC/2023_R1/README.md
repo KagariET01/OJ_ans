@@ -1,10 +1,10 @@
 # [`PCIC`] > `PCIC 2023_R1`
 
-> [`PCIC 2023_R1 PA` 尖叫雞的三角形詛咒(Triangle Curse)](#pA)  
-> [`PCIC 2023_R1 PB` 堅持下去(Give Up)](#pB)  
-> [`PCIC 2023_R1 PC` 拆地雷(Minesweeper)](#pC)  
-> [`PCIC 2023_R1 PD` 長頸鹿(Giraffe)](#pD)  
-> [`PCIC 2023_R1 PE` 戀愛關係(Relationship)](#pE)  
+> [`PCIC 2023_R1 PA` `100/100` 尖叫雞的三角形詛咒(Triangle Curse)](#PA)  
+> [`PCIC 2023_R1 PB` `100/100` 堅持下去(Give Up)](#PB)  
+> [`PCIC 2023_R1 PC` `100/100` 拆地雷(Minesweeper)](#PC)  
+> [`PCIC 2023_R1 PD` `100/100` 長頸鹿(Giraffe)](#PD)  
+> [`PCIC 2023_R1 PE` `100/100` 戀愛關係(Relationship)](#PE)  
 
 ## pA
 `PCIC 2023_R1 PA` 尖叫雞的三角形詛咒(Triangle Curse)  

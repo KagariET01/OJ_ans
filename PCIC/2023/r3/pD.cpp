@@ -28,6 +28,7 @@ int main(int argc,char** argv){
 	INT n;
 	cin>>n;
 	INT dp[n+1]={};
+	INT apple[n+1]={};
 	for(INT i=1;i<=n;i++){
 		cin>>apple[i];
 		INT nw=0;
@@ -41,7 +42,7 @@ int main(int argc,char** argv){
 			dp[i]=max(dp[i-1],dp[j]+(i-j));
 		}
 	}
-	cout<<dp[n]<<" "<<1<<endl;//	025/100
-	//cout<<dp[n]<<" "<<-1<<endl;//	060/100
+	//cout<<dp[n]<<" "<<1<<endl;//	025/100
+	cout<<dp[n]<<" "<<-1<<endl;//	060/100
 	//兩個上傳可以得到 070/100
 }

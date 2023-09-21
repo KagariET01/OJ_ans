@@ -1,13 +1,13 @@
 # [`PCIC`] > `PCIC 2023_R2`
 
 > [題目](./R2_All.pdf)  
-> [`PCIC 2023_R2 PA` 戀愛家教(Edward)](#pA)  
-> [`PCIC 2023_R2 PB` 有限阿貝爾群(Finite Abelian Group)](#pB)  
-> [`PCIC 2023_R2 PC` 山道猴子(Road Monkey)](#pC)  
-> [`PCIC 2023_R2 PD` 魔法之域(Magic Realm)](#pD)  
-> ~~[`PCIC 2023_R2 PE` 魔數師(Magician)](#pE)~~  
+> [`PCIC 2023_R2 PA` `100/100` 戀愛家教(Edward)](#PA)  
+> [`PCIC 2023_R2 PB` `100/100` 有限阿貝爾群(Finite Abelian Group)](#PB)  
+> [`PCIC 2023_R2 PC` `100/100` 山道猴子(Road Monkey)](#PC)  
+> [`PCIC 2023_R2 PD` `100/100` 魔法之域(Magic Realm)](#PD)  
+> [`PCIC 2023_R2 PE` `052/100` 魔數師(Magician)](#PE)  
 
-## pA
+## PA
 `PCIC 2023_R2 PA` 戀愛家教(Edward)  
 `100/100`
 ```c++
@@ -53,7 +53,7 @@ int main(int argc,char** argv){
 	return 0;
 }
 ```
-## pB
+## PB
 `PCIC 2023_R2 PB` 有限阿貝爾群(Finite Abelian Group)  
 `100/100`
 ```c++
@@ -145,7 +145,7 @@ int main(int argc,char** argv){
 }
 ```
 
-## pC
+## PC
 `PCIC 2023_R2 PC` 山道猴子(Road Monkey)  
 `100/100`
 ```c++
@@ -202,7 +202,7 @@ int main(int argc,char** argv){
 }
 ```
 
-## pD
+## PD
 `PCIC 2023_R2 PD` 魔法之域(Magic Realm)  
 `100/100`
 ```c++
@@ -277,7 +277,7 @@ int main(int argc,char** argv){
 }
 ```
 
-## pE
+## PE
 `PCIC 2023_R2 PE` 魔數師(Magician)  
 `052/100`
 ***下方兩隻程式皆須上傳，才可得到52分***
