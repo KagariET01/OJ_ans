@@ -36,19 +36,7 @@ bool operator==(dta a,INT b){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG{
-		cerr<<"=====DBG mod====="<<endl;
-	}
 	INT n;
 	cin>>n;
 	map<INT,dta> mp;
@@ -89,19 +77,7 @@ template<typename TPE>TPE reader(){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG{
-		cerr<<"=====DBG mod====="<<endl;
-	}
 	INT n=read(INT);
 	INT road[n+2]={};
 	INT dp[n+2]={};
@@ -179,19 +155,7 @@ template<typename TPE>TPE reader(){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG{
-		cerr<<"=====DBG mod====="<<endl;
-	}
 	INT n;
 	cin>>n;
 	INT dp[n+1]={};
@@ -236,19 +200,7 @@ template<typename TPE>TPE reader(){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG{
-		cerr<<"=====DBG mod====="<<endl;
-	}
 	INT n;
 	cin>>n;
 	INT dp[n+1]={};
@@ -325,19 +277,7 @@ void dfs(INT nw=0){
 
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG{
-		cerr<<"=====DBG mod====="<<endl;
-	}
 	cin>>n;
 	for(INT i=0;i<n;i++){
 		cin>>a[i];

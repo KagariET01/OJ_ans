@@ -24,17 +24,7 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	INT t=read(INT);
 	INT ans=0;
 	while(t--){
@@ -126,17 +116,7 @@ char solve(INT deep=0){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	cin>>str;
 	p=0;
 	n=str.size();
@@ -162,17 +142,7 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	INT t=1;
 	while(t--){
 		INT n,x,y,t;
@@ -242,17 +212,7 @@ bool operator==(superfloat a,superfloat b){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	INT n=read(INT);
 	superfloat lst[n];
 	for(INT i=0;i<n;i++){
@@ -341,17 +301,7 @@ void doC(){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	INT t=1;
 	while(t--){
 		cin>>n;
@@ -440,17 +390,7 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	DBG cerr<<"=====DBG mod====="<<endl;
 	INT t=1;
 	while(t--){
 		INT n;
