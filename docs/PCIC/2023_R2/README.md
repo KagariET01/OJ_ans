@@ -251,6 +251,7 @@ int main(int argc,char** argv){
 > [X] 6. `023/023`  
 > [ ] 7. `000/021`  
 > [ ] 8. `000/027`  
+
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
@@ -376,6 +377,7 @@ int main(int argc,char** argv){
 > [ ] 6. `000/023`  
 > [ ] 7. `000/021`  
 > [ ] 8. `000/027`  
+
 ```c++
 #include<bits/stdc++.h>
 using namespace std;

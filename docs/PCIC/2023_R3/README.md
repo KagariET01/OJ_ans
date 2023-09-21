@@ -127,7 +127,55 @@ int main(int argc,char** argv){
 
 ## PC
 `PCIC 2023_R3 PC` 衛冕優勝者(Defending Winners)
+`100/100`
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+#define INT long long int
+#define endl '\n'
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+bool debug=0;
+bool noTLE=0;
+template<typename TPE>TPE reader(){
+	TPE re;cin>>re;return re;
+}
 
+int main(int argc,char** argv){
+	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	INT n,m;
+	cin>>n>>m;
+	INT a[n][m];
+	for(INT i=0;i<n;i++){
+		for(INT j=0;j<m;j++){
+			cin>>a[i][j];
+		}
+	}
+
+	INT lastw[n*m+1];
+	INT cnt[n*m+1];
+	INT ans=0;
+	for(INT i=0;i<=n*m;i++){
+		lastw[i]=1000;
+		cnt[i]=0;
+	}
+
+	for(INT i=0;i<n;i++){
+
+		for(INT j=0;j<m;j++){
+			if(lastw[a[i][j]]==i-1){
+				cnt[a[i][j]]++;
+			}else{
+				cnt[a[i][j]]=1;
+			}
+			lastw[a[i][j]]=i;
+			ans=max(ans,cnt[a[i][j]]);
+		}
+	}
+	cout<<ans<<endl;
+}
+```
 
 ## PD
 `PCIC 2023_R3 PD` 蘋果哥哥消蘋果(Fruit Box)
@@ -140,6 +188,7 @@ int main(int argc,char** argv){
 > [ ] 3. `000/020`  
 > [ ] 4. `000/025`  
 > [ ] 5. `000/030`  
+
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
@@ -185,6 +234,7 @@ int main(int argc,char** argv){
 > [X] 3. `012/020`  
 > [X] 4. `015/025`  
 > [X] 5. `018/030`  
+
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
