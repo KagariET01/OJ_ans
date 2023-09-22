@@ -1,12 +1,12 @@
 # [`Codeforces`] > `cf 1592`<br>Codeforces Round 746 (Div. 2)
 
-> ~~[`cf 1592 PA`](#pA)~~  
-> [`cf 1592 PB` Hemose Shopping](#pB)  
-> ~~[`cf 1592 PC`](#pC)~~  
-> ~~[`cf 1592 PD`](#pD)~~  
-> ~~[`cf 1592 PE`](#pE)~~  
-> ~~[`cf 1592 PF1`](#pF1)~~  
-> ~~[`cf 1592 PF2`](#pF2)~~  
+> ~~[`cf 1592 PA`](#pa)~~  
+> [`cf 1592 PB` Hemose Shopping](#pb)  
+> ~~[`cf 1592 PC`](#pc)~~  
+> ~~[`cf 1592 PD`](#pd)~~  
+> ~~[`cf 1592 PE`](#pe)~~  
+> ~~[`cf 1592 PF1`](#pf1)~~  
+> ~~[`cf 1592 PF2`](#pf2)~~  
 
 
 ## pB

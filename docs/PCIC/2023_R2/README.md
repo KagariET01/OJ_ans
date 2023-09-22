@@ -1,11 +1,11 @@
 # [`PCIC`] > `PCIC 2023_R2`
 
 > [題目](./R2_All.pdf)  
-> [`PCIC 2023_R2 PA` `100/100` 戀愛家教(Edward)](#PA)  
-> [`PCIC 2023_R2 PB` `100/100` 有限阿貝爾群(Finite Abelian Group)](#PB)  
-> [`PCIC 2023_R2 PC` `100/100` 山道猴子(Road Monkey)](#PC)  
-> [`PCIC 2023_R2 PD` `100/100` 魔法之域(Magic Realm)](#PD)  
-> [`PCIC 2023_R2 PE` `052/100` 魔數師(Magician)](#PE)  
+> [`PCIC 2023_R2 PA` `100/100` 戀愛家教(Edward)](#pa)  
+> [`PCIC 2023_R2 PB` `100/100` 有限阿貝爾群(Finite Abelian Group)](#pb)  
+> [`PCIC 2023_R2 PC` `100/100` 山道猴子(Road Monkey)](#pc)  
+> [`PCIC 2023_R2 PD` `100/100` 魔法之域(Magic Realm)](#pd)  
+> [`PCIC 2023_R2 PE` `052/100` 魔數師(Magician)](#pe)  
 
 ## PA
 `PCIC 2023_R2 PA` 戀愛家教(Edward)  

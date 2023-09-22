@@ -1,12 +1,12 @@
 # [`Codeforces`] > `cf 1872`<br>Codeforces Round 895 (Div. 3)
 
-> [`cf 1872 PA` Two Vessels](#pA)  
-> [`cf 1872 PB` The Corridor or There and Back Again](#pB)  
-> [`cf 1872 PC` Non-coprime Split](#pC)  
-> [`cf 1872 PD` Plus Minus Permutation](#pD)  
-> [`cf 1872 PE` Data Structures Fan](#pE)  
-> ~~[`cf 1872 PF`](#pF)~~  
-> ~~[`cf 1872 PG`](#pG)~~  
+> [`cf 1872 PA` Two Vessels](#pa)  
+> [`cf 1872 PB` The Corridor or There and Back Again](#pb)  
+> [`cf 1872 PC` Non-coprime Split](#pc)  
+> [`cf 1872 PD` Plus Minus Permutation](#pd)  
+> [`cf 1872 PE` Data Structures Fan](#pe)  
+> ~~[`cf 1872 PF`](#pf)~~  
+> ~~[`cf 1872 PG`](#pg)~~  
 
 
 

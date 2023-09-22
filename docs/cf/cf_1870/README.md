@@ -1,13 +1,13 @@
 # [`Codeforces`] > `cf 1870`<br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
 
-> [`cf 1870 PA` MEXanized Array](#pA)  
-> ~~[`cf 1870 PB`](#pB)~~  
-> ~~[`cf 1870 PC`](#pC)~~  
-> ~~[`cf 1870 PD`](#pD)~~  
-> ~~[`cf 1870 PE`](#pE)~~  
-> ~~[`cf 1870 PF`](#pF)~~  
-> ~~[`cf 1870 PG`](#pG)~~  
-> ~~[`cf 1870 PH`](#pH)~~  
+> [`cf 1870 PA` MEXanized Array](#pa)  
+> ~~[`cf 1870 PB`](#pb)~~  
+> ~~[`cf 1870 PC`](#pc)~~  
+> ~~[`cf 1870 PD`](#pd)~~  
+> ~~[`cf 1870 PE`](#pe)~~  
+> ~~[`cf 1870 PF`](#pf)~~  
+> ~~[`cf 1870 PG`](#pg)~~  
+> ~~[`cf 1870 PH`](#ph)~~  
 
 ## pA
 `cf 1870 PA` MEXanized Array

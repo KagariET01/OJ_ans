@@ -54,17 +54,23 @@ int main(int argc,char** argv){
 		for(INT i=0;i<sin;i++){
 			cout<<"0";
 		}
-		for(INT i=0;i<duo;i++){
-			cout<<"1";
-			if(n%2)cout<<"1";
-			else cout<<"0";
-		}
-		for(INT i=0;i<duo;i++){
-			if(n%2==0){
-				
+		
+		if(n%2){
+			for(INT i=0;i<(duo+1)*2;i++){
+				cout<<"1";
 			}
-			cout<<"1";
+		}else{
+			for(INT i=0;i<duo+1;i++){
+				if(i)cout<<"0";
+				cout<<"1";
+			}
 		}
+
+
+		for(INT i=0;i<sin;i++){
+			cout<<"0";
+		}
+		cout<<endl;
 	}
 	return 0;
 }

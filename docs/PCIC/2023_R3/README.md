@@ -1,11 +1,11 @@
 # [`PCIC`] > `PCIC 2023_R3`
 
 > [題目](./R3_All.pdf)  
-> [`PCIC 2023_R3 PA` `100/100` 旮旯同學亂填表單(Corner)](#PA)  
-> [`PCIC 2023_R3 PB` `100/100` 能量飲料(Energy Drink)](#PB)  
-> [`PCIC 2023_R3 PC` `100/100` 衛冕優勝者(Defending Winners)](#PC)  
-> [`PCIC 2023_R3 PD` `070/100` 蘋果哥哥消蘋果(Fruit Box)](#PD)  
-> [`PCIC 2023_R3 PE` `100/100` 密室尋寶(Treasure)](#PE)  
+> [`PCIC 2023_R3 PA` `100/100` 旮旯同學亂填表單(Corner)](#pa)  
+> [`PCIC 2023_R3 PB` `100/100` 能量飲料(Energy Drink)](#pb)  
+> [`PCIC 2023_R3 PC` `100/100` 衛冕優勝者(Defending Winners)](#pc)  
+> [`PCIC 2023_R3 PD` `070/100` 蘋果哥哥消蘋果(Fruit Box)](#pd)  
+> [`PCIC 2023_R3 PE` `100/100` 密室尋寶(Treasure)](#pe)  
 
 ## PA
 `PCIC 2023_R3 PA` 旮旯同學亂填表單(Corner)

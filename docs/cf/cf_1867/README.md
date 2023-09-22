@@ -1,14 +1,14 @@
 # [`Codeforces`] > `cf 1867`<br>Codeforces Round 897 (Div. 2)
 
-> [`cf 1867 PA` green_gold_dog, array and permutation](#pA)  
-> ~~[`cf 1867 PB`](#pB)~~  
-> ~~[`cf 1867 PC`](#pC)~~  
-> ~~[`cf 1867 PD`](#pD)~~  
-> ~~[`cf 1867 PE1`](#pE1)~~  
-> ~~[`cf 1867 PE2`](#pE2)~~  
-> ~~[`cf 1867 PF`](#pF)~~  
+> [`cf 1867 PA` green_gold_dog, array and permutation](#pa)  
+> [`cf 1867 PB` XOR Palindromes](#pb)  
+> ~~[`cf 1867 PC`](#pc)~~  
+> ~~[`cf 1867 PD`](#pd)~~  
+> ~~[`cf 1867 PE1`](#pe1)~~  
+> ~~[`cf 1867 PE2`](#pe2)~~  
+> ~~[`cf 1867 PF`](#pf)~~  
 
-## pA
+## PA
 `cf 1867 PA` green_gold_dog, array and permutation
 ```c++
 #include<bits/stdc++.h>
@@ -51,10 +51,17 @@ int main(int argc,char** argv){
 	return 0;
 }
 ```
-> Tag
+
+> Tag  
 > `sort`
 
+## PB
+`cf 1867 PB` XOR Palindromes
+```c++
+```
 
+> Tag  
+> `bit運算` `math` `觀察`
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj
