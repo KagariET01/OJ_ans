@@ -1,0 +1,1366 @@
+.
+├── 2023 算法班歡樂團體燒烤
+│   ├── anj.cpp
+│   ├── anj.h
+│   ├── compile_cpp.sh
+│   ├── grader.cpp
+│   ├── pA_anj
+│   │   └── public
+│   │       ├── cpp
+│   │       │   ├── anj.cpp
+│   │       │   ├── anj.h
+│   │       │   ├── compile_cpp.sh
+│   │       │   └── grader.cpp
+│   │       └── files
+│   ├── pA_anj.zip
+│   ├── pA.cpp
+│   ├── pA.pdf
+│   ├── pB.cpp
+│   ├── pB.pdf
+│   ├── pC.cpp
+│   ├── pC.pdf
+│   ├── pD.cpp
+│   ├── pD.pdf
+│   ├── pD_sample.cpp
+│   ├── pE.cpp
+│   ├── pE.pdf
+│   ├── pF.cpp
+│   ├── pF.pdf
+│   ├── pG.cpp
+│   ├── pG.pdf
+│   ├── pG_TLE.cpp
+│   ├── pH.cpp
+│   ├── pH_input.txt
+│   ├── pH.pdf
+│   ├── pH.txt
+│   ├── pI.cpp
+│   ├── pI.pdf
+│   ├── pJ.cpp
+│   ├── pJ.pdf
+│   └── run.exe
+├── Algorithm
+│   ├── basic_lite.cpp
+│   ├── command.md
+│   ├── DC_1.cpp
+│   ├── dp
+│   │   ├── b232-2.cpp
+│   │   ├── LCS
+│   │   │   ├── LCS_1.cpp
+│   │   │   └── LCS_2_template.cpp
+│   │   ├── LIS
+│   │   │   ├── LIS_1.cpp
+│   │   │   ├── LIS_2_template.cpp
+│   │   │   └── LIS_3_template.cpp
+│   │   └── TFbackpack
+│   │       ├── TFbackpack_mult_item.cpp
+│   │       └── TFbackpack_q_1.cpp
+│   ├── learn_lst.md
+│   ├── math
+│   │   ├── Geometry
+│   │   │   └── Geometry.cpp
+│   │   ├── mod
+│   │   │   ├── Extended_Euclidean.cpp
+│   │   │   └── Modular_multiplicative_inverse.cpp
+│   │   └── 矩陣快速冪-q1.cpp
+│   ├── string
+│   │   ├── Failure.cpp
+│   │   ├── hash.cpp
+│   │   ├── kmp.cpp
+│   │   ├── kmp.md
+│   │   ├── trie.cpp
+│   │   ├── z_value.cpp
+│   │   └── z_value.md
+│   └── tree
+│       ├── BFS
+│       │   ├── bfs_q_1.cpp
+│       │   ├── bfs_q_2.cpp
+│       │   └── Topological_sorting
+│       │       └── Topological_sorting_q_1.cpp
+│       ├── BIT.cpp
+│       ├── dsu.cpp
+│       ├── lca
+│       │   └── lca_1.cpp
+│       ├── rmq
+│       │   └── rmq_1.cpp
+│       ├── seg_tree.cpp
+│       ├── 最短路徑
+│       │   ├── dijkstra.cpp
+│       │   ├── 最短路徑-1.cpp
+│       │   ├── 最短路徑dfs.cpp
+│       │   ├── 最短路徑-greedy.cpp
+│       │   └── 最短路徑-greedy-虛擬碼.txt
+│       └── 樹直徑_q_1.cpp
+├── AtCoder
+│   ├── at_abc121D.cpp
+│   ├── at_abc141C.cpp
+│   ├── at_abc178E.cpp
+│   ├── at_abc244C.cpp
+│   ├── at_abc264A.cpp
+│   ├── at_abc273B.cpp
+│   ├── at_ABC293G.cpp
+│   ├── at_abc307A.cpp
+│   ├── at_abc307B.cpp
+│   ├── at_abc308A.cpp
+│   ├── at_abc308B.cpp
+│   ├── at_abc308C.cpp
+│   ├── at_abc309A.cpp
+│   ├── at_abc309D.cpp
+│   ├── at_abc309E.cpp
+│   ├── at_abc310A.cpp
+│   ├── at_abc310B.cpp
+│   ├── at_abc310C.cpp
+│   ├── at_abc311A.cpp
+│   ├── at_abc311B.cpp
+│   ├── at_abc311C.cpp
+│   ├── at_abc311D.cpp
+│   ├── at_abc311E.cpp
+│   ├── at_abc311E.md
+│   ├── at_abc315A.cpp
+│   ├── at_abc315B.cpp
+│   ├── at_abc315D.cpp
+│   ├── at_abc317A.cpp
+│   ├── at_abc317B.cpp
+│   ├── at_abc317C.cpp
+│   ├── at_abc317D.cpp
+│   ├── at_abc317E.cpp
+│   ├── at_arc164A.cpp
+│   ├── at_practice1.cpp
+│   └── README.md
+├── cf_1864B.in
+├── cf_1864B.out
+├── ch.cpp
+├── codeforces
+│   ├── cf_1592B.cpp
+│   ├── cf_1630A_1631C.cpp
+│   ├── cf_1676H.cpp
+│   ├── cf_1726B.cpp
+│   ├── cf_1763A.cpp
+│   ├── cf_1771A.cpp
+│   ├── cf_1797A.cpp
+│   ├── cf_1797B.cpp
+│   ├── cf_1814A.cpp
+│   ├── cf_1814B.cpp
+│   ├── cf_1815A_1816C.cpp
+│   ├── cf_1816A.cpp
+│   ├── cf_1816B.cpp
+│   ├── cf_1827A_1828C.cpp
+│   ├── cf_1828A.cpp
+│   ├── cf_1828B.cpp
+│   ├── cf_1834A.cpp
+│   ├── cf_1834B.cpp
+│   ├── cf_1834C.cpp
+│   ├── cf_1836A.cpp
+│   ├── cf_1836B.cpp
+│   ├── cf_1836C.cpp
+│   ├── cf_1840A.cpp
+│   ├── cf_1840B.cpp
+│   ├── cf_1840C.cpp
+│   ├── cf_1841A.cpp
+│   ├── cf_1841B.cpp
+│   ├── cf_1841C.cpp
+│   ├── cf_1841D.cpp
+│   ├── cf_1842A.cpp
+│   ├── cf_1842C
+│   │   ├── ans.cpp
+│   │   └── README.md
+│   ├── cf_1843A.cpp
+│   ├── cf_1843B.cpp
+│   ├── cf_1843C.cpp
+│   ├── cf_1843D.cpp
+│   ├── cf_1844A.cpp
+│   ├── cf_1844B.cpp
+│   ├── cf_1844C.cpp
+│   ├── cf_1844C.md
+│   ├── cf_1844D.cpp
+│   ├── cf_1844D.md
+│   ├── cf_1845A.cpp
+│   ├── cf_1845B.cpp
+│   ├── cf_1845C.cpp
+│   ├── cf_1845C.md
+│   ├── cf_1846A.cpp
+│   ├── cf_1846B.cpp
+│   ├── cf_1846C.cpp
+│   ├── cf_1846D.cpp
+│   ├── cf_1846E1.cpp
+│   ├── cf_1847B.cpp
+│   ├── cf_1847C.cpp
+│   ├── cf_1847C.md
+│   ├── cf_1848A.cpp
+│   ├── cf_1848A.md
+│   ├── cf_1848B.cpp
+│   ├── cf_1848C.cpp
+│   ├── cf_1848C.md
+│   ├── cf_1849A.cpp
+│   ├── cf_1849B.cpp
+│   ├── cf_1849C.cpp
+│   ├── cf_1850A.cpp
+│   ├── cf_1850B.cpp
+│   ├── cf_1850C.cpp
+│   ├── cf_1850D.cpp
+│   ├── cf_1850E.cpp
+│   ├── cf_1850F.cpp
+│   ├── cf_1851A.cpp
+│   ├── cf_1851B.cpp
+│   ├── cf_1851C.cpp
+│   ├── cf_1851D.cpp
+│   ├── cf_1851E.cpp
+│   ├── cf_1851F.cpp
+│   ├── cf_1851F.md
+│   ├── cf_1851G.cpp
+│   ├── cf_1853A.cpp
+│   ├── cf_1853B.cpp
+│   ├── cf_1853B.md
+│   ├── cf_1854A1_1854A2_1855C1_1855C2.cpp
+│   ├── cf_1855A.cpp
+│   ├── cf_1855B.cpp
+│   ├── cf_1857A.cpp
+│   ├── cf_1857B.cpp
+│   ├── cf_1857C.cpp
+│   ├── cf_1857D.cpp
+│   ├── cf_1857E.cpp
+│   ├── cf_1858A.cpp
+│   ├── cf_1858B.cpp
+│   ├── cf_1858C.cpp
+│   ├── cf_1859A.cpp
+│   ├── cf_1859B.cpp
+│   ├── cf_1859C.cpp
+│   ├── cf_1859D.cpp
+│   ├── cf_1860A.cpp
+│   ├── cf_1860B.cpp
+│   ├── cf_1860C.cpp
+│   ├── cf_1860D.cpp
+│   ├── cf_1862A.cpp
+│   ├── cf_1862B.cpp
+│   ├── cf_1862C.cpp
+│   ├── cf_1862D.cpp
+│   ├── cf_1864A.cpp
+│   ├── cf_1864B.cpp
+│   ├── cf_1864B_test.cpp
+│   ├── cf_1864C.cpp
+│   ├── cf_1867A.cpp
+│   ├── cf_1867B.cpp
+│   ├── cf_1870A.cpp
+│   ├── cf_1872A.cpp
+│   ├── cf_1872B.cpp
+│   ├── cf_1872C.cpp
+│   ├── cf_1872D.cpp
+│   ├── cf_1872E.cpp
+│   ├── pcsh contest
+│   │   ├── 431641A.cpp
+│   │   ├── 431641B.cpp
+│   │   ├── 431641D.cpp
+│   │   ├── 447678A.cpp~
+│   │   ├── 447678A.xlsx
+│   │   ├── cf_374977B.cpp
+│   │   ├── cf_465505A.cpp
+│   │   ├── cf_465505B.cpp
+│   │   ├── cf_465505C.cpp
+│   │   ├── cf_465505D.cpp
+│   │   ├── cf_465505E.cpp
+│   │   ├── cf_470188A.cpp
+│   │   ├── cf_470188B.cpp
+│   │   ├── cf_470188C.cpp
+│   │   ├── cf_470188D.cpp
+│   │   ├── cf_470188E.cpp
+│   │   ├── cf_470188F.cpp
+│   │   ├── README.md
+│   │   ├── run.exe
+│   │   ├── run.exe.stackdump
+│   │   └── _.swp
+│   ├── README.md
+│   └── run.exe
+├── cun.exe
+├── docs
+│   ├── cf
+│   │   ├── cf_1592
+│   │   │   └── README.md
+│   │   ├── cf_1867
+│   │   │   └── README.md
+│   │   ├── cf_1870
+│   │   │   └── README.md
+│   │   ├── cf_1872
+│   │   │   └── README.md
+│   │   └── README.md
+│   ├── log
+│   │   └── README.md
+│   ├── PCIC
+│   │   ├── 2023_R1
+│   │   │   ├── pA.pdf
+│   │   │   ├── pB.pdf
+│   │   │   ├── pC.pdf
+│   │   │   ├── pD.pdf
+│   │   │   ├── pE.pdf
+│   │   │   └── README.md
+│   │   ├── 2023_R2
+│   │   │   ├── R2_All.pdf
+│   │   │   └── README.md
+│   │   ├── 2023_R3
+│   │   │   ├── R3_All.pdf
+│   │   │   └── README.md
+│   │   └── README.md
+│   ├── README.md
+│   ├── temp.md
+│   └── zj
+│       ├── a
+│       │   ├── a001
+│       │   │   └── README.md
+│       │   └── README.md
+│       ├── i
+│       │   ├── i722
+│       │   │   └── README.md
+│       │   └── README.md
+│       └── README.md
+├── doing
+│   ├── ARC163A.cpp
+│   ├── ARC163C.cpp
+│   ├── at_abc103D.cpp
+│   ├── cf_1625C.cpp
+│   ├── cf_1682B.cpp
+│   ├── cf_1797C.cpp
+│   ├── cf_1841C.cpp
+│   ├── cf_1841D.cpp
+│   ├── cf_1842B.cpp
+│   ├── cf_1843E.cpp
+│   ├── cf_1844B.cpp
+│   ├── cf_1845C.cpp
+│   ├── cf_1845D.cpp
+│   ├── cf_1847C.cpp
+│   ├── cf_1851F-2.cpp
+│   ├── cf_1851F.cpp
+│   ├── cf_1856C.cpp
+│   ├── cf_1858B.cpp
+│   ├── cf_1858C.cpp
+│   ├── cf_1862E.cpp
+│   ├── cf_374977A.cpp
+│   ├── cf_374977C.cpp
+│   ├── cf_374977D.cpp
+│   ├── cf_PCSH_447678A.cpp
+│   ├── neoj_140.cpp
+│   ├── neoj_141.cpp
+│   ├── neoj_263.cpp
+│   ├── neoj_402.cpp
+│   ├── neoj_734.cpp
+│   ├── neoj_740.cpp
+│   ├── pcsh contest
+│   │   └── cf_467337A.cpp
+│   ├── tioj_1281.cpp
+│   ├── tioj_2253.cpp
+│   ├── YTP
+│   │   └── 2023
+│   │       └── pre
+│   │           ├── pD-2.cpp
+│   │           ├── pD.cpp
+│   │           ├── pG.cpp
+│   │           ├── YTP2023PreliminaryContest_S1_toStudent
+│   │           │   ├── TestCases
+│   │           │   │   ├── 0_HelloWorld
+│   │           │   │   │   ├── input.001
+│   │           │   │   │   └── output.001
+│   │           │   │   ├── 1_Nijika_or_Doritos
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   └── output.0-01
+│   │           │   │   ├── 2_War_Power_Analysis
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   └── output.0-01
+│   │           │   │   ├── 3_Mean_Value_Theorem
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   ├── input.0-02
+│   │           │   │   │   ├── input.0-03
+│   │           │   │   │   ├── output.0-01
+│   │           │   │   │   ├── output.0-02
+│   │           │   │   │   └── output.0-03
+│   │           │   │   ├── 4_Roots_of_Polynomial
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   └── output.0-01
+│   │           │   │   ├── 5_When2meet
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   ├── input.0-02
+│   │           │   │   │   ├── output.0-01
+│   │           │   │   │   └── output.0-02
+│   │           │   │   ├── 6_Marquee
+│   │           │   │   │   ├── input.0-01
+│   │           │   │   │   ├── input.0-02
+│   │           │   │   │   ├── output.0-01
+│   │           │   │   │   └── output.0-02
+│   │           │   │   └── 7_Summoned_to_Another_World
+│   │           │   │       ├── input.0-01
+│   │           │   │       └── output.0-01
+│   │           │   └── YTP2023PreliminaryContest_S1.pdf
+│   │           └── YTP2023PreliminaryContest_S1_toStudent.zip
+│   ├── zj_a007.cpp
+│   ├── zj_a017.cpp
+│   └── zj_a410.cpp
+├── files.txt
+├── leetcode
+│   ├── 1.cpp
+│   ├── 239.cpp
+│   ├── 392.cpp
+│   ├── 392-summit.cpp
+│   └── 704.cpp
+├── neoj
+│   ├── neoj_124.cpp
+│   ├── neoj_125
+│   │   ├── neoj_125.cpp
+│   │   └── neoj_125.md
+│   ├── neoj_136.cpp
+│   ├── neoj_138
+│   │   ├── neoj_138.cpp
+│   │   └── neoj_138.md
+│   ├── neoj_157.cpp
+│   ├── neoj_158.cpp
+│   ├── neoj_165.cpp
+│   ├── neoj_19.cpp
+│   ├── neoj_265.cpp
+│   ├── neoj_266.cpp
+│   ├── neoj_391.cpp
+│   ├── neoj_398.cpp
+│   ├── neoj_399.cpp
+│   ├── neoj_400.cpp
+│   ├── neoj_401.cpp
+│   ├── neoj_431.cpp
+│   ├── neoj_46.cpp
+│   ├── neoj_62.cpp
+│   ├── neoj_63.cpp
+│   ├── neoj_69.cpp
+│   ├── neoj_70.cpp
+│   ├── neoj_72.cpp
+│   ├── neoj_74.cpp
+│   ├── neoj_789
+│   │   ├── neoj_789.cpp
+│   │   └── neoj_789.md
+│   ├── neoj_78.cpp
+│   ├── neoj_89.cpp
+│   ├── neoj_91.cpp
+│   └── README.md
+├── no_tag
+│   ├── 2022新北市賽
+│   │   ├── am
+│   │   │   ├── basic.cpp
+│   │   │   ├── basic.exe
+│   │   │   ├── basic.o
+│   │   │   ├── p1-2.cpp
+│   │   │   ├── p1-2.exe
+│   │   │   ├── p1-2.o
+│   │   │   ├── p1.cpp
+│   │   │   ├── p1.exe
+│   │   │   ├── p1.o
+│   │   │   ├── p2.cpp
+│   │   │   ├── p2.exe
+│   │   │   ├── p2.o
+│   │   │   ├── p3.cpp
+│   │   │   ├── p4.cpp
+│   │   │   ├── p4.exe
+│   │   │   ├── p4.o
+│   │   │   ├── p5.cpp
+│   │   │   ├── p5.exe
+│   │   │   ├── p5.o
+│   │   │   ├── p6.cpp
+│   │   │   ├── p6.exe
+│   │   │   ├── p6.o
+│   │   │   ├── p7.cpp
+│   │   │   ├── p7.exe
+│   │   │   └── p7.o
+│   │   ├── P10 (ZH).pdf
+│   │   ├── P11 (ZH).pdf
+│   │   ├── P12 (ZH).pdf
+│   │   ├── P1 (ZH).pdf
+│   │   ├── P2 (ZH).pdf
+│   │   ├── P3 (ZH).pdf
+│   │   ├── P4 (ZH).pdf
+│   │   ├── P5 (ZH).pdf
+│   │   ├── P6 (ZH).pdf
+│   │   ├── P7 (ZH).pdf
+│   │   ├── P8 (ZH).pdf
+│   │   ├── P9 (ZH).pdf
+│   │   └── pm
+│   │       ├── basic.cpp
+│   │       ├── p10.cpp
+│   │       ├── p10.exe
+│   │       ├── p10.o
+│   │       ├── p11.cpp
+│   │       ├── p12.cpp
+│   │       ├── p12.exe
+│   │       ├── p12.i
+│   │       ├── p12.o
+│   │       ├── p1.exe
+│   │       ├── p1.o
+│   │       ├── p2.exe
+│   │       ├── p2.o
+│   │       ├── p8.cpp
+│   │       ├── p9.cpp
+│   │       ├── p9.exe
+│   │       ├── p9.i
+│   │       └── p9.o
+│   ├── algorithm_learn
+│   │   ├── 4operator.cpp
+│   │   ├── basic.cpp
+│   │   ├── basic.exe
+│   │   ├── Binary_Search.cpp
+│   │   ├── BIT_search_the_test.cpp
+│   │   ├── codebook.docx
+│   │   ├── euclid.cpp
+│   │   ├── gcd.cpp
+│   │   ├── IDK.cpp
+│   │   ├── prime_num.cpp
+│   │   ├── run.exe
+│   │   ├── test.cpp
+│   │   ├── tree
+│   │   │   ├── basic_tree.cpp
+│   │   │   ├── run
+│   │   │   ├── seg-tree-6_template.cpp
+│   │   │   ├── seg-tree-7-temp.cpp
+│   │   │   ├── seg-tree-7-temp.exe
+│   │   │   ├── tree_1.cpp
+│   │   │   ├── 線段數-4.cpp
+│   │   │   ├── 線段數-5.cpp
+│   │   │   ├── 線段樹-2.cpp
+│   │   │   ├── 線段樹-3.cpp
+│   │   │   └── 線段樹.cpp
+│   │   ├── tre_num.cpp
+│   │   └── 二分搜.cpp
+│   ├── APCS
+│   │   ├── 2018-10-3.cpp
+│   │   ├── 2018-10-4 2.cpp
+│   │   ├── 2018-10-4.cpp
+│   │   ├── 2019-06-3.cpp
+│   │   ├── 2019-06-4.cpp
+│   │   ├── 2019-10-3.cpp
+│   │   ├── 2020-01-1.cpp
+│   │   ├── 2020-01-3-2.cpp
+│   │   ├── 2020-01-3.cpp
+│   │   ├── 2020-07-3-2.cpp
+│   │   ├── 2020-07-3.cpp
+│   │   ├── 2020-10-3-2.cpp
+│   │   ├── 2020-10-3.cpp
+│   │   ├── 2021-01-1.cpp
+│   │   ├── 2021-01-2.cpp
+│   │   ├── 2021-01-3.cpp
+│   │   ├── 2021-01-4.cpp
+│   │   ├── 2021-09-1.cpp
+│   │   ├── 2021-09-2.cpp
+│   │   ├── 2021-09-3.cpp
+│   │   ├── 2021-09-4-2.cpp
+│   │   ├── 2021-09-4-3.cpp
+│   │   ├── 2021-09-4.cpp
+│   │   ├── 2021-11-1.cpp
+│   │   ├── 2021-11-2-2.cpp
+│   │   ├── 2021-11-2.cpp
+│   │   ├── 2021-11-3.cpp
+│   │   ├── 2021-11-4.cpp
+│   │   ├── 2022-01-1.cpp
+│   │   ├── 2022-01-2-1.cpp
+│   │   ├── 2022-01-2.cpp
+│   │   ├── 2022-01-3.cpp
+│   │   ├── 2022-01-4.cpp
+│   │   ├── 2022-06-1.cpp
+│   │   ├── 2022-06-2.cpp
+│   │   ├── 2022-06-3.cpp
+│   │   ├── 2022-06-4.cpp
+│   │   ├── 2022-10-3.cpp
+│   │   └── 2022-10-4.cpp
+│   ├── atcoder
+│   │   ├── abc194
+│   │   │   └── at_abc194C.cpp
+│   │   ├── abc196
+│   │   │   └── D.cpp
+│   │   ├── abc197
+│   │   │   └── C.cpp
+│   │   ├── abc199
+│   │   │   └── C.cpp
+│   │   ├── abc217
+│   │   │   └── D.cpp
+│   │   ├── abc220
+│   │   │   ├── c.cpp
+│   │   │   └── c.exe
+│   │   ├── abc229
+│   │   │   └── C.cpp
+│   │   ├── abc237
+│   │   │   └── d.cpp
+│   │   ├── abc241
+│   │   │   └── D.cpp
+│   │   ├── abc242
+│   │   │   └── D.cpp
+│   │   ├── abc243
+│   │   │   └── F.cpp
+│   │   ├── abc245
+│   │   │   └── C.cpp
+│   │   ├── abc247
+│   │   │   └── C.cpp
+│   │   ├── abc261
+│   │   │   └── C.cpp
+│   │   └── dp
+│   │       ├── A
+│   │       ├── A.cpp
+│   │       ├── B.cpp
+│   │       ├── C.cpp
+│   │       ├── D
+│   │       ├── D.cpp
+│   │       ├── E.cpp
+│   │       ├── F
+│   │       ├── F.cpp
+│   │       └── N.cpp
+│   ├── codeforces
+│   │   ├── 118A.cpp
+│   │   ├── 1501B.cpp
+│   │   ├── 1520D.cpp
+│   │   ├── 1538C.cpp
+│   │   ├── 1538G.cpp
+│   │   ├── 158B.cpp
+│   │   ├── 1609B.cpp
+│   │   ├── 1610C.cpp
+│   │   ├── 1623C-0.cpp
+│   │   ├── 1623C-1.cpp
+│   │   ├── 1623C-2.cpp
+│   │   ├── 1623C-3.cpp
+│   │   ├── 1623C-other.cpp
+│   │   ├── 1659B.cpp
+│   │   ├── 1679B.cpp
+│   │   ├── 1701C.cpp
+│   │   ├── 1703G.cpp
+│   │   ├── 1A.cpp
+│   │   ├── 209884B_2.cpp
+│   │   ├── 209884B.cpp
+│   │   ├── 285084C-2.cpp
+│   │   ├── 285084C.cpp
+│   │   ├── 333897H.cpp
+│   │   ├── 333897I.cpp
+│   │   ├── 340173h.cpp
+│   │   ├── 342784A.cpp
+│   │   ├── 342784B-2.cpp
+│   │   ├── 342784B-3.cpp
+│   │   ├── 342784B.cpp
+│   │   ├── 342784C-2.cpp
+│   │   ├── 342784C.cpp
+│   │   ├── 342784D.cpp
+│   │   ├── 342784E.cpp
+│   │   ├── 343897F.cpp
+│   │   ├── 345674A-2.cpp
+│   │   ├── 345674A.cpp
+│   │   ├── 345674N.cpp
+│   │   ├── 369768A - 6.cpp
+│   │   ├── 369768F.cpp
+│   │   ├── 369768I - 7_2.cpp
+│   │   ├── 369768I - 7.cpp
+│   │   ├── 369768J.cpp
+│   │   ├── 369768L - 2.cpp
+│   │   ├── 369768P.cpp
+│   │   ├── 369768Q-2.cpp
+│   │   ├── 369768Q.cpp
+│   │   ├── 375463B.cpp
+│   │   ├── 375463D-2.cpp
+│   │   ├── 375463D.cpp
+│   │   ├── 375463D-DBG.cpp
+│   │   ├── 375463E.cpp
+│   │   ├── 376140B.cpp
+│   │   ├── 391774a.cpp
+│   │   ├── 391774b.cpp
+│   │   ├── 391774c.cpp
+│   │   ├── 391774d.cpp
+│   │   ├── 391774e.cpp
+│   │   ├── 391774F_0_1.cpp
+│   │   ├── 391774F.cpp
+│   │   ├── 391774J.cpp
+│   │   ├── 395777A.cpp
+│   │   ├── 395777B.cpp
+│   │   ├── 395777C.cpp
+│   │   ├── 395777D.cpp
+│   │   ├── 397692B.cpp
+│   │   ├── 397692C.cpp
+│   │   ├── 397692G.cpp
+│   │   ├── 397692H.cpp
+│   │   ├── 400975A.cpp
+│   │   ├── 400975B.cpp
+│   │   ├── 400975C.cpp
+│   │   ├── 400975D.cpp
+│   │   ├── 400975E.cpp
+│   │   ├── 403298
+│   │   │   ├── a.cpp
+│   │   │   ├── basic.cpp
+│   │   │   └── run
+│   │   ├── 406993
+│   │   │   ├── A.cpp
+│   │   │   ├── B-2.cpp
+│   │   │   ├── basic.cpp
+│   │   │   ├── B.cpp
+│   │   │   ├── C-2.cpp
+│   │   │   ├── C.cpp
+│   │   │   ├── D.cpp
+│   │   │   ├── E.cpp
+│   │   │   ├── F.cpp
+│   │   │   ├── G.cpp
+│   │   │   ├── H-2.cpp
+│   │   │   ├── H-3.cpp
+│   │   │   ├── H-4.cpp
+│   │   │   ├── H-5.cpp
+│   │   │   ├── H-6.cpp
+│   │   │   ├── H.cpp
+│   │   │   ├── run
+│   │   │   └── test.cpp
+│   │   ├── 411569
+│   │   │   ├── a-2.cpp
+│   │   │   ├── a.cpp
+│   │   │   ├── b-2.cpp
+│   │   │   ├── b.cpp
+│   │   │   ├── c.cpp
+│   │   │   ├── d.cpp
+│   │   │   ├── e.cpp
+│   │   │   └── run
+│   │   ├── 417347
+│   │   │   ├── pA.cpp
+│   │   │   ├── pD.cpp
+│   │   │   ├── pE.cpp
+│   │   │   ├── pF.cpp
+│   │   │   ├── pG bit.cpp
+│   │   │   ├── pG.cpp
+│   │   │   ├── pG random.cpp
+│   │   │   ├── pG random.exe
+│   │   │   ├── pH.cpp
+│   │   │   └── pI.cpp
+│   │   ├── 431640
+│   │   │   ├── A.cpp
+│   │   │   ├── B.cpp
+│   │   │   └── C.cpp
+│   │   ├── 58A.cpp
+│   │   ├── Codeforces Round 845
+│   │   │   ├── A.cpp
+│   │   │   ├── A.exe
+│   │   │   ├── B.cpp
+│   │   │   ├── B.exe
+│   │   │   ├── C.cpp
+│   │   │   ├── D.cpp
+│   │   │   ├── E.cpp
+│   │   │   ├── F.cpp
+│   │   │   └── F.exe
+│   │   ├── Codeforces Round 846
+│   │   │   ├── A.cpp
+│   │   │   └── A.exe
+│   │   ├── Codeforces Round 847
+│   │   │   ├── A.cpp
+│   │   │   ├── A.exe
+│   │   │   ├── B.cpp
+│   │   │   ├── B.exe
+│   │   │   ├── C.cpp
+│   │   │   ├── C.exe
+│   │   │   ├── D.cpp
+│   │   │   ├── D.exe
+│   │   │   ├── E.cpp
+│   │   │   └── E.exe
+│   │   ├── Codeforces Round 848
+│   │   │   ├── A.cpp
+│   │   │   └── A.exe
+│   │   ├── Codeforces Round 849
+│   │   │   ├── A.cpp
+│   │   │   ├── B.cpp
+│   │   │   ├── B.exe
+│   │   │   ├── C.cpp
+│   │   │   ├── D.cpp
+│   │   │   ├── D.exe
+│   │   │   ├── E.cpp
+│   │   │   ├── E.exe
+│   │   │   ├── F_2.cpp
+│   │   │   ├── F_2.exe
+│   │   │   ├── F_3.cpp
+│   │   │   ├── F_3.exe
+│   │   │   ├── F.cpp
+│   │   │   ├── F.exe
+│   │   │   ├── G1.cpp
+│   │   │   ├── G2.cpp
+│   │   │   └── G2.exe
+│   │   ├── Codeforces Round 857 Div2
+│   │   │   ├── pA.cpp
+│   │   │   ├── pB.cpp
+│   │   │   └── pD.cpp
+│   │   └── Educational Codeforces Round 142
+│   │       ├── A.cpp
+│   │       ├── A.exe
+│   │       ├── B.cpp
+│   │       ├── B.exe
+│   │       ├── C-2.cpp
+│   │       ├── C-2.exe
+│   │       ├── C.cpp
+│   │       └── C.exe
+│   ├── cses
+│   │   ├── 1084.cpp
+│   │   ├── 1085.cpp
+│   │   ├── 1095-2.cpp
+│   │   ├── 1095-3.cpp
+│   │   ├── 1095-4.cpp
+│   │   ├── 1095.cpp
+│   │   ├── 1097.cpp
+│   │   ├── 1131.cpp
+│   │   ├── 1132.cpp
+│   │   ├── 1142-2.cpp
+│   │   ├── 1142.cpp
+│   │   ├── 1159.cpp
+│   │   ├── 1192.cpp
+│   │   ├── 1618_2.cpp
+│   │   ├── 1618_3.cpp
+│   │   ├── 1618.cpp
+│   │   ├── 1620-2.cpp
+│   │   ├── 1620.cpp
+│   │   ├── 1621.cpp
+│   │   ├── 1622-2.cpp
+│   │   ├── 1622.cpp
+│   │   ├── 1623.cpp
+│   │   ├── 1624.cpp
+│   │   ├── 1630.cpp
+│   │   ├── 1633.cpp
+│   │   ├── 1636.cpp
+│   │   ├── 1645_2.cpp
+│   │   ├── 1645_3.cpp
+│   │   ├── 1646.cpp
+│   │   ├── 1648.cpp
+│   │   ├── 1649.cpp
+│   │   ├── 1667.cpp
+│   │   ├── 1668.cpp
+│   │   ├── 1722.cpp
+│   │   ├── 2165.cpp
+│   │   ├── 2422.cpp
+│   │   └── 2428.cpp
+│   ├── luogu
+│   │   └── p2024.cpp
+│   ├── neoj
+│   │   ├── 1101.cpp
+│   │   ├── 19.cpp
+│   │   ├── 20_2.cpp
+│   │   ├── 20.cpp
+│   │   ├── 21_2.cpp
+│   │   ├── 21_3.cpp
+│   │   ├── 21_4.cpp
+│   │   ├── 21_5.cpp
+│   │   ├── 21_5.exe
+│   │   ├── 21_6.cpp
+│   │   ├── 21_7.cpp
+│   │   ├── 21.cpp
+│   │   ├── 22_1.cpp
+│   │   ├── 22.cpp
+│   │   ├── 293.cpp
+│   │   ├── 36.cpp
+│   │   ├── 37.cpp
+│   │   ├── 400.cpp
+│   │   ├── 401.cpp
+│   │   ├── 42.cpp
+│   │   ├── 44.cpp
+│   │   ├── 46_1.cpp
+│   │   ├── 46.cpp
+│   │   ├── 47.cpp
+│   │   ├── 48.cpp
+│   │   ├── 49.cpp
+│   │   ├── 59.cpp
+│   │   └── 62.cpp
+│   ├── tioj
+│   │   ├── 1001.cpp
+│   │   ├── 1007.cpp
+│   │   ├── 1040.cpp
+│   │   ├── 1084-2.cpp
+│   │   ├── 1084.cpp
+│   │   ├── 1092.cpp
+│   │   ├── 1175.cpp
+│   │   ├── 1195.cpp
+│   │   ├── 1196.cpp
+│   │   ├── 1199.cpp
+│   │   ├── 1209.cpp
+│   │   ├── 1211.cpp
+│   │   ├── 1229.cpp
+│   │   ├── 1230.cpp
+│   │   ├── 1231.cpp
+│   │   ├── 1232.cpp
+│   │   ├── 1233.cpp
+│   │   ├── 1234.cpp
+│   │   ├── 1235.cpp
+│   │   ├── 1236.cpp
+│   │   ├── 1288.cpp
+│   │   ├── 1402.cpp
+│   │   ├── 1407.cpp
+│   │   ├── 1448.cpp
+│   │   ├── 1506.cpp
+│   │   ├── 1508.cpp
+│   │   ├── 2051-2.cpp
+│   │   ├── 2051.cpp
+│   │   ├── 2052.cpp
+│   │   ├── 2053.cpp
+│   │   ├── 2054.cpp
+│   │   ├── 2055.cpp
+│   │   ├── 2188.cpp
+│   │   ├── 2189.cpp
+│   │   ├── 2191-2.cpp
+│   │   ├── 2191_56.cpp
+│   │   ├── 2193.cpp
+│   │   ├── 2194-2.cpp
+│   │   ├── 2194-3.cpp
+│   │   ├── 2194.cpp
+│   │   ├── 2223.cpp
+│   │   ├── 2224.cpp
+│   │   ├── 2225.cpp
+│   │   ├── 2246.cpp
+│   │   ├── 2247-2.cpp
+│   │   ├── 2247.cpp
+│   │   ├── 2247_sheet.cpp
+│   │   ├── 2248.cpp
+│   │   ├── 2250.cpp
+│   │   ├── 2251.cpp
+│   │   ├── 2252.cpp
+│   │   ├── 2259.cpp
+│   │   └── basic.cpp
+│   ├── vjudge
+│   │   ├── HDU-1166.cpp
+│   │   ├── HDU-1166-summit.cpp
+│   │   └── HDU-1754.cpp
+│   └── zerojudge
+│       ├── a002.cpp
+│       ├── a003.cpp
+│       ├── a006.cpp
+│       ├── a007-2.cpp
+│       ├── a007.cpp
+│       ├── a015.cpp
+│       ├── a040.cpp
+│       ├── a058.cpp
+│       ├── a065.cpp
+│       ├── a111.cpp
+│       ├── a129.cpp
+│       ├── a130.cpp
+│       ├── a135.cpp
+│       ├── a147.cpp
+│       ├── a148.cpp
+│       ├── a160.cpp
+│       ├── a225.cpp
+│       ├── a227.cpp
+│       ├── a233.cpp
+│       ├── a289.cpp
+│       ├── a362.cpp
+│       ├── a445.cpp
+│       ├── a451-2.cpp
+│       ├── a451.cpp
+│       ├── a453.cpp
+│       ├── a454.cpp
+│       ├── a518.cpp
+│       ├── a521.cpp
+│       ├── a524.cpp
+│       ├── a536.cpp
+│       ├── a536_debug.cpp
+│       ├── a647.cpp
+│       ├── a693.cpp
+│       ├── a799.cpp
+│       ├── a825.cpp
+│       ├── a982.cpp
+│       ├── b002.cpp
+│       ├── b115-2.cpp
+│       ├── b115-3.cpp
+│       ├── b115.cpp
+│       ├── b116.cpp
+│       ├── b117-2.cpp
+│       ├── b117.cpp
+│       ├── b130.cpp
+│       ├── b184.cpp
+│       ├── b229.cpp
+│       ├── b230_boli.cpp
+│       ├── b230.cpp
+│       ├── b231.cpp
+│       ├── b232-2.cpp
+│       ├── b232.cpp
+│       ├── b304.cpp
+│       ├── b333.cpp
+│       ├── b367.cpp
+│       ├── b428.cpp
+│       ├── b430.cpp
+│       ├── b467.cpp
+│       ├── b550.cpp
+│       ├── b562.cpp
+│       ├── b565.cpp
+│       ├── b582_ned.cpp
+│       ├── b606.cpp
+│       ├── b837-2.cpp
+│       ├── b837.cpp
+│       ├── b838-1_1.cpp
+│       ├── b838-2.cpp
+│       ├── b838.cpp
+│       ├── b839.cpp
+│       ├── b877.cpp
+│       ├── c001.cpp
+│       ├── c002.cpp
+│       ├── c005.cpp
+│       ├── c013.cpp
+│       ├── c015.cpp
+│       ├── c022.cpp
+│       ├── c039.cpp
+│       ├── c067.cpp
+│       ├── c079.cpp
+│       ├── c085.cpp
+│       ├── c123.cpp
+│       ├── c128-2.cpp
+│       ├── c128-3.cpp
+│       ├── c128.cpp
+│       ├── c135-2ned.cpp
+│       ├── c135ned.cpp
+│       ├── c143.cpp
+│       ├── c145-2.cpp
+│       ├── c145.cpp
+│       ├── c230_0_1.cpp
+│       ├── c230_0_2.cpp
+│       ├── c230_ans.cpp
+│       ├── c299.cpp
+│       ├── c459.cpp
+│       ├── c460.cpp
+│       ├── c471.cpp
+│       ├── c726.cpp
+│       ├── c776.cpp
+│       ├── C777-2.CPP
+│       ├── C777-3.CPP
+│       ├── C777-4.CPP
+│       ├── C777.CPP
+│       ├── c812.cpp
+│       ├── c813.cpp
+│       ├── c875.cpp
+│       ├── c876.cpp
+│       ├── c877.cpp
+│       ├── c889.cpp
+│       ├── d010.cpp
+│       ├── d038.cpp
+│       ├── d039.cpp
+│       ├── d044.cpp
+│       ├── d049.cpp
+│       ├── d050.cpp
+│       ├── d051.cpp
+│       ├── d053.cpp
+│       ├── d054.cpp
+│       ├── d058.cpp
+│       ├── d060.cpp
+│       ├── d063.cpp
+│       ├── d064.cpp
+│       ├── d065.cpp
+│       ├── d066.cpp
+│       ├── d067.cpp
+│       ├── d068.cpp
+│       ├── d069.cpp
+│       ├── d070.cpp
+│       ├── d072.cpp
+│       ├── d073.cpp
+│       ├── d074.cpp
+│       ├── d091.cpp
+│       ├── d097.cpp
+│       ├── d105.cpp
+│       ├── d123-2.cpp
+│       ├── d123.cpp
+│       ├── d189.cpp
+│       ├── d190.cpp
+│       ├── d212.cpp
+│       ├── d221.cpp
+│       ├── d235.cpp
+│       ├── d242.cpp
+│       ├── d250.cpp
+│       ├── d255.cpp
+│       ├── d267.cpp
+│       ├── d275.cpp
+│       ├── d279-2.cpp
+│       ├── d279-3.cpp
+│       ├── d279.cpp
+│       ├── d378.cpp
+│       ├── d390.cpp
+│       ├── d406.cpp
+│       ├── d442.cpp
+│       ├── d449-2.cpp
+│       ├── d449.cpp
+│       ├── d449-test.cpp
+│       ├── d453.cpp
+│       ├── d481.cpp
+│       ├── d482.cpp
+│       ├── d485_1.cpp
+│       ├── d536.cpp
+│       ├── d636.cpp
+│       ├── d669.cpp
+│       ├── d671.cpp
+│       ├── d673.cpp
+│       ├── d784.cpp
+│       ├── d793-2.cpp
+│       ├── d793-3.cpp
+│       ├── d793-4.cpp
+│       ├── d793.cpp
+│       ├── d827.cpp
+│       ├── d828.cpp
+│       ├── d872.cpp
+│       ├── d890.cpp
+│       ├── d908.cpp
+│       ├── d980.cpp
+│       ├── e031.cpp
+│       ├── e155.cpp
+│       ├── e339.cpp
+│       ├── e446.cpp
+│       ├── e447.cpp
+│       ├── e511.cpp
+│       ├── e529.cpp
+│       ├── e564.cpp
+│       ├── e603.cpp
+│       ├── e621.cpp
+│       ├── e622.cpp
+│       ├── e623.cpp
+│       ├── e641.cpp
+│       ├── e718.cpp
+│       ├── e786.cpp
+│       ├── e787.cpp
+│       ├── e806.cpp
+│       ├── e807.cpp
+│       ├── e808.cpp
+│       ├── e834.cpp
+│       ├── e835.cpp
+│       ├── e968.cpp
+│       ├── e969.cpp
+│       ├── f160.cpp
+│       ├── f161.cpp
+│       ├── f162.cpp
+│       ├── f168.cpp
+│       ├── f314.cpp
+│       ├── f315.cpp
+│       ├── f376.cpp
+│       ├── f410.cpp
+│       ├── f581.cpp
+│       ├── f607_2.cpp
+│       ├── f607.cpp
+│       ├── f608.cpp
+│       ├── f637.cpp
+│       ├── f640.cpp
+│       ├── f677.cpp
+│       ├── g277.cpp
+│       ├── g278-2.cpp
+│       ├── g278.cpp
+│       ├── g321.cpp
+│       ├── g555.cpp
+│       ├── g556.cpp
+│       ├── g597.cpp
+│       ├── g598.cpp
+│       ├── g727.cpp
+│       ├── g732.cpp
+│       ├── g751_always_ans.py
+│       ├── h083.cpp
+│       ├── h084.cpp
+│       ├── h363.cpp
+│       ├── h400.cpp
+│       ├── h472.cpp
+│       ├── h557.cpp
+│       ├── h610.cpp
+│       ├── h631.cpp
+│       ├── h964.cpp
+│       ├── i085.cpp
+│       ├── i139.cpp
+│       ├── i401.cpp
+│       ├── i402.cpp
+│       ├── i647.cpp
+│       └── j125.cpp
+├── OJ_ans.code-workspace
+├── PCIC
+│   └── 2023
+│       ├── r1
+│       │   ├── grader.cpp
+│       │   ├── Minesweeper.cpp
+│       │   ├── Minesweeper.h
+│       │   ├── pA.cpp
+│       │   ├── pA.pdf
+│       │   ├── pB.cpp
+│       │   ├── pB.pdf
+│       │   ├── pC
+│       │   │   ├── cpp
+│       │   │   │   ├── compile_cpp.sh
+│       │   │   │   ├── grader.cpp
+│       │   │   │   ├── Minesweeper.cpp
+│       │   │   │   └── Minesweeper.h
+│       │   │   ├── examples
+│       │   │   │   ├── 01.in
+│       │   │   │   └── 01.out
+│       │   │   └── py
+│       │   │       ├── compile_py.sh
+│       │   │       ├── grader.py
+│       │   │       └── Minesweeper.py
+│       │   ├── pC.cpp
+│       │   ├── pC.pdf
+│       │   ├── pC_racing.cpp
+│       │   ├── pC.zip
+│       │   ├── pD.cpp
+│       │   ├── pD.pdf
+│       │   ├── pD_racing.cpp
+│       │   ├── pE.cpp
+│       │   ├── pE.pdf
+│       │   └── run
+│       ├── r2
+│       │   ├── basic_lite.cpp
+│       │   ├── pA.cpp
+│       │   ├── pB.cpp
+│       │   ├── pC.cpp
+│       │   ├── pD-013.cpp
+│       │   ├── pD-031.cpp
+│       │   ├── pD-2.cpp
+│       │   ├── pD.cpp
+│       │   ├── pE_bowle.cpp
+│       │   ├── pE.cpp
+│       │   ├── pE-old.cpp
+│       │   ├── R2_All.pdf
+│       │   ├── run
+│       │   ├── runb
+│       │   ├── runc.exe
+│       │   └── run.exe
+│       ├── r3
+│       │   ├── basic_lite.cpp
+│       │   ├── pA.cpp
+│       │   ├── pB.cpp
+│       │   ├── pC.cpp
+│       │   ├── pD.cpp
+│       │   ├── pE.cpp
+│       │   ├── R3_All.pdf
+│       │   ├── run.exe
+│       │   └── Treasure.cpp
+│       └── test
+│           ├── a.cpp
+│           ├── b.cpp
+│           ├── c.cpp
+│           ├── Egg.h
+│           ├── grader.cpp
+│           ├── pA.pdf
+│           ├── pB.pdf
+│           ├── pC
+│           │   ├── cpp
+│           │   │   ├── compile_cpp.sh
+│           │   │   ├── Egg.cpp
+│           │   │   ├── Egg.h
+│           │   │   └── grader.cpp
+│           │   ├── examples
+│           │   │   ├── 01.in
+│           │   │   └── 01.out
+│           │   └── py
+│           │       ├── compile_py.sh
+│           │       ├── Egg.py
+│           │       └── grader.py
+│           ├── pC.pdf
+│           ├── pC.zip
+│           ├── pD
+│           │   ├── examples
+│           │   │   ├── 01.in
+│           │   │   └── 01.out
+│           │   └── tests
+│           │       ├── 01.in
+│           │       ├── 02.in
+│           │       ├── 03.in
+│           │       ├── 04.in
+│           │       ├── 05.in
+│           │       ├── 06.in
+│           │       ├── 07.in
+│           │       ├── 08.in
+│           │       ├── 09.in
+│           │       └── 10.in
+│           ├── pD_check.cpp
+│           ├── pD.cpp
+│           ├── pD_i5.cpp
+│           ├── pDout
+│           │   ├── 01.in
+│           │   ├── 01.out
+│           │   ├── 02.in
+│           │   ├── 02.out
+│           │   ├── 03.in
+│           │   ├── 03.out
+│           │   ├── 04.in
+│           │   ├── 05.in
+│           │   ├── 05.out
+│           │   ├── 06.in
+│           │   ├── 07.in
+│           │   ├── 08.in
+│           │   ├── 09.in
+│           │   └── 10.in
+│           ├── pD.pdf
+│           ├── pD.zip
+│           └── run
+├── racing
+│   ├── TOI
+│   │   └── 練習賽
+│   │       └── 2023
+│   │           ├── 04
+│   │           │   ├── 新手組
+│   │           │   │   ├── pA.cpp
+│   │           │   │   ├── pA.pdf
+│   │           │   │   ├── pB.cpp
+│   │           │   │   ├── pB.pdf
+│   │           │   │   ├── pC.cpp
+│   │           │   │   └── pC.pdf
+│   │           │   └── 潛力組
+│   │           │       ├── pA.cpp
+│   │           │       ├── pA.pdf
+│   │           │       ├── pB.cpp
+│   │           │       ├── pB.pdf
+│   │           │       ├── pC.cpp
+│   │           │       └── pC.pdf
+│   │           └── list.md
+│   └── 資訊之芽
+│       └── 2023
+│           ├── 期中考
+│           │   ├── pA.cpp
+│           │   ├── pA.pdf
+│           │   ├── pB.pdf
+│           │   ├── pC.cpp
+│           │   ├── pC.pdf
+│           │   ├── pD.pdf
+│           │   ├── pE.pdf
+│           │   ├── pE_sample_code.cpp
+│           │   └── polynomial.h
+│           └── 期末考
+│               ├── pA_20.cpp
+│               ├── pA.cpp
+│               ├── pA.pdf
+│               ├── pB.pdf
+│               ├── pC.cpp
+│               ├── pC.pdf
+│               ├── pD.pdf
+│               ├── pE.pdf
+│               ├── pF.pdf
+│               ├── pF_sample3_input.txt
+│               ├── pF_sample3_output.txt
+│               ├── pG.cpp
+│               ├── pG.pdf
+│               ├── pH.pdf
+│               └── README.md
+├── README.md
+├── run
+├── run.cpp
+├── run.exe
+├── runn.exe
+├── sha256.cpp
+├── tcirc
+│   ├── tcirc_d030.cpp
+│   └── tcirc_d075.cpp
+├── test.cpp
+├── tioj
+│   ├── tioj_1015.cpp
+│   ├── tioj_1040.cpp
+│   ├── tioj_1072.cpp
+│   ├── tioj_1105.cpp
+│   ├── tioj_1152.cpp
+│   ├── tioj_1199.cpp
+│   ├── tioj_1402.cpp
+│   ├── tioj_1419.cpp
+│   ├── tioj_1947.cpp
+│   ├── tioj_2252.cpp
+│   ├── tioj_2253.cpp
+│   └── tioj_2258.cpp
+├── vim.md
+├── zerojudge
+│   ├── zj_a001.cpp
+│   ├── zj_a001.py
+│   ├── zj_a002.cpp
+│   ├── zj_a003.cpp
+│   ├── zj_a004.cpp
+│   ├── zj_a005.cpp
+│   ├── zj_a006.cpp
+│   ├── zj_a009.cpp
+│   ├── zj_a017.py
+│   ├── zj_a289.cpp
+│   ├── zj_a597.cpp
+│   ├── zj_b430.cpp
+│   ├── zj_c067.cpp
+│   ├── zj_c291.cpp
+│   ├── zj_f314.cpp
+│   ├── zj_f581.cpp
+│   ├── zj_g541.cpp
+│   ├── zj_g541.md
+│   ├── zj_h026.cpp
+│   ├── zj_h028.cpp
+│   ├── zj_h399_h400.cpp
+│   ├── zj_i399.cpp
+│   └── zj_k465.cpp
+└── 題目整理.md
+
+133 directories, 1230 files
