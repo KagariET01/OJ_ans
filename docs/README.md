@@ -1,7 +1,7 @@
 > [`Codeforces`](./cf)  
 > [`Zerojudge`](./zj)  
 
-> [`PCIC`]  
+> [`PCIC`](./PCIC)  
 > [`Log`](./log)  
 
 
