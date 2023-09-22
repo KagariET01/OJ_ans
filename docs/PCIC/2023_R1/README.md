@@ -1,4 +1,5 @@
-# [`PCIC`] > `PCIC 2023_R1`
+# `PCIC 2023_R1`
+[`back`](../)
 
 > [`PCIC 2023_R1 PA` `100/100` 尖叫雞的三角形詛咒(Triangle Curse)](#pa)  
 > [`PCIC 2023_R1 PB` `100/100` 堅持下去(Give Up)](#pb)  

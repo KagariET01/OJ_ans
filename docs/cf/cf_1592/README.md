@@ -1,12 +1,7 @@
-# [`Codeforces`] > `cf 1592`<br>Codeforces Round 746 (Div. 2)
+# `CF 1592` <br>Codeforces Round 746 (Div. 2)
+[`back`](../)
 
-> ~~[`cf 1592 PA`](#pa)~~  
-> [`cf 1592 PB` Hemose Shopping](#pb)  
-> ~~[`cf 1592 PC`](#pc)~~  
-> ~~[`cf 1592 PD`](#pd)~~  
-> ~~[`cf 1592 PE`](#pe)~~  
-> ~~[`cf 1592 PF1`](#pf1)~~  
-> ~~[`cf 1592 PF2`](#pf2)~~  
+> [`CF 1592 PB` Hemose Shopping](#pb)  
 
 
 ## pB

@@ -1,5 +1,7 @@
-# [`ZeroJudge`] > `zj i___`
-> [`zj i722` 蝸牛好蟀](./722)
+# `ZJ i___`
+[`back`](../)
+
+> [`ZJ i722` 蝸牛好蟀](./722)
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj

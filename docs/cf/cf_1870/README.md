@@ -1,13 +1,7 @@
-# [`Codeforces`] > `cf 1870`<br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
+# `CF 1870` <br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
+[`back`](../)
 
-> [`cf 1870 PA` MEXanized Array](#pa)  
-> ~~[`cf 1870 PB`](#pb)~~  
-> ~~[`cf 1870 PC`](#pc)~~  
-> ~~[`cf 1870 PD`](#pd)~~  
-> ~~[`cf 1870 PE`](#pe)~~  
-> ~~[`cf 1870 PF`](#pf)~~  
-> ~~[`cf 1870 PG`](#pg)~~  
-> ~~[`cf 1870 PH`](#ph)~~  
+> [`CF 1870 PA` MEXanized Array](#pa)  
 
 ## pA
 `cf 1870 PA` MEXanized Array

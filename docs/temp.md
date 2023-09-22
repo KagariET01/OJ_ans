@@ -1,4 +1,4 @@
-# `OJ` > `OJ contest`<br>contest name
+# `OJ contest` <br>contest name
 
 > [`OJ contest P` name](#pA)
 

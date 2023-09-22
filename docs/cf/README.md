@@ -1,8 +1,11 @@
 # [`Codeforces`]
-> [`cf 1592` `1/7` Codeforces Round 746 (Div. 2)](./cf_1592)  
-> [`cf 1867` `1/7` Codeforces Round 897 (Div. 2)](./cf_1867)  
-> [`cf 1870` `1/8` CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)](./cf_1870)  
-> [`cf 1872` `5/7` Codeforces Round 895 (Div. 3)](./cf_1872)  
+[`back`](../)
+
+> [`CF 1592` `1/7` Codeforces Round 746 (Div. 2)](./cf_1592)  
+> [`CF 1863` `1/7` Pinely Round 2 (Div. 1 + Div. 2)](./cf_1863)  
+> [`CF 1867` `2/7` Codeforces Round 897 (Div. 2)](./cf_1867)  
+> [`CF 1870` `1/8` CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)](./cf_1870)  
+> [`CF 1872` `5/7` Codeforces Round 895 (Div. 3)](./cf_1872)  
 
 
 [`Codeforces`]: /OJ_ans/cf

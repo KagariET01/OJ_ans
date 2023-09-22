@@ -1,4 +1,5 @@
-# [`Zerojudge`] > `zj i722`<br>蝸牛好蟀
+# `ZJ i722` <br>蝸牛好蟀
+[`back`](../)
 
 ```c++
 #include<iostream>

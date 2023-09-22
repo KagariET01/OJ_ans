@@ -1,4 +1,5 @@
-# [`PCIC`] > `PCIC 2023_R2`
+# `PCIC 2023_R2`
+[`back`](../)
 
 > [題目](./R2_All.pdf)  
 > [`PCIC 2023_R2 PA` `100/100` 戀愛家教(Edward)](#pa)  
