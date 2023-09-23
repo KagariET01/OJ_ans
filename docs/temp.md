@@ -1,10 +1,13 @@
-# `OJ contest` <br>contest name
+# `CF 1869` <br>Codeforces Round 896 (Div. 2)
+[`back`](../)
 
-> [`OJ contest P` name](#pA)
+> [`CF 1869 PA` Make It Zero](#pa)
 
-# pA
-`OJ contest P` name
+# PA
+`CF 1869 PA` Make It Zero
+```c++
 
-[`Codeforces`]: /OJ_ans/cf
-[`Zerojudge`]: /OJ_ans/zj
-[`PCIC`]: /OJ_ans/PCIC
+```
+> Tag
+> `bit運算` `math` `greedy` `想法`
+

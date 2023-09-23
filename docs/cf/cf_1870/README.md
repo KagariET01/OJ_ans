@@ -3,7 +3,7 @@
 
 > [`CF 1870 PA` MEXanized Array](#pa)  
 
-## pA
+## PA
 `cf 1870 PA` MEXanized Array
 ```c++
 #include<bits/stdc++.h>
