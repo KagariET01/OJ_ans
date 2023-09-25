@@ -48,7 +48,7 @@ int main(int argc,char** argv){
 }
 ```
 
-> Tag  
+> Tag:
 > `sort`
 
 ## PB
@@ -107,8 +107,8 @@ int main(int argc,char** argv){
 }
 ```
 
-> Tag  
-> `bit運算` `math` `觀察`
+> Tag:
+> `bit運算`,`math`,`觀察`
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj

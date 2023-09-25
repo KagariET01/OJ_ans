@@ -49,5 +49,5 @@ int main(int argc,char** argv){
 }
 ```
 
-> Tag  
-> `math` `觀察`
+> Tag:
+> `math`,`觀察`

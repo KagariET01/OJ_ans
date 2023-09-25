@@ -251,9 +251,6 @@ int main(int argc,char** argv){
 }
 ```
 
-## pF
-
-## pG
 
 
 

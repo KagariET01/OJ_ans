@@ -17,6 +17,13 @@ template<typename tpe>tpe reader(){
 }
 
 int main(int argc,char** argv){
+	bool tcase=1;
+	auto solve=[](INT case){
+		int inin=read(INT);
+		cout<<inin;
+	};
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
 		if(nwstr=="-Dev"){
@@ -26,7 +33,6 @@ int main(int argc,char** argv){
 			noTLE=0;
 		}
 	}
-	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	DBG{
 		cout<<"Temp by KagariET01"<<endl;
 		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
@@ -38,8 +44,10 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
-	while(t--){
+
+	INT t=(tcase?read(int):1);
+	for(INT i=0;i<t;i++){
+		solve(i);
 	}
 	return 0;
 }
