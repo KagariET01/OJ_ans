@@ -35,11 +35,11 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 
-	auto solve=[](INT casenum){
-		return 0;
-	};
+	auto solve=[](INT case){
+
+	}
 	bool one_case=0;
-	bool ynans=0;
+	bool ynans=1;
 	string yes="yes";
 	string no="no";
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);

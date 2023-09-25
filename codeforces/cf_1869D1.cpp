@@ -11,7 +11,7 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 
-int main(int argc,char** argv){	
+int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
 		if(nwstr=="-Dev"){
@@ -32,14 +32,42 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 
-	auto solve=[](INT casenum){
-		return 0;
+	auto solve=[](INT icase){
+		INT n=read(INT);
+		INT a[n];
+		INT tot=0;
+		for(INT i=0;i<n;i++){cin>>a[i];tot+=a[i];}
+		if(tot%n)return 0;
+		INT cen=tot/n;
+		vector<INT> vec;
+		vec.resize(64);
+		auto lowbit=[](INT n){
+			return n&(-n);
+		};
+		for(INT i=0;i<n;i++){
+			if(a[i]==cen)continue;
+			INT mx=abs(a[i]-cen);//距離平均的距離
+			INT cnv=lowbit(mx);//要其他人給i的
+			INT tot=mx+cnv;//i先給出多少給別人
+			if(__builtin_popcount(tot)==1){//i先給出去的數量應該要是2^n
+				if(a[i]>cen){
+					vec[__lg(tot)]++;
+					vec[__lg(cnv)]--;
+				}else{
+					vec[__lg(tot)]--;
+					vec[__lg(cnv)]++;
+				}
+			}else return 0;
+		}
+		for(INT i:vec){
+			if(i)return 0;
+		}
+		return 1;
 	};
 	bool one_case=0;
-	bool ynans=0;
+	bool ynans=1;
 	string yes="yes";
 	string no="no";
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);

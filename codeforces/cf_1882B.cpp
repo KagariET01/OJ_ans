@@ -36,6 +36,32 @@ int main(int argc,char** argv){
 
 
 	auto solve=[](INT casenum){
+		INT n=read(INT);
+		set<INT> vec[55];//哪些人有i
+		vector<INT> se[n];//第i人有什麼
+		set<INT> allse;
+		for(INT i=0;i<n;i++){
+			INT sz=read(INT);
+			for(INT j=0;j<sz;j++){
+				INT inin=read(INT);
+				se[i].push_back(inin);
+				vec[inin].insert(i);
+				allse.insert(inin);
+			}
+		}
+		set<INT> nw;
+		INT ans=0;
+		for(INT i:allse){
+			nw.clear();
+			for(INT j=0;j<n;j++){
+				if(vec[i].count(j))continue;
+				for(INT k:se[j]){
+					nw.insert(k);
+				}
+			}
+			ans=max(ans,(INT)(nw.size()));
+		}
+		cout<<ans<<endl;
 		return 0;
 	};
 	bool one_case=0;

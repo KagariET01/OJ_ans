@@ -36,6 +36,14 @@ int main(int argc,char** argv){
 
 
 	auto solve=[](INT casenum){
+		INT n=read(INT);
+		INT ans=1;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(ans==inin)ans++;
+			ans++;
+		}
+		cout<<ans-1<<endl;
 		return 0;
 	};
 	bool one_case=0;
