@@ -196,7 +196,7 @@ textarea {
   font:inherit
 }
 * {
-  box-sizing:border-box
+  box-sizing:border-box;
 }
 input,
 select,
@@ -211,7 +211,7 @@ body {
   font-size:14px;
   line-height:1.5;
   color:#24292e;
-  background-color:#fff
+  background-color:#000;
 }
 a {
   color:#0ff;
@@ -4784,7 +4784,9 @@ pre {
 }
 .markdown-body blockquote {
   padding:1em;
-  border-left:0.25em solid #dfe2e5
+  border-left:0.25em solid #fff;
+  background-color: #fff2;
+  border-radius: 3px;
 }
 .markdown-body blockquote>:first-child {
   margin-top:0
@@ -5034,10 +5036,10 @@ pre {
 .markdown-body code,
 .markdown-body tt {
   padding:0.2em 0.4em;
-  margin:0;
+  margin:0.2em 0;
   font-size:85%;
   background-color:#fff3;
-  border-radius:3px
+  border-radius:3px;
 }
 .markdown-body code br,
 .markdown-body tt br {

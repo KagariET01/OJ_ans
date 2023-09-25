@@ -1,8 +1,3 @@
-/*
-[q]
-[]
-*/
-//#ifndef eval
 #include<bits/stdc++.h>
 using namespace std;
 #define INT long long int
@@ -26,7 +21,6 @@ int main(int argc,char** argv){
 			noTLE=0;
 		}
 	}
-	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	DBG{
 		cout<<"Temp by KagariET01"<<endl;
 		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
@@ -38,9 +32,27 @@ int main(int argc,char** argv){
 		}
 		cout<<"===Code start==="<<endl;
 	}
-	INT t=read(int);
-	while(t--){
+
+
+	auto solve=[](INT case){
+
+	}
+	bool 1case=0;
+	bool ynans=1;
+	string yes="yes";
+	string no="no";
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	INT t=(1case?1:read(int));
+	for(INT i=0;i<t;i++){
+		if(!ynans){
+			solve(i);
+		}else{
+			if(solve(i)){
+				cout<<yes<<endl;
+			}else{
+				cout<<no<<endl;
+			}
+		}
 	}
 	return 0;
 }
-//#endif
