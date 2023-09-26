@@ -5076,7 +5076,7 @@ pre {
   overflow:auto;
   font-size:85%;
   line-height:1.45;
-  background-color:#f6f8fa;
+  background-color:#000;
   border-radius:3px
 }
 .markdown-body pre code,
@@ -5125,11 +5125,11 @@ pre {
   font-style:italic
 }
 .highlight .cp {
-  color:#999999;
+  color:#a6f;
   font-weight:bold
 }
 .highlight .c1 {
-  color:#999988;
+  color:#0c0;
   font-style:italic
 }
 .highlight .cs {
@@ -5200,12 +5200,12 @@ pre {
   font-weight:bold
 }
 .highlight .kt {
-  color:#445588;
+  color:#0ff;
   font-weight:bold
 }
 .highlight .k,
 .highlight .kv {
-  color:#000000;
+  color:#04f;
   font-weight:bold
 }
 .highlight .mf {
@@ -5218,7 +5218,7 @@ pre {
   color:#009999
 }
 .highlight .mi {
-  color:#009999
+  color:#4f8;
 }
 .highlight .mo {
   color:#009999
@@ -5241,7 +5241,7 @@ pre {
   color:#d14
 }
 .highlight .se {
-  color:#d14
+  color:#8f0;
 }
 .highlight .sh {
   color:#d14
@@ -5262,7 +5262,7 @@ pre {
   color:#990073
 }
 .highlight .s {
-  color:#d14
+  color:#f88;
 }
 .highlight .na {
   color:#008080
@@ -5274,7 +5274,7 @@ pre {
   color:#0086B3
 }
 .highlight .nc {
-  color:#445588;
+  color:#f8f;
   font-weight:bold
 }
 .highlight .no {
@@ -5292,7 +5292,7 @@ pre {
   font-weight:bold
 }
 .highlight .nf {
-  color:#990000;
+  color:#ff0;
   font-weight:bold
 }
 .highlight .nl {
@@ -5318,16 +5318,14 @@ pre {
   color:#008080
 }
 .highlight .ow {
-  color:#fff;
-  /*font-weight:bold*/
+  color:#000000;
+  font-weight:bold
 }
 .highlight .o {
-  color:#fff;
-  /*! font-weight:bold */
 }
 .highlight .w {
   color:#bbbbbb
 }
 .highlight {
-  background-color:#fff
+  background-color:fff2;
 }
