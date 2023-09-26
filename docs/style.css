@@ -4786,6 +4786,7 @@ pre {
   padding:1em;
   border-left:0.25em solid #fff;
   background-color: #fff2;
+  color:#fff;
   border-radius: 3px;
 }
 .markdown-body blockquote>:first-child {
@@ -5125,7 +5126,7 @@ pre {
   font-style:italic
 }
 .highlight .cp {
-  color:#aaa;
+  color:#a6f;
   font-weight:bold
 }
 .highlight .c1 {
