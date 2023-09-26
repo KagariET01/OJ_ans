@@ -4868,7 +4868,8 @@ pre {
 .markdown-body h2 {
   padding-bottom:0.3em;
   font-size:1.5em;
-  border-bottom:1px solid #eaecef
+  color:#fff;
+  border-bottom:1px solid #fff
 }
 .markdown-body h3 {
   font-size:1.25em
@@ -5063,22 +5064,20 @@ pre {
   border:0
 }
 .markdown-body .highlight {
-  margin-bottom:16px background-color: #fff2;
+  margin-bottom:16px
 }
 .markdown-body .highlight pre {
   margin-bottom:0;
-  word-break:normal;
-  background-color: #000;
+  word-break:normal
 }
-/*.markdown-body .highlight pre,*/
+.markdown-body .highlight pre,
 .markdown-body pre {
   padding:16px;
   overflow:auto;
   font-size:85%;
   line-height:1.45;
-  background-color:#000;
-  border-radius:3px;
-  border: 0.25em solid #fff8;
+  background-color:#f6f8fa;
+  border-radius:3px
 }
 .markdown-body pre code,
 .markdown-body pre tt {
@@ -5089,7 +5088,7 @@ pre {
   overflow:visible;
   line-height:inherit;
   word-wrap:normal;
-  background-color:#0000;
+  background-color:transparent;
   border:0
 }
 .markdown-body .csv-data td,
@@ -5126,7 +5125,7 @@ pre {
   font-style:italic
 }
 .highlight .cp {
-  color:#a6f;
+  color:#999999;
   font-weight:bold
 }
 .highlight .c1 {
@@ -5201,12 +5200,12 @@ pre {
   font-weight:bold
 }
 .highlight .kt {
-  color:#0ff;
+  color:#445588;
   font-weight:bold
 }
 .highlight .k,
 .highlight .kv {
-  color:#04f;
+  color:#000000;
   font-weight:bold
 }
 .highlight .mf {
@@ -5219,7 +5218,7 @@ pre {
   color:#009999
 }
 .highlight .mi {
-  color:#4f8;
+  color:#009999
 }
 .highlight .mo {
   color:#009999
@@ -5242,7 +5241,7 @@ pre {
   color:#d14
 }
 .highlight .se {
-  color:#8f0;
+  color:#d14
 }
 .highlight .sh {
   color:#d14
@@ -5263,7 +5262,7 @@ pre {
   color:#990073
 }
 .highlight .s {
-  color:#f88;
+  color:#d14
 }
 .highlight .na {
   color:#008080
@@ -5275,7 +5274,7 @@ pre {
   color:#0086B3
 }
 .highlight .nc {
-  color:#f8f;
+  color:#445588;
   font-weight:bold
 }
 .highlight .no {
@@ -5293,7 +5292,7 @@ pre {
   font-weight:bold
 }
 .highlight .nf {
-  color:#ff0;
+  color:#990000;
   font-weight:bold
 }
 .highlight .nl {
@@ -5319,14 +5318,16 @@ pre {
   color:#008080
 }
 .highlight .ow {
-  color:#000000;
-  font-weight:bold
+  color:#fff;
+  /*font-weight:bold*/
 }
 .highlight .o {
+  color:#fff;
+  /*! font-weight:bold */
 }
 .highlight .w {
   color:#bbbbbb
 }
 .highlight {
-  background-color:fff2;
+  background-color:#fff
 }
