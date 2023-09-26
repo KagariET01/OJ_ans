@@ -1,3 +1,6 @@
+
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
 # `CF 1882`<br>Codeforces Round 899 (Div. 2)
 
 > ## `CF 1882 PA`<br>Increasing Sequence
@@ -204,5 +207,3 @@
 > greedy
 > ```
 
-
-<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
