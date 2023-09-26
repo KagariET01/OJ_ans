@@ -5077,7 +5077,8 @@ pre {
   font-size:85%;
   line-height:1.45;
   background-color:#000;
-  border-radius:3px
+  border-radius:3px;
+  border:0.25em solid #fff8;
 }
 .markdown-body pre code,
 .markdown-body pre tt {
