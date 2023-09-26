@@ -5066,17 +5066,18 @@ pre {
 }
 .markdown-body .highlight pre {
   margin-bottom:0;
-  word-break:normal
-  background-color:#fff2;
+  word-break:normal;
+  background-color: #000;
 }
-.markdown-body .highlight pre,
+/*.markdown-body .highlight pre,*/
 .markdown-body pre {
   padding:16px;
   overflow:auto;
   font-size:85%;
   line-height:1.45;
-  background-color:#fff2;
-  border-radius:3px
+  background-color:#000;
+  border-radius:3px;
+  border: 0.25em solid #fff8;
 }
 .markdown-body pre code,
 .markdown-body pre tt {
@@ -5217,7 +5218,7 @@ pre {
   color:#009999
 }
 .highlight .mi {
-  color:#009999
+  color:#4f8;
 }
 .highlight .mo {
   color:#009999
@@ -5273,7 +5274,7 @@ pre {
   color:#0086B3
 }
 .highlight .nc {
-  color:#445588;
+  color:#f8f;
   font-weight:bold
 }
 .highlight .no {
