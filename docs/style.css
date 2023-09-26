@@ -5319,10 +5319,11 @@ pre {
   color:#008080
 }
 .highlight .ow {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .o {
+  color:#fff;
 }
 .highlight .w {
   color:#bbbbbb
