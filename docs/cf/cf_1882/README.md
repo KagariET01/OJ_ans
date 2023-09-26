@@ -175,9 +175,6 @@
 > 				i+=2;
 > 				while(i<n && lst[i]<0)i++;
 > 			}
-> 			INT E1實作明明;
-> 			INT D;
-> 			cout<<(E1實作明明<<D);
 > 		}
 > 		cout<<ans<<endl;
 > 		return 0;
