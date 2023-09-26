@@ -1,3 +1,7 @@
+
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
+
 # 2023/09/25
 `CF 1882 PA` `AC`  
 `CF 1882 PB` `AC`  
@@ -20,5 +24,3 @@
 `CF 1872 PD` `AC`  
 `CF 1872 PE` `AC`  
 
-
-<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
