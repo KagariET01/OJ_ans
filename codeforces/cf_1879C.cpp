@@ -13,7 +13,7 @@ template<typename tpe>tpe reader(){
 
 INT mod=998244353;
 
-int main(int argc,char** argv){
+int main(int argc,char** argv){	
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
 		if(nwstr=="-Dev"){
@@ -37,6 +37,38 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		string str=read(string);
+		auto pw=[](INT n){
+			INT re=1;
+			while(n){
+				re*=n;
+				re%=mod;
+				n--;
+			}
+			return re;
+		};
+		INT n=str.size();
+		INT k=0;//keep多少
+		INT op=1;//空格的組合
+		INT nw=1;//該group的size
+		for(INT i=1;i<n;i++){
+			if(str[i]==str[i-1]){
+				nw++;
+			}else{
+				k++;
+				op*=nw;
+				op%=mod;
+				nw=1;
+			}
+		}
+				k++;
+				op*=nw;
+				op%=mod;
+				nw=1;
+		INT aans=n-k;
+		op*=pw(aans);//空格間的排列
+		op%=mod;
+		cout<<aans<<" "<<op<<endl;
 		return 0;
 	};
 	bool one_case=0;

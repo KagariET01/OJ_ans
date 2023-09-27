@@ -1,3 +1,5 @@
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
 # `CF 1869` `CF 1868`<br>Codeforces Round 896 (Div. 1, Div. 2)
 [`back`](../)
 
@@ -221,4 +223,3 @@
 
 
 
-<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">

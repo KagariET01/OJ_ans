@@ -11,9 +11,7 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 
-INT mod=998244353;
-
-int main(int argc,char** argv){
+int main(int argc,char** argv){	
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
 		if(nwstr=="-Dev"){
@@ -37,6 +35,22 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		INT n=read(INT);
+		INT atot=0,amin=1e9+7;
+		INT btot=0,bmin=1e9+7;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			atot+=inin;
+			amin=min(amin,inin);
+		}
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			btot+=inin;
+			bmin=min(bmin,inin);
+		}
+		INT aans=atot+bmin*n;
+		INT bans=btot+amin*n;
+		cout<<min(aans,bans)<<endl;
 		return 0;
 	};
 	bool one_case=0;

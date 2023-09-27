@@ -1,4 +1,3 @@
-
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1882`<br>Codeforces Round 899 (Div. 2)

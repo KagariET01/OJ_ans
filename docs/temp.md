@@ -1,7 +1,9 @@
-# `OJ CID PID`
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
+# `OJ CID PID`<br>N
 [`back`](../)
 
-> ## `OJ CID PID` PN
+> ## `OJ CID PID`<br>PN
 > ### `Score`
 > ### `Thinking`
 > ### `c++`

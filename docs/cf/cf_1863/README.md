@@ -1,11 +1,10 @@
-# `CF 1863` <br>Pinely Round 2 (Div. 1 + Div. 2)
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
+# `CF 1863`<br>Pinely Round 2 (Div. 1 + Div. 2)
 [`back`](../)
 
-> ## `CF 1863 PC` MEX Repetition
->
+> ## `CF 1863 PC`<br>MEX Repetition
 > ### `C++`
->
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -51,9 +50,8 @@
 > ```
 >
 > ### `Tag`
->
 > ```txt
 > math,觀察
 > ```
 
-<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
