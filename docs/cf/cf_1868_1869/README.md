@@ -1,7 +1,7 @@
-# `CF 1869` Codeforces Round 896 (Div. 2)<br>`CF 1868` Codeforces Round 896 (Div. 1)
+# `CF 1869` `CF 1868`<br>Codeforces Round 896 (Div. 1, Div. 2)
 [`back`](../)
 
-> ## `CF 1869 PA` Make It Zero
+> ## `CF 1869 PA`<br>Make It Zero
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>
@@ -45,7 +45,7 @@
 > bit運算,math,greedy,想法
 > ```
 
-> ## `CF 1869 PB` 2D Traveling
+> ## `CF 1869 PB`<br>2D Traveling
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>
@@ -91,7 +91,7 @@
 > ```
 
 
-> ## `CF 1869 PC` `CF 1868 PA` Fill in the Matrix
+> ## `CF 1869 PC` `CF 1868 PA`<br>Fill in the Matrix
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>
@@ -142,7 +142,7 @@
 > ```
 
 
-> ## `CF 1869 PD1` `CF 1868 PB1` Candy Party (Easy Version)
+> ## `CF 1869 PD1` `CF 1868 PB1`<br>Candy Party (Easy Version)
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>
