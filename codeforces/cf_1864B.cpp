@@ -58,11 +58,12 @@ int main(int argc,char** argv){
 			sort(a[1].begin(),a[1].end());
 			s="";
 			s.reserve(n);
-			for(INT i=0;i<n/2;i++){
-				s.push_back(a[0][i]);
-				s.push_back(a[1][i]);
+			for(INT i=0;i<a[0].size() || i<a[1].size();i++){
+				if(i<a[0].size())
+					s.push_back(a[0][i]);
+				if(i<a[1].size())
+					s.push_back(a[1][i]);
 			}
-			s.push_back(a[0].back());
 		}else{
 
 			sort(s.begin(),s.end());
