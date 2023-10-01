@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1870`<br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
-[`back`](../)
+[`back`](../) [`CF 1870`](https://codeforces.com/contest/1870)
 
 > ## `CF 1870 PA`<br>MEXanized Array
 > ### `C++`

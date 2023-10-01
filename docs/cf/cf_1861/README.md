@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1861`<br>Educational Codeforces Round 154 (Rated for Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1861`](https://codeforces.com/contest/1861)
 
 > ## `CF 1861 PA`<br>Prime Deletion
 > ### `C++`

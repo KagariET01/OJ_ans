@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1882`<br>Codeforces Round 899 (Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1882`](https://codeforces.com/contest/1882)
 
 > ## `CF 1882 PA`<br>Increasing Sequence
 > ### `C++`

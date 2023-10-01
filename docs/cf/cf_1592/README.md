@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1592`<br>Codeforces Round 746 (Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1592`](https://codeforces.com/contest/1592)
 
 > ## `CF 1592 PB`<br>Hemose Shopping
 > ### `C++`

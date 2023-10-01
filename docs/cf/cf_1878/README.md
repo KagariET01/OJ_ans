@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1878`<br>Codeforces Round 900 (Div. 3)
-[`back`](../)
+[`back`](../) [`CF 1878`](https://codeforces.com/contest/1878)
 
 > ## `CF 1878 PA`<br>How Much Does Daytona Cost?
 > ### `C++`

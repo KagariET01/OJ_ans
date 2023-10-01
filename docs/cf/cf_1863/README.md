@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1863`<br>Pinely Round 2 (Div. 1 + Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1863`](https://codeforces.com/contest/1863)  
 
 > ## `CF 1863 PC`<br>MEX Repetition
 > ### `C++`

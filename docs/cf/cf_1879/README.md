@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1879`<br>Educational Codeforces Round 155 (Rated for Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1879`](https://codeforces.com/contest/1879)
 
 > ## `CF 1879 PA`<br>Rigged!
 > ### `C++`

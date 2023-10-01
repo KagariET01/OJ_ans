@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1872`<br>Codeforces Round 895 (Div. 3)
-[`back`](../) [`contest`](https://codeforces.com/contest/1872)
+[`back`](../) [`CF 1872`](https://codeforces.com/contest/1872)
 
 > ## `CF 1872 PA`<br>Two Vessels  
 > ### `C++`

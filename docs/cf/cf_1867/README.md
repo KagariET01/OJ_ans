@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1867`<br>Codeforces Round 897 (Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1867`](https://codeforces.com/contest/1867)
 
 > ## `CF 1867 PA`<br>green_gold_dog, array and permutation
 > ### `C++`

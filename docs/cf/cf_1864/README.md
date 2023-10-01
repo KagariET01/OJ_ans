@@ -1,7 +1,7 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1864`<br>Harbour.Space Scholarship Contest 2023-2024 (Div. 1 + Div. 2)
-[`back`](../)
+[`back`](../) [`CF 1864`](https://codeforces.com/contest/1864)
 
 > ## `CF 1864 PA`<br>Increasing and Decreasing
 > ### `C++`
