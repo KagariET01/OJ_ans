@@ -37,22 +37,14 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
-		INT n,m,k;
-		cin>>n>>m>>k;
-		INT sum1=0,sum2=0;
-		INT a[n],b[m];
+		INT a,b,n;
+		cin>>a>>b>>n;
+		INT ans=b;
+		a--;
 		for(INT i=0;i<n;i++){
-			cin>>a[i];
-			sum1+=a[i];
+			ans+=min(read(INT),a);
 		}
-		for(INT i=0;i<m;i++){
-			cin>>b[i];
-		}
-		sort(a,a+n);
-		sort(b,b+m);
-		INT mn1=a[0],mx1=a[n-1],mn2=b[0],mx2=b[m-1];
-		if(k%2)cout<<max(sum1,sum1-mn1+mx2)<<endl;
-		else cout<<max(sum1,sum1-mn1+mx2)-max(mx1,mx2)+min(mn1,mn2)<<endl;
+		cout<<ans<<endl;
 		return 0;
 	};
 	bool one_case=0;
@@ -74,12 +66,3 @@ int main(int argc,char** argv){
 	}
 	return 0;
 }
-
-
-/*
-
-1
-10 10 100
-5 5 5 5 5 9 9 9 9 9
-1 1 1 1 1 7 7 7 7 7
-*/

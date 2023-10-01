@@ -11,6 +11,8 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 
+INT aaa(INT b){return 0;}
+
 INT mod=998244353;
 
 int main(int argc,char** argv){
@@ -36,23 +38,46 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
+
+	//int(*) tst;
 	auto solve=[](INT casenum){
-		INT n,m,k;
-		cin>>n>>m>>k;
-		INT sum1=0,sum2=0;
-		INT a[n],b[m];
-		for(INT i=0;i<n;i++){
-			cin>>a[i];
-			sum1+=a[i];
+		INT a,b,n;
+		cin>>a>>b>>n;
+		n=min(n,(INT)5+n%2);
+		INT sea[a];
+		INT seb[b];
+		for(INT i=0;i<a;i++){
+			sea[i]=read(INT);
 		}
-		for(INT i=0;i<m;i++){
-			cin>>b[i];
+		for(INT i=0;i<b;i++){
+			seb[i]=read(INT);
 		}
-		sort(a,a+n);
-		sort(b,b+m);
-		INT mn1=a[0],mx1=a[n-1],mn2=b[0],mx2=b[m-1];
-		if(k%2)cout<<max(sum1,sum1-mn1+mx2)<<endl;
-		else cout<<max(sum1,sum1-mn1+mx2)-max(mx1,mx2)+min(mn1,mn2)<<endl;
+		for(INT i=1;i<=n;i++){
+			sort(sea,sea+a);
+			sort(seb,seb+b);
+			if(i%2){
+				if(sea[0]<seb[b-1]){
+					swap(sea[0],seb[b-1]);
+				}
+			}else{
+				if(seb[0]<sea[a-1]){
+					swap(seb[0],sea[a-1]);
+				}
+			}
+			DBG{
+				cerr<<"a:";
+				for(INT i:sea)cerr<<" "<<i;
+				cerr<<endl;
+				cerr<<"b:";
+				for(INT i:seb)cerr<<" "<<i;
+				cerr<<endl<<endl;
+			}
+		}
+		INT ans=0;
+		for(INT i:sea){
+			ans+=i;
+		}
+		cout<<ans<<endl;
 		return 0;
 	};
 	bool one_case=0;
@@ -74,12 +99,3 @@ int main(int argc,char** argv){
 	}
 	return 0;
 }
-
-
-/*
-
-1
-10 10 100
-5 5 5 5 5 9 9 9 9 9
-1 1 1 1 1 7 7 7 7 7
-*/
