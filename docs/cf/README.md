@@ -2,7 +2,7 @@
 [`back`](../)
 
 > [`CF 1592` `1/7` Codeforces Round 746 (Div. 2)](./cf_1592)  
-> [`CF 1861` `2/6` Educational Codeforces Round 154 (Rated for Div. 2)](./cf_1861)
+> [`CF 1861` `2/6` Educational Codeforces Round 154 (Rated for Div. 2)](./cf_1861)  
 > [`CF 1863` `1/7` Pinely Round 2 (Div. 1 + Div. 2)](./cf_1863)  
 > [`CF 1867` `2/7` Codeforces Round 897 (Div. 2)](./cf_1867)  
 > [`CF 1868` `CF 1869` `4/9` Codeforces Round 896 (Div. 1, Div. 2)](./cf_1868_1869)  
