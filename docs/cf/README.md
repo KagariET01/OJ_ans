@@ -8,7 +8,7 @@
 > [`CF 1868` `CF 1869` `4/9` Codeforces Round 896 (Div. 1, Div. 2)](./cf_1868_1869)  
 > [`CF 1870` `1/8` CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)](./cf_1870)  
 > [`CF 1872` `5/7` Codeforces Round 895 (Div. 3)](./cf_1872)  
-> [`CF 1874` `CF 1875` `3/9` Codeforces Round 901 (Div. 1, Div. 2)](./cf_1874_1875)  
+> [`CF 1874` `CF 1875` `4/10` Codeforces Round 901 (Div. 1, Div. 2)](./cf_1874_1875)  
 > [`CF 1878` `3/7` Codeforces Round 900 (Div. 3)](./cf_1882)  
 > [`CF 1879` `3/6` Educational Codeforces Round 155 (Rated for Div. 2)](./cf_1882)  
 > [`CF 1882` `3/7` Codeforces Round 899 (Div. 2)](./cf_1882)  
