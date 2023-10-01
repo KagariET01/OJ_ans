@@ -39,19 +39,27 @@ int main(int argc,char** argv){
 	auto solve=[](INT casenum){
 		INT n;
 		cin>>n;
-		map<INT,INT> mp;
+		INT lst[n+1]={};
 		for(INT i=0;i<n;i++){
-			mp[read(INT)]++;
+			INT inin=read(INT);
+			if(inin<n)lst[inin]++;
 		}
-		while(!mp.empty()){
-			INT nwmex=0;
-			map<INT,INT>::iterator it=mp.begin();
-			while((*it).first==nwmex){
-				nwmex++;
-				it++;
+		INT i=0;
+		while(lst[i])i++;
+		INT dp[n+1];
+		fill(dp,dp+n,1e9+7);
+		dp[i]=0;
+		for(;i>=0;i--){
+			for(INT j=i-1;j>=0;j--){
+				dp[j
+				]=min(dp[j],
+					dp[i]+ //從i開始
+					i*(lst[j]-1)+//但是最後一次例外
+					j
+				);
 			}
-			
 		}
+		cout<<dp[0]<<endl;
 		return 0;
 	};
 	bool one_case=0;
