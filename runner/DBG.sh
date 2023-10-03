@@ -4,6 +4,6 @@ g++ -o run main.cpp
 echo "輸入檔================="
 strings -n 1 "01.in"
 echo "輸出檔================="
-./run < 01.in > 01.out
-strings -n 1 "01.out"
+./run -Dev < 01.in
+./run -Dev < 01.in > 01.out
 echo "======================"
