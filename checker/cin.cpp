@@ -38,12 +38,12 @@ int main(int argc,char** argv){
 
 	
 	auto solve=[](INT casenum){
-		INT t=100;
+		INT t=1000;
 		cout<<t<<endl;
-		INT mnn=10000,mxn=20000;
+		INT mnn=499990,mxn=500000;
 		for(INT n=mnn;n<=mxn && t;n++){
 			for(INT m=mnn;m<=mxn && t;m++){
-				INT mnk=100000,mxk=min(n*m,(INT)200000);
+				INT mnk=7900000,mxk=min(n*m,(INT)8000000);
 				for(INT k=mnk;k<=mxk && t;k++){
 					cout<<n<<" "<<m<<" "<<k<<endl;
 					t--;

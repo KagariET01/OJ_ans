@@ -13,6 +13,30 @@ template<typename tpe>tpe reader(){
 
 INT mod=998244353;
 
+INT n,m,k;
+
+INT checker(INT mx){
+	INT r=m;
+	INT re=0;
+	for(INT i=1;i<=n;i++){
+		while(i*r>mx)r--;
+		re+=r;
+		if(r==0)break;
+	}
+	return re;
+}
+
+INT BITsearch(INT l,INT r){
+	while(l<r){
+		INT mnt=(r-l)/2+l;
+		if(checker(mnt)>=k){
+			r=mnt;
+		}
+		else l=mnt+1;
+	}
+	return r;
+}
+
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
@@ -36,20 +60,9 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
-	
 	auto solve=[](INT casenum){
-		INT t=100;
-		cout<<t<<endl;
-		INT mnn=10000,mxn=20000;
-		for(INT n=mnn;n<=mxn && t;n++){
-			for(INT m=mnn;m<=mxn && t;m++){
-				INT mnk=100000,mxk=min(n*m,(INT)200000);
-				for(INT k=mnk;k<=mxk && t;k++){
-					cout<<n<<" "<<m<<" "<<k<<endl;
-					t--;
-				}
-			}
-		}
+		cin>>n>>m>>k;
+		cout<<BITsearch(1,n*m+1)<<endl;
 		return 0;
 	};
 	bool one_case=1;
@@ -71,12 +84,3 @@ int main(int argc,char** argv){
 	}
 	return 0;
 }
-
-
-/*
-
-1
-10 10 100
-5 5 5 5 5 9 9 9 9 9
-1 1 1 1 1 7 7 7 7 7
-*/

@@ -36,23 +36,26 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
-	
 	auto solve=[](INT casenum){
-		INT t=100;
-		cout<<t<<endl;
-		INT mnn=10000,mxn=20000;
-		for(INT n=mnn;n<=mxn && t;n++){
-			for(INT m=mnn;m<=mxn && t;m++){
-				INT mnk=100000,mxk=min(n*m,(INT)200000);
-				for(INT k=mnk;k<=mxk && t;k++){
-					cout<<n<<" "<<m<<" "<<k<<endl;
-					t--;
-				}
-			}
+		INT n=read(INT);
+		INT a=0,b=0,c=0;
+		for(INT i=1;i<=n;i++){
+			INT inin=read(INT);
+			if(inin==1)a=i;
+			else if(inin==2)b=i;
+			else if(inin==n)c=i;
 		}
+
+		if(false)return 0;
+		else if(a<b && b<c)cout<<c<<" "<<b<<endl;
+		else if(a<c && c<b)cout<<"1 1"<<endl;
+		else if(b<a && a<c)cout<<a<<" "<<c<<endl;
+		else if(b<c && c<a)cout<<"1 1"<<endl;
+		else if(c<a && a<b)cout<<a<<" "<<c<<endl;
+		else if(c<b && b<a)cout<<c<<" "<<b<<endl;
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
 	string yes="yes";
 	string no="no";
@@ -71,12 +74,3 @@ int main(int argc,char** argv){
 	}
 	return 0;
 }
-
-
-/*
-
-1
-10 10 100
-5 5 5 5 5 9 9 9 9 9
-1 1 1 1 1 7 7 7 7 7
-*/
