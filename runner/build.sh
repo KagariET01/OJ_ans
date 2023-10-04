@@ -1,9 +1,24 @@
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
 rm run
 rm 01.out
-g++ -o run main.cpp
-echo "輸入檔================="
-strings -n 1 "01.in"
-echo "輸出檔================="
+g++ -o run main.cpp > 01.log
 ./run < 01.in > 01.out
+echo "=====input================="
+strings -n 1 "01.in"
+echo "=====output================"
 strings -n 1 "01.out"
-echo "======================"
+echo "=====ans==================="
+strings -n 1 "01.ans"
+#echo "=====time=================="
+#date +"start time: %y/%m/%d %T"
+#date +"end time:   %y/%m/%d %T"
+#echo "=====checker==============="
+#./checker 01.out 01.ans
+echo "==========================="
+
+
+

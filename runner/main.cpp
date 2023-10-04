@@ -13,6 +13,22 @@ template<typename tpe>tpe reader(){
 
 INT mod=998244353;
 
+struct str{
+	INT nw=0;
+	INT n=0;
+	INT x=0;
+	INT p=0;
+	INT id=0;
+};
+bool operator>(str a,str b){
+	return a.nw>b.nw;
+}
+struct vser{
+	bool operator()(str a,str b){
+		return a>b;
+	}
+};
+
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
@@ -37,81 +53,47 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
-		INT n,k;
-		cin>>n>>k;
-		DBG cout<<n<<" "<<k<<endl;
-		INT l[k+1],r[k+1];
-		bool cen[k+1];
-		for(INT i=1;i<=k;i++){
-			l[i]=k/2-(k%2==0?1:0);
-			r[i]=k/2;
-			cen[i]=0;
+		INT t;
+		cin>>t;
+		priority_queue<str,vector<str>,vser> pq;
+		bool ans[t]={};
+		for(INT i=0;i<t;i++){
+			str nw;
+			cin>>nw.n>>nw.x>>nw.p;
+			nw.id=i;
+			nw.nw=nw.n-nw.x;
+			pq.push(nw);
 		}
-		while(n--){
-			INT inin=read(INT);
-			INT nwbt=k/2+1,nwup=k/2+1;
-			bool ans=0;
-			while(true){
-				if(0<nwbt){
-					if(!cen[nwbt]){
-						ans=1;
-						cen[nwbt]=1;
-						INT ansl=k/2-(inin/2)+1;
-						INT ansr=k/2+((inin-1)/2)+1;
-						l[nwbt]-=(inin/2);
-						r[nwbt]-=((inin-1)/2);
-						cout<<nwbt<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}else if(l[nwbt]>=inin){
-						ans=1;
-						l[nwbt]-=inin;
-						INT ansl=l[nwbt]+1;
-						INT ansr=l[nwbt]+inin;
-						cout<<nwbt<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}else if(r[nwbt]>=inin){
-						ans=1;
-						r[nwbt]-=inin;
-						INT ansr=k-r[nwbt];
-						INT ansl=ansr-inin+1;
-						cout<<nwbt<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}
+		INT f=1;
+		INT ftt=1;
+		while(!pq.empty()){
+			DBG cerr<<"f="<<f<<" ftt="<<ftt<<endl;
+			while(!pq.empty()){
+				str nw=pq.top();
+				pq.pop();
+				DBG cerr<<"f="<<f<<" ftt="<<ftt<<" nw="<<nw.nw<<" n="<<nw.n<<" x="<<nw.x<<" p="<<nw.p<<" id="<<nw.id<<endl;
+				if(ftt<nw.nw){
+					pq.push(nw);
+					break;
 				}
-				if(nwup<=k){
-					if(!cen[nwup]){
-						ans=1;
-						cen[nwup]=1;
-						INT ansl=k/2-(inin/2)+1;
-						INT ansr=k/2+((inin-1)/2)+1;
-						l[nwup]-=(inin/2);
-						r[nwup]-=((inin-1)/2);
-						cout<<nwup<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}else if(l[nwup]>=inin){
-						ans=1;
-						l[nwup]-=inin;
-						INT ansl=l[nwup]+1;
-						INT ansr=l[nwup]+inin;
-						cout<<nwup<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}else if(r[nwup]>=inin){
-						ans=1;
-						r[nwup]-=inin;
-						INT ansr=k-r[nwup];
-						INT ansl=ansr-inin+1;
-						cout<<nwup<<" "<<ansl<<" "<<ansr<<endl;
-						break;
-					}
+				if(nw.nw<ftt){
+					INT xx=ftt-nw.nw;
+					xx=xx/nw.n+(xx%nw.n?1:0);
+					nw.nw+=nw.n*xx;
 				}
-				nwbt--;
-				nwup++;
-				DBG cout<<"nwbt="<<nwbt<<" nwup="<<nwup<<" k="<<k<<endl;
-				if(nwbt<=0 && k<nwup)break;
+				if(nw.p<f || nw.n<f*2)continue;
+				if(nw.nw==ftt){
+					DBG cerr<<nw.id<<" pass"<<endl;
+					ans[nw.id]=1;
+					continue;
+				}
+				pq.push(nw);
 			}
-			if(!ans){
-				cout<<-1<<endl;
-			}
+			f++;
+			ftt+=f;
+		}
+		for(INT i=0;i<t;i++){
+			cout<<(ans[i]?"yes":"no")<<endl;
 		}
 		return 0;
 	};

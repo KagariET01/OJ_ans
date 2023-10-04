@@ -37,9 +37,17 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		INT x,y;
+		cin>>x>>y;
+		x=abs(x);
+		y=abs(y);
+		INT sn=min(x,y);
+		INT mr=max(x,y)-sn;
+		mr=max((INT)0,mr*2-1);
+		cout<<sn*2+mr<<endl;
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
 	bool eof=0;
 	string yes="yes";
