@@ -37,24 +37,31 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		INT ans=0;
+		INT n=read(INT);
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(ans<0)continue;
+			else ans=max(ans,inin);
+			if(inin<0)ans=inin;
+		}
+		cout<<ans<<endl;
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
-	bool eof=0;
 	string yes="yes";
 	string no="no";
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
+	for(INT i=0;i<t;i++){
 		if(!ynans){
-			if(solve(i)==-1)return 0;
+			solve(i);
 		}else{
-			if(solve(i)==1){
+			if(solve(i)){
 				cout<<yes<<endl;
-			}else if(solve(i)==0){
-				cout<<no<<endl;
 			}else{
-				return 0;
+				cout<<no<<endl;
 			}
 		}
 	}

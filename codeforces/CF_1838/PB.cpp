@@ -37,24 +37,38 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		INT n=read(INT);
+		INT a=0,b=0,c=0;
+		for(INT i=1;i<=n;i++){
+			INT inin=read(INT);
+			if(inin==1)a=i;
+			else if(inin==2)b=i;
+			else if(inin==n)c=i;
+		}
+
+		if(false)return 0;
+		else if(a<b && b<c)cout<<c<<" "<<b<<endl;
+		else if(a<c && c<b)cout<<"1 1"<<endl;
+		else if(b<a && a<c)cout<<a<<" "<<c<<endl;
+		else if(b<c && c<a)cout<<"1 1"<<endl;
+		else if(c<a && a<b)cout<<a<<" "<<c<<endl;
+		else if(c<b && b<a)cout<<c<<" "<<b<<endl;
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
-	bool eof=0;
 	string yes="yes";
 	string no="no";
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
+	for(INT i=0;i<t;i++){
 		if(!ynans){
-			if(solve(i)==-1)return 0;
+			solve(i);
 		}else{
-			if(solve(i)==1){
+			if(solve(i)){
 				cout<<yes<<endl;
-			}else if(solve(i)==0){
-				cout<<no<<endl;
 			}else{
-				return 0;
+				cout<<no<<endl;
 			}
 		}
 	}

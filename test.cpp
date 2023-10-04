@@ -36,26 +36,23 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
+	
 	auto solve=[](INT casenum){
-		INT n,m,k;
-		cin>>n>>m>>k;
-		INT sum1=0,sum2=0;
-		INT a[n],b[m];
-		for(INT i=0;i<n;i++){
-			cin>>a[i];
-			sum1+=a[i];
+		INT t=100;
+		cout<<t<<endl;
+		INT mnn=10000,mxn=20000;
+		for(INT n=mnn;n<=mxn && t;n++){
+			for(INT m=mnn;m<=mxn && t;m++){
+				INT mnk=100000,mxk=min(n*m,(INT)200000);
+				for(INT k=mnk;k<=mxk && t;k++){
+					cout<<n<<" "<<m<<" "<<k<<endl;
+					t--;
+				}
+			}
 		}
-		for(INT i=0;i<m;i++){
-			cin>>b[i];
-		}
-		sort(a,a+n);
-		sort(b,b+m);
-		INT mn1=a[0],mx1=a[n-1],mn2=b[0],mx2=b[m-1];
-		if(k%2)cout<<max(sum1,sum1-mn1+mx2)<<endl;
-		else cout<<max(sum1,sum1-mn1+mx2)-max(mx1,mx2)+min(mn1,mn2)<<endl;
 		return 0;
 	};
-	bool one_case=0;
+	bool one_case=1;
 	bool ynans=0;
 	string yes="yes";
 	string no="no";

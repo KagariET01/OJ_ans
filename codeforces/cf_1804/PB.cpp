@@ -37,9 +37,25 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		INT n,k,d,w;
+		cin>>n>>k>>d>>w;
+		INT lsttme=-1e9;
+		INT nw=0;
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			INT inin=read(INT);
+			if(nw && (inin-lsttme)<=d){
+				nw--;
+			}else{
+				lsttme=inin+w;
+				nw=k-1;
+				ans++;
+			}
+		}
+		cout<<ans<<endl;
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
 	bool eof=0;
 	string yes="yes";

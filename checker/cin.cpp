@@ -36,27 +36,47 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
+	
 	auto solve=[](INT casenum){
+		INT t=1000;
+		cout<<t<<endl;
+		INT mnn=499990,mxn=500000;
+		for(INT n=mnn;n<=mxn && t;n++){
+			for(INT m=mnn;m<=mxn && t;m++){
+				INT mnk=7900000,mxk=min(n*m,(INT)8000000);
+				for(INT k=mnk;k<=mxk && t;k++){
+					cout<<n<<" "<<m<<" "<<k<<endl;
+					t--;
+				}
+			}
+		}
 		return 0;
 	};
 	bool one_case=1;
 	bool ynans=0;
-	bool eof=0;
 	string yes="yes";
 	string no="no";
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
+	for(INT i=0;i<t;i++){
 		if(!ynans){
-			if(solve(i)==-1)return 0;
+			solve(i);
 		}else{
-			if(solve(i)==1){
+			if(solve(i)){
 				cout<<yes<<endl;
-			}else if(solve(i)==0){
-				cout<<no<<endl;
 			}else{
-				return 0;
+				cout<<no<<endl;
 			}
 		}
 	}
 	return 0;
 }
+
+
+/*
+
+1
+10 10 100
+5 5 5 5 5 9 9 9 9 9
+1 1 1 1 1 7 7 7 7 7
+*/
