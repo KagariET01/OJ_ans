@@ -4,6 +4,7 @@
 > [`CF 10` `1/5` Codeforces Beta Round 10](./cf_10)  
 > [`CF 448` `1/5` Codeforces Round 256 (Div. 2)](./cf_448)  
 > [`CF 1592` `1/7` Codeforces Round 746 (Div. 2)](./cf_1592)  
+> [`CF 1789` `3/6` Codeforces Round 853 (Div. 2)](./cf_1789)  
 > [`CF 1804` `2/8` Nebius Welcome Round (Div. 1 + Div. 2)](./cf_1804)  
 > [`CF 1861` `2/6` Educational Codeforces Round 154 (Rated for Div. 2)](./cf_1861)  
 > [`CF 1863` `1/7` Pinely Round 2 (Div. 1 + Div. 2)](./cf_1863)  
