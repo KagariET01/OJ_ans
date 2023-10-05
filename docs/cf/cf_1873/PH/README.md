@@ -19,5 +19,6 @@
 > ### `HINT 4`
 > > <span class="ET01 hide">要先確保Valeriu可以在被Marcel抓到前抵達環</span>
 > > 
+> 
 > ### `C++`
 > [code](../#cf-1873-phmad-city)
