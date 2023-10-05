@@ -5,7 +5,7 @@ echo ""
 echo ""
 rm run
 rm 01.out
-g++ -o run main.cpp > 01.log
+g++ -o run main.cpp
 ./run < 01.in > 01.out
 echo "=====input================="
 strings -n 1 "01.in"

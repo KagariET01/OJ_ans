@@ -39,19 +39,20 @@ int main(int argc,char** argv){
 	auto solve=[](INT casenum){
 		return 0;
 	};
-	bool one_case=1;
+	bool one_case=0;
 	bool ynans=0;
 	bool eof=0;
 	string yes="yes";
 	string no="no";
 	INT t=(one_case?1:read(int));
 	for(INT i=0;eof || i<t;i++){
+		INT re=solve(i);
 		if(!ynans){
-			if(solve(i)==-1)return 0;
+			if(re==-1)return 0;
 		}else{
-			if(solve(i)==1){
+			if(re==1){
 				cout<<yes<<endl;
-			}else if(solve(i)==0){
+			}else if(re==0){
 				cout<<no<<endl;
 			}else{
 				return 0;
