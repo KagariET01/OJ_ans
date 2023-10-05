@@ -1,3 +1,7 @@
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
+[`back`](../)
+
 > ## `CF 1873 PH`<br>Mad City
 > 
 > ### `HINT 1`
