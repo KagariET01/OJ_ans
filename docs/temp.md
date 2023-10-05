@@ -6,6 +6,9 @@
 > ## `OJ CID PID`<br>PN
 > ### `Score`
 > ### `Thinking`
+> ### `HINT 1`
+> ```txt
+> ```
 > ### `C++`
 > ```c++
 > #include<iostream>
