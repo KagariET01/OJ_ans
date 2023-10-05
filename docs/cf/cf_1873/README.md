@@ -430,6 +430,11 @@
 > 	return 0;
 > }
 > ```
+> ### `Tag`
+> ```txt
+> greedy
+> ```
+
 
 > ## `CF 1873 PH`<br>Mad City
 > 
@@ -567,5 +572,8 @@
 > 	return 0;
 > }
 > ```
-
+> ### `Tag`
+> ```txt
+> graphs
+> ```
 
