@@ -21,4 +21,4 @@
 > > 
 > 
 > ### `C++`
-> [code](../#cf-1873-phmad-city)
+> [`code`](../#cf-1873-phmad-city)
