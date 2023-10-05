@@ -9,7 +9,7 @@
 > > 
 > 
 > ### `HINT 2`
-> > <span class="ET01 hide">最多只會有一個環</span>
+> > <span class="ET01 hide">可以證明最多只會有一個環</span>
 > > 
 > 
 > ### `HINT 3`
