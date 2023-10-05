@@ -10,85 +10,55 @@ bool noTLE=1;
 template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
-
-INT mod=998244353;
-
-int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
-	DBG{
-		cout<<"Temp by KagariET01"<<endl;
-		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
-		cout<<"===DBG mod on==="<<endl;
-		cout<<"Here's your CFG"<<endl;
-		for(int i=0;i<argc;i++){
-			string nwstr=argv[i];
-			cout<<'['<<nwstr<<']'<<endl;
-		}
-		cout<<"===Code start==="<<endl;
-	}
-	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-
-	auto solve=[](INT casenum){
-		INT n,m;
-		cin>>n>>m;
-		INT lst[n];//紀錄現在狀態
-		INT las[n];//紀錄上次值改變的時候
-		INT nwcnt[n+m+1]={};
-		INT allcnt[n+m+1]={};
-		for(INT i=0;i<n;i++){
-			cin>>lst[i];
-			las[i]=0;
-			nwcnt[lst[i]]++;
-		}
-
-
-		for(INT i=1;i<=m;i++){
-			INT a,b;
-			cin>>a>>b;
-			a--;
-			allcnt[lst[a]]+=i-las[a];
-			lst[a]=b;
-			las[a]=i;
-		}
-		for(INT i=0;i<n;i++){
-			allcnt[lst[i]]+=(m+1)-las[i];
-		}
-		INT ans=((m+1)*m)*n;
-		for(INT j:allcnt){
-			ans-=j*(j-1)/2;
-			DBG cout<<"  -"<<j*(j-1)/2<<endl;
-		}
-		cout<<ans<<endl;
-		return 0;
-	};
-	bool one_case=0;
-	bool ynans=0;
-	bool eof=0;
-	debug=0;
-	string yes="yes";
-	string no="no";
-	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
-		INT re=solve(i);
-		if(!ynans){
-			if(re==-1)return 0;
-		}else{
-			if(re==1){
-				cout<<yes<<endl;
-			}else if(re==0){
-				cout<<no<<endl;
-			}else{
-				return 0;
+INT mp[9][9];
+bool row[9][10],column[9][10],box[3][3][10];
+INT ans=0;
+void solve(INT x=0,INT y=0){
+	if(x==0 && y==0){
+		memset(row,0,sizeof(row));
+		memset(column,0,sizeof(column));
+		memset(box,0,sizeof(box));
+		debug=1;
+		for(INT i=0;i<9;i++){
+			for(INT j=0;j<9;j++){
+				cin>>mp[i][j];
+				row[i][mp[i][j]]=1;
+				column[j][mp[i][j]]=1;
+				box[i/3][j/3][mp[i][j]]=1;
 			}
 		}
 	}
+	if(y==9){solve(x+1,0);}
+	else if(x==9){
+		for(INT i=0;i<9;i++){
+			for(INT j=0;j<9;j++){
+				if(j)cout<<" ";
+				cout<<mp[i][j];
+			}
+			cout<<endl;
+		}
+		cout<<endl;
+		ans++;
+	}
+	else if(mp[x][y])solve(x,y+1);
+	else{
+		for(INT i=1;i<=9;i++){
+			if(row[x][i] || column[y][i] || box[x/3][y/3][i])continue;
+			row[x][i] = column[y][i] = box[x/3][y/3][i] = 1;
+			mp[x][y]=i;
+			solve(x,y+1);
+			row[x][mp[x][y]] = column[y][mp[x][y]] = box[x/3][y/3][mp[x][y]] = 0;
+			mp[x][y]=0;
+		}
+		mp[x][y]=0;
+	}
+	
+	if(x==0 && y==0){
+		cout<<"there are a total of "<<ans<<" solution(s)."<<endl;
+	}
+}
+int main(int argc,char** argv){
+	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+	solve();
 	return 0;
 }
