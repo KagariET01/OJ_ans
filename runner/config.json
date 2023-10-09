@@ -1,20 +1,4 @@
-[
-	{
-		"input":"io/01.in",
-		"output":"io/01.out",
-		"answer":"io/01.ans",
-		"tl":1
-	},
-	{
-		"input":"io/02.in",
-		"output":"io/02.out",
-		"answer":"io/02.ans",
-		"tl":1
-	},
-	{
-		"input":"io/03.in",
-		"output":"io/03.out",
-		"answer":"io/03.ans",
-		"tl":1
-	}
-]
+{
+	"tl":1,
+	"path":"io/"
+}

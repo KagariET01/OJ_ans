@@ -17,6 +17,7 @@
 > [`CF 1878` `3/7` Codeforces Round 900 (Div. 3)](./cf_1878)  
 > [`CF 1879` `3/6` Educational Codeforces Round 155 (Rated for Div. 2)](./cf_1879)  
 > [`CF 1882` `3/7` Codeforces Round 899 (Div. 2)](./cf_1882)  
+> [`CF 1886` `2/6` Educational Codeforces Round 156 (Rated for Div. 2)](./cf_1886)  
 
 
 [`Codeforces`]: /OJ_ans/cf

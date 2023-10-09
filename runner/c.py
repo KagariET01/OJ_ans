@@ -15,6 +15,9 @@ lang=json.loads(open("lang/ch.json","r").read())
 print(lang["loadCFG"])
 cfg=json.loads(open("config.json","r").read())
 
+def pathget(i,tpe):
+	return cfg["path"]+"{:0>2d}".format(i)+tpe
+print(pathget(1,".in"))
 #編譯
 print(lang["build"])
 os.system("rm run")
@@ -57,31 +60,29 @@ class KThread(threading.Thread):#執行器，支援kill
 	def kill(self):
 		self.killed = True
 
+
 def coderunner(i):#執行
 	result[i]["st"]=time.time()
-	if(os.system("./run < "+cfg[i]["input"]+" > "+cfg[i]["output"])):
+	if(os.system("./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
 		result[i]["re"]=True
 		result[i]["ac"]=True
 	result[i]["ed"]=time.time()
 
 def judge(i):
-	if(open(cfg[i]["input"],"r").read()==""):
-		result[i]["ac"]=0
-		return
 	run=KThread(target=coderunner,args=(i,))
 	print(lang["run"],i)
 	run.start()
-	time.sleep(cfg[i]["tl"]+1)
+	time.sleep(cfg["tl"])
 	run.kill()
-	outf=open(cfg[i]["output"],"r").read().lower()
-	ansf=open(cfg[i]["answer"],"r").read().lower()
+	outf=open(pathget(i,".out"),"r").read().lower()
+	ansf=open(pathget(i,".ans"),"r").read().lower()
 	if(not result[i]["ed"]):
 		result[i]["st"]=False
-		result[i]["ed"]=cfg[i]["tl"]+10
+		result[i]["ed"]=cfg["tl"]+10
 		result[i]["tl"]=True
 		result[i]["ac"]=False
 		return
-	if(result[i]["ed"]-result[i]["st"]>cfg[i]["tl"]):
+	if(result[i]["ed"]-result[i]["st"]>cfg["tl"]):
 		result[i]["tl"]=True
 		result[i]["ac"]=False
 		return
@@ -95,18 +96,23 @@ def judge(i):
 
 
 
-
-for i in range(0,len(cfg),1):
+i=0
+while(True):
+	if(not os.path.isfile(pathget(i,".in"))):
+		break
+	if(open(pathget(i,".in"),"r").read()==""):
+		break
 	result.append(copy.copy(tmp))
 	result[i]["runner"]=threading.Thread(target=judge,args=(i,))
 	result[i]["runner"].start()
 	#result[i]["runner"]=threading.Thread(target=judge,args=(i,))
+	i+=1
 
-for i in range(len(cfg)):
+for i in range(len(result)):
 	result[i]["runner"].join()
 
 allAC=True
-for i in range(0,len(cfg),1):
+for i in range(0,len(result),1):
 	if(result[i]["ac"]):
 		print(Fore.GREEN+lang["test"],i,":",lang["AC"],Fore.WHITE+lang["time"],result[i]["ed"]-result[i]["st"])
 	elif(result[i]["re"]):
@@ -121,3 +127,7 @@ for i in range(0,len(cfg),1):
 
 if(allAC):
 	print(lang["allAC"])
+	exit()
+else:
+	print("no pass")
+	exit()
