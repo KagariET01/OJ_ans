@@ -4,8 +4,7 @@
 [`back`](../)
 
 > ## `Meta 2023-1 PB1`<br>Sum 41 (Chapter 1)
-> ### `OUTPUT`
-> [`output`](./Meta_2023-1_PB1_output)
+> ### [`OUTPUT`](./Meta_2023-1_PB1_output)
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>
