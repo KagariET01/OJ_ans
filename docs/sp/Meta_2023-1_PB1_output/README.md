@@ -1,3 +1,5 @@
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
 ```txt
 Case #1: 5 13 11 9 4 4
 Case #2: 4 25 8 6 2

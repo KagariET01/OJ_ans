@@ -1,4 +1,7 @@
+<link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
 # `Meta 2023-1` Meta Hacker Cup 2023 Round 1
+[`back`](../)
 
 > ## `Meta 2023-1 PB1`<br>Sum 41 (Chapter 1)
 > ### `OUTPUT`
