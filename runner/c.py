@@ -63,7 +63,7 @@ class KThread(threading.Thread):#執行器，支援kill
 
 def coderunner(i):#執行
 	result[i]["st"]=time.time()
-	if(os.system("./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
+	if(os.system("timeout "+str(cfg["tl"]+0.2)+" ./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
 		result[i]["re"]=True
 		result[i]["ac"]=True
 	result[i]["ed"]=time.time()
@@ -78,7 +78,7 @@ def judge(i):
 	ansf=open(pathget(i,".ans"),"r").read().lower()
 	if(not result[i]["ed"]):
 		result[i]["st"]=False
-		result[i]["ed"]=cfg["tl"]+10
+		result[i]["ed"]=cfg["tl"]
 		result[i]["tl"]=True
 		result[i]["ac"]=False
 		return
@@ -130,4 +130,5 @@ if(allAC):
 	exit()
 else:
 	print("no pass")
+	sys.exit(0)
 	exit()

@@ -37,6 +37,7 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
+		while(1){}
 		INT px,py;
 		INT ax,ay;
 		INT bx,by;
