@@ -1,6 +1,8 @@
 # `PCIC 2023_R3`
 [`back`](../)
 
+> [題目](./R3_All.pdf)  
+
 > ## `PCIC 2023_R3 PA`<br>旮旯同學亂填表單(Corner)
 > ### `Score`
 > ```diff
