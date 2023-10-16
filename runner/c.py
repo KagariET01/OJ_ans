@@ -7,13 +7,14 @@ from colorama import Fore, Style
 import threading
 import sys
 import copy
+import platform
 
 DBG=True
-lang=json.loads(open("lang/ch.json","r").read())
+lang=json.loads(open("lang/ch.json","r",encoding="utf-8").read())
 
 #讀取設定檔
 print(lang["loadCFG"])
-cfg=json.loads(open("config.json","r").read())
+cfg=json.loads(open("config.json","r",encoding="utf-8").read())
 
 def pathget(i,tpe):
 	return cfg["path"]+"{:0>2d}".format(i)+tpe
@@ -63,9 +64,14 @@ class KThread(threading.Thread):#執行器，支援kill
 
 def coderunner(i):#執行
 	result[i]["st"]=time.time()
-	if(os.system("timeout "+str(cfg["tl"]+0.2)+" ./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
-		result[i]["re"]=True
-		result[i]["ac"]=True
+	if(platform.system()=="Windows"):
+		os.system("start .\\run < "+pathget(i,".in")+" > "+pathget(i,".out"))
+		os.system("timeout "+str(cfg["tl"]+5.1))
+		os.system("taskkill /F /im run.exe")
+	else:
+		if(os.system("timeout "+str(cfg["tl"]+0.2)+" ./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
+			result[i]["re"]=True
+			result[i]["ac"]=True
 	result[i]["ed"]=time.time()
 
 def judge(i):
@@ -74,8 +80,8 @@ def judge(i):
 	run.start()
 	time.sleep(cfg["tl"])
 	run.kill()
-	outf=open(pathget(i,".out"),"r").read().lower()
-	ansf=open(pathget(i,".ans"),"r").read().lower()
+	outf=open(pathget(i,".out"),"r",encoding="utf-8").read().lower()
+	ansf=open(pathget(i,".ans"),"r",encoding="utf-8").read().lower()
 	if(not result[i]["ed"]):
 		result[i]["st"]=False
 		result[i]["ed"]=cfg["tl"]
@@ -100,7 +106,7 @@ i=0
 while(True):
 	if(not os.path.isfile(pathget(i,".in"))):
 		break
-	if(open(pathget(i,".in"),"r").read()==""):
+	if(open(pathget(i,".in"),"r",encoding="utf-8").read()==""):
 		break
 	result.append(copy.copy(tmp))
 	result[i]["runner"]=threading.Thread(target=judge,args=(i,))

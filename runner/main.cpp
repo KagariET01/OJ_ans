@@ -37,34 +37,47 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	auto solve=[](INT casenum){
-		while(1){}
-		INT px,py;
-		INT ax,ay;
-		INT bx,by;
-		cin>>px>>py;
-		cin>>ax>>ay;
-		cin>>bx>>by;
-
-		long double ato0=sqrt(ax*ax+ay*ay);
-		long double atop=sqrt(
-			(px-ax)*(px-ax)+
-			(py-ay)*(py-ay)
-		);
-		long double bto0=sqrt(bx*bx+by*by);
-		long double btop=sqrt(
-			(px-bx)*(px-bx)+
-			(py-by)*(py-by)
-		);
-		long double atob=sqrt(
-			(ax-bx)*(ax-bx)+
-			(ay-by)*(ay-by)
-		)/2;
-		long double ans=1e5+7;
-		ans=min(ans,max(ato0,atop));//only use a
-		ans=min(ans,max(bto0,btop));//only use b
-		ans=min(ans,max(max(ato0,atob),btop));//0->a->b->p
-		ans=min(ans,max(max(atop,atob),bto0));//0->b->a->p
-		cout<<fixed<<setprecision(10)<<ans<<endl;
+		string str=read(string);
+		INT q=read(INT);
+		INT n=str.size();
+		INT lst[n]={};
+		INT nwnm=1;
+		stack<pair<char,INT>> st;
+		for(INT i=0;i<n;i++){
+			while(!st.empty()){
+				pair<char,INT> nw=st.top();
+				if(nw.first>str[i]){
+					lst[nw.second]=nwnm;
+					nwnm++;
+					st.pop();
+				}else break;
+			}
+			st.push({str[i],i});
+			continue;
+		}
+		while(!st.empty()){
+			pair<char,INT> nw=st.top();
+			lst[nw.second]=nwnm;
+			nwnm++;
+			st.pop();
+		}
+		INT nwmm=n;
+		INT qid=0;
+		while(nwmm<q){
+			q-=nwmm;
+			qid++;
+			nwmm--;
+		}
+		DBG cerr<<"q="<<q<<endl;
+		INT i=0;
+		for(INT i=0;i<n;i++){
+			q-=(lst[i]>qid)?1:0;
+			if(!q){
+				cout<<str[i];
+				DBG cerr<<endl;
+				return 0;
+			}
+		}
 		return 0;
 	};
 	bool one_case=0;
@@ -87,5 +100,6 @@ int main(int argc,char** argv){
 			}
 		}
 	}
+	cout<<endl;
 	return 0;
 }
