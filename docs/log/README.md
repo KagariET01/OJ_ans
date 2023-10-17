@@ -1,6 +1,12 @@
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
+# 2023/10/17
+`CF 1863 PA` `AC`  
+
+# 2023/10/16
+`CF 1886 PC` `AC`  
+
 # 2023/09/29
 `CF 1879 PA` `AC`  
 

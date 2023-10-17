@@ -1,6 +1,6 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `OJ CID`<br>N
+# `CF 1804`<br>Nebius Welcome Round (Div. 1 + Div. 2)
 [`back`](../)
 
 > ## `CF 1804 PA`<br>Lame King

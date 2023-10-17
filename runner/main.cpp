@@ -11,8 +11,6 @@ template<typename tpe>tpe reader(){
 	tpe re;cin>>re;return re;
 }
 
-INT mod=998244353;
-
 int main(int argc,char** argv){
 	for(int i=0;i<argc;i++){
 		string nwstr=argv[i];
@@ -36,35 +34,48 @@ int main(int argc,char** argv){
 	}
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
-	auto solve=[](INT casenum){
-		while(1){}
-		INT px,py;
-		INT ax,ay;
-		INT bx,by;
-		cin>>px>>py;
-		cin>>ax>>ay;
-		cin>>bx>>by;
-
-		long double ato0=sqrt(ax*ax+ay*ay);
-		long double atop=sqrt(
-			(px-ax)*(px-ax)+
-			(py-ay)*(py-ay)
-		);
-		long double bto0=sqrt(bx*bx+by*by);
-		long double btop=sqrt(
-			(px-bx)*(px-bx)+
-			(py-by)*(py-by)
-		);
-		long double atob=sqrt(
-			(ax-bx)*(ax-bx)+
-			(ay-by)*(ay-by)
-		)/2;
-		long double ans=1e5+7;
-		ans=min(ans,max(ato0,atop));//only use a
-		ans=min(ans,max(bto0,btop));//only use b
-		ans=min(ans,max(max(ato0,atob),btop));//0->a->b->p
-		ans=min(ans,max(max(atop,atob),bto0));//0->b->a->p
-		cout<<fixed<<setprecision(10)<<ans<<endl;
+	function<int(INT)> solve=[](INT casenum){
+		INT n,a,b;
+		string q;
+		cin>>n>>a>>b>>q;
+		INT alladd=a;
+		INT nw=a;
+		INT ans=0;
+		if(nw>=n){
+			ans=2;
+			cout<<"YES"<<endl;
+			return 0;
+		}
+		if(alladd>=n){
+			ans=1;
+		}
+		for(char c:q){
+			if(c=='+'){
+				alladd++;
+				nw++;
+				if(nw>=n){
+					ans=2;
+					break;
+				}
+				if(alladd>=n){
+					ans=1;
+				}
+			}else{
+				nw--;
+			}
+			DBG cout<<"alladd="<<alladd<<" nw="<<nw<<" ans="<<ans<<endl;
+		}
+		switch(ans){
+			case 0:
+				cout<<"NO"<<endl;
+			break;
+			case 1:
+				cout<<"MAYBE"<<endl;
+			break;
+			case 2:
+				cout<<"YES"<<endl;
+			break;
+		}
 		return 0;
 	};
 	bool one_case=0;

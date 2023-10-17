@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1867`<br>Codeforces Round 897 (Div. 2)
+
 [`back`](../) [`CF 1867`](https://codeforces.com/contest/1867)
 
 > ## `CF 1867 PA`<br>green_gold_dog, array and permutation
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,7 +21,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -46,13 +49,17 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > sort
 > ```
 
 > ## `CF 1867 PB`<br>XOR Palindromes
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -66,7 +73,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -85,7 +92,7 @@
 > 		for(INT i=0;i<sin;i++){
 > 			cout<<"0";
 > 		}
-> 		
+>
 > 		if(n%2){
 > 			for(INT i=0;i<(duo+1)*2;i++){
 > 				cout<<"1";
@@ -96,8 +103,8 @@
 > 				cout<<"1";
 > 			}
 > 		}
-> 
-> 
+>
+>
 > 		for(INT i=0;i<sin;i++){
 > 			cout<<"0";
 > 		}
@@ -106,9 +113,11 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
-> bit運算,math,觀察
+> bit運算
+> math 數學
+> 觀察
 > ```
-
-

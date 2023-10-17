@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `CF 1868` `CF 1869`<br>Codeforces Round 896 (Div. 1, Div. 2)
+
 [`back`](../) [`CF 1868`](https://codeforces.com/contest/1868) [`CF 1869`](https://codeforces.com/contest/1869)
 
 > ## `CF 1869 PA`<br>Make It Zero
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,7 +21,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -42,13 +45,20 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
-> bit運算,math,greedy,想法
+> bit運算
+> math 數學
+> greedy
+> 想法
 > ```
 
 > ## `CF 1869 PB`<br>2D Traveling
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -62,7 +72,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -87,14 +97,19 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
-> math,greedy,想法
+> math 數學
+> greedy
+> 想法
 > ```
 
-
 > ## `CF 1869 PC` `CF 1868 PA`<br>Fill in the Matrix
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -108,7 +123,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -133,19 +148,23 @@
 > 				cout<<endl;
 > 			}
 > 		}
-> 		
+>
 > 	}
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
-> math,想法
+> math 數學
+> 想法
 > ```
 
-
 > ## `CF 1869 PD1` `CF 1868 PB1`<br>Candy Party (Easy Version)
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -159,7 +178,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	auto solve=[](INT icase){
 > 		INT n=read(INT);
@@ -213,13 +232,12 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
-> bit運算,math,想法,greedy
+> bit運算
+> math 數學
+> 想法
+> greedy
 > ```
-
-
-
-
-
-
