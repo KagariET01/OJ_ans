@@ -1,10 +1,10 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `OJ CID`<br>N
+# `CF 1800`<br>Codeforces Round 855 (Div. 3)
 
 [`back`](../)
 
-> ## `OJ CID PID`<br>PN
+> ## `CF 1800 PA`<br>Is It a Cat?
 > ### `C++`
 > ```c++
 > #include<bits/stdc++.h>

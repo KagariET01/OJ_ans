@@ -43,7 +43,7 @@ int main(int argc,char** argv){
 		INT ans=0;
 		if(nw>=n){
 			ans=2;
-			cout<<"YES"<<endl;
+			cout<<"YES"<<endl;	
 			return 0;
 		}
 		if(alladd>=n){
