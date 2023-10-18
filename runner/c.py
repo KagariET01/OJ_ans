@@ -66,16 +66,17 @@ class KThread(threading.Thread):#執行器，支援kill
 def coderunner(i):#執行
 	result[i]["st"]=0
 	if(platform.system()=="Windows"):
+		#print("> type \""+pathget(i,".in")+"\" | .\\run > "+pathget(i,".out")+" & timeout /NOBREAK /T "+str(cfg["tl"])+" > \"DBG\" & taskkill /f /im run.exe > \"DBG\"")
+		nwtm=os
 		result[i]["st"]=time.time()
-		os.system("start .\\run < "+pathget(i,".in")+" > "+pathget(i,".out"))
-		os.system("timeout "+str(cfg["tl"]+5.1))
-		os.system("taskkill /F /im run.exe")
+		nwtm.system("type \""+pathget(i,".in")+"\" | .\\run > "+pathget(i,".out"))
+		result[i]["ed"]=time.time()
 	else:
 		result[i]["st"]=time.time()
 		if(os.system("timeout "+str(cfg["tl"]+0.2)+" ./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
 			result[i]["re"]=True
 			result[i]["ac"]=True
-	result[i]["ed"]=time.time()
+		result[i]["ed"]=time.time()
 
 def judge(i):
 	run=threading.Thread(target=coderunner,args=(i,))
@@ -113,7 +114,6 @@ while(True):
 	result.append(copy.copy(tmp))
 	result[i]["runner"]=threading.Thread(target=judge,args=(i,))
 	result[i]["runner"].start()
-	#result[i]["runner"]=threading.Thread(target=judge,args=(i,))
 	i+=1
 
 for i in range(len(result)):

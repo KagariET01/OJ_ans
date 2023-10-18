@@ -35,12 +35,34 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	function<int(INT)> solve=[](INT casenum){
-		INT n=read(INT)-1;
+		struct dta{
+			INT a,b;
+		};
+		function<bool(dta,dta)> vser=[](dta a,dta b){
+			if(a.b==b.b)return a.a>b.a;
+			return a.b<b.b;
+		};
+		INT n,p;
+		cin>>n>>p;
 		INT ans=0;
-		while(n--){
-			ans+=read(INT);
+		INT hve=0;
+		dta lst[n];
+		for(INT i=0;i<n;i++){
+			cin>>lst[i].a;
 		}
-		cout<<(-ans)<<endl;
+		for(INT i=0;i<n;i++){
+			cin>>lst[i].b;
+		}
+		sort(lst,lst+n,vser);
+		for(INT i=0;i<n;i++){
+			if(hve==i){
+				hve++;
+				ans+=p;
+			}
+			ans+=min(lst[i].a,n-hve)*min(lst[i].b,p);
+			hve+=min(lst[i].a,n-hve);
+		}
+		cout<<ans<<endl;
 		return 0;
 	};
 	bool one_case=0;

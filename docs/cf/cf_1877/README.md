@@ -60,3 +60,76 @@
 > ```txt
 > 基本輸出輸入
 > ```
+
+> ## `CF 1877 PB`<br>Helmets in Night Light
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT long long int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define PII pair<INT,INT>
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){
+> 	tpe re;cin>>re;return re;
+> }
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 	function<int(INT)> solve=[](INT casenum){
+> 		struct dta{
+> 			INT a,b;
+> 		};
+> 		function<bool(dta,dta)> vser=[](dta a,dta b){
+> 			if(a.b==b.b)return a.a>b.a;
+> 			return a.b<b.b;
+> 		};
+> 		INT n,p;
+> 		cin>>n>>p;
+> 		INT ans=0;
+> 		INT hve=0;
+> 		dta lst[n];
+> 		for(INT i=0;i<n;i++){
+> 			cin>>lst[i].a;
+> 		}
+> 		for(INT i=0;i<n;i++){
+> 			cin>>lst[i].b;
+> 		}
+> 		sort(lst,lst+n,vser);
+> 		for(INT i=0;i<n;i++){
+> 			if(hve==i){
+> 				hve++;
+> 				ans+=p;
+> 			}
+> 			ans+=min(lst[i].a,n-hve)*min(lst[i].b,p);
+> 			hve+=min(lst[i].a,n-hve);
+> 		}
+> 		cout<<ans<<endl;
+> 		return 0;
+> 	};
+> 	bool one_case=0;
+> 	bool ynans=0;
+> 	bool eof=0;
+> 	string yes="YES";
+> 	string no="NO";
+> 	INT t=(one_case?1:read(int));
+> 	for(INT i=0;eof || i<t;i++){
+> 		INT re=solve(i);
+> 		if(!ynans){
+> 			if(re==-1)return 0;
+> 		}else{
+> 			if(re==1){
+> 				cout<<yes<<endl;
+> 			}else if(re==0){
+> 				cout<<no<<endl;
+> 			}else{
+> 				return 0;
+> 			}
+> 		}
+> 	}
+> 	return 0;
+> }
+> ```
