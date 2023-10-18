@@ -35,47 +35,12 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	function<int(INT)> solve=[](INT casenum){
-		INT n,a,b;
-		string q;
-		cin>>n>>a>>b>>q;
-		INT alladd=a;
-		INT nw=a;
+		INT n=read(INT)-1;
 		INT ans=0;
-		if(nw>=n){
-			ans=2;
-			cout<<"YES"<<endl;	
-			return 0;
+		while(n--){
+			ans+=read(INT);
 		}
-		if(alladd>=n){
-			ans=1;
-		}
-		for(char c:q){
-			if(c=='+'){
-				alladd++;
-				nw++;
-				if(nw>=n){
-					ans=2;
-					break;
-				}
-				if(alladd>=n){
-					ans=1;
-				}
-			}else{
-				nw--;
-			}
-			DBG cout<<"alladd="<<alladd<<" nw="<<nw<<" ans="<<ans<<endl;
-		}
-		switch(ans){
-			case 0:
-				cout<<"NO"<<endl;
-			break;
-			case 1:
-				cout<<"MAYBE"<<endl;
-			break;
-			case 2:
-				cout<<"YES"<<endl;
-			break;
-		}
+		cout<<(-ans)<<endl;
 		return 0;
 	};
 	bool one_case=0;
@@ -98,6 +63,5 @@ int main(int argc,char** argv){
 			}
 		}
 	}
-	cout<<endl;
 	return 0;
 }

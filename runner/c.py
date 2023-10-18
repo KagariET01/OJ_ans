@@ -13,6 +13,7 @@ DBG=True
 lang=json.loads(open("lang/ch.json","r",encoding="utf-8").read())
 
 #讀取設定檔
+print("OS:",platform.system())
 print(lang["loadCFG"])
 cfg=json.loads(open("config.json","r",encoding="utf-8").read())
 
@@ -63,23 +64,24 @@ class KThread(threading.Thread):#執行器，支援kill
 
 
 def coderunner(i):#執行
-	result[i]["st"]=time.time()
+	result[i]["st"]=0
 	if(platform.system()=="Windows"):
+		result[i]["st"]=time.time()
 		os.system("start .\\run < "+pathget(i,".in")+" > "+pathget(i,".out"))
 		os.system("timeout "+str(cfg["tl"]+5.1))
 		os.system("taskkill /F /im run.exe")
 	else:
+		result[i]["st"]=time.time()
 		if(os.system("timeout "+str(cfg["tl"]+0.2)+" ./run < "+pathget(i,".in")+" > "+pathget(i,".out"))):
 			result[i]["re"]=True
 			result[i]["ac"]=True
 	result[i]["ed"]=time.time()
 
 def judge(i):
-	run=KThread(target=coderunner,args=(i,))
+	run=threading.Thread(target=coderunner,args=(i,))
 	print(lang["run"],i)
 	run.start()
-	time.sleep(cfg["tl"])
-	run.kill()
+	run.join()
 	outf=open(pathget(i,".out"),"r",encoding="utf-8").read().lower()
 	ansf=open(pathget(i,".ans"),"r",encoding="utf-8").read().lower()
 	if(not result[i]["ed"]):
