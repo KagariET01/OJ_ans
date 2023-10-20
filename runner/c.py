@@ -10,19 +10,22 @@ import copy
 import platform
 
 DBG=True
-lang=json.loads(open("lang/ch.json","r",encoding="utf-8").read())
+lang=json.loads(open("lang/en.json","r",encoding="utf-8").read())
 
 #讀取設定檔
-print("OS:",platform.system())
-print(lang["loadCFG"])
+print(Fore.LIGHTMAGENTA_EX+"OS:",platform.system())
+#print(lang["loadCFG"])
 cfg=json.loads(open("config.json","r",encoding="utf-8").read())
+if(platform.system()=="Windows"):
+	cfg["path"].replace('/','\\')
+
 
 def pathget(i,tpe):
 	return cfg["path"]+"{:0>2d}".format(i)+tpe
-print(pathget(1,".in"))
 #編譯
 print(lang["build"])
 os.system("rm run")
+#print("> g++ -o run main.cpp")
 if(os.system("g++ -o run main.cpp")):
 	print(Fore.YELLOW+lang["CE"])
 	exit()
@@ -80,7 +83,11 @@ def coderunner(i):#執行
 
 def judge(i):
 	run=threading.Thread(target=coderunner,args=(i,))
-	print(lang["run"],i)
+	if(not cfg["mult"]):
+		print('\r',end="")
+	print(Fore.BLUE+lang["run"],i,Fore.WHITE,end="")
+	if(cfg["mult"]):
+		print()
 	run.start()
 	run.join()
 	outf=open(pathget(i,".out"),"r",encoding="utf-8").read().lower()
@@ -101,7 +108,8 @@ def judge(i):
 	else:
 		result[i]["wa"]=1
 		result[i]["ac"]=0
-	print(lang["fin"],i)
+	if(cfg["mult"]):
+		print(Fore.BLUE+lang["fin"],i,Fore.WHITE)
 
 
 
@@ -114,27 +122,32 @@ while(True):
 	result.append(copy.copy(tmp))
 	result[i]["runner"]=threading.Thread(target=judge,args=(i,))
 	result[i]["runner"].start()
+	if(not cfg["mult"]):
+		result[i]["runner"].join()
 	i+=1
 
-for i in range(len(result)):
-	result[i]["runner"].join()
-
+if(cfg["mult"]):
+	for i in range(len(result)):
+		result[i]["runner"].join()
+else:
+	print("\r",end="")
 allAC=True
 for i in range(0,len(result),1):
 	if(result[i]["ac"]):
-		print(Fore.GREEN+lang["test"],i,":",lang["AC"],Fore.WHITE+lang["time"],result[i]["ed"]-result[i]["st"])
+		print(Fore.LIGHTGREEN_EX+lang["test"],i,":",lang["AC"],end="")
 	elif(result[i]["re"]):
-		print(Fore.YELLOW+lang["test"],i,":",lang["RE"],Fore.WHITE+lang["time"],result[i]["ed"]-result[i]["st"])
+		print(Fore.YELLOW+lang["test"],i,":",lang["RE"],end="")
 		allAC=False
 	elif(result[i]["tl"]):
-		print(Fore.YELLOW+lang["test"],i,":",lang["TLE"],Fore.WHITE+lang["time"],result[i]["ed"]-result[i]["st"])
+		print(Fore.YELLOW+lang["test"],i,":",lang["TLE"],end="")
 		allAC=False
 	elif(result[i]["wa"]):
-		print(Fore.YELLOW+lang["test"],i,":",lang["WA"],Fore.WHITE+lang["time"],result[i]["ed"]-result[i]["st"])
+		print(Fore.YELLOW+lang["test"],i,":",lang["WA"],end="")
 		allAC=False
+	print(" "+Fore.LIGHTCYAN_EX+lang["time"],str(int((result[i]["ed"]-result[i]["st"])*1000))+"ms")
 
 if(allAC):
-	print(lang["allAC"])
+	print(Fore.LIGHTGREEN_EX+lang["allAC"])
 	exit()
 else:
 	print("no pass")

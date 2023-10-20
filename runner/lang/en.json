@@ -3,12 +3,12 @@
 	"build":"Building Your Code.",
 	"run":"Running:",
 	"fin":"finished:",
-	"TLE":" TLE!",
-	"WA":"  WA!",
-	"RE":" RTE!",
+	"TLE":"TLEX!",
+	"WA":"WANS!",
+	"RE":"RERR!",
 	"AC":"PASS!",
 	"CE":"COMPILER ERROR!",
 	"time":"Time:",
-	"test":"Test",
+	"test":"case",
 	"allAC":"ALL EXAMPLE TEST PASSED!"
 }
