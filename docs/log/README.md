@@ -1,6 +1,9 @@
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
+# 2023/10/23
+`TIOJ 1828` `AC`  
+
 # 2023/10/18
 `CF 1877 PB` `AC`  
 `CF 1877 PA` `AC`  

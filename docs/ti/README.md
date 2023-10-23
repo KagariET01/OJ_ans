@@ -70,6 +70,72 @@
 > }
 > ```
 
+> ## [`TIOJ 1828`]<br>控控控之蘿莉控
+> [`TIOJ 1828`]: https://tioj.ck.tp.edu.tw/problems/1828
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT long long int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define PII pair<INT,INT>
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){
+> 	tpe re;cin>>re;return re;
+> }
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 
+> 	function<int(INT)> solve=[](INT casenum){
+> 		INT a,b,c;
+> 		cin>>a>>b>>c;
+> 		if(a==0 && b==0){//在警局門口+警察剛出來抓你
+> 			cout<<-1<<endl;
+> 			return 0;
+> 		}
+> 		else if(a>10000){//不在警局範圍內
+> 			cout<<0<<endl;
+> 			return 0;
+> 		}else if(c==0){//警察不會動
+> 			if(a==0){//如果在警局門口
+> 				cout<<1<<endl;
+> 				return 0;
+> 			}else{//如果不是
+> 				cout<<0<<endl;
+> 				return 0;
+> 			}
+> 		}else cout<<((10000*c-a*c)/(b*c+10000)+1)<<endl;//算警察到10000的時間和你要跑的距離，計算最小速率
+> 		return 0;
+> 	};
+> 	bool one_case=0;
+> 	bool ynans=0;
+> 	bool eof=0;
+> 	string yes="YES";
+> 	string no="NO";
+> 	INT t=(one_case?1:read(int));
+> 	for(INT i=0;eof || i<t;i++){
+> 		INT re=solve(i);
+> 		if(!ynans){
+> 			if(re==-1)return 0;
+> 		}else{
+> 			if(re==1){
+> 				cout<<yes<<endl;
+> 			}else if(re==0){
+> 				cout<<no<<endl;
+> 			}else{
+> 				return 0;
+> 			}
+> 		}
+> 	}
+> 	return 0;
+> }
+> ```
+
+
 > ## `TIOJ 2054` 
 > ### `Thinking`
 > ```txt
