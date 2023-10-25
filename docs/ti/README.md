@@ -76,105 +76,64 @@
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
+> #pragma GCC optimize("Ofast")
+> #pragma GCC optimize("O1")
+> #pragma GCC optimize("O2")
+> #pragma GCC optimize("O3")
 > #define INT long long int
 > #define endl "\n"
-> #define read(n) reader<n>()
-> #define DBG if(debug)
-> #define PII pair<INT,INT>
-> bool debug=0;
-> bool noTLE=1;
-> template<typename tpe>tpe reader(){
-> 	tpe re;cin>>re;return re;
-> }
 > 
 > const INT mxn=500000;
 > 
-> int main(int argc,char** argv){
-> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
-> 	function<int(INT)> solve=[](INT casenum){
-> 		struct dta{
-> 			INT h;
-> 			INT i;//實際位置
-> 			INT mini;//左界
-> 		};
-> 		INT n;
-> 		cin>>n;
-> 		vector<INT> h(n);
-> 		for(INT i=0;i<n;i++){
-> 			cin>>h[i];
-> 		}
-> 		h.push_back(1e9+7);
-> 		INT mp[n+5];//mp[距離]=高
-> 		for(INT i=0;i<=n;i++){
-> 			mp[i]=1e9+7;
-> 		}
-> 		stack<dta> st;
-> 		for(INT i=0;i<=n;i++){
-> 			DBG{
-> 				if(st.empty()){
-> 					cerr<<"st empty"<<endl;
-> 				}else{
-> 					cerr<<"st top= h:"<<st.top().h<<" i:"<<st.top().i<<" mini:"<<st.top().mini<<endl;
-> 				}
-> 			}
-> 			while(!st.empty()){
-> 				if(st.top().h<h[i]){
-> 					INT hh=i-st.top().mini;//最大距離
-> 					mp[hh]=min(mp[hh],st.top().h);
-> 					st.pop();
-> 				}else if(st.top().h==h[i]){
-> 					st.top().i=i;
-> 					break;
-> 				}else break;
-> 			}
-> 			if(st.empty()){
-> 				dta pp;
-> 				pp.h=h[i];
-> 				pp.i=i;
-> 				pp.mini=0;
-> 				st.push(pp);
-> 			}else if(st.top().h==h[i])continue;
-> 			else{
-> 				dta pp;
-> 				pp.h=h[i];
-> 				pp.i=i;
-> 				pp.mini=st.top().i+1;
-> 				st.push(pp);
-> 			}
-> 		}
-> 		INT nw=mp[n];
-> 		DBG cerr<<"mp: ";
-> 		for(INT i=n;i>=0;i--){
-> 			nw=min(nw,mp[i]);
-> 			mp[i]=nw;
-> 			DBG cerr<<mp[i]<<" ";
-> 		}
-> 		INT q=read(INT);
-> 		while(q--){
-> 			cout<<mp[read(INT)]<<endl;
-> 		}
-> 		return 0;
+> int main(){
+> 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 	struct dta{
+> 		INT h;
+> 		INT i;//實際位置
+> 		INT mini;//左界
 > 	};
-> 	bool one_case=1;
-> 	bool ynans=0;
-> 	bool eof=0;
-> 	string yes="YES";
-> 	string no="NO";
-> 	INT t=(one_case?1:read(int));
-> 	for(INT i=0;eof || i<t;i++){
-> 		INT re=solve(i);
-> 		if(!ynans){
-> 			if(re==-1)return 0;
-> 		}else{
-> 			if(re==1){
-> 				cout<<yes<<endl;
-> 			}else if(re==0){
-> 				cout<<no<<endl;
-> 			}else{
-> 				return 0;
-> 			}
+> 	INT n;
+> 	cin>>n;
+> 	INT h[n+1];
+> 	for(INT i=0;i<n;i++){
+> 		cin>>h[i];
+> 	}
+> 	h[n]=1e9+7;
+> 	INT mp[n+1];//mp[距離]=高
+> 	for(INT i=0;i<=n;i++){
+> 		mp[i]=1e9+7;
+> 	}
+> 	stack<dta> st;
+> 	for(INT i=0;i<=n;i++){
+> 		while(!st.empty()){
+> 			dta &nw=st.top();
+> 			if(nw.h<h[i]){
+> 				INT hh=i-nw.mini;//最大距離
+> 				mp[hh]=min(mp[hh],nw.h);
+> 				st.pop();
+> 			}else if(nw.h==h[i]){
+> 				nw.i=i;
+> 				break;
+> 			}else break;
 > 		}
+> 		if(st.empty()){
+> 			st.push({h[i],i,0});
+> 		}else if(st.top().h==h[i])continue;
+> 		else{
+> 			st.push({h[i],i,st.top().i+1});
+> 		}
+> 	}
+> 	INT nw=mp[n];
+> 	for(INT i=n-1;i>=0;i--){
+> 		nw=nw<mp[i]?nw:mp[i];
+> 		mp[i]=nw;
+> 	}
+> 	INT q;
+> 	cin>>q;
+> 	INT inin;
+> 	while(q--){
+> 		cin>>inin;
+> 		cout<<mp[inin]<<endl;
 > 	}
 > 	return 0;
 > }
