@@ -1,9 +1,10 @@
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# waiting
-`CF 1884 PD`  
-``
+# 2023/10/25
+`CF 1884 PD` `AC`  
+`PCSH Mid-2023-01 PD`  
+`AT ABC325 PA` `AC`  
 
 # 2023/10/24
 `TIOJ 1320` `AC`

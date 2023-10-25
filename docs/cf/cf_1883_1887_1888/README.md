@@ -1,11 +1,11 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1883` `CF 1887` `CF 1888`<br>Codeforces Round 905 (Div. 1, Div. 2, Div. 3)
+# [`CF 1883`] [`CF 1887`] [`CF 1888`]<br>Codeforces Round 905 (Div. 1, Div. 2, Div. 3)
 
 [`back`](../)
-[`CF 1883`](https://codeforces.com/contest/1883)
-[`CF 1887`](https://codeforces.com/contest/1887)
-[`CF 1888`](https://codeforces.com/contest/1888)
+[`CF 1883`]: https://codeforces.com/contest/1883
+[`CF 1887`]: https://codeforces.com/contest/1887
+[`CF 1888`]: https://codeforces.com/contest/1888
 
 > ## [`CF 1883 PA`]<br>Morning
 > ### `C++`
