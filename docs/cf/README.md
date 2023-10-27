@@ -7,6 +7,7 @@
 > [`CF 1592` `1/7` Codeforces Round 746 (Div. 2)](./cf_1592)  
 > [`CF 1789` `3/6` Codeforces Round 853 (Div. 2)](./cf_1789)  
 > [`CF 1804` `2/8` Nebius Welcome Round (Div. 1 + Div. 2)](./cf_1804)  
+> [`CF 1850` `6/8` Codeforces Round 886 (Div. 4)](./cf_1850)  
 > [`CF 1861` `2/6` Educational Codeforces Round 154 (Rated for Div. 2)](./cf_1861)  
 > [`CF 1863` `1/7` Pinely Round 2 (Div. 1 + Div. 2)](./cf_1863)  
 > [`CF 1867` `2/7` Codeforces Round 897 (Div. 2)](./cf_1867)  

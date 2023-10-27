@@ -40,22 +40,22 @@ void build(INT n){//註1
 
 
 int lca(int a, int b){// 求a和b的LCA（利用倍增法）
-    if (dep[b] < dep[a]) swap(a, b);
-    if (dep[a] != dep[b]){//確保dep是相同的
-        int dif = dep[b] - dep[a];
-        for (int i = 0; i < 20; i++){//註2
-            if (dif & 1) b = p[b][i];
-            dif >>= 1;
-        }
-    }
-    if (a == b) return a;//如果位置相同，那lca就是自己
-    for (int i = 19; i >= 0; i--){//註3
-        if (p[a][i] != p[b][i]){
-            a = p[a][i];
-            b = p[b][i];
-        }
-    }
-    return p[a][0];
+	if (dep[b] < dep[a]) swap(a, b);
+	if (dep[a] != dep[b]){//確保dep是相同的
+		int dif = dep[b] - dep[a];
+		for (int i = 0; i < 20; i++){//註2
+			if (dif & 1) b = p[b][i];
+			dif >>= 1;
+		}
+	}
+	if (a == b) return a;//如果位置相同，那lca就是自己
+	for (int i = 19; i >= 0; i--){//註3
+		if (p[a][i] != p[b][i]){
+			a = p[a][i];
+			b = p[b][i];
+		}
+	}
+	return p[a][0];
 }
 
 
