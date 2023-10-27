@@ -211,5 +211,53 @@
 > }
 > ```
 
-
+> ## [`CF 1850 PF`]<br>We Were Both Children
+> [`CF 1850 PF`]: https://codeforces.com/contest/1850/problem/F
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){
+> 	tpe re;cin>>re;return re;
+> }
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 	INT t=read(int);
+> 	while(t--){
+> 		INT n=read(INT);
+> 		INT a[n+1];
+> 		memset(a,0,sizeof(a));
+> 		for(INT i=0;i<n;i++){
+> 			INT inin=read(INT);
+> 			if(inin<=n)a[inin]++;
+> 		}
+> 		INT ans=0;
+> 		for(INT i=1;i<=n;i++){
+> 			vector<INT> vec;
+> 			for(INT j=1;j<=i;j++){
+> 				if(j>i/j)break;
+> 				if(i%j)continue;
+> 				vec.push_back(j);
+> 				if(j!=i/j){
+> 					vec.push_back(i/j);
+> 				}
+> 			}
+> 			INT nw=0;
+> 			for(INT j:vec){
+> 				nw+=a[j];
+> 			}
+> 			ans=max(ans,nw);
+> 		}
+> 		cout<<ans<<endl;
+> 	}
+> 	return 0;
+> }
+> ```
 

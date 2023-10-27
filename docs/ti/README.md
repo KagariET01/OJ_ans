@@ -1,6 +1,18 @@
 # [`TIOJ`]
 [`back`](../)
 
+> ## [`TIOJ 1001`]<br>Hello World!
+> [`TIOJ 1001`]: https://tioj.ck.tp.edu.tw/problems/1001
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> int main(){std::cout<<"Hello Tmt World XD!\n";return 0;}
+> ```
+> ### `Tag`
+> ```txt
+> 基本輸出輸入
+> ```
+
 > ## `TIOJ 1025`<br>數獨問題
 > ### `C++`
 > ```c++
