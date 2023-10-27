@@ -4,8 +4,8 @@
 
 [`back`](../)
 
-> ## `OJ CID PID`<br>PN
->
+> ## [`OJ CID PID`]<br>PN
+> [`OJ CID PID`]: 
 > ### `Score`
 >
 > ### `Thinking`

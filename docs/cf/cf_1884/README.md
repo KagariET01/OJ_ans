@@ -236,8 +236,107 @@
 > }
 > ```
 
-
-
+> ## [`CF 1884 PD`]<br>Counting Rhyme
+> [`CF 1884 PD`]: https://codeforces.com/contest/1884/problem/D
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT long long int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define PII pair<INT,INT>
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){
+> 	tpe re;cin>>re;return re;
+> }
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 
+> 	function<int(INT)> solve=[](INT casenum){
+> 		//cerr<<"Task "<<casenum<<" ==============="<<endl;
+> 		INT n=read(INT);
+> 		INT mp[n+1]={};
+> 		bool se[n+1]={};
+> 		for(INT i=0;i<n;i++){
+> 			INT inin=read(INT);
+> 			mp[inin]++;
+> 			se[inin]=1;
+> 			DBG cerr<<"Your Input="<<inin<<endl;
+> 		}
+> 		bool newse[n+1]={};
+> 		//newse.reserve(n);
+> 		for(INT i=1;i<=n;i++){
+> 			if(se[i])
+> 				for(INT j=i;j<=n;j+=i)
+> 					newse[j]=1;
+> 		}
+> 		DBG{
+> 			cerr<<"newse=";
+> 			for(INT i:newse){
+> 				cerr<<" "<<i;
+> 			}
+> 			cerr<<endl;
+> 		}
+> 		INT dp[n+1]={};
+> 		INT ans=0;
+> 		DBG cerr<<"run start"<<endl;
+> 		
+> 		for(INT i=n;i>=1;i--){
+> 			DBG cerr<<"i="<<i<<endl;
+> 			dp[i]=0;
+> 			INT j=i;
+> 			while(j<=n){
+> 				dp[i]+=mp[j];
+> 				j+=i;
+> 			}
+> 			dp[i]=(dp[i]-1)*dp[i]/2;
+> 			for(INT j=i+i;j<=n;j+=i){
+> 				dp[i]-=dp[j];
+> 			}
+> 			ans+=dp[i];
+> 		}
+> 		DBG cerr<<"finish"<<endl;
+> 		DBG for(INT i=1;i<=n;i++){
+> 			cerr<<dp[i]<<" ";
+> 		}
+> 		for(INT i=1;i<=n;i++){
+> 			if(newse[i])
+> 				ans-=dp[i];
+> 		}
+> 		DBG cerr<<"cout ans"<<endl;
+> 		cout<<ans<<endl;
+> 		return 0;
+> 	};
+> 	bool one_case=0;
+> 	bool ynans=0;
+> 	bool eof=0;
+> 	string yes="YES";
+> 	string no="NO";
+> 	INT t=(one_case?1:read(int));
+> 	for(INT i=0;eof || i<t;i++){
+> 		INT re=solve(i);
+> 		if(!ynans){
+> 			if(re==-1)return 0;
+> 		}else{
+> 			if(re==1){
+> 				cout<<yes<<endl;
+> 			}else if(re==0){
+> 				cout<<no<<endl;
+> 			}else{
+> 				return 0;
+> 			}
+> 		}
+> 	}
+> 	return 0;
+> }
+> ```
+> 
+> 
+> 
 > ### `Tag`
 > ```txt
 > 基本輸出輸入
