@@ -1,11 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1800`<br>Codeforces Round 855 (Div. 3)
+# `CF 1800` Codeforces Round 855 (Div. 3)
 
 [`back`](../)
 
-> ## `CF 1800 PA`<br>Is It a Cat?
+> ## `CF 1800 PA` Is It a Cat?
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -19,9 +21,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -73,9 +75,9 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > String
 > ```
-
-

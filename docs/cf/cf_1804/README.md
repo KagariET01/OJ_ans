@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1804`<br>Nebius Welcome Round (Div. 1 + Div. 2)
+# `CF 1804` Nebius Welcome Round (Div. 1 + Div. 2)
+
 [`back`](../)
 
-> ## `CF 1804 PA`<br>Lame King
+> ## `CF 1804 PA` Lame King
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -54,8 +57,10 @@
 > }
 > ```
 
-> ## `CF 1804 PB`<br>Vaccination
+> ## `CF 1804 PB` Vaccination
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -113,8 +118,10 @@
 > }
 > ```
 
-> ## `CF 1804 PC`<br>Pull Your Luck
+> ## `CF 1804 PC` Pull Your Luck
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -128,9 +135,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > struct str{
 > 	INT nw=0;
 > 	INT n=0;
@@ -146,7 +153,7 @@
 > 		return a>b;
 > 	}
 > };
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -216,7 +223,3 @@
 > 	return 0;
 > }
 > ```
-
-
-
-

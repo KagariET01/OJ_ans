@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1886`<br>Educational Codeforces Round 156 (Rated for Div. 2)
+# `CF 1886` Educational Codeforces Round 156 (Rated for Div. 2)
+
 [`back`](../)
 
-> ## `CF 1886 PA`<br>Sum of Three
+> ## `CF 1886 PA` Sum of Three
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,9 +21,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -62,14 +65,18 @@
 > 	return 0;
 > }
 > ```
-> ### `Tag`  
+>
+> ### `Tag`
+>
 > ```txt
 > 基本輸出輸入
 > greedy
 > ```
 
-> ## `CF 1886 PB`<br>Fear of the Dark
+> ## `CF 1886 PB` Fear of the Dark
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -83,12 +90,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT px,py;
 > 		INT ax,ay;
@@ -96,7 +103,7 @@
 > 		cin>>px>>py;
 > 		cin>>ax>>ay;
 > 		cin>>bx>>by;
-> 
+>
 > 		long double ato0=sqrt(ax*ax+ay*ay);
 > 		long double atop=sqrt(
 > 			(px-ax)*(px-ax)+
@@ -143,8 +150,10 @@
 > }
 > ```
 
-> ## `CF 1886 PC`<br>Decreasing String
+> ## `CF 1886 PC` Decreasing String
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -158,9 +167,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -231,5 +240,3 @@
 > 	return 0;
 > }
 > ```
-
-

@@ -1,11 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1863`<br>Pinely Round 2 (Div. 1 + Div. 2)
+# `CF 1863` Pinely Round 2 (Div. 1 + Div. 2)
 
 [`back`](../) [`CF 1863`](https://codeforces.com/contest/1863)
 
-> ## `CF 1863 PA`<br>Channel
+> ## `CF 1863 PA` Channel
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -19,13 +21,13 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
-> 
+>
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,a,b;
 > 		string q;
@@ -83,9 +85,10 @@
 > }
 > ```
 
-
-> ## `CF 1863 PC`<br>MEX Repetition
+> ## `CF 1863 PC` MEX Repetition
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;

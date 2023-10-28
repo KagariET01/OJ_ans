@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1873`<br>Codeforces Round 898 (Div. 4)
+# `CF 1873` Codeforces Round 898 (Div. 4)
+
 [`back`](../)
 
-> ## `CF 1873 PA`<br>Short Sort
+> ## `CF 1873 PA` Short Sort
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -53,8 +56,10 @@
 > }
 > ```
 
-> ## `CF 1873 PB`<br>Good Kid
+> ## `CF 1873 PB` Good Kid
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -106,8 +111,10 @@
 > }
 > ```
 
-> ## `CF 1873 PC`<br>Target Practice
+> ## `CF 1873 PC` Target Practice
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -166,8 +173,10 @@
 > }
 > ```
 
-> ## `CF 1873 PD`<br>1D Eraser
+> ## `CF 1873 PD` 1D Eraser
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -220,8 +229,10 @@
 > }
 > ```
 
-> ## `CF 1873 PE`<br>Building an Aquarium
+> ## `CF 1873 PE` Building an Aquarium
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -235,10 +246,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > vector<INT> vec;
 > INT x;
-> 
+>
 > bool mxer(INT h){
 > 	INT nw=0;
 > 	for(INT i:vec){
@@ -259,7 +270,7 @@
 > 	}
 > 	return l;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	auto solve=[](INT casenum){
 > 		INT n;
@@ -294,8 +305,10 @@
 > }
 > ```
 
-> ## `CF 1873 PF`<br>Money Trees
+> ## `CF 1873 PF` Money Trees
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -366,8 +379,10 @@
 > }
 > ```
 
-> ## `CF 1873 PG`<br>ABBC or BACB
+> ## `CF 1873 PG` ABBC or BACB
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -430,17 +445,19 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > ```
 
-
-> ## `CF 1873 PH`<br>Mad City
-> 
+> ## `CF 1873 PH` Mad City
+>
 > ### [`HINT`](PH)
-> 
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -463,7 +480,7 @@
 > INT ato=0;
 > INT atolen=1e9+7;
 > INT btolen=1e9+7;
-> 
+>
 > bool findcirc(INT n,INT lst){
 > 	DBG cerr<<"n="<<n<<" lst="<<lst<<endl;
 > 	if(visi[n] && !circ[n]){//發現環
@@ -488,7 +505,7 @@
 > 	road.pop_back();
 > 	return 0;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	auto solve=[](INT casenum){
 > 		cin>>n>>b>>a;
@@ -507,7 +524,7 @@
 > 			tre[v].push_back(u);
 > 		}
 > 		findcirc(0,0);
-> 		
+>
 > 		bool vst[n+5]={};
 > 		deque<PII> dq;
 > 		dq.push_back({a,0});
@@ -528,7 +545,7 @@
 > 				}
 > 			}
 > 		}
-> 
+>
 > 		memset(vst,0,sizeof(vst));
 > 		dq.clear();
 > 		dq.push_back({b,0});
@@ -572,8 +589,9 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > graphs
 > ```
-

@@ -1,9 +1,9 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-
 [`back`](../)
 
-> ### `Meta 2023-1 PB1 OUTPUT`<br>Sum 41 (Chapter 1) `OUTPUT`
+> ### `Meta 2023-1 PB1 OUTPUT` Sum 41 (Chapter 1) `OUTPUT`
+>
 > ```txt
 > Case #1: 5 13 11 9 4 4
 > Case #2: 4 25 8 6 2

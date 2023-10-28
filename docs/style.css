@@ -4827,6 +4827,8 @@ pre {
   font-weight:700;
   line-height:2;
   text-align: Center;
+  border-radius: 3px;
+  background-color: #fff2;
 }
 .markdown-body h1 .octicon-link,
 .markdown-body h2 .octicon-link,
@@ -4869,15 +4871,15 @@ pre {
   font-size:inherit
 }
 .markdown-body h1 {
-  padding-bottom:0.3em;
+  padding-bottom:0;
   font-size:2em;
-  border-bottom:1px solid #eaecef
+  border-bottom: none;
 }
 .markdown-body h2 {
-  padding-bottom:0.3em;
+  padding-bottom:0;
   font-size:1.5em;
   color:#fff;
-  border-bottom:1px solid #fff
+  border-bottom: none;
 }
 .markdown-body h3 {
   font-size:1.25em

@@ -2,8 +2,10 @@
 
 [`back`](../)
 
-> ## `ZJ k465` `TOIP 2023-04-HARD PC`<br>姓名分析 (Name)
+> ## `ZJ k465` `TOIP 2023-04-HARD PC` 姓名分析 (Name)
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -16,13 +18,13 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > struct dta{
 > 	INT cnt=0;
 > 	bool hnx['Z'-'A'+1];
 > 	dta *nxt['Z'-'A'+1];
 > };
-> 
+>
 > void ptre(dta *root,INT deep=1){
 > 	cerr<<(*root).cnt<<endl;
 > 	for(INT i=0;i<('Z'-'A'+1);i++){
@@ -37,7 +39,7 @@
 > 	}
 > }
 > string str[1000000];
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=1;
@@ -45,7 +47,7 @@
 > 		INT n=read(INT);
 > 		dta root;
 > 		memset(root.hnx,0,('Z'-'A'+1));
-> 
+>
 > 		for(INT i=0;i<n;i++){
 > 			str[i]=read(string);
 > 		}
@@ -87,12 +89,11 @@
 > 	return 0;
 > }
 > ```
-> ### `Tag`  
+>
+> ### `Tag`
+>
 > ```txt
 > trie 字典數
 > ```
-
-
-
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">

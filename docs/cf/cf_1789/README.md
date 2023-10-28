@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1789`<br>Codeforces Round 853 (Div. 2)
+# `CF 1789` Codeforces Round 853 (Div. 2)
+
 [`back`](../)
 
-> ## `CF 1789 PA`<br>Serval and Mocha's Array
+> ## `CF 1789 PA` Serval and Mocha's Array
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,9 +21,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -63,8 +66,10 @@
 > }
 > ```
 
-> ## `CF 1789 PB`<br>Serval and Inversion Magic
+> ## `CF 1789 PB` Serval and Inversion Magic
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -78,9 +83,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -127,8 +132,10 @@
 > }
 > ```
 
-> ## `CF 1789 PC`<br>Serval and Toxel's Arrays
+> ## `CF 1789 PC` Serval and Toxel's Arrays
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -142,9 +149,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -202,6 +209,3 @@
 > 	return 0;
 > }
 > ```
-
-
-

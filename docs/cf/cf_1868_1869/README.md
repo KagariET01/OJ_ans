@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1868` `CF 1869`<br>Codeforces Round 896 (Div. 1, Div. 2)
+# [`CF 1868`] Codeforces Round 896 (Div. 1)
+# [`CF 1869`] Codeforces Round 896 (Div. 2) 
 
-[`back`](../) [`CF 1868`](https://codeforces.com/contest/1868) [`CF 1869`](https://codeforces.com/contest/1869)
+[`back`](../)
+[`CF 1868`]: https://codeforces.com/contest/1868
+[`CF 1869`]: https://codeforces.com/contest/1869
 
-> ## `CF 1869 PA`<br>Make It Zero
+> ## `CF 1869 PA` Make It Zero
 >
 > ### `C++`
 >
@@ -55,7 +58,7 @@
 > 想法
 > ```
 
-> ## `CF 1869 PB`<br>2D Traveling
+> ## `CF 1869 PB` 2D Traveling
 >
 > ### `C++`
 >
@@ -106,7 +109,7 @@
 > 想法
 > ```
 
-> ## `CF 1869 PC` `CF 1868 PA`<br>Fill in the Matrix
+> ## `CF 1869 PC` `CF 1868 PA` Fill in the Matrix
 >
 > ### `C++`
 >
@@ -161,7 +164,7 @@
 > 想法
 > ```
 
-> ## `CF 1869 PD1` `CF 1868 PB1`<br>Candy Party (Easy Version)
+> ## `CF 1869 PD1` `CF 1868 PB1` Candy Party (Easy Version)
 >
 > ### `C++`
 >

@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1874` `CF 1875`<br>Codeforces Round 901 (Div. 1, Div. 2)
+# `CF 1874` `CF 1875` Codeforces Round 901 (Div. 1, Div. 2)
+
 [`back`](../) [`CF 1874`](https://codeforces.com/contest/1874) [`CF 1875`](https://codeforces.com/contest/1875)
 
-> ## `CF 1875 PA`<br>Jellyfish and Undertale
+> ## `CF 1875 PA` Jellyfish and Undertale
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,12 +21,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT a,b,n;
 > 		cin>>a>>b>>n;
@@ -56,8 +59,10 @@
 > }
 > ```
 
-> ## `CF 1875 PB` `CF 1874 PA`<br>Jellyfish and Game
+> ## `CF 1875 PB` `CF 1874 PA` Jellyfish and Game
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -71,12 +76,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT a,b,n;
 > 		cin>>a>>b>>n;
@@ -142,8 +147,10 @@
 > }
 > ```
 
-> ## `CF 1875 PC`<br>Jellyfish and Green Apple
+> ## `CF 1875 PC` Jellyfish and Green Apple
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -157,13 +164,13 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > INT lowbit(INT n){
 > 	return n&(-n);
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -207,8 +214,10 @@
 > }
 > ```
 
-> ## `CF 1875 PD`<br>Jellyfish and Mex
+> ## `CF 1875 PD` Jellyfish and Mex
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -222,12 +231,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT n;
 > 		cin>>n;
@@ -274,12 +283,9 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > DP
 > ```
-
-
-
-
-

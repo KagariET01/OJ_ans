@@ -1,14 +1,18 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# [`CF 1883`] [`CF 1887`] [`CF 1888`]<br>Codeforces Round 905 (Div. 1, Div. 2, Div. 3)
+# [`CF 1883`] Codeforces Round 905 (Div. 3)
+# [`CF 1887`] Codeforces Round 905 (Div. 1)
+# [`CF 1888`] Codeforces Round 905 (Div. 2)
 
 [`back`](../)
 [`CF 1883`]: https://codeforces.com/contest/1883
 [`CF 1887`]: https://codeforces.com/contest/1887
 [`CF 1888`]: https://codeforces.com/contest/1888
 
-> ## [`CF 1883 PA`]<br>Morning
+> ## [`CF 1883 PA`] Morning
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -22,7 +26,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	function<int(INT)> solve=[](INT casenum){
@@ -68,8 +72,10 @@
 > }
 > ```
 
-> ## [`CF 1883 PB`] [`CF 1888 PA`]<br>Chemistry
+> ## [`CF 1883 PB`] [`CF 1888 PA`] Chemistry
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -83,10 +89,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,k;
 > 		cin>>n>>k;
@@ -129,8 +135,10 @@
 > }
 > ```
 
-> ## [`CF 1883 PC`] [`CF 1888 PB`]<br>Raspberries
+> ## [`CF 1883 PC`] [`CF 1888 PB`] Raspberries
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -144,10 +152,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,k;
 > 		cin>>n>>k;
@@ -201,8 +209,10 @@
 > }
 > ```
 
-> ## [`CF 1883 PD`]<br>In Love
+> ## [`CF 1883 PD`] In Love
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -216,10 +226,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		struct mncmp{
 > 			bool operator()(PII a,PII b){
@@ -231,8 +241,8 @@
 > 				return a.first<b.first;
 > 			}
 > 		};
-> 		
-> 
+>
+>
 > 		INT q=read(INT);
 > 		DBG cerr<<"q="<<q<<endl;
 > 		map<PII,INT> del_mx;
@@ -300,14 +310,9 @@
 > }
 > ```
 
-
-
-
-
 [`CF 1883 PA`]: https://codeforces.com/contest/1883/problem/A
 [`CF 1883 PB`]: https://codeforces.com/contest/1883/problem/B
 [`CF 1883 PC`]: https://codeforces.com/contest/1883/problem/C
 [`CF 1883 PD`]: https://codeforces.com/contest/1883/problem/D
-
 [`CF 1888 PA`]: https://codeforces.com/contest/1888/problem/A
 [`CF 1888 PB`]: https://codeforces.com/contest/1888/problem/B

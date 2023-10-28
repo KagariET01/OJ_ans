@@ -1,14 +1,19 @@
 # `PCIC 2023_R3`
+
 [`back`](../)
 
-> [題目](./R3_All.pdf)  
+> [題目](./R3_All.pdf)
 
-> ## `PCIC 2023_R3 PA`<br>旮旯同學亂填表單(Corner)
+> ## `PCIC 2023_R3 PA` 旮旯同學亂填表單(Corner)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -22,18 +27,18 @@
 > template<typename TPE>TPE reader(){
 > 	TPE re;cin>>re;return re;
 > }
-> 
+>
 > struct dta{
 > 	INT a=0;
 > 	INT b=0;
 > 	INT c=0;
 > };
-> 
+>
 > bool operator==(dta a,INT b){
 > 	if(a.a==b || a.b==b || a.c==b)return 1;
 > 	else return 0;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	INT n;
@@ -57,12 +62,16 @@
 > }
 > ```
 
-> ## `PCIC 2023_R3 PB`<br>能量飲料(Energy Drink)
+> ## `PCIC 2023_R3 PB` 能量飲料(Energy Drink)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -77,7 +86,7 @@
 > template<typename TPE>TPE reader(){
 > 	TPE re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	INT n=read(INT);
@@ -120,12 +129,16 @@
 > }
 > ```
 
-> ## `PCIC 2023_R3 PC`<br>衛冕優勝者(Defending Winners)
+> ## `PCIC 2023_R3 PC` 衛冕優勝者(Defending Winners)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -139,7 +152,7 @@
 > template<typename TPE>TPE reader(){
 > 	TPE re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	INT n,m;
@@ -150,7 +163,7 @@
 > 			cin>>a[i][j];
 > 		}
 > 	}
-> 
+>
 > 	INT lastw[n*m+1];
 > 	INT cnt[n*m+1];
 > 	INT ans=0;
@@ -158,9 +171,9 @@
 > 		lastw[i]=1000;
 > 		cnt[i]=0;
 > 	}
-> 
+>
 > 	for(INT i=0;i<n;i++){
-> 
+>
 > 		for(INT j=0;j<m;j++){
 > 			if(lastw[a[i][j]]==i-1){
 > 				cnt[a[i][j]]++;
@@ -175,23 +188,26 @@
 > }
 > ```
 
-> ## `PCIC 2023_R3 PD`<br>蘋果哥哥消蘋果(Fruit Box)
-> `070/100`
-> ***下方兩隻程式皆須上傳，才可得到70分***
-> 
+> ## `PCIC 2023_R3 PD` 蘋果哥哥消蘋果(Fruit Box)
+>
+> `070/100` > **_下方兩隻程式皆須上傳，才可得到 70 分_**
+>
 > ### `025/100`
+>
 > > #### `Score`
+> >
 > > ```diff
 > >   025/100
 > > =========
-> > - 000/000  
-> > + 025/025  
-> > - 000/020  
-> > - 000/025  
-> > - 000/030  
+> > - 000/000
+> > + 025/025
+> > - 000/020
+> > - 000/025
+> > - 000/030
 > > ```
-> > 
+> >
 > > #### `C++`
+> >
 > > ```c++
 > > #include<bits/stdc++.h>
 > > using namespace std;
@@ -205,7 +221,7 @@
 > > template<typename TPE>TPE reader(){
 > > 	TPE re;cin>>re;return re;
 > > }
-> > 
+> >
 > > int main(int argc,char** argv){
 > > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > > 	INT n;
@@ -230,20 +246,23 @@
 > > 	//兩個上傳可以得到 070/100
 > > }
 > > ```
-> 
+>
 > ### `060/100`
+>
 > > #### `Score`
+> >
 > > ```diff
 > >   060/100
 > > =========
-> >   000/000  
-> >   015/025  
-> >   012/020  
-> >   015/025  
+> >   000/000
+> >   015/025
+> >   012/020
+> >   015/025
 > >   018/030
-> > ```  
-> > 
+> > ```
+> >
 > > #### `C++`
+> >
 > > ```c++
 > > #include<bits/stdc++.h>
 > > using namespace std;
@@ -257,7 +276,7 @@
 > > template<typename TPE>TPE reader(){
 > > 	TPE re;cin>>re;return re;
 > > }
-> > 
+> >
 > > int main(int argc,char** argv){
 > > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > > 	INT n;
@@ -283,13 +302,16 @@
 > > }
 > > ```
 
-> ## `PCIC 2023_R3 PE`<br>密室尋寶(Treasure)
+> ## `PCIC 2023_R3 PE` 密室尋寶(Treasure)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
-> 
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -303,19 +325,19 @@
 > template<typename TPE>TPE reader(){
 > 	TPE re;cin>>re;return re;
 > }
-> 
+>
 > const INT mxn=2e5;
 > INT n;
 > INT a[mxn];
 > vector<INT> vec[mxn];
-> bool disab[mxn];	
-> 
+> bool disab[mxn];
+>
 > vector<INT> anslst;
 > vector<INT> nwlst;
 > bool vis[mxn];
-> 
+>
 > bool vser(INT a,INT b){return a<b;}
-> 
+>
 > void dfs(INT nw=0){
 > 	vis[nw]=1;
 > 	nwlst.push_back(nw);
@@ -337,8 +359,8 @@
 > 	nwlst.pop_back();
 > 	vis[nw]=0;
 > }
-> 
-> 
+>
+>
 > int main(int argc,char** argv){
 > 	if(!debug && noTLE){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	cin>>n;
@@ -375,15 +397,8 @@
 > }
 > ```
 
-
-
-
-
-
-
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj
 [`PCIC`]: /OJ_ans/PCIC
-
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">

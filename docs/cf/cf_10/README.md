@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 10`<br>Codeforces Beta Round 10
+# `CF 10` Codeforces Beta Round 10
+
 [`back`](../)
 
-> ## `CF 10 PA`<br>Power Consumption Calculation
+> ## `CF 10 PA` Power Consumption Calculation
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,11 +21,11 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > INT n,m,k;
-> 
+>
 > INT checker(INT mx){
 > 	INT r=m;
 > 	INT re=0;
@@ -33,7 +36,7 @@
 > 	}
 > 	return re;
 > }
-> 
+>
 > INT BITsearch(INT l,INT r){
 > 	while(l<r){
 > 		INT mnt=(r-l)/2+l;
@@ -44,7 +47,7 @@
 > 	}
 > 	return r;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	auto solve=[](INT casenum){
 > 		INT n,p1,p2,p3,t1,t2;
@@ -87,8 +90,3 @@
 > 	return 0;
 > }
 > ```
-
-
-
-
-

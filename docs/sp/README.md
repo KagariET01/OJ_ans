@@ -2,11 +2,14 @@
 
 [`back`](../)
 
-
 # `PCSH Mid-2023-01` PCSH Midterm Exam Contest #007
-> ## [`PCSH Mid-2023-01 PD`]<br>好想跟鄭國手一樣強(User333 Orz)
+
+> ## [`PCSH Mid-2023-01 PD`] 好想跟鄭國手一樣強(User333 Orz)
+>
 > [`PCSH Mid-2023-01 PD`]: https://codeforces.com/group/VEc3guEDmO/contest/477514/problem/D
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -20,7 +23,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > const INT mxn=500000;
 > function<
 > 	void(
@@ -31,7 +34,7 @@
 > > mrgesort;
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n;
 > 		if(!(cin>>n))return -1;
@@ -121,10 +124,9 @@
 > }
 > ```
 
-
 # `Meta 2023-1` Meta Hacker Cup 2023 Round 1
 
-> ## `Meta 2023-1 PB1`<br>Sum 41 (Chapter 1)
+> ## `Meta 2023-1 PB1` Sum 41 (Chapter 1)
 >
 > ### [`OUTPUT`](./Meta_2023-1_PB1_output)
 >

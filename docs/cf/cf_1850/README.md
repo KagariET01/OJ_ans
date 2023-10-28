@@ -1,11 +1,15 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1850`<br>Codeforces Round 886 (Div. 4)
+# `CF 1850` Codeforces Round 886 (Div. 4)
+
 [`back`](../)
 
-> ## [`CF 1850 PA`]<br>To My Critics
+> ## [`CF 1850 PA`] To My Critics
+>
 > [`CF 1850 PA`]: https://codeforces.com/contest/1850/problem/A
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,7 +22,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -39,9 +43,12 @@
 > }
 > ```
 
-> ## [`CF 1850 PB`]<br>Ten Words of Wisdom
+> ## [`CF 1850 PB`] Ten Words of Wisdom
+>
 > [`CF 1850 PB`]: https://codeforces.com/contest/1850/problem/B
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -54,7 +61,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -78,9 +85,12 @@
 > }
 > ```
 
-> ## [`CF 1850 PC`]<br>Word on the Paper
+> ## [`CF 1850 PC`] Word on the Paper
+>
 > [`CF 1850 PC`]: https://codeforces.com/contest/1850/problem/C
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -93,7 +103,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -119,9 +129,12 @@
 > }
 > ```
 
-> ## [`CF 1850 PD`]<br>Balanced Round
+> ## [`CF 1850 PD`] Balanced Round
+>
 > [`CF 1850 PD`]: https://codeforces.com/contest/1850/problem/D
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -134,7 +147,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -161,9 +174,12 @@
 > }
 > ```
 
-> ## [`CF 1850 PE`]<br>We Were Both Children
+> ## [`CF 1850 PE`] We Were Both Children
+>
 > [`CF 1850 PE`]: https://codeforces.com/contest/1850/problem/F
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -176,7 +192,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -211,9 +227,12 @@
 > }
 > ```
 
-> ## [`CF 1850 PF`]<br>We Were Both Children
+> ## [`CF 1850 PF`] We Were Both Children
+>
 > [`CF 1850 PF`]: https://codeforces.com/contest/1850/problem/F
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -226,7 +245,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -260,4 +279,3 @@
 > 	return 0;
 > }
 > ```
-

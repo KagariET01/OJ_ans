@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1879`<br>Educational Codeforces Round 155 (Rated for Div. 2)
+# `CF 1879` Educational Codeforces Round 155 (Rated for Div. 2)
+
 [`back`](../) [`CF 1879`](https://codeforces.com/contest/1879)
 
-> ## `CF 1879 PA`<br>Rigged!
+> ## `CF 1879 PA` Rigged!
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,10 +21,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT n=read(INT);
 > 		INT aa,ab;
@@ -60,13 +63,17 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > ```
 
-> ## `CF 1879 PB`<br>Chips on the Board
+> ## `CF 1879 PB` Chips on the Board
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -80,10 +87,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
-> int main(int argc,char** argv){	
+>
+> int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT n=read(INT);
 > 		INT atot=0,amin=1e9+7;
@@ -123,9 +130,9 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > ```
-
-
