@@ -8,7 +8,7 @@
 > [`CF 1611` `1/8` Codeforces Round 756 (Div. 3)](./cf_1611)  
 > [`CF 1789` `3/6` Codeforces Round 853 (Div. 2)](./cf_1789)  
 > [`CF 1804` `2/8` Nebius Welcome Round (Div. 1 + Div. 2)](./cf_1804)  
-> [`CF 1831` `3/6` Codeforces Round 875 (Div. 2)](./cf_1831)
+> [`CF 1831` `3/6` Codeforces Round 875 (Div. 2)](./cf_1831)  
 > [`CF 1850` `6/8` Codeforces Round 886 (Div. 4)](./cf_1850)  
 > [`CF 1861` `2/6` Educational Codeforces Round 154 (Rated for Div. 2)](./cf_1861)  
 > [`CF 1863` `1/7` Pinely Round 2 (Div. 1 + Div. 2)](./cf_1863)  
