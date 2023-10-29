@@ -1,13 +1,19 @@
 # `PCIC 2023_R1`
+
 [`back`](../)
 
-> ## `PCIC 2023_R1 PA`<br>尖叫雞的三角形詛咒(Triangle Curse)  
-> [`題目`](./pA.pdf)  
+> ## `PCIC 2023_R1 PA` 尖叫雞的三角形詛咒(Triangle Curse)
+>
+> [`題目`](./pA.pdf)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
-> ### `C++` 
+>
+> ### `C++`
+>
 > ```c++
 > #include<iostream>
 > #include<vector>
@@ -19,7 +25,7 @@
 > #define DBG if(debug)
 > bool debug=0;
 > bool iofast=1;
-> 
+>
 > template<typename TPE>TPE reader(){
 > 	TPE re;
 > 	cin>>re;
@@ -53,13 +59,18 @@
 > }
 > ```
 
-> ## `PCIC 2023_R1 PB`<br>堅持下去(Give Up)  
-> [`題目`](./pB.pdf)  
+> ## `PCIC 2023_R1 PB` 堅持下去(Give Up)
+>
+> [`題目`](./pB.pdf)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
-> ``` 
+> ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<iostream>
 > #include<algorithm>
@@ -72,14 +83,14 @@
 > #define DBG if(debug)
 > bool debug=0;
 > bool iofast=1;
-> 
+>
 > template<typename TPE> TPE reader(){
 > 	TPE re;
 > 	cin>>re;
 > 	return re;
 > }
 > #define read(n) reader<n>()
-> 
+>
 > int main(){
 > 	if(iofast){ET01}
 > 	INT t=1;
@@ -104,13 +115,18 @@
 > }
 > ```
 
-> ## `PCIC 2023_R1 PC`<br>拆地雷(Minesweeper)  
-> [`題目`](./pC.pdf)  
+> ## `PCIC 2023_R1 PC` 拆地雷(Minesweeper)
+>
+> [`題目`](./pC.pdf)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
-> ``` 
+> ```
+>
 > ### `C++`
+>
 > ```c++
 > //[AC]
 > #include "Minesweeper.h"
@@ -197,13 +213,18 @@
 > }
 > ```
 
-> ## `PCIC 2023_R1 PD`<br>長頸鹿(Giraffe)  
-> [`題目`](./pD.pdf)  
+> ## `PCIC 2023_R1 PD` 長頸鹿(Giraffe)
+>
+> [`題目`](./pD.pdf)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
-> ``` 
+> ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -217,7 +238,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > struct dta{
 > 	INT id=0;
 > 	INT w=0;
@@ -240,7 +261,7 @@
 > 		return a.id>b.id;
 > 	}
 > };
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=1;
@@ -312,13 +333,18 @@
 > }
 > ```
 
-> ## `PCIC 2023_R1 PE`<br>戀愛關係(Relationship)  
-> [`題目`](./pE.pdf)  
+> ## `PCIC 2023_R1 PE` 戀愛關係(Relationship)
+>
+> [`題目`](./pE.pdf)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
-> ``` 
+> ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<iostream>
 > #include<vector>
@@ -334,14 +360,14 @@
 > bool iofast=1;
 > //長頸鹿的資料
 > #define dta map<char,INT>
-> 
+>
 > template<typename TPE> TPE reader(){
 > 	TPE re;
 > 	cin>>re;
 > 	return re;
 > }
 > #define read(n) reader<n>()
-> 
+>
 > int main(){
 > 	if(iofast){ET01}
 > 	INT t=1;
@@ -351,7 +377,7 @@
 > 		for(INT i=0;i<n;i++){
 > 			a[i]=read(INT)-1;
 > 		}
-> 
+>
 > 		bool inlove[n]={};//1=in love
 > 		INT eme[n]={};//有eme[i]個人愛i
 > 		for(INT i=0;i<n;i++){
@@ -375,7 +401,6 @@
 > 	return 0;
 > }
 > ```
-
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj

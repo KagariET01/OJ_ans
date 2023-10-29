@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1878`<br>Codeforces Round 900 (Div. 3)
+# `CF 1878` Codeforces Round 900 (Div. 3)
+
 [`back`](../) [`CF 1878`](https://codeforces.com/contest/1878)
 
-> ## `CF 1878 PA`<br>How Much Does Daytona Cost?
+> ## `CF 1878 PA` How Much Does Daytona Cost?
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,9 +21,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -31,7 +34,7 @@
 > 			INT inin=read(INT);
 > 			re|=(k==inin);
 > 		}
-> 		
+>
 > 		return re;
 > 	};
 > 	bool one_case=0;
@@ -55,8 +58,10 @@
 > }
 > ```
 
-> ## `CF 1878 PB`<br>Aleksa and Stack
+> ## `CF 1878 PB` Aleksa and Stack
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -70,12 +75,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT n=read(INT);
 > 		INT a=1,b=3;
@@ -112,8 +117,10 @@
 > }
 > ```
 
-> ## `CF 1878 PC`<br>Vasilije in Cacak
+> ## `CF 1878 PC` Vasilije in Cacak
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -127,12 +134,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		INT n,k,x;
 > 		cin>>n>>k>>x;
@@ -161,7 +168,3 @@
 > 	return 0;
 > }
 > ```
-
-
-
-

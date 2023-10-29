@@ -2,8 +2,10 @@
 
 [`back`](../)
 
-> ## `ZJ h399`<br>蛋糕店促銷（簡易版）
+> ## `ZJ h399` 蛋糕店促銷（簡易版）
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -66,15 +68,19 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > math 數學
 > 觀察
 > greedy
 > ```
 
-> ## `ZJ h400`<br>蛋糕店促銷（困難版）
+> ## `ZJ h400` 蛋糕店促銷（困難版）
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -88,12 +94,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT superx(INT a,INT n,INT mod=0){
 > 	INT re=1;
 > 	INT xx=a;
 > 	while(n>0){
-> 		
+>
 > 		if(n&1){
 > 			re*=xx;
 > 		}
@@ -106,9 +112,9 @@
 > 	}
 > 	return re;
 > }
-> 
+>
 > const INT Amod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -137,7 +143,9 @@
 > 	return 0;
 > }
 > ```
-> ### `Tag`  
+>
+> ### `Tag`
+>
 > ```txt
 > math 數學
 > 觀察
@@ -145,17 +153,7 @@
 > exponentiating by squaring 平方求冪
 > ```
 
-
-
-
-
-
-
-
-
-## 
-
-
+##
 
 ##
 

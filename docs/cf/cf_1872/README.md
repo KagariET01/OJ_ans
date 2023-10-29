@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1872`<br>Codeforces Round 895 (Div. 3)
+# `CF 1872` Codeforces Round 895 (Div. 3)
+
 [`back`](../) [`CF 1872`](https://codeforces.com/contest/1872)
 
-> ## `CF 1872 PA`<br>Two Vessels  
+> ## `CF 1872 PA` Two Vessels
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,7 +21,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -34,8 +37,10 @@
 > }
 > ```
 
-> ## `CF 1872 PB`<br>The Corridor or There and Back Again  
+> ## `CF 1872 PB` The Corridor or There and Back Again
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -49,7 +54,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -72,8 +77,10 @@
 > }
 > ```
 
-> ## `CF 1872 PC`<br>Non-coprime Split  
+> ## `CF 1872 PC` Non-coprime Split
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -104,7 +111,7 @@
 > 		}
 > 	}
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	ggetod();
@@ -146,8 +153,10 @@
 > }
 > ```
 
-> ## `CF 1872 PD`<br>Plus Minus Permutation  
+> ## `CF 1872 PD` Plus Minus Permutation
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -161,7 +170,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -187,8 +196,10 @@
 > }
 > ```
 
-> ## `CF 1872 PE`<br>Data Structures Fan  
+> ## `CF 1872 PE` Data Structures Fan
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -202,7 +213,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -239,14 +250,11 @@
 > 			}
 > 		}
 > 		cout<<endl;
-> 
+>
 > 	}
 > 	return 0;
 > }
 > ```
-
-
-
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj

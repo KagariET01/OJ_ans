@@ -1,4 +1,19 @@
-#include<bits/stdc++.h>
+//#include<bits/stdc++.h>
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+#include<cmath>
+#include<string>
+#include<sstream>
+#include<vector>
+#include<queue>
+#include<deque>
+#include<map>
+#include<set>
+#include<cstring>
+#include<iomanip>
+#include<ctime>
+
 using namespace std;
 #define INT long long int
 #define endl "\n"
@@ -35,32 +50,24 @@ int main(int argc,char** argv){
 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 
 	function<int(INT)> solve=[](INT casenum){
-		struct dta{
-			INT a,b;
-		};
-		function<bool(dta,dta)> vser=[](dta a,dta b){
-			if(a.b==b.b)return a.a>b.a;
-			return a.b<b.b;
-		};
-		INT n,p;
-		cin>>n>>p;
-		INT ans=0;
-		INT hve=0;
-		dta lst[n];
+		INT mod=998244353;
+		INT n=read(INT);
+		vector<INT> vec;
+		vec.reserve(n);
 		for(INT i=0;i<n;i++){
-			cin>>lst[i].a;
+			vec.push_back(read(INT));
 		}
 		for(INT i=0;i<n;i++){
-			cin>>lst[i].b;
-		}
-		sort(lst,lst+n,vser);
-		for(INT i=0;i<n;i++){
-			if(hve==i){
-				hve++;
-				ans+=p;
+			INT j=i;
+			while(j<i){
+				vec[i]=max(vec[i],vec[j]);
+				j+=i;
 			}
-			ans+=min(lst[i].a,n-hve)*min(lst[i].b,p);
-			hve+=min(lst[i].a,n-hve);
+		}
+		sort(vec.begin(),vec.end());
+		INT ans=0;
+		for(INT i=0;i<n;i++){
+			ans+=((vec[i]%mod)*(1<<i)%mod)%mod;
 		}
 		cout<<ans<<endl;
 		return 0;

@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1882`<br>Codeforces Round 899 (Div. 2)
+# `CF 1882` Codeforces Round 899 (Div. 2)
+
 [`back`](../) [`CF 1882`](https://codeforces.com/contest/1882)
 
-> ## `CF 1882 PA`<br>Increasing Sequence
+> ## `CF 1882 PA` Increasing Sequence
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,8 +21,8 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
-> int main(int argc,char** argv){	
+>
+> int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
 > 		INT n=read(INT);
@@ -52,13 +55,17 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > ```
 
-> ## `CF 1882 PB`<br>Sets and Union
+> ## `CF 1882 PB` Sets and Union
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -72,7 +79,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
@@ -124,14 +131,18 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > 模擬constructive algorithms
 > ```
 
-> ## `CF 1882 PC`<br>Card Game
+> ## `CF 1882 PC` Card Game
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -145,8 +156,8 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
-> int main(int argc,char** argv){	
+>
+> int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	auto solve=[](INT casenum){
 > 		INT n=read(INT);
@@ -199,8 +210,9 @@
 > 	return 0;
 > }
 > ```
+>
 > ### `Tag`
+>
 > ```txt
 > greedy
 > ```
-

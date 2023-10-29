@@ -1,6 +1,22 @@
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
+# tasklist
+`AT ABC230 PE`  
+`CF 1840 PD`  
+
+# 2023/10/25
+`CF 1884 PD` `AC`  
+`PCSH Mid-2023-01 PD`  
+`AT ABC325 PA` `AC`  
+
+# 2023/10/24
+`TIOJ 1320` `AC`
+`CF 1201 PC` `AC`  
+
+# 2023/10/23
+`TIOJ 1828` `AC`  
+
 # 2023/10/18
 `CF 1877 PB` `AC`  
 `CF 1877 PA` `AC`  

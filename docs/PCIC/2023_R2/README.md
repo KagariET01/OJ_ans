@@ -1,16 +1,21 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
 # `PCIC 2023_R2`
+
 [`back`](../)
 
-> [題目](./R2_All.pdf)  
+> [題目](./R2_All.pdf)
 
-> ## `PCIC 2023_R2 PA`<br>戀愛家教(Edward)  
+> ## `PCIC 2023_R2 PA` 戀愛家教(Edward)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -45,12 +50,16 @@
 > }
 > ```
 
-> ## `PCIC 2023_R2 PB`<br>有限阿貝爾群(Finite Abelian Group)  
+> ## `PCIC 2023_R2 PB` 有限阿貝爾群(Finite Abelian Group)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -64,24 +73,24 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
-> 
+>
+>
 > int swmp[4][4]={
 > 	{0,1,2,3},
 > 	{1,3,0,2},
 > 	{2,0,3,1},
 > 	{3,2,1,0}
 > };
-> 
+>
 > char rp(char a,char b){
 > 	return 'a'+swmp[a-'a'][b-'a'];
 > }
-> 
+>
 > string str;
 > INT p;
 > INT n;
-> 
-> 
+>
+>
 > char solve(INT deep=0){
 > 	char bef='0';
 > 	for(;p<n;){
@@ -97,7 +106,7 @@
 > 		}else{
 > 			nw=str[p];
 > 		}
-> 
+>
 > 		if(bef=='0'){
 > 			bef=nw;
 > 			p++;
@@ -110,7 +119,7 @@
 > 	}
 > 	return bef;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	cin>>str;
@@ -121,12 +130,16 @@
 > }
 > ```
 
-> ## `PCIC 2023_R2 PC`<br>山道猴子(Road Monkey)  
+> ## `PCIC 2023_R2 PC` 山道猴子(Road Monkey)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -162,19 +175,23 @@
 > 			basicsp=basicsp+road*x;
 > 			basicsp=min(basicsp,lst[i+1].second);
 > 		}
-> 
+>
 > 		cout<<basicsp<<endl;;
 > 	}
 > 	return 0;
 > }
 > ```
 
-> ## `PCIC 2023_R2 PD`<br>魔法之域(Magic Realm)  
+> ## `PCIC 2023_R2 PD` 魔法之域(Magic Realm)
+>
 > ### `Score`
+>
 > ```diff
 > + 100/100
 > ```
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -188,7 +205,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > struct superfloat{
 > 	INT up;
 > 	INT dn;
@@ -206,11 +223,11 @@
 > 	INT bb=b.up*bx;
 > 	return aa<bb;
 > }
-> 
+>
 > bool operator==(superfloat a,superfloat b){
 > 	return a.up==b.up && a.dn==b.dn;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > 	INT n=read(INT);
@@ -237,26 +254,29 @@
 > }
 > ```
 
-> ## `PCIC 2023_R2 PE`<br>魔數師(Magician)  
-> `052/100`
-> ***下方兩隻程式皆須上傳，才可得到52分***
-> 
+> ## `PCIC 2023_R2 PE` 魔數師(Magician)
+>
+> `052/100` > **_下方兩隻程式皆須上傳，才可得到 52 分_**
+>
 > ### `035/100`
-> > #### `Score`  
+>
+> > #### `Score`
+> >
 > > ```diff
 > >   035/100
 > > =========
-> > + 000/000  
-> > + 004/004  
-> > + 004/004  
-> > + 004/004  
-> > - 000/017  
-> > + 023/023  
-> > - 000/021  
-> > - 000/027  
+> > + 000/000
+> > + 004/004
+> > + 004/004
+> > + 004/004
+> > - 000/017
+> > + 023/023
+> > - 000/021
+> > - 000/027
 > > ```
-> > 
+> >
 > > #### `C++`
+> >
 > > ```c++
 > > #include<bits/stdc++.h>
 > > using namespace std;
@@ -270,7 +290,7 @@
 > > template<typename tpe>tpe reader(){
 > > 	tpe re;cin>>re;return re;
 > > }
-> > 
+> >
 > > const INT mxn=1e5;
 > > INT n;
 > > INT lst[mxn+5];
@@ -305,7 +325,7 @@
 > > 		lst[cpy[i]-1]=i+1;
 > > 	}
 > > }
-> > 
+> >
 > > int main(int argc,char** argv){
 > > 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 > > 	INT t=1;
@@ -358,7 +378,7 @@
 > > 			else if(b==3)doC();
 > > 			else doAB();
 > > 		}
-> > 
+> >
 > > 		for(INT i=0;i<n;i++){
 > > 			if(i)cout<<" ";
 > > 			cout<<lst[i];
@@ -368,22 +388,26 @@
 > > 	return 0;
 > > }
 > > ```
-> 
-> ### `029/100`  
+>
+> ### `029/100`
+>
 > > #### `Score`
+> >
 > > ```diff
 > >   029/100
 > > =========
-> > - 000/000  
-> > + 004/004  
-> > + 004/004  
-> > + 004/004  
-> > + 017/017  
-> > - 000/023  
-> > - 000/021  
-> > - 000/027  
+> > - 000/000
+> > + 004/004
+> > + 004/004
+> > + 004/004
+> > + 017/017
+> > - 000/023
+> > - 000/021
+> > - 000/027
 > > ```
+> >
 > > #### `C++`
+> >
 > > ```c++
 > > #include<bits/stdc++.h>
 > > using namespace std;
@@ -455,7 +479,7 @@
 > > 				}
 > > 			}
 > > 		}
-> > 
+> >
 > > 		for(INT i=0;i<n;i++){
 > > 			if(i)cout<<" ";
 > > 			cout<<lst[i];
@@ -465,8 +489,3 @@
 > > 	return 0;
 > > }
 > > ```
-> 
-> 
-> 
-> 
-> 

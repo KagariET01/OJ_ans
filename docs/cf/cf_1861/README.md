@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1861`<br>Educational Codeforces Round 154 (Rated for Div. 2)
+# `CF 1861` Educational Codeforces Round 154 (Rated for Div. 2)
+
 [`back`](../) [`CF 1861`](https://codeforces.com/contest/1861)
 
-> ## `CF 1861 PA`<br>Prime Deletion
+> ## `CF 1861 PA` Prime Deletion
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,9 +21,9 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > vector<INT> prime;
 > void build_prime(INT n){
 > 	INT lst[n+1]={};
@@ -35,7 +38,7 @@
 > 		}
 > 	}
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	build_prime(1000);
@@ -82,9 +85,10 @@
 > }
 > ```
 
-
-> ## `CF 1861 PB`<br>Two Binary Strings
+> ## `CF 1861 PB` Two Binary Strings
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -98,12 +102,12 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		string a=read(string);
 > 		string b=read(string);
@@ -113,7 +117,7 @@
 > 		}
 > 		return 0;
 > 		//return 0;
-> 
+>
 > 	};
 > 	bool one_case=0;
 > 	bool ynans=1;
@@ -135,9 +139,3 @@
 > 	return 0;
 > }
 > ```
-
-
-
-
-
-

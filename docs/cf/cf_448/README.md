@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 448`<br>Codeforces Round 256 (Div. 2)
+# `CF 448` Codeforces Round 256 (Div. 2)
+
 [`back`](../)
 
-> ## `CF 448 PD`<br>Multiplication Table
+> ## `CF 448 PD` Multiplication Table
+>
 > ### `c++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,11 +21,11 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT mod=998244353;
-> 
+>
 > INT n,m,k;
-> 
+>
 > INT checker(INT mx){
 > 	INT r=m;
 > 	INT re=0;
@@ -33,7 +36,7 @@
 > 	}
 > 	return re;
 > }
-> 
+>
 > INT BITsearch(INT l,INT r){
 > 	while(l<r){
 > 		INT mnt=(r-l)/2+l;
@@ -44,10 +47,10 @@
 > 	}
 > 	return r;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	auto solve=[](INT casenum){
 > 		cin>>n>>m>>k;
 > 		cout<<BITsearch(1,n*m+1)<<endl;
@@ -73,14 +76,12 @@
 > 	return 0;
 > }
 > ```
-> ### `Tag`  
+>
+> ### `Tag`
+>
 > ```txt
 > Binary Search
 > ```
-
-
-
-
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj
