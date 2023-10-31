@@ -214,3 +214,90 @@
 > ```txt
 > 家庭暴力防治法
 > ```
+
+> ## `AOJ 129` 電皇的小寫英文字母
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> 
+> using namespace std;
+> #define INT long long int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define PII pair<INT,INT>
+> #define max(a,b) ((a>b)?a:b)
+> #define min(a,b) ((a<b)?a:b)
+> #define maxs(a,b) a=max(a,b)
+> #define mins(a,b) a=min(a,b)
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){
+> 	tpe re;cin>>re;return re;
+> }
+> 
+> int lv[1000001];
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 	function<int(INT)> solve=[](INT casenum){
+> 		string str;
+> 		if(!(cin>>str))return -1;
+> 		INT n=str.size();
+> 		INT cnt[30]={};
+> 		INT charcnt=0;
+> 		INT ansl=-1,ansr=-1;
+> 		INT l=0,r=0;
+> 		for(;r<n;r++){
+> 			DBG cout<<"nw="<<str[r]<<endl;
+> 			cnt[(str[r]-'a')]++;
+> 			if(cnt[(str[r]-'a')]==1)charcnt++;
+> 			while(cnt[(str[l]-'a')]>1){
+> 				cnt[(str[l]-'a')]--;
+> 				l++;
+> 			}
+> 			if(charcnt==26){
+> 				if(ansr==-1 || ansr-ansl>r-l){
+> 					ansr=r;
+> 					ansl=l;
+> 				}
+> 			}
+> 		}
+> 		if(charcnt==26){
+> 			for(INT i=ansl;i<=ansr;i++){
+> 				DBG cerr<<i<<" ";
+> 				cout<<str[i];
+> 			}
+> 		}else{
+> 			cout<<"QQ";
+> 		}
+> 		cout<<endl;
+> 		return 0;
+> 	};
+> 	bool one_case=1;
+> 	bool ynans=0;
+> 	bool eof=1;
+> 	string yes="YES";
+> 	string no="NO";
+> 	INT t=(one_case?1:read(int));
+> 	for(INT i=0;eof || i<t;i++){
+> 		INT re=solve(i);
+> 		if(!ynans){
+> 			if(re==-1)return 0;
+> 		}else{
+> 			if(re==1){
+> 				cout<<yes<<endl;
+> 			}else if(re==0){
+> 				cout<<no<<endl;
+> 			}else{
+> 				return 0;
+> 			}
+> 		}
+> 	}
+> 	return 0;
+> }
+> ```
+
+
+
+
