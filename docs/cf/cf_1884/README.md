@@ -1,12 +1,15 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `OJ CID`<br>N
+# `OJ CID` N
 
 [`back`](../)
 
-> ## `CF 1884 PA`<br>Simple Design
+> ## `CF 1884 PA` Simple Design
+>
 > [`CF 1884 PA`]: https://codeforces.com/contest/1884/problem/A
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -20,10 +23,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,k;
 > 		cin>>n>>k;
@@ -66,9 +69,12 @@
 > }
 > ```
 
-> ## `CF 1884 PB`<br>Haunted House
+> ## `CF 1884 PB` Haunted House
+>
 > [`CF 1884 PB`]: https://codeforces.com/contest/1884/problem/B
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -82,10 +88,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n=read(INT);
 > 		string str;
@@ -143,9 +149,12 @@
 > }
 > ```
 
-> ## `CF 1884 PC`<br>Medium Design
+> ## `CF 1884 PC` Medium Design
+>
 > [`CF 1884 PC`]: https://codeforces.com/contest/1884/problem/C
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -159,10 +168,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT q,m;
 > 		cin>>q>>m;
@@ -236,9 +245,12 @@
 > }
 > ```
 
-> ## [`CF 1884 PD`]<br>Counting Rhyme
+> ## [`CF 1884 PD`] Counting Rhyme
+>
 > [`CF 1884 PD`]: https://codeforces.com/contest/1884/problem/D
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -252,10 +264,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		//cerr<<"Task "<<casenum<<" ==============="<<endl;
 > 		INT n=read(INT);
@@ -284,7 +296,7 @@
 > 		INT dp[n+1]={};
 > 		INT ans=0;
 > 		DBG cerr<<"run start"<<endl;
-> 		
+>
 > 		for(INT i=n;i>=1;i--){
 > 			DBG cerr<<"i="<<i<<endl;
 > 			dp[i]=0;
@@ -334,10 +346,9 @@
 > 	return 0;
 > }
 > ```
-> 
-> 
-> 
+>
 > ### `Tag`
+>
 > ```txt
 > 基本輸出輸入
 > String

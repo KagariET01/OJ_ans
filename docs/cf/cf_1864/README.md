@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1864`<br>Harbour.Space Scholarship Contest 2023-2024 (Div. 1 + Div. 2)
+# `CF 1864` Harbour.Space Scholarship Contest 2023-2024 (Div. 1 + Div. 2)
+
 [`back`](../) [`CF 1864`](https://codeforces.com/contest/1864)
 
-> ## `CF 1864 PA`<br>Increasing and Decreasing
+> ## `CF 1864 PA` Increasing and Decreasing
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,11 +21,11 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT lowbit(INT n){
 > 	return n&(-n);
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -48,8 +51,10 @@
 > }
 > ```
 
-> ## `CF 1864 PB`<br>Swap and Reverse
+> ## `CF 1864 PB` Swap and Reverse
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -63,11 +68,11 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT lowbit(INT n){
 > 	return n&(-n);
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -93,7 +98,7 @@
 > 					s.push_back(a[1][i]);
 > 			}
 > 		}else{
-> 
+>
 > 			sort(s.begin(),s.end());
 > 		}
 > 		cout<<s<<endl;
@@ -102,8 +107,10 @@
 > }
 > ```
 
-> ## `CF 1864 PC`<br>Divisor Chain
+> ## `CF 1864 PC` Divisor Chain
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -117,11 +124,11 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > INT lowbit(INT n){
 > 	return n&(-n);
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -147,6 +154,3 @@
 > 	return 0;
 > }
 > ```
-
-
-

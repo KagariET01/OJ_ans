@@ -1,12 +1,15 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1201`<br>Codeforces Round 577 (Div. 2)
+# `CF 1201` Codeforces Round 577 (Div. 2)
 
 [`back`](../)
 
-> ## [`CF 1201 PC`]<br>Maximum Median
+> ## [`CF 1201 PC`] Maximum Median
+>
 > [`CF 1201 PC`]: https://codeforces.com/contest/1201/problem/C
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -20,10 +23,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,k;
 > 		cin>>n>>k;
@@ -67,5 +70,3 @@
 > 	return 0;
 > }
 > ```
-
-

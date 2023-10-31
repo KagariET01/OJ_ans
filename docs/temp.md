@@ -1,11 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `OJ CID`<br>N
+# `OJ CID` N
 
 [`back`](../)
 
-> ## [`OJ CID PID`]<br>PN
-> [`OJ CID PID`]: 
+> ## [`OJ CID PID`] PN
+>
+> [`OJ CID PID`]:
+>
 > ### `Score`
 >
 > ### `Thinking`
@@ -40,5 +42,3 @@
 > 家庭暴力防治法
 > trie 字典數
 > ```
-
-

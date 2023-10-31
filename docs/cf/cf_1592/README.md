@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1592`<br>Codeforces Round 746 (Div. 2)
+# `CF 1592` Codeforces Round 746 (Div. 2)
+
 [`back`](../) [`CF 1592`](https://codeforces.com/contest/1592)
 
-> ## `CF 1592 PB`<br>Hemose Shopping
+> ## `CF 1592 PB` Hemose Shopping
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -16,7 +19,7 @@
 > template<typename TPE>TPE reader(){
 > 	TPE re;cin>>re;return re;
 > }
->  
+>
 > int main(){
 > 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(INT);

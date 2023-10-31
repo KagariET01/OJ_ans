@@ -1,11 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1876` `CF 1877`<br>Codeforces Round 902 (Div.1, Div. 2, based on COMPFEST 15 - Final Round)
+# `CF 1876` `CF 1877` Codeforces Round 902 (Div.1, Div. 2, based on COMPFEST 15 - Final Round)
 
 [`back`](../)
 
-> ## `CF 1877 PA`<br>Goals of Victory
+> ## `CF 1877 PA` Goals of Victory
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -19,10 +21,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n=read(INT)-1;
 > 		INT ans=0;
@@ -57,12 +59,15 @@
 > ```
 >
 > ### `Tag`
+>
 > ```txt
 > 基本輸出輸入
 > ```
 
-> ## `CF 1876 PA` `CF 1877 PB`<br>Helmets in Night Light
+> ## `CF 1876 PA` `CF 1877 PB` Helmets in Night Light
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -76,7 +81,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	function<int(INT)> solve=[](INT casenum){
@@ -134,9 +139,10 @@
 > }
 > ```
 
-
-> ## `CF 1877`<br>Joyboard
+> ## `CF 1877` Joyboard
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -150,10 +156,10 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
-> 
+>
 > 	function<int(INT)> solve=[](INT casenum){
 > 		INT n,m,k;
 > 		cin>>n>>m>>k;

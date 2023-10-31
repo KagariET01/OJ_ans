@@ -1,10 +1,13 @@
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
 
-# `CF 1870`<br>CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
+# `CF 1870` CodeTON Round 6 (Div. 1 + Div. 2, Rated, Prizes!)
+
 [`back`](../) [`CF 1870`](https://codeforces.com/contest/1870)
 
-> ## `CF 1870 PA`<br>MEXanized Array
+> ## `CF 1870 PA` MEXanized Array
+>
 > ### `C++`
+>
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
@@ -18,7 +21,7 @@
 > template<typename tpe>tpe reader(){
 > 	tpe re;cin>>re;return re;
 > }
-> 
+>
 > int main(int argc,char** argv){
 > 	if(noTLE && !debug)cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
 > 	INT t=read(int);
@@ -38,6 +41,3 @@
 > 	return 0;
 > }
 > ```
-
-
-

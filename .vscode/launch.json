@@ -80,8 +80,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/kagareit01/Documents/git/kagariet01/oj_ans/main",
-      "program": "/home/kagareit01/Documents/git/kagariet01/oj_ans/main/build/Debug/outDebug",
+      "cwd": "/home/kagariet01/Documents/git/kagariet01/OJ_ans/main",
+      "program": "/home/kagariet01/Documents/git/kagariet01/OJ_ans/main/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

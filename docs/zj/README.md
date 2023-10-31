@@ -10,6 +10,8 @@
 > [`g___`](./g)  
 > [`h___`](./h)  
 > [`i___`](./i)  
+> [`j___`](./j)  
+> [`k___`](./k)  
 
 [`Codeforces`]: /OJ_ans/cf
 [`Zerojudge`]: /OJ_ans/zj
