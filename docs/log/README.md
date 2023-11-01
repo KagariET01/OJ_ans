@@ -5,76 +5,82 @@
 `AT ABC230 PE`  
 `CF 1840 PD`  
 
+# 2023/11/01
+`CF 1891 PA`  
+
+# 2023/10/31
+`CF 1891 PC`  
+
 # 2023/10/29
-`ZJ J244` `AC`  
-`ZJ J245` `AC`  
-`ZJ J247` `AC`  
-`ZJ J248` `AC`  
-`CF 1890 PD` `AC`  
+`ZJ J244`  
+`ZJ J245`  
+`ZJ J247`  
+`ZJ J248`  
+`CF 1890 PD`  
 
 # 2023/10/28
-`CF 1831 PA` `AC`  
-`CF 1831 PB` `AC`  
-`CF 1831 PC` `AC`  
-`CF 1890 PA` `AC`  
-`CF 1890 PB` `AC`  
-`CF 1890 PC` `AC`  
-`ZJ J242` `AC`  
+`CF 1831 PA`  
+`CF 1831 PB`  
+`CF 1831 PC`  
+`CF 1890 PA`  
+`CF 1890 PB`  
+`CF 1890 PC`  
+`ZJ J242`  
 
 # 2023/10/27
-`CF 1611 PF` `AC`  
+`CF 1611 PF`  
 
 # 2023/10/25
-`CF 1884 PD` `AC`  
+`CF 1884 PD`  
 `PCSH Mid-2023-01 PD`  
-`AT ABC325 PA` `AC`  
+`AT ABC325 PA`  
 
 # 2023/10/24
-`TIOJ 1320` `AC`
-`CF 1201 PC` `AC`  
+`TIOJ 1320`
+`CF 1201 PC`  
 
 # 2023/10/23
-`TIOJ 1828` `AC`  
+`TIOJ 1828`  
 
 # 2023/10/18
-`CF 1877 PB` `AC`  
-`CF 1877 PA` `AC`  
+`CF 1877 PB`  
+`CF 1877 PA`  
 
 # 2023/10/17
-`CF 1863 PA` `AC`  
+`CF 1863 PA`  
 
 # 2023/10/16
-`CF 1886 PC` `AC`  
+`CF 1886 PC`  
 
 # 2023/09/29
-`CF 1879 PA` `AC`  
+`CF 1879 PA`  
 
 # 2023/09/27
-`CF 1879 PA` `AC`  
-`CF 1879 PB` `AC`  
+`CF 1879 PA`  
+`CF 1879 PB`  
 
 # 2023/09/25
-`CF 1882 PA` `AC`  
-`CF 1882 PB` `AC`  
-`CF 1882 PC` `AC`  
+`CF 1882 PA`  
+`CF 1882 PB`  
+`CF 1882 PC`  
 
 # 2023/09/23
-`CF 1869 PA` `AC`  
-`CF 1869 PB` `AC`  
-`CF 1869 PC` `AC`  
-`CF 1868 PA` `AC`  
+`CF 1869 PA`  
+`CF 1869 PB`  
+`CF 1869 PC`  
+`CF 1868 PA`  
 
 # 2023/09/22
-`CF 1863 PC` `AC`  
-`CF 1867 PB` `AC`  
+`CF 1863 PC`  
+`CF 1867 PB`  
 
 # 2023/09/20
-`ZJ I722` `AC`  
+`ZJ I722`  
 
 # 2023/09/19
-`CF 1872 PA` `AC`  
-`CF 1872 PB` `AC`  
-`CF 1872 PC` `AC`  
-`CF 1872 PD` `AC`  
-`CF 1872 PE` `AC`  
+`CF 1872 PA`  
+`CF 1872 PB`  
+`CF 1872 PC`  
+`CF 1872 PD`  
+`CF 1872 PE`  
 
