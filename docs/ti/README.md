@@ -86,7 +86,7 @@
 
 > ## [`TIOJ 1080`] 逆序數對
 > [`TIOJ 1080`]: https://tioj.ck.tp.edu.tw/problems/1080
-> ### `C++`
+> ### [`C++`](https://gist.github.com/KagariET01/7f0c5973aa9491a0c269420418cc8311)
 > ```c++
 > #include<bits/stdc++.h>
 > using namespace std;
