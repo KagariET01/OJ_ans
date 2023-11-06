@@ -84,6 +84,76 @@
 > }
 > ```
 
+> ## [`TIOJ 1080`] 逆序數對
+> [`TIOJ 1080`]: https://tioj.ck.tp.edu.tw/problems/1080
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT long long int
+> #define PII pair<INT,INT>
+> #define maxs(a,b) a=max(a,b)
+> #define mins(a,b) a=min(a,b)
+> 
+> const INT mxn=1e5+5;
+> INT lst[mxn];
+> INT n;
+> 
+> INT merge_sort(INT *l,INT *r){
+> 	if(r-l<=1)return 0;
+> 	INT re=0;
+> 	INT *mid=(r-l)/2+l;
+> 	re+=merge_sort(l,mid);
+> 	re+=merge_sort(mid,r);
+> 	INT *i=l,*j=mid;
+> 	vector<INT> newlst;
+> 	newlst.reserve(r-l);
+> 	while(i<mid && j<r){
+> 		if(*i>*j){
+> 			re+=(r-j);
+> 			newlst.push_back(*i);
+> 			i++;
+> 		}else{
+> 			newlst.push_back(*j);
+> 			j++;
+> 		}
+> 	}
+> 	while(i<mid){
+> 		newlst.push_back(*i);
+> 		i++;
+> 	}
+> 	while(j<r){
+> 		newlst.push_back(*j);
+> 		j++;
+> 	}
+> 	for(INT i:newlst){
+> 		*l=i;
+> 		l++;
+> 	}
+> 	return re;
+> }
+> 
+> int main(){
+> 	ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+> 	INT t=1;
+> 	while(cin>>n){
+> 		if(!n)break;
+> 		for(INT i=0;i<n;i++){
+> 			cin>>lst[i];
+> 		}
+> 		cout<<"Case #"<<t<<": "<<merge_sort(lst,lst+n)<<endl;
+> 		t++;
+> 	}
+> 	return 0;
+> }
+> ```
+> ### `Tag`
+> ```txt
+> sort
+> 	merge_sort
+> 分治
+> ```
+
 > ## [`TIOJ 1320`] 雙子大廈 Twintower
 > [`TIOJ 1320`]: https://tioj.ck.tp.edu.tw/problems/1320
 > ### `C++`

@@ -32,6 +32,7 @@
 > math 數學
 > 觀察
 > sort
+> 	merge_sort
 > bit運算
 > greedy
 > 想法
@@ -41,4 +42,6 @@
 > graphs
 > 家庭暴力防治法
 > trie 字典數
+> seg_tree
+> 分治
 > ```
