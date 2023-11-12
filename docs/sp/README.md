@@ -401,6 +401,66 @@
 > ```
 
 
+> ## [`NHSPC-NTPC 2023 PL`] 處方箋
+> [`NHSPC-NTPC 2023 PL`]: ./NHSPC-NTPC_2023/PL.pdf
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> using namespace std;
+> #define INT long long int
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define endl '\n'
+> #define maxs(a,b) a=max(a,b)
+> #define mins(a,b) a=min(a,b)
+> #define PII pair<INT,INT>
+> bool debug=0;
+> 
+> 
+> template<typename T>T reader(){
+> 	T re;cin>>re;return re;
+> }
+> 
+> const INT mxn=1005;
+> INT n,m;
+> INT flag[mxn];//0=IDK, 1=eat, -1=danger
+> vector<INT> tree[mxn];
+> 
+> void dfs(INT nw,INT lst=-1){
+> 	for(INT i:tree[nw]){
+> 		if(flag[i]==1){
+> 			flag[nw]=-1;
+> 			continue;
+> 		}
+> 	}
+> 
+> 	if(flag[nw]==0)flag[nw]=1;
+> 
+> 	for(INT i:tree[nw]){
+> 		if(flag[i]==0){
+> 			flag[i]=0-flag[nw];
+> 			dfs(i,nw);
+> 		}
+> 	}
+> }
+> int main(){
+> 	cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);
+> 	cin>>n>>m;
+> 	for(INT i=0;i<m;i++){
+> 		INT a,b;
+> 		cin>>a>>b;
+> 		tree[a].push_back(b);
+> 		tree[b].push_back(a);
+> 	}
+> 	INT ans=0;
+> 	for(INT i=1;i<=n;i++){
+> 		if(!flag[i])dfs(i);
+> 		ans+=(flag[i]==1);
+> 	}
+> 	cout<<ans<<endl;
+> 	return 0;
+> }
+> ```
 
 # `PCSH Mid-2023-01` PCSH Midterm Exam Contest #007
 
