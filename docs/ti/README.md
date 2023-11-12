@@ -773,7 +773,102 @@
 > }
 > ```
 
-
+> ## [`TIOJ 2258`] 天竺鼠遊行
+> [`TIOJ 2258`]: https://tioj.ck.tp.edu.tw/problems/2258
+> ### `C++`
+> ```c++
+> #include<bits/stdc++.h>
+> 
+> using namespace std;
+> #define INT int
+> #define endl "\n"
+> #define read(n) reader<n>()
+> #define DBG if(debug)
+> #define PII pair<INT,INT>
+> #define maxs(a,b) a=max(a,b)
+> #define mins(a,b) a=min(a,b)
+> bool debug=0;
+> bool noTLE=1;
+> template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+> 
+> const INT mxn=1e6+5;
+> INT n,k,p;
+> INT h[mxn];
+> 
+> bool checker(INT lim){
+> 	INT l=0,cnt=0,mx=h[0]-h[1];
+> 	if(k>2){
+> 		for(INT i=2;i<n;i++){
+> 			if(i-2>=l){
+> 				maxs(mx,h[i-2]-h[i]);
+> 			}
+> 			if(mx>lim){
+> 				l=i-1;
+> 				mx=h[i-1]-h[i];
+> 			}
+> 			if(i-l+1>=k){
+> 				cnt++;
+> 				l=i+1;
+> 				mx=0;
+> 			}
+> 		}
+> 	}else{
+> 		for(INT i=1;i<n;i++){
+> 			if(h[i-1]-h[i]<=lim){
+> 				cnt++;
+> 				i++;
+> 			}
+> 		}
+> 	}
+> 	return cnt>=p;
+> }
+> 
+> int main(int argc,char** argv){
+> 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+> 
+> 	function<int(INT)> solve=[](INT casenum){
+> 		if(!(cin>>n>>k>>p))return -1;
+> 		for(INT i=0;i<n;i++){
+> 			cin>>h[i];
+> 		}
+> 		sort(h,h+n,[](INT a,INT b){return a>b;});
+> 		INT l=0,r=h[0]-h[n-1];
+> 		while(l<r){
+> 			INT mid=(r-l)/2+l;
+> 			if(checker(mid))
+> 				r=mid;
+> 			else l=mid+1;
+> 		}
+> 		cout<<l<<endl;
+> 		return 0;
+> 	};
+> 	bool one_case=1;
+> 	bool ynans=0;
+> 	bool eof=1;
+> 	string yes="YES";
+> 	string no="NO";
+> 	INT t=(one_case?1:read(int));
+> 	for(INT i=0;eof || i<t;i++){
+> 		INT re=solve(i);
+> 		if(!ynans){
+> 			if(re==-1)return 0;
+> 		}else{
+> 			if(re==1){
+> 				cout<<yes<<endl;
+> 			}else if(re==0){
+> 				cout<<no<<endl;
+> 			}else{
+> 				return 0;
+> 			}
+> 		}
+> 	}
+> 	return 0;
+> }
+> ```
+> ### `Tag`
+> ```txt`
+> 二分搜
+> ``` 
 
 
 
