@@ -4,44 +4,46 @@
 
 [`back`](../)
 
-> ## [`OJ CID PID`] PN
->
-> [`OJ CID PID`]:
->
-> ### `Score`
->
-> ### `Thinking`
->
-> ### `HINT 1`
->
-> ```txt
->
-> ```
->
-> ### `C++`
->
-> ```c++
-> #include<iostream>
-> ```
->
-> ### `Tag`
->
-> ```txt
-> 基本輸出輸入
-> String
-> math 數學
-> 觀察
-> sort
-> 	merge_sort
-> bit運算
-> greedy
-> 想法
-> DP
-> 模擬constructive algorithms
-> Binary Search
-> graphs
-> 家庭暴力防治法
-> trie 字典數
-> seg_tree
-> 分治
-> ```
+## [`OJ CID PID`] PN
+
+[`OJ CID PID`]:
+
+### `Score`
+
+### `Thinking`
+
+### `HINT 1`
+
+```txt
+
+```
+
+### `C++`
+
+```c++
+#include<iostream>
+```
+
+### `Tag`
+
+```txt
+基本輸出輸入
+String
+math 數學
+觀察
+sort
+	merge_sort
+bit運算
+greedy
+想法
+DP
+模擬constructive algorithms
+Binary Search
+graphs
+家庭暴力防治法
+trie 字典數
+seg_tree
+分治
+NHSPC 全國資訊學科能力競賽
+TOI 臺灣國際資訊奧林匹亞競賽
+```
