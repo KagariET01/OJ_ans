@@ -5158,11 +5158,11 @@ pre {
   background-color:#e3d2d2
 }
 .highlight .gd {
-  color:#000000;
-  background-color:#ffdddd
+  color:#fff;
+  background-color:#ff000044
 }
 .highlight .ge {
-  color:#000000;
+  color:#fff;
   font-style:italic
 }
 .highlight .gr {
@@ -5172,8 +5172,8 @@ pre {
   color:#999999
 }
 .highlight .gi {
-  color:#000000;
-  background-color:#ddffdd
+  color:#fff;
+  background-color:#00ff0044
 }
 .highlight .go {
   color:#888888
@@ -5191,23 +5191,23 @@ pre {
   color:#aa0000
 }
 .highlight .kc {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .kd {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .kn {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .kp {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .kr {
-  color:#000000;
+  color:#fff;
   font-weight:bold
 }
 .highlight .kt {
