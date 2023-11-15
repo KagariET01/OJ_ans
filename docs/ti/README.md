@@ -782,6 +782,147 @@ int main(int argc,char** argv){
 TOI 臺灣國際資訊奧林匹亞競賽
 ```
 
+## [`TIOJ 2254`] 汽車不再繞圈圈
+### `Thinking`
+> 使用二分搜，尋找最小需要的power
+> 因為有power的路可以任意更改方向，dfs時可忽略這些邊
+> 使用dfs 以O(n+m)的方式判斷是否有環
+> 找到最小power後，在更據深度判斷哪些邊需要反轉
+> 時間複雜度 $log((n+m)log_2(c_i))$
+### `C++`
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+//#define max(a,b) ((a>b)?a:b)
+//#define min(a,b) ((a<b)?a:b)
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+bool debug=0;
+bool noTLE=1;
+
+bool one_case=1;
+bool ynans=0;
+bool eof=0;
+string yes="YES";
+string no="NO";
+
+
+
+const INT mxn=1e5+5;
+INT n,m;
+struct edge{
+	INT t,w,id;
+};
+vector<edge> tree[mxn];
+INT indo[mxn]={};
+bool vis[mxn]={};
+bool ins[mxn]={};
+vector<INT> s;//深度，最深的在最前面
+bool dfs(INT nw,INT lim){
+	vis[nw]=1;
+	ins[nw]=1;
+	for(edge i:tree[nw]){
+		if(i.w>lim){
+			if(!vis[i.t]){
+				if(!dfs(i.t,lim)){
+					return 0;
+				}
+			}else if(ins[i.t]){
+				return 0;
+			}
+		}
+	}
+	ins[nw]=0;
+	s.push_back(nw);
+	return 1;
+};
+function<bool(INT)> checker=[](INT lim){
+	s.clear();
+	memset(vis,0,sizeof(vis));
+	memset(ins,0,sizeof(ins));
+	for(INT i=1;i<=n;i++){
+		if(!vis[i]){//沒拜訪過
+			if(!dfs(i,lim)){
+				return 0;
+			}
+		}
+	}
+	return 1;
+};
+function<int(INT)> solve=[](INT casenum){
+	cin>>n>>m;
+	for(INT i=1;i<=n;i++){
+		tree[i].clear();
+		vis[i]=0;
+		ins[i]=0;
+	}
+	for(INT i=1;i<=m;i++){
+		INT a,b,c;
+		a--,b--;
+		cin>>a>>b>>c;
+		tree[a].push_back({b,c,i});
+	}
+	INT l=0,r=1e9+5;
+	while(l<r){
+		INT mid=(r-l)/2+l;
+		if(checker(mid)){
+			r=mid;
+		}else{
+			l=mid+1;
+		}
+	}
+	INT P=l;
+	checker(P);
+	vector<INT> deep(n+5);
+	s.clear();
+	for(INT i=0;i<n;i++){
+		deep[s[i]]=i;
+	}
+	for(INT i=1;i<=n;i++){
+		for(edge j:tree[i]){
+			if(deep[i]<deep[j.t]){
+				s.push_back(j.id);
+			}
+		}
+	}
+	cout<<P<<' '<<s.size()<<endl;
+	for(INT i:s){
+		cout<<i<<endl;
+	}
+	return 0;
+};
+
+
+
+int main(int argc,char** argv){
+	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	INT t=(one_case?1:read(int));
+	for(INT i=0;eof || i<t;i++){
+		INT re=solve(i);
+		if(!ynans){
+			if(re==-1)return 0;
+		}else{
+			if(re==1){
+				cout<<yes<<endl;
+			}else if(re==0){
+				cout<<no<<endl;
+			}else{
+				return 0;
+			}
+		}
+	}
+	return 0;
+}
+```
+
 ## [`TIOJ 2255`] 天空競技場
 [`TIOJ 2255`]: https://tioj.ck.tp.edu.tw/problems/2255
 ### `Score`
@@ -979,6 +1120,8 @@ int main(int argc,char** argv){
 ```
 ### `Tag`
 ```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PH
 二分搜
 ``` 
 
@@ -989,7 +1132,7 @@ int main(int argc,char** argv){
 > 每一欄儲存的資料如下圖所示  
 > ![Alt text](image.png)  
 > 列出DP式，再用矩陣乘法+快速冪優化  
-> 轉移表+初始設定如下（假設初始狀態為i=1）`  
+> 轉移表+初始設定如下（假設初始狀態為i=1）
 > ![Alt text](image-1.png)  
 ### `C++`
 ```c++
