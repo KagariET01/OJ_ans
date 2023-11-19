@@ -1130,10 +1130,10 @@ NHSPC 全國資訊學科能力競賽
 ### `Thinking`
 > 建立一個DP陣列  
 > 每一欄儲存的資料如下圖所示  
-> ![Alt text](image.png)  
+> ![Alt text.](image.png)  
 > 列出DP式，再用矩陣乘法+快速冪優化  
 > 轉移表+初始設定如下（假設初始狀態為i=1）
-> ![Alt text](image-1.png)  
+> ![Alt text.](image-1.png)  
 ### `C++`
 ```c++
 #include<bits/stdc++.h>
