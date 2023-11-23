@@ -5,6 +5,7 @@
 [`Codeforces`](./cf)  
 [`Special`](./sp)  
 [`TIOJ`](./ti)  
+[`TOI_practice`](./tp)  
 [`Zerojudge`](./zj)  
 
 [`PCIC`](./PCIC)  
