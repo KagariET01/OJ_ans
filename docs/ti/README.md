@@ -494,6 +494,66 @@ int main(int argc,char** argv){
 }
 ```
 
+## [`TIOJ 2227`] 共同朋友
+[`TIOJ 2227`]: https://tioj.ck.tp.edu.tw/problems/2227
+### `C++`
+```cpp
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+const INT mxn=2505;
+INT n=0;
+bitset<mxn> vis[mxn];
+
+function<int(INT)> solve=[](INT casenum){
+	if(!(cin>>n))return -1;
+	for(int i=0;i<n;i++){
+		vis[i].reset();
+	}
+	for(INT i=0;i<n;i++){
+		INT d=read(INT);
+		for(INT j=0;j<d;j++){
+			INT f=read(INT);
+			vis[i][f]=1;
+			vis[f][i]=1;
+		}
+	}
+	INT ans=0;
+	for(INT i=0;i<n;i++){
+		for(INT j=i+1;j<n;j++){
+			bitset<mxn> nw=vis[i]&vis[j];
+			if(nw.any()){
+				ans++;
+			}
+		}
+	}
+	cout<<ans<<endl;
+	return 0;
+};
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽 2020
+bitset
+```
+
+
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+  solve(0);
+	return 0;
+}
+```
+
 ## [`TIOJ 2246`] 迷宮入口<br>`TOI 2022_1 PA` 迷宮入口
 [`TIOJ 2246`]: https://tioj.ck.tp.edu.tw/problems/2246
 ### `C++`
@@ -1130,10 +1190,10 @@ NHSPC 全國資訊學科能力競賽
 ### `Thinking`
 > 建立一個DP陣列  
 > 每一欄儲存的資料如下圖所示  
-> ![Alt text.](image.png)  
+> ![Alt text.](TIOJ_2259/image.png)  
 > 列出DP式，再用矩陣乘法+快速冪優化  
 > 轉移表+初始設定如下（假設初始狀態為i=1）
-> ![Alt text.](image-1.png)  
+> ![Alt text.](TIOJ_2259/image-1.png)  
 ### `C++`
 ```c++
 #include<bits/stdc++.h>
@@ -1221,7 +1281,11 @@ int main(){
 	return 0;
 }
 ```
-
+### `Tag`
+```txt
+DP
+快速冪
+```
 
 
 

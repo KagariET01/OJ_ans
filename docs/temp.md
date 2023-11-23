@@ -34,6 +34,7 @@ math 數學
 sort
 	merge_sort
 bit運算
+bitset
 greedy
 想法
 DP
@@ -44,7 +45,10 @@ graphs
 trie 字典數
 seg_tree
 分治
+圖論
+快速冪
+ST表
+區間極值
 NHSPC 全國資訊學科能力競賽
 TOI 臺灣國際資訊奧林匹亞競賽
-圖論
 ```

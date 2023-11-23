@@ -58,7 +58,7 @@ function<int(INT)> solve=[](INT casenum){
 
 int main(int argc,char** argv){
 	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-  solve(i);
+  solve(1);
 	return 0;
 }
 ```
@@ -102,7 +102,7 @@ function<int(INT)> solve=[](INT casenum){
 
 int main(int argc,char** argv){
 	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	solve(i);
+	solve(1);
 	return 0;
 }
 ```
@@ -153,7 +153,7 @@ function<int(INT)> solve=[](INT casenum){
 
 int main(int argc,char** argv){
 	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	solve(i);
+	solve(1);
 	return 0;
 }
 ```
