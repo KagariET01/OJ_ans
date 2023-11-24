@@ -493,6 +493,91 @@ int main(int argc,char** argv){
 	return 0;
 }
 ```
+### `Tag`
+```txt
+學科能力競賽/台北區/2019/PD
+```
+
+## [`TIOJ 2173`] 搜集寶藏 (Treasure)
+[`TIOJ 2173`]: https://tioj.ck.tp.edu.tw/problems/2173
+### `C++`
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+function<int(INT)> solve=[](INT casenum){
+	INT n,m;
+	cin>>n>>m;
+	INT mp[n+1][m+1];
+	for(INT i=1;i<=n;i++){
+		for(INT j=1;j<=m;j++){
+			cin>>mp[i][j];
+		}
+	}
+	if(mp[1][1]==-1){
+		cout<<"0\n";
+		return 0;
+	}
+	INT dp[n+m+5][n+5][n+5];
+	for(INT i=0;i<n+m+5;i++){
+		for(INT j=0;j<n+5;j++){
+			for(INT k=0;k<n+5;k++){
+				dp[i][j][k]=-1e9;
+			}
+		}
+	}
+	dp[2][1][1]=mp[1][1];
+	for(INT step=3;step<=n+m;step++){
+		for(INT x1=1;x1<=n;x1++){
+			INT y1=step-x1;
+			if(y1<1 || m<y1)continue;
+			if(mp[x1][y1]==-1)continue;
+			for(INT x2=1;x2<=n;x2++){
+				INT y2=step-x2;
+				if(y2<1 || m<y2)continue;
+				if(mp[x2][y2]==-1)continue;
+				maxs(dp[step][x1][x2],dp[step-1][x1][x2]);
+				maxs(dp[step][x1][x2],dp[step-1][x1][x2-1]);
+				maxs(dp[step][x1][x2],dp[step-1][x1-1][x2]);
+				maxs(dp[step][x1][x2],dp[step-1][x1-1][x2-1]);
+				dp[step][x1][x2]+=mp[x1][y1]+mp[x2][y2]-(x1==x2?mp[x1][y1]:0);
+			}
+		}
+	}
+	DBG{
+		cout<<endl;
+		for(INT i=1;i<=n;i++){
+			for(INT j=1;j<=m;j++){
+				cout<<dp[i+j][i][i]<<" ";
+			}
+			cout<<endl;
+		}
+	}
+	cout<<max(dp[n+m][n][n],0)<<endl;
+	return 0;
+};
+
+
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve(0);
+	return 0;
+}
+```
+### `Tag`
+```txt
+學科能力競賽/台北區/2019
+```
 
 ## [`TIOJ 2227`] 共同朋友
 [`TIOJ 2227`]: https://tioj.ck.tp.edu.tw/problems/2227
