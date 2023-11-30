@@ -928,6 +928,7 @@ TOI 臺灣國際資訊奧林匹亞競賽
 ```
 
 ## [`TIOJ 2254`] 汽車不再繞圈圈
+[`TIOJ 2254`]: https://tioj.ck.tp.edu.tw/problems/2254
 ### `Thinking`
 > 使用二分搜，尋找最小需要的power
 > 因為有power的路可以任意更改方向，dfs時可忽略這些邊
@@ -1067,6 +1068,11 @@ int main(int argc,char** argv){
 	return 0;
 }
 ```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PD
+```
 
 ## [`TIOJ 2255`] 天空競技場
 [`TIOJ 2255`]: https://tioj.ck.tp.edu.tw/problems/2255
@@ -1170,6 +1176,137 @@ int main(int argc,char** argv){
 	return 0;
 }
 ```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PE
+```
+
+## [`TIOJ 2257`] 鳳梨關稅
+[`TIOJ 2257`]: https://tioj.ck.tp.edu.tw/problems/2257
+### `Thinking`
+> 使用樹壓平  
+> `in[i]`代表節點`i`的編號  
+> `out[i]`代表節點`i`的子樹最大編號  
+> 可以證明`in[i]`~`out[i]`是一個區間，該區間所有點皆為`i`的子節點  
+> 如果我們要對`i`進行關稅調整，即`in[i]`到`out[i]`的價格可以`-1`  
+> 再來要考慮如何維護到每個點所需要的關稅  
+> 我們可以使用標記+前綴和  
+> ![Alt text](TIOJ_2257/image.png)  
+> 我們在`in[i]`標記`+1`，`out[i]+1`標記`-1`  
+> 因為在`out[i]+1`的時候，代表我們從某條練裡面出來了，把那些點減掉  
+> 我們可以輕鬆算出到每個節點需要的關稅  
+> 我們可以用`BIT`優化  
+
+### `C++`
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+
+const INT mxn=1e5+5;
+vector<INT> tree[mxn];
+vector<PII> edge;
+INT n,s,t,w;
+INT id=0;
+INT in[mxn];
+INT out[mxn];
+INT BIT[mxn];
+
+INT lowbit(INT nw){return nw&(-nw);}
+
+void dfs(INT nw,INT lst){
+	id++;
+	in[nw]=id;
+	for(INT i:tree[nw]){
+		if(i==lst)continue;
+		dfs(i,nw);
+	}
+	out[nw]=id;
+}
+
+void update(INT nw,INT v){
+	while(nw<=n){
+		BIT[nw]+=v;
+		nw+=lowbit(nw);
+	}
+}
+
+INT query(INT nw){
+	INT re=0;
+	while(nw){
+		re+=BIT[nw];
+		nw-=lowbit(nw);
+	}
+	return re;
+}
+
+function<int(INT)> solve=[](INT casenum){
+	if(!(cin>>n>>s>>t>>w))return -1;
+	for(INT i=0;i<=n+1;i++){
+		tree[i].clear();
+		in[i]=0;
+		out[i]=0;
+		BIT[i]=0;
+	}
+	id=0;
+	edge.clear();
+	for(INT i=1;i<n;i++){
+		INT u,v;
+		cin>>u>>v;
+		tree[u].push_back(v);
+		tree[v].push_back(u);
+		edge.push_back({u,v});
+	}
+	dfs(s,-1);
+	for(INT i=1;i<=n;i++){
+		if(i==s)continue;
+		update(in[i],1);
+		update(out[i]+1,-1);
+	}
+	INT q=t+w;
+	while(q--){
+		INT op;
+		cin>>op;
+		if(op==1){
+			INT x,y;
+			cin>>x>>y;
+			cout<<x*query(in[y])<<endl;
+		}else{
+			INT z;
+			cin>>z;
+			INT x,y;
+			x=edge[z-1].first;
+			y=edge[z-1].second;
+			if(in[x]<in[y])swap(x,y);
+			update(in[x],-1);
+			update(out[x]+1,1);
+		}
+	}
+	return 0;
+};
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve()
+	return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PG
+```
+
 
 ## [`TIOJ 2258`] 天竺鼠遊行
 [`TIOJ 2258`]: https://tioj.ck.tp.edu.tw/problems/2258
@@ -1370,6 +1507,8 @@ int main(){
 ```txt
 DP
 快速冪
+NHSPC 全國資訊學科能力競賽
+	2021 PI
 ```
 
 
