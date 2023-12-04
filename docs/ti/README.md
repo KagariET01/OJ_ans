@@ -578,10 +578,73 @@ int main(int argc,char** argv){
 ```txt
 學科能力競賽/台北區/2019
 ```
+## [`TIOJ 2223`] 礦砂採集
+[`TIOJ 2223`]: https://tioj.ck.tp.edu.tw/problems/2223
+### [`C++`](https://gist.github.com/KagariET01/f105cdf24c0bf490e72c4ff3f508692a)
+```c++
+#include<bits/stdc++.h>
+
+/*using namespace*/
+using namespace std;
+
+/*define type*/
+#define what_the_fuck cin.tie(0);cout.tie(0);ios::sync_with_stdio(false)
+#define ULLI unsigned long long int
+#define LLI long long int
+#define INT LLI
+#define UINT unsigned INT
+#define PII pair<INT,INT>
+#define PUIUI pair<UINT,UINT>
+#define endl "\n"
+#define DBG if(debug)
+#define FIR first
+#define SEC second
+#define elif else if
+bool debug=0;
+bool iofast=true;
+
+INT n,m;
+INT ans=0;
+vector<PII> item;
+/*main*/
+int main(){
+	if(!debug&&iofast){what_the_fuck;}
+	/*CIN*/
+	cin>>n>>m;
+	while(n--){
+		INT w,p;
+		cin>>w>>p;
+		item.push_back({p,w});
+	}
+	/*solve*/
+	INT ans=0;
+	sort(item.begin(),item.end(),[](PII a,PII b){return a>b;});
+	for(PII i:item){
+		if(m<=0)break;
+		if(i.SEC<=m){
+			m-=i.SEC;
+			ans+=i.SEC*i.FIR;
+		}
+		else{
+			ans+=m*i.FIR;
+			m=0;
+		}
+	}
+	cout<<ans<<endl;
+	return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2020 PA
+greedy
+	背包問題
+```
 
 ## [`TIOJ 2227`] 共同朋友
 [`TIOJ 2227`]: https://tioj.ck.tp.edu.tw/problems/2227
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/bd62c67c6aa02a5bc59805f5f22db0e9)
 ```cpp
 #include<bits/stdc++.h>
 
@@ -624,19 +687,12 @@ function<int(INT)> solve=[](INT casenum){
 	cout<<ans<<endl;
 	return 0;
 };
+```
 ### `Tag`
 ```txt
 NHSPC 全國資訊學科能力競賽 2020
+	2020 PE
 bitset
-```
-
-
-
-int main(int argc,char** argv){
-	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-  solve(0);
-	return 0;
-}
 ```
 
 ## [`TIOJ 2246`] 迷宮入口<br>`TOI 2022_1 PA` 迷宮入口

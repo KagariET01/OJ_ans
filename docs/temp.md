@@ -36,6 +36,7 @@ sort
 bit運算
 bitset
 greedy
+	背包問題
 想法
 DP
 模擬constructive algorithms
@@ -54,5 +55,6 @@ ST表
 	北2區
 	台北區
 NHSPC 全國資訊學科能力競賽
+	2000 PZ
 TOI 臺灣國際資訊奧林匹亞競賽
 ```
