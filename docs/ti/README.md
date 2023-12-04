@@ -223,6 +223,77 @@ int main(){
 }
 ```
 
+## [`TIOJ 1441`] 萬里長城
+### [`C++`](https://gist.github.com/KagariET01/a29579b6f048ce13b8ca99ef932dd8f4)
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define PIPII pair<INT,PII>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+bool debug=0;
+bool noTLE=1;
+
+bool one_case=1;
+bool ynans=0;
+bool eof=1;
+string yes="Yes";
+string no="No";
+
+INT mx[]={0,1,0,-1};
+INT my[]={1,0,-1,0};
+
+function<int()> solve=[](){
+	INT n;
+	if(!(cin>>n))return -1;
+	INT a[n];
+	for(INT i=0;i<n;i++){
+		cin>>a[i];
+	}
+	INT ans=0;
+	INT lst=-1;
+	for(INT i=0;i<n;i++){
+		if(ans==0){
+			ans=1;
+			lst=a[i];
+		}else{
+			if(ans&1){//next: low
+				if(lst>a[i]){
+					ans++;
+					lst=a[i];
+				}else{
+					lst=a[i];
+				}
+			}else{
+				if(lst<a[i]){
+					ans++;
+					lst=a[i];
+				}else{
+					lst=a[i];
+				}
+			}
+		}
+	}
+	ans-=1-(ans&1);
+	maxs(ans,0ll);
+	cout<<ans<<endl;
+	return 0;
+};
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve();
+	return 0;
+}
+```
+
 ## [`TIOJ 1828`] 控控控之蘿莉控
 [`TIOJ 1828`]: https://tioj.ck.tp.edu.tw/problems/1828
 ### `C++`
@@ -286,6 +357,78 @@ int main(int argc,char** argv){
 	}
 	return 0;
 }
+```
+
+## [`TIOJ 2009`] 數字密碼鎖（Lock）
+### [`C++`](https://gist.github.com/KagariET01/85192e3d6769605aaae08b863ffb66be)
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define PIPII pair<INT,PII>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+string yes="Yes";
+string no="No";
+
+INT mx[]={0,1,0,-1};
+INT my[]={1,0,-1,0};
+
+function<int()> solve=[](){
+	INT n,k;
+	if(!(cin>>n>>k))return -1;
+	INT a[n];
+	INT b[n];
+	for(INT i=0;i<n;i++)cin>>a[i],a[i]--;
+	for(INT i=0;i<n;i++)cin>>b[i],b[i]--;
+	INT ans=0;
+	for(INT i=0;i<n-k+1;i++){
+		INT cnt=0;
+		if(b[i]<a[i]){
+			cnt=b[i];
+			cnt+=9-a[i];
+		}else{
+			cnt=b[i]-a[i];
+		}
+		for(INT j=0;j<k;j++){
+			a[i+j]+=cnt;
+			a[i+j]%=9;
+		}
+		ans+=cnt;
+	}
+	bool ok=1;
+	for(INT i=0;i<n;i++){
+		if(a[i]!=b[i]){
+			ok=0;
+			break;
+		}
+	}
+	DBG{
+		for(INT i=0;i<n;i++)cout<<a[i]<<' ';
+		cout<<endl;
+	}
+	if(ok)cout<<ans<<endl;
+	else cout<<0<<endl;
+	return 0;
+};
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve();
+	return 0;
+}
+```
+### [`Tag`]
+```txt
+模擬constructive algorithms
+greedy
 ```
 
 ## [`TIOJ 2054`] 最大矩形涵蓋（cover）
@@ -500,7 +643,7 @@ int main(int argc,char** argv){
 
 ## [`TIOJ 2173`] 搜集寶藏 (Treasure)
 [`TIOJ 2173`]: https://tioj.ck.tp.edu.tw/problems/2173
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/dea90f5e8089b884281d9a50c39fe903)
 ```c++
 #include<bits/stdc++.h>
 
@@ -578,6 +721,7 @@ int main(int argc,char** argv){
 ```txt
 學科能力競賽/台北區/2019
 ```
+
 ## [`TIOJ 2223`] 礦砂採集
 [`TIOJ 2223`]: https://tioj.ck.tp.edu.tw/problems/2223
 ### [`C++`](https://gist.github.com/KagariET01/f105cdf24c0bf490e72c4ff3f508692a)
@@ -640,6 +784,254 @@ NHSPC 全國資訊學科能力競賽
 	2020 PA
 greedy
 	背包問題
+```
+
+## [`TIOJ 2224`] 村莊與小徑
+### [`C++`](https://gist.github.com/KagariET01/20964ad15f5b1981d57e5010b6dce706)
+```c++
+#include<bits/stdc++.h>
+
+/*using namespace*/
+using namespace std;
+
+/*define type*/
+#define what_the_fuck cin.tie(0);cout.tie(0);ios::sync_with_stdio(false)
+#define ULLI unsigned long long int
+#define LLI long long int
+#define INT LLI
+#define UINT unsigned INT
+#define PII pair<INT,INT>
+#define PUIUI pair<UINT,UINT>
+#define endl "\n"
+#define DBG if(debug)
+#define FIR first
+#define SEC second
+#define elif else if
+#define wassomething() empty()==false
+/*struct宣告*/
+struct mat;
+/*fn宣告*/
+/*num*/
+bool debug=0;
+bool iofast=true;
+
+const INT mxn=1e5;
+INT n,m;
+vector<PII> tree[mxn+1];
+INT inin[mxn+1];
+INT dang[mxn+1];
+deque<INT> dq;
+
+PII padd(PII a,PII b){
+	return {a.FIR+b.FIR,a.SEC+b.SEC};
+}
+/*main*/
+int main(){
+	if(!debug&&iofast){what_the_fuck;}
+	//memset(dang,1e9,sizeof(dang));
+	dang[1]=0;
+	/*CIN*/
+	cin>>n>>m;
+	while(m--){
+	    INT u,v,w;
+	    cin>>u>>v>>w;
+	    tree[u].push_back({v,w});
+	    inin[v]++;
+	}
+	/*solve*/
+	for(INT i=0;i<=n;i++){
+	    dang[i]=1e11;
+	}
+	dang[1]=0;
+	DBG{
+	    for(INT i=0;i<=n;i++){
+	        cerr<<dang[i]<<" ";
+	    }
+	    cerr<<endl;
+	}
+	dq.push_back(1);
+	INT ans=0;
+	while(dq.wassomething()){
+	    INT nw=dq.front();
+	    dq.pop_front();
+	    ans+=dang[nw];
+	    for(PII i:tree[nw]){
+	        dang[i.FIR]=min(dang[i.FIR],dang[nw]+i.SEC);
+	        DBG cerr<<i.FIR<<" "<<dang[i.FIR]<<endl;
+	        inin[i.FIR]--;
+	        if(inin[i.FIR]<=0)dq.push_back(i.FIR);
+	    }
+	}
+	cout<<ans<<endl;
+	DBG{
+	    for(INT i=0;i<=n;i++){
+	        cerr<<dang[i]<<" ";
+	    }
+	    cerr<<endl;
+	}
+	return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2020 PB
+圖論
+	拓撲排序
+```
+
+## [`TIOJ 2225`] 樣本解析
+### [`C++`](https://gist.github.com/KagariET01/1d497c9e24a8b049b84a1408426f76e3)
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define FINT long double
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+
+#define VEC vector
+#define PB push_back
+#define VSORT(n) sort(n.begin(),n.end())
+#define LOOP(i,n) for(INT i=0;i<n;i++)
+
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+bool debug=0;
+bool noTLE=1;
+
+bool one_case=1;
+bool ynans=0;
+bool eof=1;
+string yes="YES";
+string no="NO";
+
+const INT mxn=20;
+INT n;
+string x;
+string s[mxn];
+bitset<30> xbit;
+bitset<30> sbit[mxn];
+
+function<int(INT)> solve=[](INT casenum){
+	if(!(cin>>n))return -1;
+	xbit=0;
+	for(INT i=0;i<=n;i++){
+		sbit[i]=0;
+	}
+
+	cin>>x;
+	for(char c:x){
+		xbit[c-'a']=1;
+	}
+	for(INT i=0;i<n;i++){
+		cin>>s[i];
+		for(char c:s[i]){
+			sbit[i][c-'a']=1;
+		}
+	}
+
+	INT p1,p2,p3,p4,p5;
+	p1=p2=p3=p4=p5=0;
+	//get p1~p4
+	for(INT i=0;i<n;i++){
+		bitset<30> nw=xbit&sbit[i];
+		if(nw==0){
+			p1++;
+			continue;
+		}else if(nw==xbit){
+			p2++;
+			continue;
+		}else if(nw==sbit[i]){
+			p3++;
+			continue;
+		}else{
+			p4++;
+			continue;
+		}
+	}
+
+	INT m=x.size();
+	bitset<30> xa[2];
+	for(INT i=1;i<(1<<m)-1;i++){
+		xa[0]=xa[1]=0;
+		for(INT j=0;j<m;j++){
+			xa[(i&(1<<j)?1:0)][x[j]-'a']=1;
+		}
+		bool nap4=1;
+		for(INT j=0;j<n && nap4;j++){
+			bitset<30> nw=xa[0]&sbit[j];
+			if(!(nw==0 ||
+				nw==xa[0] ||
+				nw==sbit[j])){
+				nap4=0;
+				break;
+			}
+		}
+		for(INT j=0;j<n && nap4;j++){
+			bitset<30> nw=xa[1]&sbit[j];
+			if(!(nw==0 ||
+				nw==xa[1] ||
+				nw==sbit[j])){
+				nap4=0;
+				break;
+			}
+		}
+		p5+=nap4;
+	}
+	cout<<p1<<" "<<p2<<" "<<p3<<" "<<p4<<" "<<p5<<endl;
+	return 0;
+};
+
+
+//#ifndef EVAL
+int main(int argc,char** argv){
+	for(int i=0;i<argc;i++){
+		string nwstr=argv[i];
+		if(nwstr=="-Dev"){
+			debug=1;
+			noTLE=0;
+		}else if(nwstr=="-TLE"){
+			noTLE=0;
+		}
+	}
+	DBG{
+		cout<<"Temp by KagariET01"<<endl;
+		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
+		cout<<"===DBG mod on==="<<endl;
+		cout<<"Here's your CFG"<<endl;
+		for(int i=0;i<argc;i++){
+			string nwstr=argv[i];
+			cout<<'['<<nwstr<<']'<<endl;
+		}
+		cout<<"===Code start==="<<endl;
+	}
+	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	do{
+		INT t=(one_case?1:read(int));
+		for(INT i=0;i<t;i++){
+			INT re=solve(i);
+			if(re==-1)return 0;
+			if(ynans){
+				if(re==1){
+					cout<<yes<<endl;
+				}else if(re==0){
+					cout<<no<<endl;
+				}
+			}
+		}
+	}while(eof);
+	return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2020 PC
 ```
 
 ## [`TIOJ 2227`] 共同朋友
@@ -991,6 +1383,7 @@ TOI 臺灣國際資訊奧林匹亞競賽
 > 使用dfs 以O(n+m)的方式判斷是否有環
 > 找到最小power後，在更據深度判斷哪些邊需要反轉
 > 時間複雜度 $log((n+m)log_2(c_i))$
+
 ### `C++`
 ```c++
 #include<bits/stdc++.h>
@@ -1254,7 +1647,7 @@ NHSPC 全國資訊學科能力競賽
 > 我們可以輕鬆算出到每個節點需要的關稅  
 > 我們可以用`BIT`優化  
 
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/86fbf8a0677fe4da57f0aba0001c9938)
 ```c++
 #include<bits/stdc++.h>
 

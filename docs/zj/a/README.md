@@ -3,9 +3,7 @@
 [`back`](../)
 
 ## `ZJ a001` 哈囉
-
 ### `c++`
-
 ```c++
 #include<iostream>
 #include<string>
@@ -17,15 +15,11 @@ int main(){
 	return 0;
 }
 ```
-
 ### `Py`
-
 ```py
 print("hello,",input())
 ```
-
 ### `Tag`
-
 ```txt
 基本輸出輸入
 ```
