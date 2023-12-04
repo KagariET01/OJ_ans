@@ -224,6 +224,7 @@ int main(){
 ```
 
 ## [`TIOJ 1441`] 萬里長城
+[`TIOJ 1441`]: https://tioj.ck.tp.edu.tw/problems/1441
 ### [`C++`](https://gist.github.com/KagariET01/a29579b6f048ce13b8ca99ef932dd8f4)
 ```c++
 #include<bits/stdc++.h>
@@ -360,6 +361,7 @@ int main(int argc,char** argv){
 ```
 
 ## [`TIOJ 2009`] 數字密碼鎖（Lock）
+[`TIOJ 2009`]: https://tioj.ck.tp.edu.tw/problems/2009
 ### [`C++`](https://gist.github.com/KagariET01/85192e3d6769605aaae08b863ffb66be)
 ```c++
 #include<bits/stdc++.h>
