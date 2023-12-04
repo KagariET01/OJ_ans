@@ -787,6 +787,7 @@ greedy
 ```
 
 ## [`TIOJ 2224`] 村莊與小徑
+[`TIOJ 2223`]: https://tioj.ck.tp.edu.tw/problems/2224
 ### [`C++`](https://gist.github.com/KagariET01/20964ad15f5b1981d57e5010b6dce706)
 ```c++
 #include<bits/stdc++.h>
@@ -881,6 +882,7 @@ NHSPC 全國資訊學科能力競賽
 ```
 
 ## [`TIOJ 2225`] 樣本解析
+[`TIOJ 2223`]: https://tioj.ck.tp.edu.tw/problems/2225
 ### [`C++`](https://gist.github.com/KagariET01/1d497c9e24a8b049b84a1408426f76e3)
 ```c++
 #include<bits/stdc++.h>
