@@ -1418,90 +1418,130 @@ NHSPC 全國資訊學科能力競賽
 > 列出DP式，再用矩陣乘法+快速冪優化  
 > 轉移表+初始設定如下（假設初始狀態為i=1）  
 > ![Alt text.](TIOJ_2259/image-1.png)  
+
 ### `C++`
 ```c++
 #include<bits/stdc++.h>
+
 using namespace std;
-#define what_the_fuck cin.tie(0);cout.tie(0);ios::sync_with_stdio(false)
-#define ULLI unsigned long long int
-#define LLI long long int
-#define INT LLI
-#define UINT unsigned INT
-#define PII pair<INT,INT>
-#define PUIUI pair<UINT,UINT>
+#define INT long long int
 #define endl "\n"
+#define read(n) reader<n>()
 #define DBG if(debug)
-#define FIR first
-#define SEC second
+#define PII pair<INT,INT>
+#define ifif if
 #define elif else if
-#define wassomething() empty()==false
-struct mat;
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
 bool debug=0;
-bool iofast=true;
-PII mv[]={{0,1},{1,0},{0,-1},{-1,0}};
-INT mx[]={0,1,0,-1};
-INT my[]={1,0,-1,0};
-INT mod=1e9+7;
-/*struct定義*/
-struct mat{
-	INT a[6][6];
-	mat(){
-		memset(a,0,sizeof(a));
-	}
-	mat operator*(const mat &b)const{
-		mat re;
-		for(INT i=0;i<6;i++){
-			for(INT j=0;j<6;j++){
-				for(INT k=0;k<6;k++){
-					re.a[i][j]=(re.a[i][j]+a[i][k]*b.a[k][j])%mod;
-				}
+bool noTLE=1;
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+struct str{
+	INT lst[3][3]={};
+};
+
+str operator*(str a,str b){
+	str re;
+	for(INT i=0;i<3;i++){
+		for(INT j=0;j<3;j++){
+			for(INT k=0;k<3;k++){
+				re.lst[i][j]+=a.lst[i][k]*b.lst[k][j];
+				re.lst[i][j]%=(INT)(1e9+7);
 			}
 		}
+	}
+	return re;
+}
+
+template<typename T>T spow(T a,INT b){
+	if(b==0){
+		T re;
 		return re;
 	}
-};
-/*fn定義*/
-PII padd(PII a,PII b){
-	return {a.FIR+b.FIR,a.SEC+b.SEC};
-}
-/*main*/
-int main(){
-	if(!debug&&iofast){what_the_fuck;}
-	/*CIN*/
-	INT n;
-	cin>>n;
-	/*solve*/
-	n--;
-	mat bs;
-	bs.a[0][3]=1;
-	mat aa;
-
-	aa.a[0][3]=1;
-
-	aa.a[1][0]=1;
-	aa.a[1][4]=1;
-	
-	aa.a[2][0]=1;
-	aa.a[2][5]=1;
-	
-	aa.a[3][0]=1;
-	aa.a[3][1]=1;
-	aa.a[3][2]=1;
-	aa.a[3][3]=1;
-
-	aa.a[4][0]=1;
-	aa.a[4][4]=1;
-	
-	aa.a[5][0]=1;
-	aa.a[5][5]=1;
-	while(n){
-		if(n&1){
-			bs=bs*aa;
-		}
-		aa=aa*aa;
-		n>>=1;
+	T re=a;
+	T xx=a;
+	b--;
+	while(b){
+		if(b&1)re=re*xx;
+		xx=xx*xx;
+		b>>=1;
 	}
-	cout<<bs.a[0][0]<<endl;
+	return re;
+}
+
+int main(int argc,char** argv){
+	for(int i=0;i<argc;i++){
+		string nwstr=argv[i];
+		if(nwstr=="-Dev"){
+			debug=1;
+			noTLE=0;
+		}else if(nwstr=="-TLE"){
+			noTLE=0;
+		}
+	}
+	DBG{
+		cout<<"Temp by KagariET01"<<endl;
+		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
+		cout<<"===DBG mod on==="<<endl;
+		cout<<"Here's your CFG"<<endl;
+		for(int i=0;i<argc;i++){
+			string nwstr=argv[i];
+			cout<<'['<<nwstr<<']'<<endl;
+		}
+		cout<<"===Code start==="<<endl;
+	}
+	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+
+	function<int(INT)> solve=[](INT casenum){
+		INT n;
+		if(!(cin>>n))return -1;
+		ifif(n==1){
+			cout<<0<<endl;
+			return 0;
+		}elif(n==2){
+			cout<<1<<endl;
+			return 0;
+		}elif(n==3){
+			cout<<3<<endl;
+			return 0;
+		}else{
+			str a;
+			a.lst[0][0]=0;
+			a.lst[0][1]=1;
+			a.lst[0][2]=3;
+			str b;
+			b.lst[1][0]=1;
+			b.lst[2][1]=1;
+			b.lst[0][2]=1;
+			b.lst[2][2]=2;
+			n-=3;
+			a=a*spow(b,n);
+			cout<<a.lst[0][2]<<endl;
+		}
+
+		return 0;
+	};
+	bool one_case=1;
+	bool ynans=0;
+	bool eof=1;
+	string yes="YES";
+	string no="NO";
+	INT t=(one_case?1:read(int));
+	for(INT i=0;eof || i<t;i++){
+		INT re=solve(i);
+		if(!ynans){
+			if(re==-1)return 0;
+		}else{
+			if(re==1){
+				cout<<yes<<endl;
+			}else if(re==0){
+				cout<<no<<endl;
+			}else{
+				return 0;
+			}
+		}
+	}
 	return 0;
 }
 ```
