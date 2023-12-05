@@ -1339,6 +1339,7 @@ TOI 臺灣國際資訊奧林匹亞競賽
 ```
 
 ## [`TIOJ 2251`] 髮廊服務優化問題
+[`TIOJ 2251`]: https://tioj.ck.tp.edu.tw/problems/2251
 ### [`C++`](https://gist.github.com/KagariET01/1d7824a8aaa266f4800657e4651e0736)
 ```c++
 #include<bits/stdc++.h>
@@ -1377,6 +1378,7 @@ NHSPC 全國資訊學科能力競賽
 ```
 
 ## [`TIOJ 2252`] 校園公車
+[`TIOJ 2252`]: https://tioj.ck.tp.edu.tw/problems/2252
 ### [`C++`](https://gist.github.com/KagariET01/5093d46356a6b0c054869a37039b8ed8)
 ```c++
 #include<bits/stdc++.h>
