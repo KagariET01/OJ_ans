@@ -905,14 +905,6 @@ using namespace std;
 #define LOOP(i,n) for(INT i=0;i<n;i++)
 
 template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
-bool debug=0;
-bool noTLE=1;
-
-bool one_case=1;
-bool ynans=0;
-bool eof=1;
-string yes="YES";
-string no="NO";
 
 const INT mxn=20;
 INT n;
@@ -921,7 +913,7 @@ string s[mxn];
 bitset<30> xbit;
 bitset<30> sbit[mxn];
 
-function<int(INT)> solve=[](INT casenum){
+function<int()> solve=[](){
 	if(!(cin>>n))return -1;
 	xbit=0;
 	for(INT i=0;i<=n;i++){
@@ -994,41 +986,8 @@ function<int(INT)> solve=[](INT casenum){
 
 //#ifndef EVAL
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
-	DBG{
-		cout<<"Temp by KagariET01"<<endl;
-		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
-		cout<<"===DBG mod on==="<<endl;
-		cout<<"Here's your CFG"<<endl;
-		for(int i=0;i<argc;i++){
-			string nwstr=argv[i];
-			cout<<'['<<nwstr<<']'<<endl;
-		}
-		cout<<"===Code start==="<<endl;
-	}
-	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	do{
-		INT t=(one_case?1:read(int));
-		for(INT i=0;i<t;i++){
-			INT re=solve(i);
-			if(re==-1)return 0;
-			if(ynans){
-				if(re==1){
-					cout<<yes<<endl;
-				}else if(re==0){
-					cout<<no<<endl;
-				}
-			}
-		}
-	}while(eof);
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve();
 	return 0;
 }
 ```
@@ -1379,6 +1338,136 @@ int main(int argc,char** argv){
 TOI 臺灣國際資訊奧林匹亞競賽
 ```
 
+## [`TIOJ 2251`] 髮廊服務優化問題
+### [`C++`](https://gist.github.com/KagariET01/1d7824a8aaa266f4800657e4651e0736)
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT int
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+
+int main(int argc,char** argv){
+  {cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+
+  INT n;
+  if(!(cin>>n))return -1;
+  vector<INT> vec;
+  vec.reserve(n);
+  for(INT i=0;i<n;i++)vec.push_back(read(INT));
+  sort(vec.begin(),vec.end(),[](INT a,INT b){return a>b;});
+  INT ans=0;
+  for(INT i=0;i<n;i++){
+    ans+=vec[i]*(i+1);
+  }
+  cout<<ans<<endl;
+  return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PA
+```
+
+## [`TIOJ 2252`] 校園公車
+### [`C++`](https://gist.github.com/KagariET01/5093d46356a6b0c054869a37039b8ed8)
+```c++
+#include<bits/stdc++.h>
+
+using namespace std;
+#define INT long long int
+#define FINT long double
+#define endl "\n"
+#define read(n) reader<n>()
+#define DBG if(debug)
+#define PII pair<INT,INT>
+//#define max(a,b) ((a>b)?a:b)
+//#define min(a,b) ((a<b)?a:b)
+#define maxs(a,b) a=max(a,b)
+#define mins(a,b) a=min(a,b)
+template<typename tpe>tpe reader(){tpe re;cin>>re;return re;}
+bool debug=0;
+bool noTLE=1;
+
+struct pnt{
+	FINT x;
+	FINT y;
+};
+FINT x,y;
+INT n;
+pnt orig;
+vector<pnt> stop;
+FINT ans=1e9;
+
+FINT getl(pnt a,pnt b){
+	FINT xl=fabs(a.x-b.x);
+	FINT yl=fabs(a.y-b.y);
+	return sqrt(xl*xl + yl*yl);
+}
+pnt crop(pnt l,pnt r,FINT a){
+	pnt re;
+	re.x=(l.x-r.x)*a+r.x;
+	re.y=(l.y-r.y)*a+r.y;
+	return re;
+}
+
+void bitfind(pnt a,pnt b){
+	INT t=100000;
+	FINT l=0,r=1;
+	while(t--){
+		FINT mid1=(r-l)/3+l;
+		FINT mid2=(r-l)/3*2+l;
+		pnt p1=crop(a,b,mid1);
+		pnt p2=crop(a,b,mid2);
+		FINT l1=getl(p1,orig);
+		FINT l2=getl(p2,orig);
+		if(l1<l2){
+			r=mid2;
+		}else{
+			l=mid1;
+		}
+		mins(ans,l1);
+		mins(ans,l2);
+	}
+}
+
+function<int()> solve=[](){
+	cin>>x>>y>>n;
+	orig={x,y};
+	stop.clear();
+	ans=1e9;
+	for(INT i=0;i<=n;i++){
+		FINT x,y;
+		cin>>x>>y;
+		stop.push_back({x,y});
+		mins(ans,getl(stop[i],orig));
+	}
+	for(INT i=1;i<=n;i++){
+		bitfind(stop[i-1],stop[i]);
+	}
+	cout<<fixed<<setprecision(18)<<ans<<endl;
+	return 0;
+};
+
+int main(int argc,char** argv){
+	{cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+	solve();
+	return 0;
+}
+```
+### `Tag`
+```txt
+NHSPC 全國資訊學科能力競賽
+	2021 PB
+```
+
 ## [`TIOJ 2254`] 汽車不再繞圈圈
 [`TIOJ 2254`]: https://tioj.ck.tp.edu.tw/problems/2254
 ### `Thinking`
@@ -1388,7 +1477,7 @@ TOI 臺灣國際資訊奧林匹亞競賽
 > 找到最小power後，在更據深度判斷哪些邊需要反轉
 > 時間複雜度 $log((n+m)log_2(c_i))$
 
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/2623ed2469e1a699306ed29998def7c6)
 ```c++
 #include<bits/stdc++.h>
 
@@ -1412,8 +1501,6 @@ bool ynans=0;
 bool eof=0;
 string yes="YES";
 string no="NO";
-
-
 
 const INT mxn=1e5+5;
 INT n,m;
@@ -1456,7 +1543,7 @@ function<bool(INT)> checker=[](INT lim){
 	}
 	return 1;
 };
-function<int(INT)> solve=[](INT casenum){
+function<int()> solve=[](){
 	cin>>n>>m;
 	for(INT i=1;i<=n;i++){
 		tree[i].clear();
@@ -1499,25 +1586,9 @@ function<int(INT)> solve=[](INT casenum){
 	return 0;
 };
 
-
-
 int main(int argc,char** argv){
 	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
-	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
-		INT re=solve(i);
-		if(!ynans){
-			if(re==-1)return 0;
-		}else{
-			if(re==1){
-				cout<<yes<<endl;
-			}else if(re==0){
-				cout<<no<<endl;
-			}else{
-				return 0;
-			}
-		}
-	}
+	solve();
 	return 0;
 }
 ```
@@ -1765,7 +1836,7 @@ NHSPC 全國資訊學科能力競賽
 
 ## [`TIOJ 2258`] 天竺鼠遊行
 [`TIOJ 2258`]: https://tioj.ck.tp.edu.tw/problems/2258
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/5928d9b349b7dc59d548a8c68a20b3c6)
 ```c++
 #include<bits/stdc++.h>
 
@@ -1872,7 +1943,7 @@ NHSPC 全國資訊學科能力競賽
 > 轉移表+初始設定如下（假設初始狀態為i=1）  
 > ![Alt text.](TIOJ_2259/image-1.png)  
 
-### `C++`
+### [`C++`](https://gist.github.com/KagariET01/b01254a684de2bd1210452e60902c91d)
 ```c++
 #include<bits/stdc++.h>
 
@@ -1924,29 +1995,9 @@ template<typename T>T spow(T a,INT b){
 }
 
 int main(int argc,char** argv){
-	for(int i=0;i<argc;i++){
-		string nwstr=argv[i];
-		if(nwstr=="-Dev"){
-			debug=1;
-			noTLE=0;
-		}else if(nwstr=="-TLE"){
-			noTLE=0;
-		}
-	}
-	DBG{
-		cout<<"Temp by KagariET01"<<endl;
-		cout<<"My Webpage: https://kagariet01.github.io/about"<<endl;
-		cout<<"===DBG mod on==="<<endl;
-		cout<<"Here's your CFG"<<endl;
-		for(int i=0;i<argc;i++){
-			string nwstr=argv[i];
-			cout<<'['<<nwstr<<']'<<endl;
-		}
-		cout<<"===Code start==="<<endl;
-	}
-	if(noTLE && !debug){cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
+  {cin.tie(0);cout.tie(0);ios::sync_with_stdio(0);}
 
-	function<int(INT)> solve=[](INT casenum){
+	function<int()> solve=[](){
 		INT n;
 		if(!(cin>>n))return -1;
 		ifif(n==1){
@@ -1975,26 +2026,7 @@ int main(int argc,char** argv){
 
 		return 0;
 	};
-	bool one_case=1;
-	bool ynans=0;
-	bool eof=1;
-	string yes="YES";
-	string no="NO";
-	INT t=(one_case?1:read(int));
-	for(INT i=0;eof || i<t;i++){
-		INT re=solve(i);
-		if(!ynans){
-			if(re==-1)return 0;
-		}else{
-			if(re==1){
-				cout<<yes<<endl;
-			}else if(re==0){
-				cout<<no<<endl;
-			}else{
-				return 0;
-			}
-		}
-	}
+  solve();
 	return 0;
 }
 ```
@@ -2014,3 +2046,4 @@ NHSPC 全國資訊學科能力競賽
 [`PCIC`]: /OJ_ans/PCIC
 
 <link id="style_css" rel="stylesheet" type="text/css" href="/OJ_ans/style.css">
+
